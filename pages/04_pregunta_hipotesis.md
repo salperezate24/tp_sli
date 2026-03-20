@@ -1,6 +1,7 @@
 ---
 transition: slide-left
 title: Pregunta de investigación e hipótesis
+deckSection: pregunta
 ---
 
 <div class="mx-auto flex max-w-5xl flex-col gap-5 pr-2 text-left sm:gap-6">
@@ -25,18 +26,15 @@ title: Pregunta de investigación e hipótesis
   </div>
 </div>
 
-<div class="absolute bottom-10 right-38">
+<div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
   <img
     src="../images/logos/gpima_logo.png"
     alt="GPIMA"
-    class="h-8 w-auto object-contain"
+    class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6"
   />
-</div>
-
-<div class="abs-br ml-10 mb-5">
   <img
     src="../images/logos/unal_logo_lateral.png"
     alt="Universidad Nacional de Colombia"
-    class="h-20 w-auto object-contain"
+    class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14"
   />
 </div>

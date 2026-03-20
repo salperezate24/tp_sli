@@ -52,6 +52,7 @@ const style = computed(() => handleBackground(props.image, false, props.backgrou
 
 <template>
   <div class="slidev-layout image-right relative h-full w-full pb-10">
+    <ThesisSectionNav />
     <div class="grid h-full w-full auto-rows-fr grid-cols-2">
       <div class="slidev-layout default" :class="props.class">
         <slot />

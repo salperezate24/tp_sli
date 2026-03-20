@@ -1,11 +1,11 @@
 ---
 transition: slide-up
+deckSection: objetivos
 ---
 
 <div class="flex h-full min-h-0 flex-col justify-center pb-32 sm:pb-36">
   <header class="mb-4 text-left sm:mb-5">
-    <p class="mb-0 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#3981BF]">Objetivos</p>
-    <h1 class="mt-0.5 text-2xl font-bold leading-tight tracking-tight text-[#262626] sm:text-3xl">Objetivo general</h1>
+    <h1 class="mt-0 text-2xl font-bold leading-tight tracking-tight text-[#262626] sm:text-3xl">Objetivo general</h1>
     <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-[#A0BF5E]" />
   </header>
 
@@ -18,30 +18,27 @@ transition: slide-up
   </div>
 </div>
 
-<div class="absolute bottom-10 right-38">
+<div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
   <img
     src="../images/logos/gpima_logo.png"
     alt="GPIMA"
-    class="h-8 w-auto object-contain"
+    class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6"
   />
-</div>
-
-<div class="abs-br ml-10 mb-5">
   <img
     src="../images/logos/unal_logo_lateral.png"
     alt="Universidad Nacional de Colombia"
-    class="h-20 w-auto object-contain"
+    class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14"
   />
 </div>
 
 ---
 transition: slide-left
+deckSection: objetivos
 ---
 
 <div class="flex h-full min-h-0 flex-col justify-center pb-32 sm:pb-36">
   <header class="mb-4 text-left sm:mb-5">
-    <p class="mb-0 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#3981BF]">Objetivos</p>
-    <h1 class="mt-0.5 text-2xl font-bold leading-tight tracking-tight text-[#262626] sm:text-3xl">Objetivos específicos</h1>
+    <h1 class="mt-0 text-2xl font-bold leading-tight tracking-tight text-[#262626] sm:text-3xl">Objetivos específicos</h1>
     <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-[#A0BF5E]" />
   </header>
 
@@ -56,18 +53,15 @@ transition: slide-left
   </div>
 </div>
 
-<div class="absolute bottom-10 right-38">
+<div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
   <img
     src="../images/logos/gpima_logo.png"
     alt="GPIMA"
-    class="h-8 w-auto object-contain"
+    class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6"
   />
-</div>
-
-<div class="abs-br ml-10 mb-5">
   <img
     src="../images/logos/unal_logo_lateral.png"
     alt="Universidad Nacional de Colombia"
-    class="h-20 w-auto object-contain"
+    class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14"
   />
 </div>

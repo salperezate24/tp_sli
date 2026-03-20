@@ -11,6 +11,7 @@ const props = defineProps({
 
 <template>
   <div class="slidev-layout two-columns relative grid h-full w-full grid-cols-2 pb-10" :class="props.layoutClass">
+    <ThesisSectionNav />
     <div class="col-left" :class="props.class">
       <slot />
       <slot name="left" />

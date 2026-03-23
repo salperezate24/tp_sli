@@ -1,0 +1,1324 @@
+00:00:00:01 - 00:00:16:06
+Speaker 1
+Porque, eh, el ejercicio que hay que hacer ahora es o es esta, esta que te digo, si. Mhm. El Ya, ya te digo. Es decir, ella fue capaz ya. Sí. ¿Entonces la vas a hacer?
+
+00:00:16:08 - 00:00:20:00
+Speaker 2
+Entonces cojo esta imagen y hago zoom sobre una o sobre ella. No, no.
+
+00:00:20:00 - 00:00:24:24
+Speaker 1
+No, no. Esa que tenés. Esa que te di. Mhm.
+
+00:00:25:01 - 00:00:36:02
+Speaker 1
+La, la esa. La duplicas y la reduce a la mitad.
+
+00:00:36:04 - 00:00:40:06
+Speaker 2
+¿Cómo así? Que la reduzca la mitad.
+
+00:00:40:08 - 00:00:51:23
+Speaker 1
+Y la va a reducir a la mitad de en el. En esta imagen tiene mil pixeles. Porque el Entonces que la haga 500 píxeles por 515.
+
+00:00:52:00 - 00:00:58:12
+Speaker 2
+Ah, okay. No, yo creo que esa es la imagen completa. ¿Eh?
+
+00:00:58:14 - 00:01:04:14
+Speaker 1
+Entonces te mete la magia en completa, pero reduce la la imagen.
+
+00:01:04:16 - 00:01:09:22
+Speaker 2
+Okay, ya. Si, lo entiendo. ¿Pero pregunta Por qué lo tengo que reducir?
+
+00:01:09:24 - 00:01:12:22
+Speaker 1
+Para saber si falla su red.
+
+00:01:12:24 - 00:01:17:17
+Speaker 2
+Pero es que igual el sol cuando entra lo.
+
+00:01:17:21 - 00:01:38:08
+Speaker 1
+No. O sea, yo le le va yo le va a quitar su su red cuando entra, o sea tiene una red de mil, por tanto por mil. Por tanto sí, pero la zona del del del osito no es de mil. Por tanto por mil. Por tanto, 100 los ovocitos que se entrenó eran como de 500 o 670% 70.
+
+00:01:38:10 - 00:01:55:15
+Speaker 1
+Cuando él no esté en tamaño, el va a fallar de lo que sabemos. Venga si el o si todo mi es 300%, esto ya funciona o ya lo empieza a equivocar o si cuando el ovocito se lo crece al doble 1200 por 1200.
+
+00:01:55:15 - 00:02:01:24
+Speaker 2
+¿No espero un momentico eh?
+
+00:02:02:01 - 00:02:04:13
+Speaker 2
+Ya.
+
+00:02:04:15 - 00:02:22:12
+Speaker 2
+Es que no creo que sea tan así, porque de hecho en la red nosotros hacemos transferencia de aprendizaje. Eso tiene otras dimensiones. Yo lo redimensiona cuando entran al entrenamiento. Entonces, eh, no sé si me explico.
+
+00:02:22:14 - 00:02:31:00
+Speaker 1
+No es eso, es lo que queremos, es identificar cuál es la zona que le está funcionando, la.
+
+00:02:31:02 - 00:02:41:16
+Speaker 1
+Es decir, ese osito que tiene ahí abre la imagen que, que, que genere, pues los datos, los datos de la imagen tiene mil, 1700 píxeles.
+
+00:02:41:18 - 00:02:44:05
+Speaker 2
+Los datos de la.
+
+00:02:44:07 - 00:02:50:02
+Speaker 1
+¿Tiene 1700 píxeles, no? Ahí la, la, la la detectaste.
+
+00:02:50:04 - 00:02:52:18
+Speaker 2
+¿Pero que es una captura de pantalla? Creo que.
+
+00:02:52:22 - 00:02:53:23
+Speaker 1
+Ah, ya, bueno, listo.
+
+00:02:54:00 - 00:03:07:03
+Speaker 2
+Entonces voy a mirar la imagen. El final. Si usted quiere hacer las dos.
+
+00:03:07:05 - 00:03:16:20
+Speaker 2
+Mmm mmm.
+
+00:03:16:22 - 00:03:19:21
+Speaker 2
+Dice 536 por 516.
+
+00:03:19:23 - 00:03:27:05
+Speaker 1
+Miren, esta está cercana a Al a los modelos que se tenía. Sí.
+
+00:03:27:07 - 00:03:31:21
+Speaker 2
+Entonces usted me dice que la disminuye, Disminuya.
+
+00:03:31:21 - 00:03:37:13
+Speaker 1
+Pero mantiene la imagen en en 500 por 500. Pues.
+
+00:03:37:15 - 00:03:41:14
+Speaker 2
+O sea, le pongo como una mancha negra y.
+
+00:03:41:16 - 00:03:50:19
+Speaker 1
+No le hecho recorte el el osito y lo. Y ese recorte lo baja la mitad y después ese recorte se lo pone a la imagen igual y así.
+
+00:03:50:22 - 00:03:57:04
+Speaker 2
+Ok. Que quede en una imagen del mismo dimensión, pero el osito que a lo que quedaría la mitad de.
+
+00:03:57:06 - 00:03:58:09
+Speaker 1
+A la mitad o el doble.
+
+00:03:58:13 - 00:04:02:05
+Speaker 2
+Ok, eso si, si me hace sentido. Ok, ya, gracias.
+
+00:04:02:07 - 00:04:19:13
+Speaker 1
+Sí. ¿Por qué? Porque yo lo entiendo. Usted lo que hace es que coge la imagen. Se la. Se la pone al tamaño que tiene su entrada en la red. Es por eso de ahí también es usted. Está haciendo una especie de de aumento. Y ese aumento es lo que le permite no fallar en la detección.
+
+00:04:19:15 - 00:04:27:16
+Speaker 2
+Que probablemente va a quedar como en ese tamaño, que es donde nos está fallando exactamente. Okay.
+
+00:04:27:18 - 00:04:32:24
+Speaker 1
+Si es que. Mire, piense, piense una cosa. Si yo. Si.
+
+00:04:33:01 - 00:04:42:17
+Speaker 2
+Yo quiero esa imagen. Incluso aquí hablo de la relación pixel Micra. Entonces. Si. Si, entiendo que lo que dice ahora, si.
+
+00:04:42:19 - 00:05:10:09
+Speaker 1
+Entonces mire que usted acá. ¿Que está diciendo? Que él le está diciendo la red en ese resultado, en ese momento la red le está diciendo que el estimado es el 10%, el tamaño de la ovocito Mhm, es decir, eso es, ese cuadrito es el 10%, entonces el el el un óvulo sería casi tres.
+
+00:05:10:11 - 00:05:19:18
+Speaker 1
+Tres óvulos de los que están ahí ya. Por eso él no lo detecta.
+
+00:05:19:20 - 00:05:40:14
+Speaker 1
+¿En que la la atención lo que te está haciendo es un dimensionamiento y es un truco, cierto? Pues claro. ¿Pero cuando uno dice la atención no sé que va, va, va Ronald y se queda con eso solamente no le coge el swing a a qué es lo que está pasando? Lo que está pasando es que está dimensionando interés y no tiene lógica, Claro.
+
+00:05:40:20 - 00:05:47:01
+Speaker 1
+Cuando yo tengo un ovocito minado en diez por o en 40 por o en 50 por el se va a ver de un tamaño distinto.
+
+00:05:47:03 - 00:05:56:07
+Speaker 2
+Claro, si la relación pixel y tamaño real es diferente, es.
+
+00:05:56:09 - 00:05:57:16
+Speaker 2
+Okay.
+
+00:05:57:18 - 00:06:09:15
+Speaker 1
+Entonces lo que lo que les diría no es que uno no se deje engañar solamente por los términos y no se que la atención o el punto de atención lo que te está diciendo es un tamaño pues.
+
+00:06:09:17 - 00:06:26:16
+Speaker 1
+Porque en tus resultados estaba y mostraba la la la zona que mostraba la atención. Sí, ok, si era todo el borde del del extremo de lo que está diciendo ahí. ¿Sabes qué? Espacialmente yo considero algo que que sea un óvulo que tenga este diámetro.
+
+00:06:26:22 - 00:06:34:19
+Speaker 2
+Sí, sí, sí. Y de hecho la tengo. Una de las atenciones que usamos espacial.
+
+00:06:34:21 - 00:06:55:06
+Speaker 1
+Eh, Si pilla. Si, de eso lo saqué leyendo un documento. Yo le metí la mano. Su código no. Entonces esa es la reflexión de prueba de escritorio al final que hay que comenzar a hacer en los en los resultados experimentales que uno tenga.
+
+00:06:55:08 - 00:06:58:09
+Speaker 2
+Okay, yo lo corro, lo ejecuto.
+
+00:06:58:11 - 00:07:05:08
+Speaker 1
+Esto muy bien, pero no perfecto. No, El resultado era lo que quería que ocurriera de uno.
+
+00:07:05:10 - 00:07:13:07
+Speaker 2
+¿Eh? Lo otro para hoy era Las diapositivas no se las vamos a revisar. No está. Esto no está al final. Todavía está bastante.
+
+00:07:13:07 - 00:07:21:11
+Speaker 1
+No lo sé. ¿Entonces vamos a pasarlo rápido, eh? Igual que los los demás la vean. ¿Hay solamente algún comentario? Sí.
+
+00:07:21:13 - 00:07:27:09
+Speaker 2
+Y tengo que cambiar los datos porque lo estaba haciendo en primer. Pero como te voy a poner video, no puedo hacerlo en binario.
+
+00:07:27:11 - 00:07:29:08
+Speaker 1
+Mhm.
+
+00:07:29:10 - 00:07:33:03
+Speaker 2
+¿Eh? Entonces tenemos estas.
+
+00:07:33:03 - 00:07:34:11
+Speaker 1
+A ver, arranquemos.
+
+00:07:34:14 - 00:07:36:07
+Speaker 2
+Arranquemos con la primera.
+
+00:07:36:07 - 00:07:38:14
+Speaker 1
+Suena tan, tan, tan con.
+
+00:07:38:16 - 00:07:40:17
+Speaker 2
+Mayúscula cada una de las. No, no, no.
+
+00:07:40:17 - 00:07:51:13
+Speaker 1
+No, Ya acá es como si yo fuera también un estudiante maestría. Yo profesor. Bueno, aunque lo tienes ahí con el, con el lino. Ustedes el el.
+
+00:07:51:15 - 00:07:53:15
+Speaker 2
+Ah, ya con el Sí, sí.
+
+00:07:53:19 - 00:08:00:16
+Speaker 1
+Si usted es el el foco. Que cierto usted y usted es ingeniero.
+
+00:08:00:18 - 00:08:02:08
+Speaker 2
+Ingeniero mecánico.
+
+00:08:02:10 - 00:08:03:15
+Speaker 1
+Y la.
+
+00:08:03:17 - 00:08:12:10
+Speaker 2
+O sea, pongo aquí ingeniero no estudiante. Si, ya, ok, yo le cambié el formato que sea entonces ya nombre.
+
+00:08:12:12 - 00:08:16:24
+Speaker 1
+Y yo con el nombrecito chiquito por allá, el director ahí abajo pues.
+
+00:08:17:01 - 00:08:22:09
+Speaker 2
+Okay, aquí es eh, Sede Medellín va abajo o aquí está bien.
+
+00:08:22:11 - 00:08:28:17
+Speaker 1
+¿Eh? Facultad de Minas sede Medellín va abajo en la Universidad Nacional.
+
+00:08:28:19 - 00:08:31:24
+Speaker 2
+Va con Universidad Nacional o a sobre Universidad Nacional.
+
+00:08:32:00 - 00:08:34:11
+Speaker 1
+Universidad Nacional de Colombia, Sede Medellín.
+
+00:08:34:13 - 00:08:40:10
+Speaker 2
+Okay, bien. Tengo que poner Departamento de Ciencias de la Computación. Algunas cosas.
+
+00:08:40:12 - 00:08:47:02
+Speaker 1
+Eh. Bueno, me podría poner. Pues. Para que no se sientan.
+
+00:08:47:04 - 00:08:50:19
+Speaker 2
+Aquí, tengo que poner las O así. Está bien.
+
+00:08:50:21 - 00:09:23:04
+Speaker 1
+¿Eh? No, está bien. Pues la ponemos profunda 44 200 y polarizada. ¿Listo? Súper bien. Aquí es justificación. Entonces acá hay. Acá hay una cosa que le recomiendo. Si bien y bien No está en la agenda, podría ser solamente hablado. Se puede hacer en una diapositiva siguiente que evaluadores tales y tales.
+
+00:09:23:06 - 00:09:24:22
+Speaker 2
+Antes de la agenda.
+
+00:09:24:24 - 00:09:34:17
+Speaker 1
+Antes de la agenda Ok, y lo primero que usted hace les agradece el tiempo que destinado para evaluar el trabajo.
+
+00:09:34:19 - 00:09:42:10
+Speaker 2
+Sí, sí, señor. Sí. Recuerdo la el feedback de de creo que fue José del que.
+
+00:09:42:12 - 00:09:44:04
+Speaker 1
+Okay.
+
+00:09:44:06 - 00:09:56:07
+Speaker 2
+¿Les va pues nos quedaría bien dos profesores de que el profesor de Santa Marta es el profesor de acá, cierto? Sí, el profesor Giovanni. ¿Igual, eh? Cuando se detenga la.
+
+00:09:56:13 - 00:09:59:24
+Speaker 1
+Ya, ya me contestaron Logística y solamente requieren dos.
+
+00:10:00:03 - 00:10:06:01
+Speaker 2
+Sí. Igual cuando den la fecha invito al profesor Giovanni o Eh.
+
+00:10:06:03 - 00:10:12:00
+Speaker 1
+Sí, claro, es evidente. Es que él no tiene problema. Pues él, él es el cliente.
+
+00:10:12:00 - 00:10:15:08
+Speaker 2
+Nosotros pues ok, listo.
+
+00:10:15:10 - 00:10:22:03
+Speaker 1
+El por qué se queda atrás. Yo ahí para él. Pero sí decirle esto es soy.
+
+00:10:22:05 - 00:10:23:21
+Speaker 1
+Buena.
+
+00:10:23:23 - 00:10:39:02
+Speaker 2
+Entonces comenzamos hablando de aquí. Creo que de pronto esta importante al revés. ¿Perdón? Primero hablando en biología, luego de visión por computación y ahí luego paso pues a.
+
+00:10:39:04 - 00:10:43:24
+Speaker 2
+¿Con pues que qué es lo que tienen que identificar específicamente en el lóbulo? Entonces aquí que.
+
+00:10:44:01 - 00:10:47:21
+Speaker 1
+Si yo creo que lo de visión por computador, casco.
+
+00:10:47:23 - 00:10:49:20
+Speaker 2
+Loquito.
+
+00:10:49:22 - 00:10:52:01
+Speaker 1
+Sí.
+
+00:10:52:03 - 00:10:53:17
+Speaker 2
+Y esto también.
+
+00:10:53:19 - 00:11:08:00
+Speaker 1
+¿Si la justificación es porque y acá tiene que haber imágenes, eh? Pues no puede ser contexto.
+
+00:11:08:02 - 00:11:13:18
+Speaker 2
+¿Entonces una imagen en biología de detectar ositos y ahí sí, sí o no?
+
+00:11:13:18 - 00:11:24:14
+Speaker 1
+Estos son datos o los datos, por ejemplo, de cuántos procedimientos a nivel nacional o mundial hay de inseminación. Okay.
+
+00:11:24:16 - 00:11:39:23
+Speaker 2
+Eh, Aquí ya. Entonces hablamos de que normalmente este procedimiento es invasivo, pero hay alternativas. Pero también son duras. ¿Y aquí comienza a hablar de la piel en piel y entonces como es posible hacerlo más?
+
+00:11:40:00 - 00:11:41:19
+Speaker 1
+Si.
+
+00:11:41:21 - 00:11:42:09
+Speaker 2
+Pues son dos días.
+
+00:11:42:14 - 00:11:58:15
+Speaker 1
+Y lo otro. Y lo otro que hay que decir es que son más baratos. Pues acá hay que hay mucho texto. Quizás para la justificación hay que poner palabras claves más que el texto lo puede poner para su discurso, pero sí un poquito más de palabras claves y gráficos.
+
+00:11:58:20 - 00:12:02:12
+Speaker 2
+Sí, no, ahora protesto porque traté de.
+
+00:12:02:14 - 00:12:06:04
+Speaker 1
+Acomodarlo al tener el discurso.
+
+00:12:06:06 - 00:12:22:06
+Speaker 2
+El marco teórico. Entonces usted me dijo cuatro diapositivas. Entonces el primero sería como de el uso mediático. Bueno, embriología y uso mediático juntos en el segundo sería de.
+
+00:12:22:08 - 00:12:32:24
+Speaker 2
+Como la La polarización, aridez, exigencia, eh. Luego la detección de redes neuronales y las métricas de evaluación.
+
+00:12:33:01 - 00:12:35:18
+Speaker 2
+Son los cuatro temas del marco teórico.
+
+00:12:35:20 - 00:12:49:03
+Speaker 1
+¿Eh? A ver lo yo lo y tú, tú, tú, tú, tú, tú, tú, tú, tú. Bueno, quizás acá toque poner alguna. ¿Cuál sería la parte matemática más importante? ¿Yo?
+
+00:12:49:05 - 00:13:01:10
+Speaker 1
+Que está muy libre. Okay. Ahí. ¿Entonces, eh? Ah, y en el de polarización, las ecuaciones.
+
+00:13:01:12 - 00:13:04:21
+Speaker 2
+En un momentito y vemos que para.
+
+00:13:04:23 - 00:13:10:06
+Speaker 1
+Eh, el retardo no es solamente hay una frase. No es solamente ser.
+
+00:13:10:08 - 00:13:11:19
+Speaker 2
+Sin aparecer.
+
+00:13:11:21 - 00:13:15:15
+Speaker 1
+Y no parecer claro.
+
+00:13:15:17 - 00:13:22:16
+Speaker 2
+Entonces pongo la gente, la de diseño, pongo.
+
+00:13:22:18 - 00:13:33:04
+Speaker 1
+Esto de ahí y la ecuación inicial de retardo y pues una de ellas, porque ahí faltan.
+
+00:13:33:06 - 00:13:42:15
+Speaker 2
+Sin saltar, ya quedaron. Y aquí entonces yo lo miro a ver si puedo también poner alguna cosa bonita.
+
+00:13:42:17 - 00:13:43:24
+Speaker 1
+Nada.
+
+00:13:44:01 - 00:13:49:22
+Speaker 2
+Más. Y entonces las métricas de evaluación son. Es lo último que desarrollamos aquí en.
+
+00:13:49:24 - 00:13:53:05
+Speaker 1
+FI, ahí las ecuaciones, entonces pues.
+
+00:13:53:07 - 00:13:54:21
+Speaker 2
+Listo.
+
+00:13:54:23 - 00:14:05:14
+Speaker 1
+Esas tenías ahí pues las el énfasis quizás ya habla de 50, 50 75.
+
+00:14:05:16 - 00:14:24:18
+Speaker 1
+Es un tipo de vuélvase y toma el voto ya. A ver, de evaluación de métricas del buen tipo ahí y AM de Santiago un pantallazo ahí.
+
+00:14:24:20 - 00:14:31:10
+Speaker 1
+Ya está todo listo. ¿Cómo se aprende Escuchando a otros?
+
+00:14:31:12 - 00:14:35:14
+Speaker 2
+Y eso por.
+
+00:14:35:16 - 00:14:38:02
+Speaker 1
+El.
+
+00:14:38:04 - 00:14:51:13
+Speaker 2
+Estado del arte. Entonces, eh, que usted me ha dicho que. 123456 diapositivas. Espéreme. Okay. De nuevo, estos textos están aquí solo de guía.
+
+00:14:51:15 - 00:14:52:16
+Speaker 1
+Es decir.
+
+00:14:52:18 - 00:14:55:17
+Speaker 2
+El primero es como, eh.
+
+00:14:55:19 - 00:14:57:14
+Speaker 1
+Pues que lo último.
+
+00:14:57:14 - 00:15:17:04
+Speaker 2
+Es la polarización como la entrada, la polarización para evaluar lo la madurez del ovocito. Cierto. Y entonces aquí explicar como el uso mediático, especialmente de esta con las estructuras que nosotros vamos a ver es un semiótico es la luz y del plasma y el cuerpo polar destacan y ayudan.
+
+00:15:17:05 - 00:15:40:07
+Speaker 1
+Entonces acá en Benin, si quieres hay una cosa que podíamos colocar allá arriba en la justificación y que después por acá se va a ver. Es que los embrión lobos no pueden no ver el el el uso mediático, sino utilizan la polarización. Y cuando entra la inyección cargarse el uso mediático.
+
+00:15:40:09 - 00:15:45:05
+Speaker 2
+Okay, listo, solo lo pongo entonces.
+
+00:15:45:07 - 00:15:50:08
+Speaker 1
+Y por eso es que esta técnica es importante.
+
+00:15:50:10 - 00:15:58:21
+Speaker 1
+Y lo otro de la justificación es que tiene que. No, no hay tiempo. Ay, tengo un algoritmo muy lento que quedarme ahí mil años porque entonces el se muere. El ovocito.
+
+00:15:58:23 - 00:16:04:07
+Speaker 2
+Claro, el tiempo queremos velocidad y no dañarlo.
+
+00:16:04:09 - 00:16:10:16
+Speaker 1
+Exacto. Entonces eso le permite al embrión. Luego poder entrar. ¿Cierto? La foto video.
+
+00:16:10:16 - 00:16:23:05
+Speaker 2
+No tengo que ir tan apegado al al documento. Cierto. O sea, el documento sí dice eso, pero lo dice como bastante técnico. ¿Acá puedo saber un poquito más?
+
+00:16:23:07 - 00:16:35:12
+Speaker 1
+Eh Acá pues nos podemos generar algunas gabelas de de de quedar bien explicado, de que usted se volvió un experto en esto. Ok, y que usted tiene el título de maestro listo.
+
+00:16:35:14 - 00:16:43:13
+Speaker 2
+¿Porque yo lo estaba diciendo, pues muchas cosas que están en con base a estricto estricto bastante estricto al documento no?
+
+00:16:43:14 - 00:17:06:01
+Speaker 1
+Hay unas cosas que son estrictas al documento las ecuaciones, el método, los resultados, las conclusiones. Lo otro técnico es tiene que el contexto. Usted tiene que enganchar al, al, al, al evaluador porque diga uy, no, no había entendido el porque. Eso es importante.
+
+00:17:06:03 - 00:17:12:13
+Speaker 1
+Y entonces te van a decir Ah, gracias por explicarme.
+
+00:17:12:15 - 00:17:15:19
+Speaker 1
+SEO Mhm.
+
+00:17:15:20 - 00:17:37:09
+Speaker 2
+¿Eh? Bueno, entonces aquí, eh, como, como las redes neuronales. La la por convolución puede ayudar y entrar en esto que se. Se han desarrollado algunas redes neuronales, pero no específicamente en esta área. Por eso hablo como de la brecha. ¿Eh? Luego a ver.
+
+00:17:37:11 - 00:17:54:22
+Speaker 1
+Acá, venga acá. Ojo pues que acá si no puede dar papaya, usted tiene que decir un listado de las redes que se pueden utilizar y no caer en voladora en esto. Recuerde que parte del trabajo que hicimos fue que usted, Roy en su tesis nos decía John.
+
+00:17:54:24 - 00:17:59:14
+Speaker 2
+Si tengo que Fast la Faster, la más que todas.
+
+00:17:59:16 - 00:18:10:01
+Speaker 1
+Todas, todas. Pero eh, digan en y al final, después de revisar 50 artículos, 200 encuentro que tal cosa.
+
+00:18:10:03 - 00:18:17:05
+Speaker 2
+Okay, okay, con eso debo terminar esta diapositiva.
+
+00:18:17:07 - 00:18:34:06
+Speaker 2
+Eh dado sintéticos es uno de los temas también del estado del arte. Entonces. ¿Pues que se han desarrollado modelos con datos sintéticos, eh? Por la dificultad, sobre todo en la medicina, que a veces tener.
+
+00:18:34:08 - 00:18:45:13
+Speaker 2
+Eso de privacidad y pues hay dificultad también para pues es costoso también tener datos etiquetados. ¿Entonces aparecen los datos sintéticos eh?
+
+00:18:45:15 - 00:18:50:06
+Speaker 1
+Yo acá le daría énfasis a la red, a la base de datos de domingo.
+
+00:18:50:09 - 00:18:52:19
+Speaker 2
+Puede ser domingo. Okay.
+
+00:18:52:21 - 00:18:54:16
+Speaker 1
+Si yo pondría unas imágenes.
+
+00:18:54:18 - 00:18:58:03
+Speaker 2
+Su papel de imágenes sintéticas.
+
+00:18:58:05 - 00:19:04:18
+Speaker 1
+Okay, Y pondría de imágenes sintéticas irreales de efectos de de fundición.
+
+00:19:04:20 - 00:19:15:03
+Speaker 1
+Pero cuando uno mira, cuando uno mira el defecto que estamos diciendo, estamos entrenando la red a una cosa muy parecida a lo que era un uso mediático. MHM.
+
+00:19:15:05 - 00:19:22:05
+Speaker 1
+¿Okay, entonces usted puede decir todo bien? No había, pero.
+
+00:19:22:07 - 00:19:33:11
+Speaker 1
+Y ese fue el punto de partida. Recuerde que los primeros años evaluaciones que hicimos no tenían modelo, pero comenzamos a trabajar con las redes en ese, en ese, en esa red y aquí.
+
+00:19:33:11 - 00:19:44:12
+Speaker 2
+Creo que por de pronto lo tengo al revés porque terminó. O sea, aquí puedo concluir con lo de YOLO. Pues porque este de hecho es como en los últimos avances de YOLO que tiene.
+
+00:19:44:14 - 00:19:53:15
+Speaker 1
+De YOLO, pero también tiene que concluir con los modelos de atención.
+
+00:19:53:17 - 00:19:56:05
+Speaker 2
+Okay.
+
+00:19:56:07 - 00:20:05:02
+Speaker 1
+El YOLO en la parte teórica de YOLO. Venga devuélvase, devuélvase al YOLO. ¿Eh? ¿Qué es lo que tenemos que hablar?
+
+00:20:05:04 - 00:20:07:11
+Speaker 1
+El YOLO. ¿Eh?
+
+00:20:07:13 - 00:20:09:03
+Speaker 2
+Tenemos aquí solo la definen.
+
+00:20:09:08 - 00:20:11:20
+Speaker 1
+El que tiene el cuello.
+
+00:20:11:22 - 00:20:19:19
+Speaker 2
+Mentiras. Aquí habló de redes neuronales convolucionales. Y hablo de la de dos porque aquí está el marco teórico.
+
+00:20:19:21 - 00:20:23:14
+Speaker 1
+Ya con el marco teórico, el marco teórico tiene que hablar del YOLO.
+
+00:20:23:16 - 00:20:26:05
+Speaker 2
+Entonces por eso, pero digamos, este, esta diapositiva.
+
+00:20:26:07 - 00:20:44:20
+Speaker 1
+Integra es que venga pa que no, pa que no enrede, hágame lo que le estoy diciendo, hable de la columna vertebral, el cuello y la cabeza. Explique lo que significa, cómo, en el qué y no ponemos el marco teórico primero. Digamos que primero va al estado del arte y después va el marco teórico.
+
+00:20:44:22 - 00:20:49:24
+Speaker 2
+Okay.
+
+00:20:50:01 - 00:21:03:03
+Speaker 1
+Pero vemos como nos queda. ¿Pero porque? Bueno, el marco teórico está primero. Es como para tratar de explicar qué es el osito.
+
+00:21:03:05 - 00:21:10:03
+Speaker 1
+Sí, si es verdad. Pero pasar eso.
+
+00:21:10:04 - 00:21:11:21
+Speaker 2
+Solo. Pero solo hay una diapositiva.
+
+00:21:11:22 - 00:21:30:13
+Speaker 1
+YOLO. O sea, la política de YOLO al estado del arte. Bueno, yo lo Lo normal tiene esto. Estudia esto, pero fortaleciéndolo mucho más. Así que son modelos de cabeza. Que son. ¿Que hacen, eh? Que juegan. ¿Cómo se optimizan?
+
+00:21:30:15 - 00:22:01:00
+Speaker 2
+¿Por eso aquí puedo mencionar muy brevemente la las redes de detección de objetos que hay de dos pasadas, una pasada y aquí las limito, aquí las listo y ya entonces el estado del arte, eh? ¿Tiene que estar eh? ¿Bueno, ahí sí me centro en los y el desarrollo que yolo y que por esto es que la voy a trabajar si tengo que luego está hipótesis no?
+
+00:22:01:00 - 00:22:03:10
+Speaker 1
+Y y falta los modelos de atención.
+
+00:22:03:12 - 00:22:06:19
+Speaker 2
+A si que debería ir aquí en esta última que.
+
+00:22:06:21 - 00:22:10:12
+Speaker 1
+Los modelos de atención y los Transformers.
+
+00:22:10:14 - 00:22:12:04
+Speaker 2
+Ok.
+
+00:22:12:06 - 00:22:25:21
+Speaker 1
+Venir y puede que nos abarquen y no, no exploran otras más recientes y no sé qué cosas. ¿Cierto? Mhm. Entonces este tiene que argumentar el por qué.
+
+00:22:25:23 - 00:22:43:12
+Speaker 1
+O se habría hecho por allá una tabla de de cuáles eran. Yo pongo vi la de la de atención, la de real time en el desempeño en el tiempo que no lo que no lo tiene el documento pues lo tienen las presentaciones que que hicimos una vez acá.
+
+00:22:43:14 - 00:22:45:16
+Speaker 2
+Si las tengo.
+
+00:22:45:18 - 00:22:49:00
+Speaker 1
+En el seminario.
+
+00:22:49:02 - 00:22:52:07
+Speaker 1
+Okay.
+
+00:22:52:09 - 00:23:00:07
+Speaker 1
+¿Porque, por qué? Porque el profesor Germán va a caer sobre esto.
+
+00:23:00:09 - 00:23:03:07
+Speaker 2
+¿Listo?
+
+00:23:03:09 - 00:23:07:18
+Speaker 1
+Recuerden que todo el tiempo yo le dije Ay, porque yolo. No puedes caer en voladora. Ya.
+
+00:23:07:20 - 00:23:10:04
+Speaker 2
+Sí, sí.
+
+00:23:10:06 - 00:23:25:20
+Speaker 1
+Entonces acá hay que trabajar un poco. Ese sí, el estado del arte, el por qué, que se quedarían como se desempeñan. ¿No es cierto? Mhm. Pues el. La última diapositiva. Cierto. De ese.
+
+00:23:25:22 - 00:23:27:12
+Speaker 1
+¿Listo?
+
+00:23:27:14 - 00:23:38:16
+Speaker 2
+Okay. Sigue la pregunta de investigación y la hipótesis. Entonces, con base en todo lo que dijimos, planteamos la pregunta. Y esta hipótesis.
+
+00:23:38:18 - 00:23:46:23
+Speaker 1
+Mmm. Ah, pero entonces venga. Con lo que la hipótesis esperanza es que haya el título, esta hipótesis, pero también de investigación y hipótesis.
+
+00:23:47:04 - 00:23:48:24
+Speaker 2
+Okay.
+
+00:23:49:01 - 00:23:58:09
+Speaker 1
+Entonces, como se le pregunta Investigación espacio la pregunta, hipótesis negrilla espacio y la hipótesis.
+
+00:23:58:11 - 00:24:00:23
+Speaker 2
+Okay.
+
+00:24:01:00 - 00:24:05:14
+Speaker 2
+Ya lo he.
+
+00:24:05:16 - 00:24:20:04
+Speaker 1
+Para poner la hipótesis de eso, ya que es posible desarrollar algo que es capaz de detectar ahorita una imagen de microscopia polarizada. Además podría identificar cadenas morfológicas con la presencia de una propiedad de evidencia. Él estaba madurez.
+
+00:24:20:06 - 00:24:23:16
+Speaker 1
+De dichos ovocitos.
+
+00:24:23:18 - 00:24:26:10
+Speaker 1
+Ojo, pues que el esta madurez por allá no lo hablamos tanto nos.
+
+00:24:26:10 - 00:24:26:20
+Speaker 2
+Dice que.
+
+00:24:26:20 - 00:24:27:13
+Speaker 1
+Pero.
+
+00:24:27:15 - 00:24:28:12
+Speaker 2
+¿Que permiten?
+
+00:24:28:15 - 00:24:33:00
+Speaker 1
+No no no no pero venga ya. Yo les explico una cosa.
+
+00:24:33:02 - 00:24:41:09
+Speaker 1
+Que es Hay que jugarlo acá en el marco teórico usted dice un óvulo está maduro cuando.
+
+00:24:41:11 - 00:24:45:06
+Speaker 2
+Expulsa tiempo y muestro esto.
+
+00:24:45:08 - 00:25:04:13
+Speaker 1
+Exactamente. Y ahí usted ya está diciendo es que nosotros consideramos maduros acá del tres, de la tercera a la 4.ª, a la 5.ª es la madurez y es donde hay vida. Fíjense en el el uso mediático.
+
+00:25:04:15 - 00:25:07:08
+Speaker 2
+Figurado, pues.
+
+00:25:07:10 - 00:25:10:19
+Speaker 2
+Esto ya eso lo pongo en el marco teórico, aquí.
+
+00:25:10:21 - 00:25:14:13
+Speaker 1
+En el marco teórico, y ahí quita la discusión. Si, si me entiende.
+
+00:25:14:13 - 00:25:17:13
+Speaker 2
+Y si.
+
+00:25:17:15 - 00:25:33:16
+Speaker 1
+Decir cuando usted modela con un cuerpo es más que hacemos embrión, logos, cuando solamente en el cuerpo dicen ya está maduro y no necesariamente. Porque puede estar pasando la transferencia, sino que.
+
+00:25:33:18 - 00:25:35:14
+Speaker 2
+Así es.
+
+00:25:35:16 - 00:25:54:23
+Speaker 1
+Puede estar pasando que no, no ha salido el el óvulo, digo el el el. El uso mediático nos da nos ha vuelto otra gente y ese es el el la ventana donde uno debería inyectar el espermatozoide. Ok.
+
+00:25:55:00 - 00:26:00:11
+Speaker 2
+Si tengo que entonces verme los videos que me mandó. ¿Cierto?
+
+00:26:00:13 - 00:26:06:08
+Speaker 1
+Ajá. Ahí están las explicaciones. ¿Me queda, no? ¿Listo?
+
+00:26:06:10 - 00:26:14:14
+Speaker 2
+Bueno, para responder la pregunta. ¿Eh? Se plantearon. Lo siento. Objetivo general. El objetivo específicos.
+
+00:26:14:16 - 00:26:31:04
+Speaker 1
+Indicar. Egocéntrica. Descriptiva. Polarizada. Sí. Desarrolló un modelo. Entonces. Por eso hay que darle ojo. Ojo con las ecuaciones. Cierto que de la polarización ahí quedan faltando ecuaciones. Yo creo que acá es bueno mostrarlas completas.
+
+00:26:31:06 - 00:26:35:05
+Speaker 2
+Ok.
+
+00:26:35:07 - 00:26:39:04
+Speaker 1
+¿Y si pregunta de montaje?
+
+00:26:39:06 - 00:26:47:08
+Speaker 1
+¿Y el montaje? Si.
+
+00:26:47:10 - 00:26:54:13
+Speaker 1
+Porque al final eso está modelado. Pues sí. ¿Me entendéis? Mhm.
+
+00:26:54:15 - 00:27:16:18
+Speaker 1
+Bueno, hay una cosa que no vi acá. Eh, Salomón, devuélvete y que es muy importante. Muy, muy importante para paliar el hecho de que no tengamos la polarización. Y es de los artículos científicos sobre los cuales se armó las medidas.
+
+00:27:16:20 - 00:27:23:21
+Speaker 2
+Okay.
+
+00:27:23:23 - 00:27:27:10
+Speaker 2
+O sea, yo me iría mejor.
+
+00:27:27:12 - 00:27:37:04
+Speaker 1
+No, eso está en el estado del arte. Sí. Ya el metodología dice Ah, como lo que me referencia en el estado del arte, yo lo utilicé para construirlo. O sea.
+
+00:27:37:06 - 00:27:45:14
+Speaker 2
+Entonces aquí cuando estoy hablando de esto, pongo los artículos y lo han medido y tiene los medido y tiene.
+
+00:27:45:16 - 00:27:55:06
+Speaker 1
+Y las medí tienen un rango de de cuatro nanómetros y y de tanto por tanto, y el uso mediático no sé qué, pues.
+
+00:27:55:08 - 00:27:57:10
+Speaker 2
+Mide tanto que.
+
+00:27:57:12 - 00:28:15:13
+Speaker 1
+Porque esos son. Ese es el estado del arte con el que se construye la base de datos. Sí. Sí, porque puede ser que nos digan pero es que usted dijo que debía hace la microscopía polarizada.
+
+00:28:15:15 - 00:28:21:06
+Speaker 1
+Y ahí.
+
+00:28:21:08 - 00:28:26:09
+Speaker 1
+Y después a mí me tocará decir porque tal como no sé qué.
+
+00:28:26:11 - 00:28:31:23
+Speaker 2
+Es lo que se le agrega. Entonces en esta adelante.
+
+00:28:32:00 - 00:28:33:08
+Speaker 1
+Está bien.
+
+00:28:33:10 - 00:28:38:01
+Speaker 2
+Pasamos a la metodología.
+
+00:28:38:03 - 00:29:06:01
+Speaker 2
+¿Eh? ¿Entonces comenzamos explicando todo el esquema metodológico general, eh? Se construye el aquí dice el contrato datos. Pero en realidad son todos esos conjuntos de datos, las bases de datos, se hace entrenamiento, se hace evaluación y se van, se evalúa sobre los videos.
+
+00:29:06:03 - 00:29:16:06
+Speaker 2
+Comenzamos hablando de la construcción de la base de datos, pues la. El principal limitación es que no tenemos. No se puede conseguir la base de datos real donde se crea la base de datos.
+
+00:29:16:08 - 00:29:20:21
+Speaker 1
+Hay que decirlo en el en el proyecto tal póngalo ahí.
+
+00:29:20:23 - 00:29:23:20
+Speaker 2
+Okay.
+
+00:29:23:22 - 00:29:31:16
+Speaker 2
+Comenzaron con esa presentación que está en el documento y luego describo la base de datos sintética.
+
+00:29:31:18 - 00:29:40:00
+Speaker 1
+¿Ajá, eh? Y sigue referenciando los artículos sobre los cuales toma de decisiones en.
+
+00:29:40:02 - 00:29:58:04
+Speaker 2
+Sí o creo que esta me sobra, porque entonces aquí lo referencial y acá y me da espacio para pregunta está aquí, tengo que mostrar enseguida también o describir las otras bases de datos.
+
+00:29:58:06 - 00:29:59:19
+Speaker 1
+Para otras bases de datos.
+
+00:29:59:21 - 00:30:00:21
+Speaker 2
+Eh, La de.
+
+00:30:01:02 - 00:30:04:01
+Speaker 1
+La de los videos y los de cada.
+
+00:30:04:03 - 00:30:14:05
+Speaker 2
+Ok, Y entonces describo esta y aquí escribo las otras que se utilizarían para la evaluación final. Y esta diapositiva.
+
+00:30:14:05 - 00:30:19:23
+Speaker 1
+De videos reales de imágenes de paper.
+
+00:30:20:00 - 00:30:20:19
+Speaker 2
+Si yo quiero esto.
+
+00:30:20:21 - 00:30:31:16
+Speaker 1
+Y eso y eso puede ser mejor dicho, les puede arder como un berraco, porque eso es como es como lo mismo de del Congreso de de.
+
+00:30:31:18 - 00:30:36:05
+Speaker 1
+De, de ciencia. Pero pues.
+
+00:30:36:07 - 00:30:39:01
+Speaker 1
+Es lo que hay. Pues si.
+
+00:30:39:03 - 00:30:43:08
+Speaker 2
+Eh, luego sigo. Entonces aquí, aquí me funcionaría.
+
+00:30:43:10 - 00:30:49:23
+Speaker 1
+Ahora en números yo creo que es importante. Venga, generamos 500.000 imágenes. Dígalo por allá. Débil.
+
+00:30:50:00 - 00:31:02:16
+Speaker 2
+Ok. Si yo lo pongo aquí, pues que está. Pues la. Mi base de datos tiene 1100 en términos de decenas de miles, pero la total tiene 500.000 imágenes.
+
+00:31:02:18 - 00:31:06:10
+Speaker 1
+Que no se utilizan tanto entrenar porque por un problema de.
+
+00:31:06:12 - 00:31:11:15
+Speaker 2
+Que no hay plata y la plata porque claro.
+
+00:31:11:17 - 00:31:33:15
+Speaker 2
+Entonces aquí serían los experimentos con el la base de datos del profesor Domingo Mery para escoger las redes que al final terminan siendo las más recientes. Y entonces la etapa uno, este pre entrenamiento con sintético todas las redes. ¿Entonces aquí tendría que listar todas las redes y como se siempre si tengo que poner tablas con los resultados eh?
+
+00:31:33:20 - 00:31:43:02
+Speaker 1
+¿Y y eso es el que mira cuáles son gigantes, no? Pero no tiene que poner la gigante, pues compone un pedazo.
+
+00:31:43:02 - 00:31:49:22
+Speaker 2
+De o sea, son estas, por ejemplo, Esos son los resultados de entrenar con dataset sintético.
+
+00:31:49:24 - 00:31:58:01
+Speaker 1
+Pero pues lo puedes poner o o o o saca un extracto el los dos mejores.
+
+00:31:58:03 - 00:32:02:04
+Speaker 2
+Con el dataset del modelo técnico. Ahorita el mundo.
+
+00:32:02:04 - 00:32:12:03
+Speaker 1
+Libre y de la familia no sé qué y lo saca. Okay. Y dice el resto de la tabla tal.
+
+00:32:12:05 - 00:32:34:18
+Speaker 2
+Listo. Luego sigue entonces la transferencia. ¿Eh? Con las imágenes reales. Y también tenemos el experimento de control, que sería, eh, la evaluación de los pesos sintéticos sobre las imágenes reales.
+
+00:32:34:20 - 00:32:36:10
+Speaker 2
+Eh, aquí ya. Entonces eso.
+
+00:32:36:10 - 00:32:46:22
+Speaker 1
+Es importante. Eso hay que hacer un diagrama ahí. Porque eso eso es lo que dice Vega. Nosotros utilizamos unas, pero antes dijimos Venga, qué pasa si yo en un tren servían.
+
+00:32:47:00 - 00:32:48:03
+Speaker 2
+Estos diagramas.
+
+00:32:48:08 - 00:32:50:19
+Speaker 1
+Esos gráficos.
+
+00:32:50:21 - 00:33:05:19
+Speaker 2
+De los pesos de. Yo es que el proyecto creo que es. ¿Pero qué pasaría si yo no entreno con reales?
+
+00:33:05:21 - 00:33:18:01
+Speaker 2
+¿Luego entonces, cómo decido agregar atención? Los cuatro modelos que hago personalmente desarrollo desarrollados los cuatro modelos desarrollados.
+
+00:33:18:03 - 00:33:26:20
+Speaker 1
+Y venga a decir los modelos de nunca dijo por allá Cuál fue la configuración de los de los optimizadores.
+
+00:33:27:00 - 00:33:43:11
+Speaker 2
+¿Esa idea Entonces aquí, o sea, cuando hablo perdón, aquí eh? Cuando hablo de la etapa uno, el pre entrenamiento en sintético y aquí pongo que parámetros, hiperparámetros y configuración tengo.
+
+00:33:43:13 - 00:33:44:19
+Speaker 1
+Pues tamaño de redes.
+
+00:33:44:19 - 00:33:49:09
+Speaker 2
+Y luego acá también mi.
+
+00:33:49:11 - 00:33:53:02
+Speaker 2
+Pequeña diapositiva por ahí.
+
+00:33:53:04 - 00:34:02:17
+Speaker 2
+¿Eh? Y termino con la evaluación de los videos.
+
+00:34:02:19 - 00:34:07:17
+Speaker 2
+Esa sería la metodología. Toda la metodología.
+
+00:34:07:19 - 00:34:11:17
+Speaker 1
+Si yo haría una diapositiva final.
+
+00:34:11:19 - 00:34:16:23
+Speaker 1
+De un esquema que resuma eso.
+
+00:34:17:00 - 00:34:19:12
+Speaker 2
+Okay.
+
+00:34:19:14 - 00:34:23:23
+Speaker 2
+Okay. Listo. Y luego pasamos al de aquí.
+
+00:34:23:23 - 00:34:32:17
+Speaker 1
+Salió tal cosa. Salió una red, eh, inicial para entrenar. ¿Eh? Seleccionamos una red y la profe tratamos con los sintéticos.
+
+00:34:32:21 - 00:34:42:07
+Speaker 2
+Ya noté algo. Es que acá no creo que no van las tablas porque van acá en resultados ya. Entonces acá en esta, por ejemplo.
+
+00:34:42:09 - 00:34:51:11
+Speaker 1
+Ahí se listan en el cual puedes poner un pantallazo de de que o o listar cuáles redes estás utilizando.
+
+00:34:51:13 - 00:34:53:16
+Speaker 2
+En metodología.
+
+00:34:53:18 - 00:35:00:10
+Speaker 1
+En metodología si estoy utilizando yo el ocho, nueve, diez, 12 eh, la RC mental tal y tal.
+
+00:35:00:12 - 00:35:07:14
+Speaker 2
+¿Claro y los hiperparámetros se los puedo poner acá, pero entonces los resultados los pongo acá eh?
+
+00:35:07:15 - 00:35:09:08
+Speaker 1
+El resultado lo ponía ahí.
+
+00:35:09:09 - 00:35:12:22
+Speaker 2
+Impactando los mejores. Esta tabla.
+
+00:35:12:24 - 00:35:13:22
+Speaker 1
+Mhm.
+
+00:35:13:24 - 00:35:17:14
+Speaker 2
+¿Para que?
+
+00:35:17:15 - 00:35:26:11
+Speaker 1
+Para los dos mejores casos pues o para los tipos de.
+
+00:35:26:13 - 00:35:27:18
+Speaker 2
+¿Eh?
+
+00:35:27:20 - 00:35:33:04
+Speaker 1
+Resultados cualitativos también, claro. Mhm.
+
+00:35:33:05 - 00:35:48:20
+Speaker 2
+Entonces solo sintético y evaluado en real y aquí con transferencia sintético de valor real. Okay, pues esta imagen no son, eh, pero deberían ser las equivalentes.
+
+00:35:48:22 - 00:35:55:14
+Speaker 2
+Eh, Hablar del resultado. El cuerpo polar lo hablo la parte o, eh.
+
+00:35:55:18 - 00:36:02:17
+Speaker 1
+Pero primero presenté las las curvas de reducción generales o.
+
+00:36:02:19 - 00:36:07:20
+Speaker 1
+Solamente lo puse en tabla y no tiene.
+
+00:36:07:22 - 00:36:14:18
+Speaker 2
+Tendría que escoger de cual. Pues de las mejores puede ser.
+
+00:36:14:20 - 00:36:22:08
+Speaker 1
+Y de las mejores. ¿Eh? Y graficar cada clase en la R de cada clase.
+
+00:36:22:10 - 00:36:26:17
+Speaker 2
+Ok.
+
+00:36:26:19 - 00:36:31:06
+Speaker 1
+Que quizá no la pidan para que de hecho el documento.
+
+00:36:31:08 - 00:36:40:23
+Speaker 2
+Okay, Luego de eso ya los resultados de los modelos desarrollados versus los modelos base.
+
+00:36:41:00 - 00:36:56:20
+Speaker 1
+La atención no lo colocaste donde esa metodología acá. Ah, bueno, acá hay que ponerle las las características un poquito más formales. Sí, sí. O matemática o el diagrama mismo.
+
+00:36:56:22 - 00:37:01:23
+Speaker 2
+Pero bueno, sería.
+
+00:37:02:00 - 00:37:08:12
+Speaker 2
+Porque yo tengo por ejemplo este es una sola diapositiva, pues quizá podría poner dos.
+
+00:37:08:14 - 00:37:11:20
+Speaker 1
+Y poner dos.
+
+00:37:11:22 - 00:37:16:23
+Speaker 1
+Y los tiene que poner porque ese es su aporte.
+
+00:37:17:00 - 00:37:19:20
+Speaker 1
+O mejor dicho, que hace las diapositivas.
+
+00:37:19:22 - 00:37:22:07
+Speaker 2
+Lo pongo, Está completo.
+
+00:37:22:09 - 00:37:34:02
+Speaker 1
+Esa completa y Y cada jovencito desarrollaba de una de las de la atención con pues de la de arriba son los escalones o.
+
+00:37:34:02 - 00:37:34:23
+Speaker 2
+Módulos. Sí.
+
+00:37:35:00 - 00:37:38:13
+Speaker 1
+Claro.
+
+00:37:38:15 - 00:37:48:03
+Speaker 1
+Eso hay que colocarlo okay, porque eso es su aporte.
+
+00:37:48:05 - 00:37:56:06
+Speaker 2
+Y acá sería al revés. Acá lo tengo al revés, están los menores de primero y esto es uno de último. Pero no había dicho que lo pusiera al revés.
+
+00:37:56:06 - 00:38:11:11
+Speaker 1
+Para terminar con pues pues pues tenerlo así y después de no decir en conclusión funciona en tal y en tal y en tal. Y ponerlo de ejemplo otra vez.
+
+00:38:11:13 - 00:38:13:20
+Speaker 2
+¿Ok?
+
+00:38:13:22 - 00:38:32:08
+Speaker 1
+Es como que yo le tengo que ya el ritmo a la conversación. ¿Pues no puede ser que yo diga y que mal, no? Y en conclusión podemos decir vea, funciona en este, funciona en este y funciona en este tiempo mejoró por esto, por esto y por esto. Y un par de imágenes y ya.
+
+00:38:32:10 - 00:38:35:09
+Speaker 2
+Ok.
+
+00:38:35:11 - 00:38:39:10
+Speaker 2
+¿Y las conclusiones? La dividiendo diapositivas.
+
+00:38:39:12 - 00:38:40:17
+Speaker 1
+Mhm.
+
+00:38:40:19 - 00:38:43:16
+Speaker 2
+Es decir, solo el texto. Cierto.
+
+00:38:43:18 - 00:38:46:00
+Speaker 1
+Y Pero hay que.
+
+00:38:46:02 - 00:38:49:12
+Speaker 2
+Y el trabajo porque está en una sola.
+
+00:38:49:14 - 00:38:55:04
+Speaker 1
+¿Eh? Está bien. Ya está ahí. Estamos en 47.
+
+00:38:55:06 - 00:39:11:00
+Speaker 2
+Pues. Pero le está contando estos títulos. Uno no le está contando los títulos que son. ¿Qué? 12345678 Y.
+
+00:39:11:02 - 00:39:17:11
+Speaker 1
+Ya. Bueno, yo creo que lo de los títulos lo tenemos que revaluar, porque aunque sean títulos de de.
+
+00:39:17:13 - 00:39:29:20
+Speaker 2
+No puede cambiar todo esto, porque como usted por. Pues la idea sí es poner el video, pero esto exporta PDF. ¿No puedo poner el video aquí, eh? Ajá. Entonces tengo que cambiar el formato por completo.
+
+00:39:29:22 - 00:39:38:07
+Speaker 1
+¿Eh? O usar para un enlace. Yo yo mi recomendación que le digo es ni siquiera ponga un video, haga un gif de nuevo.
+
+00:39:38:07 - 00:39:41:00
+Speaker 2
+¿Esto es un PDF?
+
+00:39:41:02 - 00:39:41:13
+Speaker 2
+O sea.
+
+00:39:41:17 - 00:39:54:18
+Speaker 1
+Ya, bueno, quiero, pero lo que mi recomendación es así utilices Power Point, no le hagas a que tengas que entrar a leer una video porque usted no te coge el computador de allá pa pa.
+
+00:39:54:18 - 00:40:08:13
+Speaker 2
+Pa sí, si es que ya lo pensé, ya yo había hecho esta plantilla de aquí y espero ya lo supere. Ya, ya sé que toca poner el video y bueno, ni modo es me gusta o lo otro.
+
+00:40:08:13 - 00:40:14:02
+Speaker 1
+Es que bueno que el avance de esta presentación y la otra pero pero eso es riesgoso.
+
+00:40:14:04 - 00:40:22:06
+Speaker 2
+¿Si toma tiempo eh? Entonces voy a ver qué otras cosas se me ocurre y si puedo pasar la plantilla la paso.
+
+00:40:22:08 - 00:40:27:21
+Speaker 1
+Ok, listo, sigamos trabajando ya. Eso sí, la semana entrante hacemos un simulacro.
+
+00:40:27:23 - 00:40:35:05
+Speaker 2
+Mmm, no, creo que no sé para la semana entrante. Y también si el la semana entrante no puede ser jueves, no puede jueves.
+
+00:40:35:07 - 00:40:43:21
+Speaker 1
+Ya. Bueno, lo que me han hecho trabajarle a la a la a la presentación y la mandé el jueves y.
+
+00:40:43:23 - 00:40:44:22
+Speaker 2
+Ah, bueno, listo. Está bien.
+

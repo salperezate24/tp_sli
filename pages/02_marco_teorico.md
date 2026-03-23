@@ -13,6 +13,9 @@ deckSection: marco
   El ovocito es la célula femenina más grande y se caracteriza por su gran tamaño y su contenido citoplasmático. El huso meiótico es una estructura celular que se forma en la meiosis y que ayuda a separar los cromosomas homólogos.
 </p>
 
+</div>
+
+<!-- Logos abajo a la derecha (misma distribución que Agenda y resto del deck) -->
 <div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
   <img
     src="../images/logos/gpima_logo.png"
@@ -24,7 +27,6 @@ deckSection: marco
     alt="Universidad Nacional de Colombia"
     class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14"
   />
-</div>
 </div>
 
 ---
@@ -108,6 +110,9 @@ $$
 
 </div>
 
+</div>
+
+<!-- Logos abajo a la derecha (misma distribución que Agenda y resto del deck) -->
 <div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
   <img
     src="../images/logos/gpima_logo.png"
@@ -119,7 +124,6 @@ $$
     alt="Universidad Nacional de Colombia"
     class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14"
   />
-</div>
 </div>
 
 ---
@@ -133,6 +137,9 @@ deckSection: marco
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 
+</div>
+
+<!-- Logos abajo a la derecha (misma distribución que Agenda y resto del deck) -->
 <div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
   <img
     src="../images/logos/gpima_logo.png"
@@ -144,7 +151,6 @@ deckSection: marco
     alt="Universidad Nacional de Colombia"
     class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14"
   />
-</div>
 </div>
 
 ---
@@ -158,6 +164,9 @@ deckSection: marco
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 
+</div>
+
+<!-- Logos abajo a la derecha (misma distribución que Agenda y resto del deck) -->
 <div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
   <img
     src="../images/logos/gpima_logo.png"
@@ -169,5 +178,4 @@ deckSection: marco
     alt="Universidad Nacional de Colombia"
     class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14"
   />
-</div>
 </div>

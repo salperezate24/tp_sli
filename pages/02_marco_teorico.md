@@ -72,7 +72,7 @@ $$
   <p class="plm-section-label-center">Retardo óptico</p>
   <figure class="m-0 flex w-full min-w-0 flex-col items-stretch">
   <img
-    src="/Users/salperezate/Documents/GitHub/thesis/figures/Diagramas_Tesis-Página-2.png"
+    src="../images/figures/diagrams/Diagramas_Tesis-Pagina-2.png"
     alt="Ejemplo de imagen de retardo óptico"
     class="plm-retardo-img"
   />

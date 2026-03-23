@@ -86,7 +86,7 @@ deckSection: justificacion
   <div class="grid min-h-0 min-w-0 flex-1 grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1.22fr)_minmax(0,0.78fr)] lg:gap-5">
     <figure class="m-0 min-w-0 flex flex-col">
       <img
-        src="/Users/salperezate/Documents/GitHub/thesis/figures/oocytes/oocyte_diagram_002.png"
+        src="../images/figures/oocytes/oocyte_diagram_002.png"
         alt="Esquema del proceso de maduración de un ovocito"
         class="h-auto max-h-[min(70vh,500px)] w-full object-contain"
       />
@@ -97,7 +97,7 @@ deckSection: justificacion
     </figure>
     <figure class="m-0 min-w-0 flex flex-col">
       <img
-        src="/Users/salperezate/Documents/GitHub/thesis/figures/diagrams/oocyte_plm.png"
+        src="../images/figures/diagrams/oocyte_plm.png"
         alt="Diagrama esquemático de microscopía de luz polarizada aplicada al ovocito"
         class="mx-auto h-auto max-h-[min(22vh,250px)] w-full max-w-[90%] object-contain"
       />

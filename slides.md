@@ -4,10 +4,10 @@ colorSchema: light
 background: #F2F2F2
 title: Desarrollo de un modelo de red neuronal profunda para la identificación de ovocitos y sus características a través de microscopía polarizada
 # Pie de página: visible desde la diapositiva 2 (portada sin pie; ver `ThesisFooter.vue`)
-shortAuthor: Salomon Pérez Atencia
+shortAuthor: Salomón Pérez Atencia
 shortInstitute: Facultad de Minas
-shortTitle: Sustentación de Tesis de Maestría
-# Sin `class: text-center` global: la portada se centra con su propio div; el resto alinea mejor a la izquierda (p. ej. `class: text-left` en Agenda).
+shortTitle: Sustentación de tesis de maestría
+# Sin `class: text-center` global: la portada se centra con su propio div; el resto se alinea mejor a la izquierda (p. ej. `class: text-left` en la agenda).
 info: |
   Sustentación de tesis de maestría — presentación en Slidev.
 drawings:
@@ -40,10 +40,10 @@ const formattedDate = new Intl.DateTimeFormat('es-CO', {
 <div class="mt-6 text-2xl leading-relaxed">
   <div>
     <div class="font-semibold leading-snug">
-      Salomon Perez Atencia
+      Salomón Pérez Atencia
     </div>
-    <div class="text-xl leading-snug">
-      Ingeniero Mecánico
+    <div class="text-lg leading-snug">
+      Ingeniero mecánico
     </div>
   </div>
 

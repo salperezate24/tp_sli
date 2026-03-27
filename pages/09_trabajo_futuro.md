@@ -10,11 +10,11 @@ deckSection: trabajo_futuro
 
 <div class="max-w-4xl text-left text-base leading-relaxed text-[#262626] sm:text-[0.95rem]">
   <ul class="list-disc space-y-3 pl-5">
-    <li><strong>Base de datos real PLM:</strong> construir un conjunto extenso y anotado por expertos para mejorar generalización.</li>
-    <li><strong>Escala micra–píxel (zoom):</strong> estudiar robustez a magnificaciones/reescalados y su impacto en desempeño.</li>
-    <li><strong>Evaluación cuantitativa en video:</strong> anotar secuencias para reportar métricas por fotograma/secuencia.</li>
-    <li><strong>Mejorar cuerpo polar:</strong> ampliar la variabilidad (forma/tamaño/posición) en sintético y reforzar con datos reales.</li>
-    <li><strong>Integración clínica:</strong> evaluar inferencia en tiempo real, usabilidad e impacto en la decisión del embriólogo.</li>
+    <li><strong>Base de datos real PLM:</strong> desarrollar un conjunto extenso, anotado y validado por expertos que capture variabilidad biológica y condiciones reales de adquisición.</li>
+    <li><strong>Escala micra–píxel (zoom):</strong> evaluar desempeño con otras magnificaciones y reescalado de secuencias (incluyendo Zenodo) para contrastar el efecto de escala.</li>
+    <li><strong>Evaluación cuantitativa en video:</strong> anotar secuencias temporales para reportar métricas por fotograma/secuencia y comparar modelos en escenarios dinámicos.</li>
+    <li><strong>Modelación del cuerpo polar:</strong> ampliar en sintético la variabilidad de forma, tamaño y posición, e incorporar distintas relaciones micra–píxel para robustez.</li>
+    <li><strong>Integración clínica:</strong> estudiar inferencia en tiempo real, usabilidad en laboratorio e impacto en la toma de decisiones del embriólogo.</li>
   </ul>
 </div>
 

@@ -9,7 +9,7 @@ deckSection: justificacion
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-[#A0BF5E]" />
 </header>
 
-<p class="mb-1.5 max-w-3xl text-left text-sm font-normal leading-snug text-[#262626] sm:mb-2 sm:max-w-4xl sm:text-[0.95rem] sm:leading-snug">
+<p class="mb-1.5 max-w-3xl hyphens-auto text-justify text-sm font-normal leading-snug text-[#262626] sm:mb-2 sm:max-w-4xl sm:text-[0.95rem] sm:leading-snug">
   Las <span class="font-medium text-[#3981BF]">técnicas de ART</span>, y especialmente <span class="font-medium text-[#3981BF]">IVF</span>, son cada vez más utilizadas en EE.&nbsp;UU.<span class="ml-0.5 font-semibold text-[#3981BF]">[1]</span>, pero las
   <span class="font-semibold">tasas de nacidos vivos</span> caen con la edad materna<span class="ml-0.5 font-semibold text-[#3981BF]">[2]</span> —lo que refuerza la necesidad de
   decisiones y controles de laboratorio más precisos en el manejo del ovocito.
@@ -72,7 +72,7 @@ deckSection: justificacion
     <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-[#A0BF5E]" />
   </header>
 
-  <p class="mb-3 max-w-3xl text-left text-sm font-normal leading-snug text-[#262626] sm:mb-4 sm:max-w-4xl sm:text-[0.95rem] sm:leading-snug">
+  <p class="mb-3 max-w-3xl hyphens-auto text-justify text-sm font-normal leading-snug text-[#262626] sm:mb-4 sm:max-w-4xl sm:text-[0.95rem] sm:leading-snug">
     Detectar la madurez del ovocito y manipularlo con rapidez y el menor estrés posible —para alterarlo lo mínimo— condiciona la fecundación y el desarrollo embrionario en reproducción asistida
     <span class="ml-0.5 font-semibold text-[#3981BF]">[3]</span><span class="font-semibold text-[#3981BF]">[4]</span>.
     En la práctica la evaluación suele ser cualitativa; la microscopía de polarización no siempre apoya la selección y métodos con fluorescencia pueden comprometer la viabilidad del ovocito o del embrión
@@ -99,7 +99,7 @@ deckSection: justificacion
       <img
         src="../images/figures/diagrams/oocyte_plm.png"
         alt="Diagrama esquemático de microscopía de luz polarizada aplicada al ovocito"
-        class="mx-auto h-auto max-h-[min(22vh,250px)] w-full max-w-[90%] object-contain"
+        class="mx-auto h-auto max-h-[min(19vh,210px)] w-full max-w-[90%] object-contain"
       />
       <figcaption lang="es" class="mt-2 max-w-full text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
         <span class="font-semibold text-[#262626]">Fig. 3.</span>

@@ -1,11 +1,38 @@
 {
-  "name": "tp_sli",
+  "name": "sustentacion-tesis-ovocitos-slidev",
+  "description": "Diapositivas de sustentacion de tesis de maestria sobre deteccion de ovocitos y caracteristicas morfologicas en microscopia polarizada.",
   "type": "module",
   "private": true,
+  "author": "Salomon Perez Atencia",
+  "contributors": [
+    "Alejandro Restrepo Martinez (Director de tesis)"
+  ],
+  "thesisMetadata": {
+    "author": "Salomon Perez Atencia",
+    "advisor": "Alejandro Restrepo Martinez, Ph. D.",
+    "program": "Maestria",
+    "institution": "Universidad Nacional de Colombia, Sede Medellin",
+    "faculty": "Facultad de Minas",
+    "department": "Departamento de Ciencias de la Computacion"
+  },
+  "keywords": [
+    "slidev",
+    "tesis",
+    "sustentacion",
+    "ovocitos",
+    "microscopia-polarizada",
+    "deep-learning"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "build": "slidev build",
+    "build": "slidev build slides.md --out dist --base \"/tp_sli/\"",
+    "build:local": "slidev build slides.md --out dist --base \"/\"",
     "dev": "slidev --open",
-    "export": "slidev export"
+    "export": "slidev export",
+    "export:pdf": "slidev export --output \"Sustentacion_Tesis_Ovocitos.pdf\"",
+    "preview": "npx serve dist"
   },
   "dependencies": {
     "@slidev/cli": "^52.14.1",

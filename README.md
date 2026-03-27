@@ -1,16 +1,38 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Sustentacion de tesis (Slidev)
+
+Presentacion de sustentacion de maestria sobre deteccion de ovocitos y caracteristicas morfologicas en microscopia polarizada.
+
+## Metadata academica
+
+- Autor: Salomon Perez Atencia
+- Director de tesis: Alejandro Restrepo Martinez, Ph. D.
+- Institucion: Universidad Nacional de Colombia, Sede Medellin
+- Facultad: Facultad de Minas
+- Departamento: Departamento de Ciencias de la Computacion
+
+## Local development
 
 To start the slide show:
 
-- `pnpm install`
-- `pnpm dev`
+- `npm install`
+- `npm run dev`
 - visit <http://localhost:3030>
 
 Edit the [slides.md](./slides.md) to see the changes.
 
-Learn more about Slidev at the [documentation](https://sli.dev/).
+## Local static build (deploy simulation)
 
-## Deployment
+Use this to test locally the same static output that is published:
+
+- `npm install`
+- `npm run build`
+- `npm run preview`
+
+For a pure local static build (root base path), use:
+
+- `npm run build:local`
+
+## Deployment (GitHub Pages)
 
 Production deploys use GitHub Pages only.
 
@@ -19,5 +41,6 @@ Production deploys use GitHub Pages only.
 - A push to `main` triggers the workflow in `.github/workflows/pages.yml`.
 - The workflow builds Slidev output into `dist`.
 - The generated site is published to the `gh-pages` branch.
+- Vercel is not used for deployment in this repository.
 
-Vercel is not used for deployment in this repository.
+Learn more about Slidev at the [documentation](https://sli.dev/).

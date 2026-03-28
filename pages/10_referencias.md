@@ -3,7 +3,7 @@ transition: slide-up
 ---
 
 <header class="mb-4 text-left">
-  <h1 class="mt-0 text-2xl font-bold leading-tight tracking-tight text-[#262626] sm:text-3xl">Referencias</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-[#262626] sm:text-2xl">Referencias</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-[#A0BF5E]" />
 </header>
 
@@ -215,14 +215,184 @@ transition: slide-up
           target="_blank"
           rel="noopener noreferrer"
         >10.1364/AO.42.003009</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-[#3981BF]">[14]</span>
+      <span>
+        Holubcová, Z. et al.,
+        «Egg maturity assessment prior to ICSI prevents premature fertilization of late-maturing oocytes»,
+        <em>Journal of Assisted Reproduction and Genetics</em>, vol.&nbsp;36, n.º&nbsp;3, pp.&nbsp;445–452, mar. 2019.
+        DOI:
+        <a
+          class="break-all text-[#3981BF] underline decoration-[#3981BF]/40 underline-offset-1 hover:decoration-[#3981BF]"
+          href="https://doi.org/10.1007/s10815-018-1393-0"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1007/s10815-018-1393-0</a>.
+        PMID:&nbsp;30635815.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-[#3981BF]">[15]</span>
+      <span>
+        Fjeldstad, J. et al.,
+        «Segmentation of mature human oocytes provides interpretable and improved blastocyst outcome predictions by a machine learning model»,
+        <em>Scientific Reports</em>, vol.&nbsp;14, n.º&nbsp;1, 2024.
+        DOI:
+        <a
+          class="break-all text-[#3981BF] underline decoration-[#3981BF]/40 underline-offset-1 hover:decoration-[#3981BF]"
+          href="https://doi.org/10.1038/s41598-024-60901-1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1038/s41598-024-60901-1</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-[#3981BF]">[16]</span>
+      <span>
+        Mery, D.,
+        «Aluminum Casting Inspection using Deep Object Detection Methods and Simulated Ellipsoidal Defects»,
+        <em>Machine Vision and Applications</em>, vol.&nbsp;32, n.º&nbsp;3, art.&nbsp;72, abr. 2021.
+        DOI:
+        <a
+          class="break-all text-[#3981BF] underline decoration-[#3981BF]/40 underline-offset-1 hover:decoration-[#3981BF]"
+          href="https://doi.org/10.1007/s00138-021-01195-5"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1007/s00138-021-01195-5</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-[#3981BF]">[17]</span>
+      <span>
+        Mery, D. et al.,
+        «Target Detection by Target Simulation in X-ray Testing»,
+        <em>Journal of Nondestructive Evaluation</em>, vol.&nbsp;41, n.º&nbsp;1, art.&nbsp;21, feb. 2022.
+        DOI:
+        <a
+          class="break-all text-[#3981BF] underline decoration-[#3981BF]/40 underline-offset-1 hover:decoration-[#3981BF]"
+          href="https://doi.org/10.1007/s10921-022-00851-8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1007/s10921-022-00851-8</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-[#3981BF]">[18]</span>
+      <span>
+        Zhao, Y. et al.,
+        «DETRs Beat YOLOs on Real-time Object Detection»,
+        arXiv preprint arXiv:2304.08069, 2024.
         [Online].
         Available:
         <a
           class="break-all text-[#3981BF] underline decoration-[#3981BF]/40 underline-offset-1 hover:decoration-[#3981BF]"
-          href="https://opg.optica.org/ao/abstract.cfm?URI=ao-42-16-3009"
+          href="https://arxiv.org/abs/2304.08069"
           target="_blank"
           rel="noopener noreferrer"
-        >https://opg.optica.org/ao/abstract.cfm?URI=ao-42-16-3009</a>.
+        >https://arxiv.org/abs/2304.08069</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-[#3981BF]">[19]</span>
+      <span>
+        Beduschi, A.,
+        «Synthetic data protection: towards a paradigm change in data regulation?»,
+        <em>Big Data &amp; Society</em>, vol.&nbsp;11, n.º&nbsp;1, 2024.
+        DOI:
+        <a
+          class="break-all text-[#3981BF] underline decoration-[#3981BF]/40 underline-offset-1 hover:decoration-[#3981BF]"
+          href="https://doi.org/10.1177/20539517241231277"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1177/20539517241231277</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-[#3981BF]">[20]</span>
+      <span>
+        Abubakr, A.&nbsp;G. et al.,
+        «On learning deep domain-invariant features from 2D synthetic images for industrial visual inspection»,
+        <em>Fifteenth International Conference on Quality Control by Artificial Vision</em>, p.&nbsp;28, 2021.
+        DOI:
+        <a
+          class="break-all text-[#3981BF] underline decoration-[#3981BF]/40 underline-offset-1 hover:decoration-[#3981BF]"
+          href="https://doi.org/10.1117/12.2589040"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1117/12.2589040</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-[#3981BF]">[21]</span>
+      <span>
+        Kelleher, C. y Needleman, D.,
+        «The physical basis of self-organization of the mammalian oocyte spindle»,
+        arXiv preprint arXiv:2211.00883, 2022.
+        DOI:
+        <a
+          class="break-all text-[#3981BF] underline decoration-[#3981BF]/40 underline-offset-1 hover:decoration-[#3981BF]"
+          href="https://doi.org/10.48550/arXiv.2211.00883"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.48550/arXiv.2211.00883</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-[#3981BF]">[22]</span>
+      <span>
+        Redmon, J., Divvala, S., Girshick, R. y Farhadi, A.,
+        «You Only Look Once: Unified, Real-Time Object Detection»,
+        en <em>Proc. IEEE Conf. Computer Vision and Pattern Recognition (CVPR)</em>, pp.&nbsp;779–788, 2016.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-[#3981BF]">[23]</span>
+      <span>
+        Wang, C.-Y., Yeh, I.-H. y Liao, H.-Y.&nbsp;M.,
+        «YOLOv9: Learning What You Want to Learn Using Programmable Gradient Information»,
+        arXiv preprint arXiv:2402.13616, 2024.
+        [Online].
+        Available:
+        <a
+          class="break-all text-[#3981BF] underline decoration-[#3981BF]/40 underline-offset-1 hover:decoration-[#3981BF]"
+          href="https://arxiv.org/abs/2402.13616"
+          target="_blank"
+          rel="noopener noreferrer"
+        >https://arxiv.org/abs/2402.13616</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-[#3981BF]">[24]</span>
+      <span>
+        Wang, A. et al.,
+        «YOLOv10: Real-Time End-to-End Object Detection»,
+        arXiv preprint arXiv:2405.14458, 2024.
+        [Online].
+        Available:
+        <a
+          class="break-all text-[#3981BF] underline decoration-[#3981BF]/40 underline-offset-1 hover:decoration-[#3981BF]"
+          href="https://arxiv.org/abs/2405.14458"
+          target="_blank"
+          rel="noopener noreferrer"
+        >https://arxiv.org/abs/2405.14458</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-[#3981BF]">[25]</span>
+      <span>
+        Tian, Y., Ye, Q. y Doermann, D.,
+        «YOLOv12: Attention-Centric Real-Time Object Detectors»,
+        arXiv preprint arXiv:2502.12524, 2025.
+        [Online].
+        Available:
+        <a
+          class="break-all text-[#3981BF] underline decoration-[#3981BF]/40 underline-offset-1 hover:decoration-[#3981BF]"
+          href="https://arxiv.org/abs/2502.12524"
+          target="_blank"
+          rel="noopener noreferrer"
+        >https://arxiv.org/abs/2502.12524</a>.
       </span>
     </li>
   </ol>

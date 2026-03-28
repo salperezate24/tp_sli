@@ -5,7 +5,7 @@ deckSection: justificacion
 
 <div class="flex h-full min-h-0 flex-col pb-[6rem] pr-1 sm:pb-[6.5rem]">
 <header class="mb-2 text-left sm:mb-2">
-  <h1 class="mt-0 text-2xl font-bold leading-tight tracking-tight text-[#262626] sm:text-3xl">Justificación</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-[#262626] sm:text-2xl">Justificación</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-[#A0BF5E]" />
 </header>
 
@@ -68,7 +68,7 @@ deckSection: justificacion
 
 <div class="flex h-full min-h-0 flex-col pb-[6rem] pr-1 sm:pb-[6.5rem]">
   <header class="mb-2 text-left sm:mb-2">
-    <h1 class="mt-0 text-2xl font-bold leading-tight tracking-tight text-[#262626] sm:text-3xl">Justificación</h1>
+    <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-[#262626] sm:text-2xl">Justificación</h1>
     <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-[#A0BF5E]" />
   </header>
 

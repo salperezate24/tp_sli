@@ -4,7 +4,7 @@ deckSection: metodologia
 ---
 
 <header class="mb-3 text-left">
-  <h1 class="mt-0 text-2xl font-bold leading-tight tracking-tight text-[#262626] sm:text-3xl">Metodología</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-[#262626] sm:text-2xl">Metodología</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-[#A0BF5E]" />
 </header>
 
@@ -33,7 +33,7 @@ deckSection: metodologia
 ---
 
 <header class="mb-3 text-left">
-  <h1 class="mt-0 text-2xl font-bold leading-tight tracking-tight text-[#262626] sm:text-3xl">Implementación y validación</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-[#262626] sm:text-2xl">Implementación y validación</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-[#A0BF5E]" />
 </header>
 

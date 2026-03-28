@@ -7,7 +7,7 @@ deckSection: pregunta
 <div class="flex h-full min-h-0 flex-col pb-[6.5rem] pr-2 sm:pb-[7rem]">
 <div class="mx-auto w-full max-w-6xl text-left">
 <header class="mb-3 sm:mb-4">
-<h1 class="mt-0 text-2xl font-bold leading-tight tracking-tight text-[#262626] sm:text-3xl">Pregunta de investigación e hipótesis</h1>
+<h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-[#262626] sm:text-2xl">Pregunta de investigación e hipótesis</h1>
 <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-[#A0BF5E]"></div>
 </header>
 <!-- Pregunta: columna más estrecha (más líneas / “más alta”); hipótesis: más ancha + texto en 2 columnas para bajar altura -->

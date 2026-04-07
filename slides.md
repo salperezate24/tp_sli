@@ -23,7 +23,7 @@ transition: slide-left
 
 <div class="flex h-full flex-col text-center">
 
-<div class="text-3xl leading-tight tracking-tight max-w-5xl mx-auto text-[#3981BF]">
+<div class="text-3xl leading-tight tracking-tight max-w-5xl mx-auto text-unal-blue">
 <div class="font-semibold">
   Desarrollo de un modelo de red neuronal profunda para la identificación de ovocitos y sus características a través de microscopía polarizada
   </div>
@@ -92,15 +92,15 @@ class: text-left
 <div class="mx-auto flex h-full max-w-6xl -translate-y-6 flex-col justify-center px-10 pb-10 md:-translate-y-10">
 
 <header class="mb-6">
-  <h1 class="text-3xl font-bold tracking-tight text-[#262626] sm:text-4xl">Agenda</h1>
-  <div class="mt-3 h-1 w-28 max-w-full rounded-full bg-[#A0BF5E]" />
+  <h1 class="text-3xl font-bold tracking-tight text-unal-gray sm:text-4xl">Agenda</h1>
+  <div class="mt-3 h-1 w-28 max-w-full rounded-full bg-unal-green" />
 </header>
 
 <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
 
-<div class="rounded-xl border border-gray-300/60 border-l-4 border-l-[#3981BF] bg-white/95 px-6 py-5 shadow-md ring-1 ring-gray-900/5 backdrop-blur-sm">
-  <p class="mb-3 border-b border-gray-200/90 pb-2.5 text-[11px] font-bold uppercase tracking-wider text-[#3981BF]">Secciones 1–5</p>
-  <ol class="list-decimal space-y-2.5 pl-5 text-sm leading-relaxed text-[#262626] marker:font-semibold marker:text-[#3981BF] sm:text-[0.95rem]">
+<div class="rounded-xl border border-gray-300/60 border-l-4 border-l-unal-blue bg-white/95 px-6 py-5 shadow-md ring-1 ring-gray-900/5 backdrop-blur-sm">
+  <p class="mb-3 border-b border-gray-200/90 pb-2.5 text-[11px] font-bold uppercase tracking-wider text-unal-blue">Secciones 1–5</p>
+  <ol class="list-decimal space-y-2.5 pl-5 text-sm leading-relaxed text-unal-gray marker:font-semibold marker:text-unal-blue sm:text-[0.95rem]">
     <li><span class="font-semibold">Justificación</span></li>
     <li><span class="font-semibold">Marco teórico</span></li>
     <li><span class="font-semibold">Estado del arte</span></li>
@@ -109,9 +109,9 @@ class: text-left
   </ol>
 </div>
 
-<div class="rounded-xl border border-gray-300/60 border-l-4 border-l-[#A0BF5E] bg-white/95 px-6 py-5 shadow-md ring-1 ring-gray-900/5 backdrop-blur-sm">
-  <p class="mb-3 border-b border-gray-200/90 pb-2.5 text-[11px] font-bold uppercase tracking-wider text-[#3981BF]">Secciones 6–10</p>
-  <ol class="list-decimal space-y-2.5 pl-5 text-sm leading-relaxed text-[#262626] marker:font-semibold marker:text-[#3981BF] sm:text-[0.95rem]" start="6">
+<div class="rounded-xl border border-gray-300/60 border-l-4 border-l-unal-green bg-white/95 px-6 py-5 shadow-md ring-1 ring-gray-900/5 backdrop-blur-sm">
+  <p class="mb-3 border-b border-gray-200/90 pb-2.5 text-[11px] font-bold uppercase tracking-wider text-unal-blue">Secciones 6–10</p>
+  <ol class="list-decimal space-y-2.5 pl-5 text-sm leading-relaxed text-unal-gray marker:font-semibold marker:text-unal-blue sm:text-[0.95rem]" start="6">
     <li><span class="font-semibold">Metodología</span></li>
     <li><span class="font-semibold">Resultados</span></li>
     <li><span class="font-semibold">Conclusiones</span></li>

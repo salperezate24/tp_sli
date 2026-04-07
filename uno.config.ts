@@ -49,5 +49,8 @@ export default defineConfig({
     /** Rejilla 3 columnas PLM: flujo natural en la diapositiva, sin scroll interno. */
     'plm-three-col-grid':
       'isolate grid min-w-0 w-full max-w-6xl grid-cols-1 gap-3 overflow-visible pr-0.5 sm:gap-4 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.08fr)_minmax(0,1.22fr)] lg:items-start lg:gap-3',
+    /** Rejilla de 3 columnas del footer (autor | título | fecha+página). */
+    'thesis-footer-grid':
+      'grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)_minmax(0,0.95fr)]',
   },
 })

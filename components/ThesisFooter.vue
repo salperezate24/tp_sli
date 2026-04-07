@@ -47,26 +47,25 @@ const shortTitle = computed(() =>
 <template>
   <div
     v-if="show"
-    class="absolute bottom-0 left-0 right-0 z-10 grid overflow-hidden text-[9px] leading-tight text-white shadow-[0_-1px_0_rgba(0,0,0,0.08)] sm:text-[10px] sm:leading-none"
-    style="grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr) minmax(0, 0.95fr);"
+    class="thesis-footer-grid absolute bottom-0 left-0 right-0 z-10 grid overflow-hidden text-[9px] leading-tight text-white shadow-[0_-1px_0_rgba(0,0,0,0.08)] sm:text-[10px] sm:leading-none"
   >
     <!-- author in head/foot: bg=blue_unal, fg=white -->
     <div
-      class="min-w-0 truncate bg-[#3981BF] px-1.5 py-1.5 text-left font-medium sm:px-2.5 sm:py-1"
+      class="min-w-0 truncate bg-unal-blue px-1.5 py-1.5 text-left font-medium sm:px-2.5 sm:py-1"
       :title="leftLine"
     >
       {{ leftLine }}
     </div>
     <!-- title in head/foot: bg=dark_gray, fg=white -->
     <div
-      class="min-w-0 truncate bg-[#262626] px-1.5 py-1.5 text-center font-medium sm:px-2.5 sm:py-1"
+      class="min-w-0 truncate bg-unal-gray px-1.5 py-1.5 text-center font-medium sm:px-2.5 sm:py-1"
       :title="shortTitle"
     >
       {{ shortTitle }}
     </div>
     <!-- date in head/foot: bg=green_unal, fg=white -->
     <div
-      class="min-w-0 truncate bg-[#A0BF5E] px-1.5 py-1.5 text-right tabular-nums sm:px-2.5 sm:py-1"
+      class="min-w-0 truncate bg-unal-green px-1.5 py-1.5 text-right tabular-nums sm:px-2.5 sm:py-1"
     >
       <span class="hidden sm:inline">{{ formattedDate }}</span>
       <span class="sm:hidden">{{ formattedDate.replace(/\s+de\s+/g, ' ') }}</span>

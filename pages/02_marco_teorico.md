@@ -19,7 +19,7 @@ deckSection: marco
       class="h-auto max-h-[min(70vh,500px)] w-full object-contain"
     />
     <figcaption lang="es" class="mt-2 max-w-full text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
-      <span class="font-semibold text-[#262626]">Fig. 2.</span>
+      <span class="font-semibold text-unal-gray">Fig. 2.</span>
       Esquema ilustrativo del proceso de maduración de un ovocito. Elaboración propia.
     </figcaption>
   </figure>
@@ -30,9 +30,9 @@ deckSection: marco
       class="mx-auto h-auto max-h-[min(19vh,210px)] w-full max-w-[90%] object-contain"
     />
     <figcaption lang="es" class="mt-2 max-w-full text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
-      <span class="font-semibold text-[#262626]">Fig. 3.</span>
+      <span class="font-semibold text-unal-gray">Fig. 3.</span>
       Ovocito visualizado con microscopía de luz polarizada. Huso meiótico (s), zona pelúcida (zp), límite del citoplasma (c) y cuerpo polar (pb). Tomado de Rienzi et al.
-      <span class="ml-0.5 font-semibold text-[#3981BF]">[8]</span>.
+      <span class="ml-0.5 font-semibold text-unal-blue">[8]</span>.
     </figcaption>
   </figure>
 </div>
@@ -196,7 +196,7 @@ deckSection: marco
       class="mx-auto h-auto max-h-[min(52vh,410px)] w-full max-w-[96%] object-contain"
     />
     <figcaption lang="es" class="mt-2 text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
-      <span class="font-semibold text-[#262626]">Fig. 5.</span>
+      <span class="font-semibold text-unal-gray">Fig. 5.</span>
       Arquitectura general de los modelos YOLO.
       <span class="ml-0.5 font-semibold text-unal-blue">Elaboración propia.</span>
     </figcaption>

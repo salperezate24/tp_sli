@@ -6,8 +6,8 @@ deckSection: trabajo_futuro
 <div class="flex h-full min-h-0 flex-col pb-[7rem] pr-2 sm:pb-[7.5rem]">
   <div class="mx-auto w-full max-w-6xl text-left">
     <header class="mb-3 sm:mb-4">
-      <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-[#262626] sm:text-2xl">Trabajo futuro</h1>
-      <div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-[#A0BF5E]" />
+      <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Trabajo futuro</h1>
+      <div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
     </header>
     <div class="flex gap-8">
       <div class="flex w-1/2 flex-col gap-4">

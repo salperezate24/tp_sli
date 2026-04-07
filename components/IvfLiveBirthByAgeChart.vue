@@ -48,7 +48,7 @@ const tickValues = computed(() => {
 </script>
 
 <template>
-  <div class="mt-0 flex gap-1.5 text-[11px] text-[#262626] sm:gap-2 sm:text-[13px]">
+  <div class="mt-0 flex gap-1.5 text-[11px] text-unal-gray sm:gap-2 sm:text-[13px]">
     <div class="flex w-11 shrink-0 flex-col gap-1 sm:w-12">
       <span
         v-for="row in rows"
@@ -92,8 +92,8 @@ const tickValues = computed(() => {
           </div>
         </div>
       </div>
-      <div class="flex flex-col gap-0 border-t border-[#262626]/80 px-0 py-0 leading-none">
-        <div class="flex justify-between font-medium tabular-nums text-[10px] leading-none text-[#262626] sm:text-[10px]">
+      <div class="flex flex-col gap-0 border-t border-unal-gray/80 px-0 py-0 leading-none">
+        <div class="flex justify-between font-medium tabular-nums text-[10px] leading-none text-unal-gray sm:text-[10px]">
           <span v-for="t in tickValues" :key="t">{{ t }}</span>
         </div>
         <p class="-mt-px mb-0 text-center text-[10px] font-medium leading-tight text-gray-600 sm:text-[11px]">

@@ -69,15 +69,15 @@ async function goToSection(id: SectionId) {
       <template v-for="(s, i) in SECTIONS" :key="s.id">
         <span
           v-if="i > 0"
-          class="pointer-events-none shrink-0 select-none text-[8px] font-light text-[#262626] opacity-30 sm:text-[9px]"
+          class="pointer-events-none shrink-0 select-none text-[8px] font-light text-unal-gray opacity-30 sm:text-[9px]"
           aria-hidden="true"
         >·</span>
         <button
           type="button"
-          class="shrink-0 cursor-pointer whitespace-nowrap border-0 bg-transparent p-0 text-[7px] font-semibold uppercase tracking-[0.1em] transition-opacity duration-200 sm:text-[8px] sm:tracking-[0.14em] md:text-[9px] focus-visible:rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-[#3981BF]"
+          class="shrink-0 cursor-pointer whitespace-nowrap border-0 bg-transparent p-0 text-[7px] font-semibold uppercase tracking-[0.1em] transition-opacity duration-200 sm:text-[8px] sm:tracking-[0.14em] md:text-[9px] focus-visible:rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-unal-blue"
           :class="section === s.id
-            ? 'text-[#3981BF] opacity-100'
-            : 'text-[#262626] opacity-25 hover:opacity-60'"
+            ? 'text-unal-blue opacity-100'
+            : 'text-unal-gray opacity-25 hover:opacity-60'"
           @click="goToSection(s.id)"
         >
           {{ s.label }}

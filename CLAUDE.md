@@ -18,6 +18,7 @@ Presentación de defensa de tesis de Maestría construida con **Slidev** (framew
 
 ```
 slides.md              # Punto de entrada principal (orquesta todos los pages/)
+script.txt             # Guion oral de la defensa (lo que se dice en cada diapositiva)
 pages/                 # Contenido modular por sección
   01_justificacion.md
   02_marco_teorico.md
@@ -37,6 +38,8 @@ components/            # Componentes Vue personalizados
 layouts/               # Plantillas de layout para Slidev
 images/                # Logos institucionales (GPIMA, UNAL) y figuras
 archive/               # Versiones anteriores, transcripciones de reuniones y borradores
+  oocyte_maturity.txt       # Protocolo clínico de PLM para ICSI (fuente de referencia para el guion)
+  discovering_human_ooocyte.txt  # Conferencia sobre PLM cuantitativa (fuente de referencia para el guion)
 BACKLOG.md             # Tareas pendientes (contenido, slides, externos)
 dist/                  # Build output (no editar manualmente)
 ```
@@ -163,6 +166,34 @@ Capítulos relevantes para completar los slides:
 | `references.bib` | Todas las referencias bibliográficas |
 
 Al redactar o completar slides, leer primero el capítulo correspondiente para mantener coherencia con la tesis.
+
+---
+
+## Guion oral (`script.txt`)
+
+El archivo `script.txt` contiene el texto que se dirá en cada diapositiva durante la defensa.
+
+**Convenciones:**
+- Cada bloque empieza con `SLIDE N:` (número correlativo al orden de la presentación)
+- Máximo ~1 minuto por diapositiva ≈ 130–150 palabras a ritmo normal
+- El guion debe ser coherente con el contenido visual de la diapositiva correspondiente y con los datos de la tesis
+
+**Estado actual del guion:**
+
+| Slides | Sección | Estado |
+|---|---|---|
+| 1–2 | Portada y Agenda | ✓ guionizados |
+| 3–4 | Justificación | ✓ guionizados |
+| 5–8 | Marco teórico | ✓ guionizados |
+| 9–14 | Estado del arte (6 slides) | ✓ guionizados (slide 9 tiene dos versiones activas) |
+| 15 | Pregunta e hipótesis | ✓ guionizado |
+| 16–17 | Objetivos general y específicos | ✓ guionizados |
+| 18+ | Metodología en adelante | pendiente |
+
+**Fuentes de referencia para redactar el guion:**
+- `archive/oocyte_maturity.txt` — protocolo clínico de PLM para ICSI; útil para slides de justificación y marco teórico
+- `archive/discovering_human_ooocyte.txt` — conferencia sobre PLM cuantitativa y gradación de ovocitos; útil para datos cuantitativos (5–10% de potencial de desarrollo, retardo 2–3 nm, etc.)
+- Capítulos LaTeX en `/Users/salperezate/Documents/GitHub/thesis/` — fuente de verdad para todo el contenido técnico
 
 ---
 

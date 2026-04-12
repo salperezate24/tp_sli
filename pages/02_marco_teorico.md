@@ -3,42 +3,48 @@ transition: slide-up
 deckSection: marco
 ---
 
-<div class="slide-deck-shell">
-<header class="mb-3 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">El ovocito y el huso meiótico</h1>
-  <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
+<div class="slide-deck-shell pb-10">
+<header class="mb-1.5 text-left">
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">El ovocito, el huso meiótico y la PLM</h1>
+  <div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
-<p class="mb-1.5 max-w-3xl hyphens-auto text-justify text-sm font-normal leading-snug text-unal-gray sm:mb-2 sm:max-w-4xl sm:text-base sm:leading-snug">
-  El ovocito es la célula femenina más grande y se caracteriza por su gran tamaño y su contenido citoplasmático. El huso meiótico es una estructura celular que se forma en la meiosis y que ayuda a separar los cromosomas homólogos.
+<p class="mb-2 max-w-4xl hyphens-auto text-justify text-[0.82rem] font-normal leading-snug text-unal-gray">
+  El objetivo es identificar el ovocito en estadio <span class="font-semibold text-unal-blue">MII</span> con mayor probabilidad de fecundación exitosa.
+  Estadísticamente, solo entre el <span class="font-semibold">5 y el 10&nbsp;%</span> de los ovocitos recuperados poseen potencial de desarrollo completo —
+  determinar esa viabilidad sin manipular ni comprometer la célula es el desafío real.
+  La <span class="font-semibold text-unal-blue">microscopía de luz polarizada (PLM)</span> es no invasiva e incluso expone al ovocito
+  a menos luz que la microscopía convencional; combinada con visión por computador, permite objetivar y automatizar la selección.
 </p>
-<div class="grid min-h-0 min-w-0 flex-1 grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1.22fr)_minmax(0,0.78fr)] lg:gap-5">
-  <figure class="m-0 min-w-0 flex flex-col">
-    <img
-      src="../images/figures/oocytes/oocyte_diagram_002.png"
-      alt="Esquema del proceso de maduración de un ovocito"
-      class="h-auto max-h-[min(70vh,500px)] w-full object-contain"
-    />
-    <figcaption lang="es" class="mt-2 max-w-full text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
-      <span class="font-semibold text-unal-gray">Fig. 2.</span>
-      Esquema ilustrativo del proceso de maduración de un ovocito. Elaboración propia.
-    </figcaption>
-  </figure>
-  <figure class="m-0 min-w-0 flex flex-col">
-    <img
-      src="../images/figures/diagrams/oocyte_plm.png"
-      alt="Diagrama esquemático de microscopía de luz polarizada aplicada al ovocito"
-      class="mx-auto h-auto max-h-[min(19vh,210px)] w-full max-w-[90%] object-contain"
-    />
-    <figcaption lang="es" class="mt-2 max-w-full text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
-      <span class="font-semibold text-unal-gray">Fig. 3.</span>
-      Ovocito visualizado con microscopía de luz polarizada. Huso meiótico (s), zona pelúcida (zp), límite del citoplasma (c) y cuerpo polar (pb). Tomado de Rienzi et al.
-      <span class="ml-0.5 font-semibold text-unal-blue">[8]</span>.
-    </figcaption>
-  </figure>
+<div class="grid w-full grid-cols-2 gap-4 lg:gap-5">
+<figure class="m-0 flex min-w-0 flex-col">
+<img src="../images/figures/diagrams/oocyte_plm.png" alt="Ovocito bajo PLM" class="mx-auto h-auto max-h-32 w-full object-contain" />
+<figcaption lang="es" class="mt-1 max-w-full text-left text-[10px] leading-snug text-gray-600">
+  <span class="font-semibold text-unal-gray">Fig. 3.</span>
+  Ovocito bajo PLM: huso meiótico (s), ZP (zp), citoplasma (c) y cuerpo polar (pb). Rienzi et al.
+  <span class="ml-0.5 font-semibold text-unal-blue">[8]</span>.
+</figcaption>
+</figure>
+<figure class="m-0 flex min-w-0 flex-col">
+<img src="../images/figures/oocytes/oocyte_diagram_002.png" alt="Esquema del proceso de maduración de un ovocito" class="h-auto max-h-32 w-full object-contain" />
+<figcaption lang="es" class="mt-1 max-w-full text-left text-[10px] leading-snug text-gray-600">
+  <span class="font-semibold text-unal-gray">Fig. 2.</span>
+  Esquema ilustrativo del proceso de maduración de un ovocito. Elaboración propia.
+</figcaption>
+</figure>
 </div>
+<ul class="mt-2 list-none space-y-1.5 text-[0.78rem] leading-snug text-unal-gray">
+<li class="flex gap-1.5">
+  <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
+  <span><span class="font-semibold text-unal-blue">Huso meiótico:</span> responsable de la segregación cromosómica en metafase II. Aparece en metafase II y su presencia confirma la madurez nuclear del ovocito.</span>
+</li>
+<li class="flex gap-1.5">
+  <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
+  <span>El <span class="font-semibold">cuerpo polar</span> —indicador clínico habitual— aparece <span class="font-semibold">antes</span> de que el huso esté completamente ensamblado. PLM permite verificar directamente si el huso ya está formado, ofreciendo una evaluación más precisa del momento óptimo para ICSI.</span>
+</li>
+</ul>
 </div>
 
-<!-- Logos abajo a la derecha (misma distribución que Agenda y resto del deck) -->
+<!-- Logos abajo a la derecha -->
 <div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
   <img
     src="../images/logos/gpima_logo.png"
@@ -58,94 +64,106 @@ deckSection: marco
 ---
 
 <div class="slide-deck-shell">
-<header class="mb-3 text-left">
+<header class="mb-2 text-left">
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Recuperación cuantitativa del retardo</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 
-<p class="mb-0 max-w-5xl hyphens-auto text-justify text-xs leading-snug text-unal-gray sm:text-sm sm:leading-snug">
-  <span class="font-semibold">Retardo óptico en PLM cuantitativa:</span> a partir de las intensidades
-  las cinco intensidades <span class="font-medium">I₀, I₁, I₂, I₃, I₄</span> se construyen los términos <span class="font-medium italic">A</span> y <span class="font-medium italic">B</span>,
-  que permiten estimar el <span class="font-medium">retardo Δ</span> y el azimut <span class="font-medium">φ</span>
-  para describir la birrefringencia de la muestra; en este ejemplo, un astero de microtúbulos reconstituido desde el centrosoma.
+<p class="mb-2 max-w-5xl hyphens-auto text-justify text-xs leading-snug text-unal-gray sm:text-sm sm:leading-snug">
+  La PLM cuantitativa captura <span class="font-semibold">cinco imágenes</span> con distintos estados de polarización
+  (I₀&nbsp;–&nbsp;I₄). De ellas se construyen los términos auxiliares <span class="font-medium italic">A</span> y <span class="font-medium italic">B</span>,
+  que permiten estimar para cada píxel el <span class="font-semibold">retardo óptico Δ</span> —que cuantifica la birrefringencia—
+  y el <span class="font-semibold">azimut φ</span>, que indica la orientación molecular.
 </p>
-<div class="plm-three-col-grid !mt-0">
+
+<div class="grid min-h-0 flex-1 grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-6">
+
+  <!-- Columna izquierda: imagen de intensidad PLM -->
+  <div class="flex flex-col gap-2">
+    <p class="plm-section-label-center text-left font-semibold text-unal-blue text-[0.72rem] sm:text-[0.76rem]">Imagen de intensidad (I₀–I₄)</p>
+    <div class="flex flex-1 items-center justify-center rounded border-2 border-dashed border-unal-blue/60 px-4 py-6 text-center text-[0.72rem] leading-snug text-unal-blue/70 sm:text-[0.76rem]">
+      [INSERTAR IMAGEN: Ejemplo de una de las cinco capturas de intensidad PLM con distinto estado de polarización — campo oscuro del astero de microtúbulos]
+    </div>
+  </div>
+
+  <!-- Columna derecha: mapa de retardo óptico -->
   <div class="relative z-0 min-w-0 flex flex-col items-center justify-start self-start px-0.5">
-  <p class="plm-section-label-center">Retardo óptico</p>
-  <figure class="m-0 flex w-full min-w-0 flex-col items-stretch">
+    <p class="plm-section-label-center text-left font-semibold text-unal-blue text-[0.72rem] sm:text-[0.76rem]">Retardo óptico (Δ)</p>
+    <figure class="m-0 flex w-full min-w-0 flex-col items-stretch">
+      <img
+        src="../images/figures/diagrams/Diagramas_Tesis-Pagina-2.png"
+        alt="Ejemplo de imagen de retardo óptico"
+        class="plm-retardo-img"
+      />
+      <figcaption lang="es" class="plm-figcaption">
+        <span class="font-semibold">Fig. 4.</span>
+        Mapa de magnitud de retardo (algoritmo de cinco cuadros, corrección de fondo) de un astero de microtúbulos reconstituido desde centrosoma. Blanco ≈ 1,2&nbsp;nm; negro, birrefringencia nula.
+        <span class="mt-1 block font-medium opacity-100">Fuente: Shribak &amp; Oldenbourg (2003) <span class="font-semibold text-unal-blue">[13]</span>.</span>
+      </figcaption>
+    </figure>
+  </div>
+
+</div>
+
+</div>
+
+<!-- Logos abajo a la derecha -->
+<div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
   <img
-    src="../images/figures/diagrams/Diagramas_Tesis-Pagina-2.png"
-    alt="Ejemplo de imagen de retardo óptico"
-    class="plm-retardo-img"
+    src="../images/logos/gpima_logo.png"
+    alt="GPIMA"
+    class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6"
   />
-  <figcaption lang="es" class="plm-figcaption">
-  <span class="font-semibold">Fig. 4.</span>
-  Mapa de magnitud de retardo (algoritmo de cinco cuadros, corrección de fondo) de un astero de microtúbulos reconstituido desde centrosoma; haces brillantes sobre centrosoma oscuro. Blanco ≈ 1,2&nbsp;nm de retardo de birrefringencia; negro, birrefringencia nula.
-  <span class="mt-1 block font-medium opacity-100">Fuente: Shribak &amp; Oldenbourg (2003) <span class="font-semibold text-unal-blue">[13]</span>. En la tesis aparece como Fig.&nbsp;2-4 (cap.&nbsp;2).</span>
-  </figcaption>
-  </figure>
-  </div>
+  <img
+    src="../images/logos/unal_logo_lateral.png"
+    alt="Universidad Nacional de Colombia"
+    class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14"
+  />
+</div>
 
-  <div class="relative z-10 min-w-0 space-y-3 text-left plm-katex-col-left text-unal-gray">
-  <p class="plm-section-label">Retardo y azimut</p>
+---
+transition: slide-up
+deckSection: marco
+---
 
-$$
-\begin{aligned}
-\Delta &= \arctan\!\left(\sqrt{A^2 + B^2}\right) && \text{si } I_1 + I_2 - 2I_0 \geq 0, \\[0.3em]
-\Delta &= 180^\circ - \arctan\!\left(\sqrt{A^2 + B^2}\right) && \text{si } I_1 + I_2 - 2I_0 \lt 0, \\[0.3em]
-\phi &= \tfrac{1}{2}\arctan\!\left(\frac{A}{B}\right). &&
-\end{aligned}
-$$
+<div class="slide-deck-shell">
+<header class="mb-1 text-left">
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">PLM cuantitativa: modelo matemático</h1>
+  <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
+</header>
 
-  <p class="plm-section-label mt-3">Términos auxiliares</p>
+<div class="mt-2 grid w-full grid-cols-1 gap-2 [&_.katex-display]:my-1.5 [&_.katex-display]:text-[0.78rem] lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-6">
+<div class="min-w-0 text-left text-unal-gray">
+<p class="plm-section-label mb-2">Ecuaciones de intensidad</p>
 
-$$
-\begin{gathered}
-A \equiv \frac{I_1 - I_2}{I_1 + I_2 - 2I_0}\,\tan\frac{\chi}{2} = \sin 2\phi\,\tan \Delta \\[0.35em]
-B \equiv \frac{I_4 - I_3}{I_4 + I_3 - 2I_0}\,\tan\frac{\chi}{2} = \cos 2\phi\,\tan \Delta
-\end{gathered}
-$$
-  </div>
+$$I_0(x, y) = \tfrac{1}{2}\,\tau\,I_{\max}\bigl[1 - \cos \Delta\bigr] + I_{\min}$$
 
-  <div class="relative z-10 min-w-0 text-left plm-katex-col-right text-unal-gray">
-  <p class="plm-section-label">Ecuaciones de intensidad</p>
+$$I_1(x, y) = \tfrac{1}{2}\,\tau\,I_{\max}\bigl[1 - \cos\chi\cos\Delta + \sin\chi\sin 2\phi\sin\Delta\bigr] + I_{\min}$$
 
-$$
-\begin{split}
-I_0(x, y) = \tfrac{1}{2}\,\tau(x,y)\,I_{\text{max}}\bigl[1 - \cos \Delta(x,y)\bigr] + I_{\text{min}}(x,y)
-\end{split}
-$$
+$$I_2(x, y) = \tfrac{1}{2}\,\tau\,I_{\max}\bigl[1 - \cos\chi\cos\Delta - \sin\chi\sin 2\phi\sin\Delta\bigr] + I_{\min}$$
 
-$$
-\begin{split}
-I_1(x, y) = \tfrac{1}{2}\,\tau(x,y)\,I_{\text{max}}\bigl[1 - \cos\chi\cos\Delta(x,y) + \sin\chi\sin 2\phi(x,y)\sin\Delta(x,y)\bigr] \\+ I_{\text{min}}(x,y)
-\end{split}
-$$
+$$I_3(x, y) = \tfrac{1}{2}\,\tau\,I_{\max}\bigl[1 - \cos\chi\cos\Delta - \sin\chi\cos 2\phi\sin\Delta\bigr] + I_{\min}$$
 
-$$
-\begin{split}
-I_2(x, y) = \tfrac{1}{2}\,\tau(x,y)\,I_{\text{max}}\bigl[1 - \cos\chi\cos\Delta(x,y) - \sin\chi\sin 2\phi(x,y)\sin\Delta(x,y)\bigr] \\+ I_{\text{min}}(x,y)
-\end{split}
-$$
+$$I_4(x, y) = \tfrac{1}{2}\,\tau\,I_{\max}\bigl[1 - \cos\chi\cos\Delta + \sin\chi\cos 2\phi\sin\Delta\bigr] + I_{\min}$$
+</div>
+<div class="min-w-0 text-left text-unal-gray">
+<p class="plm-section-label mb-2">Términos auxiliares</p>
 
-$$
-\begin{split}
-I_3(x, y) = \tfrac{1}{2}\,\tau(x,y)\,I_{\text{max}}\bigl[1 - \cos\chi\cos\Delta(x,y) - \sin\chi\cos 2\phi(x,y)\sin\Delta(x,y)\bigr] \\+ I_{\text{min}}(x,y)
-\end{split}
-$$
+$$A \equiv \frac{I_1 - I_2}{I_1 + I_2 - 2I_0}\,\tan\frac{\chi}{2} = \sin 2\phi\,\tan \Delta$$
 
-$$
-\begin{split}
-I_4(x, y) = \tfrac{1}{2}\,\tau(x,y)\,I_{\text{max}}\bigl[1 - \cos\chi\cos\Delta(x,y) + \sin\chi\cos 2\phi(x,y)\sin\Delta(x,y)\bigr] \\+ I_{\text{min}}(x,y)
-\end{split}
-$$
-  </div>
+$$B \equiv \frac{I_4 - I_3}{I_4 + I_3 - 2I_0}\,\tan\frac{\chi}{2} = \cos 2\phi\,\tan \Delta$$
 
+<p class="plm-section-label mb-2 mt-3">Retardo y azimut</p>
+
+$$\Delta = \begin{cases} \arctan\!\sqrt{A^2+B^2} & I_1+I_2-2I_0 \ge 0 \\ 180^\circ - \arctan\!\sqrt{A^2+B^2} & I_1+I_2-2I_0 < 0 \end{cases}$$
+
+$$\phi = \tfrac{1}{2}\arctan\!\left(\tfrac{A}{B}\right)$$
+</div>
 </div>
 
 </div>
 
-<!-- Logos abajo a la derecha (misma distribución que Agenda y resto del deck) -->
+<!-- Logos abajo a la derecha -->
 <div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
   <img
     src="../images/logos/gpima_logo.png"
@@ -205,7 +223,7 @@ deckSection: marco
 
 </div>
 
-<!-- Logos abajo a la derecha (misma distribución que Agenda y resto del deck) -->
+<!-- Logos abajo a la derecha -->
 <div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
   <img
     src="../images/logos/gpima_logo.png"
@@ -282,7 +300,7 @@ $$
 
 </div>
 
-<!-- Logos abajo a la derecha (misma distribución que Agenda y resto del deck) -->
+<!-- Logos abajo a la derecha -->
 <div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
   <img
     src="../images/logos/gpima_logo.png"

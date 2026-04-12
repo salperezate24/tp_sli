@@ -1,13 +1,16 @@
 ---
 transition: slide-up
+deckSection: referencias
 ---
 
-<header class="mb-4 text-left">
+<div class="flex h-full flex-col pb-14">
+
+<header class="mb-4 shrink-0 text-left">
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Referencias</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 
-<div class="max-h-[calc(100vh-12rem)] max-w-4xl overflow-y-auto pr-2 text-left">
+<div class="min-h-0 flex-1 overflow-y-auto pr-2 text-left max-w-4xl">
   <ol class="list-none space-y-4 pl-0 text-[11px] leading-snug text-unal-gray sm:text-xs sm:leading-relaxed">
     <li class="flex gap-2">
       <span class="shrink-0 font-semibold text-unal-blue">[1]</span>
@@ -501,8 +504,42 @@ transition: slide-up
         >10.3389/fpls.2023.1276833</a>.
       </span>
     </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[33]</span>
+      <span>
+        Chen, S. et al.,
+        «In Vitro Porcine Embryo Production: Impacts on Epigenetics and Long-Term Consequences in Animals Born After Transfer»,
+        <em>Frontiers in Animal Science</em>, vol.&nbsp;3, art.&nbsp;826324, 2022.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.3389/fanim.2022.826324"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.3389/fanim.2022.826324</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[34]</span>
+      <span>
+        Society for Assisted Reproductive Technology (SART),
+        «SART National Summary Report — 2024 (Preliminary)»,
+        <em>SART</em>, 2024.
+        [Online].
+        Available:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://www.sart.org/patients/a-patients-guide-to-assisted-reproductive-technology/national-summary-data/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >https://www.sart.org/patients/a-patients-guide-to-assisted-reproductive-technology/national-summary-data/</a>.
+        Accessed: Apr. 2026.
+      </span>
+    </li>
   </ol>
-</div>
+</div><!-- cierre scroll -->
+
+</div><!-- cierre flex h-full -->
 
 <div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
   <img

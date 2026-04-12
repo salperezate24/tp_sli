@@ -1,98 +1,117 @@
-SLIDE 1:
+SLIDE 1 (TITLE PAGE):
 
 Buenos días, apreciados jurados, señoras y señores. Mi nombre es Salomón Pérez Atencia, ingeniero mecánico, y soy el autor de la tesis titulada "Desarrollo de un modelo de red neuronal profunda para la identificación de ovocitos y sus características a través de microscopía polarizada".
 
 Antes de comenzar, quiero agradecer especialmente a los jurados por su tiempo, por la lectura del documento y por estar presentes hoy en la defensa.
 
-SLIDE 2:
+El director de esta tesis es el profesor Alejandro Restrepo Martínez, y este trabajo se realizó en el marco del Grupo de Promoción e Investigación en Mecánica Aplicada (GPIMA) de la Facultad de Minas de la Universidad Nacional de Colombia, Sede Medellín.
+
+SLIDE 2 (AGENDA):
 La presentación del día de hoy está estructurada de la siguiente manera:
 
-Comenzaremos con la justificación y relevancia de este trabajo; luego se presentará el marco teórico del problema de investigación, seguido por el estado del arte, a partir de estos estudios y conocimientos se planteará la hipótesis de investigación, seguidamente se presentan los objetivos, se explicará la metodología, se presentarán los resultados, se presentan las conclusiones y finalmente se plantea el trabajo futuro.
+Comenzaremos con la justificación y relevancia de este trabajo; luego se presentará el marco teórico del problema de investigación, seguido por el estado del arte, a partir de estos estudios y conocimientos se planteará la hipótesis de investigación, seguidamente se presentan los objetivos, se explicará la metodología, se presentarán los resultados, se terminaremos con las conclusiones y un poco sobre el trabajo futuro.
 
-SLIDE 3:
-Comenzamos con la justificación. Las técnicas de reproducción asistida, especialmente la fecundación in vitro e ICSI, son cada vez más utilizadas. Solo en 2023 nacieron casi 96,000 bebés en Estados Unidos mediante estas técnicas, representando aproximadamente el 2.6% de los nacimientos del año. Sin embargo, esos nacimientos provienen de más de 430,000 ciclos de ART reportados — lo que da una tasa de éxito de alrededor del 22% por ciclo. Y como vemos en la gráfica, esa tasa cae significativamente con la edad materna. Eso nos dice que el margen es estrecho y que se requiere mayor precisión en el manejo del ovocito.
+SLIDE 3 (JUSTIFICACIÓN, PARTE 1 — SEGURIDAD ALIMENTARIA):
+La reproducción asistida y el desarrollo embrionario tienen aplicaciones relevantes tanto en la seguridad alimentaria como en la medicina humana. En ambos campos, la maduración citoplasmática del ovocito es el prerrequisito esencial para la competencia del desarrollo embrionario. Sin un ovocito maduro, la eficiencia de cualquier técnica de reproducción asistida queda comprometida.
 
-SLIDE 4:
-En esta diapositiva vemos el proceso de maduración del ovocito. El objetivo siempre es identificar cuál ovocito en estadio MII tiene mayor probabilidad de fecundación exitosa. Lo que pocas veces se dimensiona es que, estadísticamente, solo entre el 5 y el 10 % de los ovocitos recuperados poseen el potencial de desarrollo completo para producir un embarazo a término. Es decir, se trabaja con márgenes muy estrechos.
+En la industria porcina, por ejemplo, la eficiencia sigue siendo un desafío: según Chen et al. (2022), típicamente solo 1 de cada 5 embriones producidos in vitro llega a término. Técnicas avanzadas de selección pueden elevar esta proporción a 1 de cada 3. Esta brecha subraya la necesidad de mejorar la selección de los embriones producidos in vitro (IVP) para optimizar las tasas de transferencia.
 
-Ahora bien, determinar esa viabilidad sin manipular ni comprometer al ovocito es el desafío real. Los métodos con fluorescencia, aunque efectivos, son invasivos y pueden afectar la viabilidad. La microscopía polarizada, en cambio, es no invasiva y, de hecho, expone al ovocito a menos luz que la microscopía convencional. Si a eso le sumamos visión por computador, podemos objetivar y automatizar la selección — ese es el punto de partida de este trabajo.
+Lo que ocurre en la industria animal es un reflejo directo de lo que ocurre en la reproducción humana asistida — y en ese campo, el impacto es aún más evidente dado el factor de la edad materna. Veamos eso en la siguiente diapositiva.
 
-SLIDE 5:
-Entendamos un poco mejor la teoría para llegar a la hipótesis de investigación.
+SLIDE 4 (JUSTIFICACIÓN, PARTE 2 — DATOS HUMANOS SART 2024):
+En el ser humano, la efectividad de las técnicas de reproducción asistida está estrechamente ligada a la edad materna, lo que hace que la dependencia de la calidad del ovocito sea aún más evidente.
 
-En el ovocito, tres estructuras son claves para la madurez: el huso meiótico, la zona pelúcida y el cuerpo polar, todas visibles en la imagen PLM de la derecha.
+Según el reporte nacional preliminar de SART para 2024, se realizaron 431.746 ciclos totales de reproducción asistida. Los nuevos pacientes menores de 35 años tienen una probabilidad de éxito — nacimiento vivo — del 50.3%. Sin embargo, esta probabilidad cae al 27.2% entre los 38 y 40 años, y se desploma al 4.1% en mujeres mayores de 42 años utilizando sus propios óvulos.
 
-El huso meiótico es la estructura central de este trabajo. Aparece en metafase II y es responsable de la correcta segregación cromosómica. Hay un hecho clínico crítico que debemos señalar: el cuerpo polar —que es el indicador más usado para confirmar madurez en la práctica clínica— aparece antes de que el huso meiótico esté completamente ensamblado. Inyectar en ese momento puede ser prematuro. La microscopía polarizada permite visualizar directamente si el huso ya está formado, dando una evaluación más precisa del momento óptimo para ICSI.
+Si analizamos la probabilidad de éxito por cada proceso de recuperación de óvulos, los datos de 2024 muestran que en menores de 35 años la tasa es del 41.7%, mientras que en mayores de 42 años es apenas del 2.8%.
 
-SLIDE 6:
-Esta diapositiva muestra cómo la PLM cuantitativa recupera información de cada píxel de la imagen. La idea central es la siguiente: en lugar de una sola imagen, el sistema captura cinco imágenes con distintos estados de polarización — I₀ hasta I₄. Con esas cinco intensidades se construyen dos términos auxiliares, A y B, que permiten estimar para cada píxel el retardo óptico Δ —que cuantifica la birrefringencia de la estructura— y el azimut φ, que indica la orientación molecular.
+Estos datos confirman que el margen de éxito en humanos es sumamente estrecho y altamente sensible a la calidad del gameto femenino. El refinamiento de los protocolos de maduración y selección ovocitaria es una necesidad clínica urgente — ese es el punto de partida de este trabajo.
 
-A la izquierda vemos el resultado práctico: un mapa de retardo de un áster de microtúbulos, donde los puntos brillantes corresponden a zonas de alta birrefringencia. Este mismo proceso es el que permite medir cuantitativamente el huso meiótico del ovocito, estructura por estructura, píxel a píxel.
+SLIDE 5 (MARCO TEÓRICO I: OVOCITO, HUSO MEIÓTICO Y PLM):
+Entendamos la teoría detrás de este trabajo. El objetivo siempre es identificar cuál ovocito en estadio MII tiene mayor probabilidad de fecundación exitosa. Estadísticamente, solo entre el 5 y el 10 % de los ovocitos recuperados poseen el potencial de desarrollo completo. Es decir, se trabaja con márgenes muy estrechos.
 
-SLIDE 7:
+En el ovocito, tres estructuras son claves para evaluar la madurez: el huso meiótico, la zona pelúcida y el cuerpo polar, todas visibles en la imagen PLM de la derecha.
+
+El huso meiótico es la estructura central de este trabajo. Aparece en metafase II y es responsable de la correcta segregación cromosómica. Hay un hecho clínico crítico: el cuerpo polar —el indicador más usado clínicamente— aparece antes de que el huso meiótico esté completamente ensamblado. La microscopía polarizada permite visualizar directamente si el huso ya está formado, dando una evaluación más precisa del momento óptimo para ICSI. Y a diferencia de los métodos con fluorescencia, PLM es no invasiva y expone al ovocito a menos luz que la microscopía convencional.
+
+SLIDE 6 (MARCO TEÓRICO II: PLM CUANTITATIVA — VISUAL):
+Esta diapositiva muestra cómo la PLM cuantitativa recupera información de cada píxel de la imagen. La idea central es la siguiente: en lugar de una sola imagen, el sistema captura cinco imágenes con distintos estados de polarización — I₀ hasta I₄. La imagen de la izquierda es un ejemplo de una de esas capturas de intensidad.
+
+Con esas cinco intensidades se construyen dos términos auxiliares, A y B, que permiten estimar para cada píxel el retardo óptico Δ — que cuantifica la birrefringencia de la estructura — y el azimut φ, que indica la orientación molecular.
+
+A la derecha vemos el resultado práctico: un mapa de retardo de un áster de microtúbulos, donde los puntos brillantes corresponden a zonas de alta birrefringencia. Este mismo proceso es el que permite medir cuantitativamente el huso meiótico del ovocito, estructura por estructura, píxel a píxel.
+
+SLIDE 7 (MARCO TEÓRICO III: PLM CUANTITATIVA — MODELO MATEMÁTICO):
+Veamos ahora el modelo matemático que hace posible esa medición. Las cinco ecuaciones de intensidad, que aparecen a la izquierda, describen físicamente cómo cada píxel de la imagen reacciona en función del retardo óptico Δ y el azimut φ de la estructura birrefringente que contiene.
+
+Para simplificar el cálculo se definen dos términos auxiliares, A y B, que separan algebraicamente la información de orientación y de amplitud de la birrefringencia. Con A y B en mano, las ecuaciones de retardo y azimut que aparecen a la derecha permiten estimar Δ y φ para cada píxel de forma directa.
+
+Este modelo matemático es el sustento de la síntesis realista: conociendo las propiedades físicas del huso meiótico — su forma, su retardo óptico, su orientación — podemos simular con precisión las cinco imágenes de intensidad que produciría el PolScope para un ovocito dado. Eso es lo que hace posible la base de datos sintética.
+
+SLIDE 8 (MARCO TEÓRICO IV: REDES NEURONALES PARA DETECCIÓN DE OBJETOS):
 Las redes neuronales para detección de objetos resuelven tres tareas simultáneamente: extraen características de la imagen, predicen la ubicación de cada objeto mediante una caja delimitadora, y asignan a cada caja una clase y un puntaje de confianza.
 
 Históricamente esto se hacía en dos etapas: primero generar candidatos de región y luego clasificarlos y refinarlos. Las arquitecturas de una sola etapa, como la familia YOLO — que es la que usamos en este trabajo —, hacen todo en una sola pasada sobre la imagen, lo que las hace más eficientes sin sacrificar precisión. En la figura de la derecha vemos su arquitectura general: backbone para extracción de características, neck para integración multiescala, y head para las predicciones finales.
 
-SLIDE 8:
+SLIDE 9 (MARCO TEÓRICO V: MÉTRICAS DE EVALUACIÓN DE LA DETECCIÓN DE OBJETOS):
 Para evaluar un detector usamos métricas espaciales y de clasificación. En cuanto a métricas espaciales: el IoU mide el solapamiento entre la caja predicha y la de referencia — es el criterio base para decidir si una detección fue correcta. El mAP es el promedio de las precisiones promedio sobre todas las clases; lo reportamos en dos versiones: mAP@50, con umbral de IoU de 0.5, y mAP@50-95, que promedia sobre diez umbrales y es considerablemente más exigente.
 
 En cuanto a métricas de clasificación: la Precisión mide qué proporción de las detecciones positivas son realmente correctas; la Sensibilidad, cuántos objetos reales fueron detectados; y la Tasa de Falsos Positivos, cuántos negativos fueron clasificados erróneamente como positivos. Con estas seis métricas tenemos una evaluación completa del modelo.
 
-SLIDE 9:
+SLIDE 10 (ESTADO DEL ARTE I: MÉTODOS DE EVALUACIÓN DE MADUREZ DE OVOCITOS):
 Con este marco teórico claro pasamos a revisar el estado del arte, empezando por los métodos de evaluación de madurez de ovocitos.
 
 Está claro que la detección del huso meiótico es un indicador clave de madurez MII y aptitud para ICSI. También, explicamos que se sigue realizando una evaluación manual de la madurez del ovocito, pero esta es subjetiva y depende de la experiencia del observador. Estudios indican que incluso hay variabilidad interobservador, por lo que se requiere un método más objetivo.
 
-Recientemente se ha popularizado el uso de la microscopía polarizada para visualizar los ovocitos, esta técnica permite visualizar la birrefringencia de la muestra y se ha descubierto que, el huso meiótico, por ejemplo, tiene birrefringencia en el punto en que es apto para fecundación.
+Recientemente se ha popularizado el uso de la microscopía polarizada para visualizar los ovocitos. Esta técnica permite visualizar la birrefringencia de la muestra y se ha descubierto que el huso meiótico tiene birrefringencia precisamente en el punto en que es apto para fecundación.
 
-[PROPUESTA ALTERNATIVA — más completa y con cierre hacia la brecha:]
+Se han desarrollado sistemas de automatización que realizan segmentación celular o conteos, pero ninguno aprovecha las ventajas que ofrece la PLM para detectar estos marcadores de madurez en la célula.
 
-Revisando el estado del arte encontramos que la evaluación de madurez del ovocito ha evolucionado desde métodos morfológicos —subjetivos, con alta variabilidad interobservador— hacia el uso de la microscopía polarizada.
-
-La PLM ha demostrado ser clínicamente válida para visualizar no invasivamente el huso meiótico, la zona pelúcida y el cuerpo polar, midiendo su birrefringencia píxel a píxel. Esa cuantificación es algo que la microscopía convencional simplemente no puede hacer.
-
-Sin embargo, la brecha es clara y está marcada en la diapositiva: los sistemas de IA existentes —MOMA, OoCount— realizan segmentación o conteo, pero ninguno aborda la detección y localización simultánea de múltiples estructuras birrefringentes como un problema de detección de objetos multi-clase en PLM. Esa es exactamente la contribución de esta tesis.
-
-SLIDE 10:
+SLIDE 11 (ESTADO DEL ARTE II: MICROSCOPÍA POLARIZADA Y BIRREFRINGENCIA):
 En esta imagen vemos exactamente lo que la PLM permite observar de forma no invasiva: el huso meiótico con un retardo óptico típico de 2 a 3 nanómetros, la zona pelúcida con su propia birrefringencia, y el cuerpo polar confirmando el fin de la primera división meiótica.
 
 Lo que hace especialmente relevante esta imagen es que contiene toda la información necesaria para clasificar la madurez del ovocito, sin haberlo tocado ni comprometido. Y más aún: Tepla et al. encontraron que la posición relativa entre el huso y el cuerpo polar se asocia a mayores tasas de embarazo tras ICSI. Localizar espacialmente esas estructuras tiene valor clínico directo — y es exactamente lo que un detector de objetos puede aportar.
 
-SLIDE 11:
+SLIDE 12 (ESTADO DEL ARTE III: DATOS SINTÉTICOS — PARTE A):
 Para entrenar un detector de objetos se necesitan datos anotados. Aquí encontramos la primera barrera práctica: no existe ninguna base pública de imágenes PLM de ovocitos — los datos clínicos son privados, costosos de obtener y difíciles de anotar.
 
-La solución, respaldada por la literatura, es la generación de datos sintéticos. Mery et al. demostraron — como vemos en la figura superior — que simular defectos elipsoidales sobre imágenes de rayos X permitía entrenar un detector que luego transfería correctamente a imágenes reales. Frid-Adar et al. validan esta estrategia en dominios médicos de manera más general.
+La solución, respaldada por la literatura, es la generación de datos sintéticos. Mery et al. demostraron — como vemos en la figura — que simular defectos elipsoidales sobre imágenes de rayos X permitía entrenar un detector que luego transfería correctamente a imágenes reales. Frid-Adar et al. validan esta estrategia en dominios médicos de manera más general.
 
-Lo clave para nuestro caso es la analogía física: el huso meiótico se comporta como un elipsoide de bajo contraste con un retardo óptico de 4 a 6 nanómetros, lo que permite una síntesis realista basada en sus propiedades físicas — el resultado es la imagen de la figura inferior. El principal reto de este enfoque es el domain shift entre lo sintético y lo real, que se aborda con transfer learning.
+Lo clave para nuestro caso es la analogía física: el huso meiótico se comporta como un elipsoide de bajo contraste. Y como vemos en el recuadro de la derecha, los retardos reportados en la literatura para el huso son de 2 a 6 nanómetros, lo que permite una síntesis realista basada en sus propiedades físicas. El principal reto de este enfoque es el domain shift entre lo sintético y lo real, que se aborda con transfer learning.
 
-SLIDE 12:
+SLIDE 13 (ESTADO DEL ARTE IV: MEDICIÓN DE RETARDO POR ESTRUCTURA — PARTE B):
+Ahora veamos los valores concretos de retardo por estructura. El huso meiótico, nuestro objetivo principal, tiene un retardo óptico de entre 2 y 6 nanómetros. Es un objeto de muy bajo contraste, casi invisible en microscopía convencional, pero perfectamente detectable con PLM cuantitativa gracias a esta señal de birrefringencia.
+
+La zona pelúcida, la capa externa del ovocito, presenta una birrefringencia considerablemente mayor, con retardos del orden de 10 a 20 nanómetros. Esto es producto de su estructura ordenada de glicoproteínas, que le da una alta anisotropía óptica.
+
+El fondo, en cambio, tiene retardo cercano a cero y funciona como referencia de calibración del sistema. Estas tres regiones con valores bien separados son precisamente la razón por la cual una síntesis física del ovocito PLM es posible y realista — podemos modelar cada estructura con sus propias propiedades ópticas y generar imágenes que el detector aprenderá a reconocer.
+
+SLIDE 14 (ESTADO DEL ARTE V: AVANCES EN REDES NEURONALES):
 La detección de objetos con redes profundas ha evolucionado desde arquitecturas de dos etapas como Faster R-CNN, hacia detectores de una sola etapa que resuelven localización y clasificación simultáneamente. Esa evolución trajo consigo mejoras estructurales sistemáticas: backbones más eficientes para extraer características multi-escala, necks con FPN y PANet para detectar objetos pequeños, y cabezas desacopladas con pérdidas basadas en IoU para afinar la localización espacial. En la diapositiva vemos las principales arquitecturas revisadas, desde los detectores clásicos hasta las propuestas más recientes.
 
-SLIDE 13:
+SLIDE 15 (ESTADO DEL ARTE VI: FAMILIA YOLO):
 En ese panorama, la familia YOLO se consolidó como la plataforma dominante en detección en tiempo real. Más allá de la evolución de versiones, la literatura identifica tendencias estructurales claras: bloques de backbone cada vez más eficientes, fusión multi-escala mediante FPN y PANet en el neck, transición de esquemas anchor-based a anchor-free, y pérdidas basadas en variantes de IoU para mejorar la localización.
 
 Las últimas versiones marcan saltos cualitativos importantes. YOLOv9 introdujo la planificación de rutas de gradiente, mejorando la precisión incluso en configuraciones ligeras entrenadas desde cero. YOLOv12 representa un cambio de paradigma al centrar toda la arquitectura en mecanismos de atención, rompiendo con el diseño puramente convolucional. Y RT-DETR propone detección end-to-end con atención global, eliminando por completo el post-procesamiento NMS.
 
-
-SLIDE 14:
+SLIDE 16 (ESTADO DEL ARTE VII: MECANISMOS DE ATENCIÓN):
 Mencionamos que YOLOv12 y RT-DETR se centran en mecanismos de atención — vale la pena detenerse un momento en qué significa eso y por qué se ha vuelto tan relevante.
 
 Los mecanismos de atención permiten a la red enfocarse dinámicamente en las regiones más relevantes de la imagen: amplifican activaciones útiles y suprimen el ruido de fondo. A diferencia de las convoluciones, que tratan todas las posiciones por igual, la atención asigna pesos diferenciados según el contenido — lo que resulta especialmente valioso para detectar objetos pequeños o de bajo contraste.
 
 Los Transformers llevan este principio más lejos: aplican atención de forma global sobre toda la imagen, capturando relaciones entre regiones distantes que una convolución local no puede ver. Módulos como CBAM, SE y ECA ya se integran en variantes especializadas de YOLO. YOLOv12 es el primero construido completamente sobre este principio. Y RT-DETR lo adopta en su forma más pura: un Transformer end-to-end que elimina incluso el NMS.
 
-SLIDE 15:
+SLIDE 17 (HIPÓTESIS DE INVESTIGACIÓN):
 Con este panorama claro llegamos a la pregunta central: dado que ningún sistema existente detecta y localiza simultáneamente estructuras birrefringentes en imágenes PLM de ovocitos, ¿cuál configuración de red neuronal — variando arquitectura, formato de entrada y mecanismos de atención — logra identificar esas estructuras en un video en vivo de microscopía polarizada?
 
 La hipótesis propone que sí es posible. Al modificar parámetros clave de la red — el formato de imagen de entrada, la función de pérdida, las técnicas de predicción de cajas y los módulos de atención — puede desarrollarse un detector capaz de localizar y clasificar el ovocito, el huso meiótico y sus características birrefringentes, permitiendo caracterizar el estado de madurez sin manipular la muestra.
 
-SLIDE 16:
+SLIDE 18 (OBJETIVO GENERAL):
 Con la hipótesis planteada, el objetivo general del trabajo es desarrollar un modelo de red neuronal profunda para la identificación de ovocitos y sus características morfológicas a partir de imágenes de microscopía polarizada.
 
 Este objetivo integra los tres ejes que hemos construido a lo largo del marco teórico: el conocimiento del dominio —el ovocito y sus estructuras birrefringentes—, la herramienta —una red de detección de objetos—, y el dato de entrada —imágenes PLM. Los tres objetivos específicos que vemos en la siguiente diapositiva descomponen este objetivo en etapas concretas.
 
-SLIDE 17:
+SLIDE 19 (OBJETIVOS ESPECÍFICOS):
 Los tres objetivos específicos traducen el objetivo general en etapas de trabajo concretas.
 
 El primero es diseñar el método para generar la base de datos de imágenes PLM de ovocitos — responde directamente a la ausencia de datos públicos identificada en el estado del arte, y es donde los datos sintéticos tienen su rol central.
@@ -102,3 +121,31 @@ El segundo es desarrollar el método para determinar la arquitectura, estructura
 Y el tercero es evaluar el rendimiento de la red seleccionada, usando las métricas que presentamos en el marco teórico: mAP, IoU, precisión y sensibilidad.
 
 Juntos, estos tres objetivos constituyen el esqueleto de la metodología que veremos a continuación.
+
+
+SLIDE 33 (CONCLUSIONES):
+El objetivo general del trabajo se cumplió en tres etapas secuenciales: primero generamos la base de datos sintética, luego aplicamos preentrenamiento y transferencia sobre imágenes PLM reales, y finalmente desarrollamos y evaluamos modelos con módulos de atención.
+
+Los tres objetivos específicos también se alcanzaron. El primero produjo oocyte_synthetic_2025b: más de 526.000 imágenes con etiquetado automático de cuatro estructuras. El segundo estableció un método sistemático de evaluación de arquitecturas, tanto estándar como con atención. El tercero completó una comparación exhaustiva de 13 configuraciones bajo el esquema sintético→real.
+
+El resultado principal de ese proceso fue YOLOv9m como modelo óptimo: mAP50 de 0,902 y mAP50-95 de 0,627, con detección robusta del huso meiótico, la zona pelúcida, el límite del citoplasma y el cuerpo polar — las cuatro estructuras clave para evaluar la madurez del ovocito.
+
+SLIDE 34 (HALLAZGOS Y APORTES):
+Este slide sintetiza lo que aprendimos y lo que dejamos a la comunidad.
+
+Entre los hallazgos: la transferencia de dominio no es opcional, es esencial. El preentrenamiento sintético solo produce modelos que apenas detectan; la transferencia sobre imágenes reales genera mejoras dramáticas: el cuerpo polar pasó de mAP50 de 0,012 a 0,516. Los módulos de atención mostraron su mayor valor precisamente cuando no hay fine-tuning disponible — YOLOv9m-triple-attention superó al modelo estándar en 17 puntos en ese escenario. Con transferencia la diferencia se reduce a menos de tres puntos, pero en video el CBAM detectó el citoplasma establemente donde el modelo estándar falló.
+
+Como aportes concretos dejamos tres cosas: la base sintética pública oocyte_synthetic_2025b, el marco metodológico sintético→real demostrado en imágenes PLM biomédicas, y una referencia comparativa de 13 configuraciones con YOLOv9m como punto de partida sólido para este problema.
+
+SLIDE 35 (TRABAJO FUTURO):
+El trabajo abre cinco líneas naturales de continuación.
+
+La más urgente es construir una base de datos real PLM anotada por expertos — sin ella, la dependencia del esquema sintético→real seguirá siendo un supuesto que no hemos podido contrastar directamente.
+
+La segunda línea es estudiar el efecto del zoom óptico: nuestros modelos se entrenaron con una relación micra-píxel específica, y no sabemos cómo se comportan con otras magnificaciones.
+
+Tercero, la evaluación en video necesita métricas cuantitativas por fotograma — hasta ahora solo tenemos evidencia visual.
+
+Cuarto, el cuerpo polar fue la estructura más difícil de detectar; ampliar su variabilidad en la síntesis podría cerrar esa brecha.
+
+Y quinto, la integración clínica: estudiar inferencia en tiempo real, usabilidad en el laboratorio, e impacto real en la toma de decisiones del embriólogo. Ese es, en última instancia, el objetivo del trabajo.

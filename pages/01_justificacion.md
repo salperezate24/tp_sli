@@ -4,50 +4,58 @@ deckSection: justificacion
 ---
 
 <div class="slide-deck-shell">
-<header class="mb-2 text-left sm:mb-2">
+<header class="mb-1.5 text-left">
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Justificación</h1>
-  <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
+  <div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 
-<p class="mb-1.5 max-w-3xl hyphens-auto text-justify text-sm font-normal leading-snug text-unal-gray sm:mb-2 sm:max-w-4xl sm:text-[0.95rem] sm:leading-snug">
-  Las <span class="font-medium text-unal-blue">técnicas de ART</span>, y especialmente <span class="font-medium text-unal-blue">IVF</span>, son cada vez más utilizadas en EE.&nbsp;UU.<span class="ml-0.5 font-semibold text-unal-blue">[1]</span>, pero las
-  <span class="font-semibold">tasas de nacidos vivos</span> caen con la edad materna<span class="ml-0.5 font-semibold text-unal-blue">[2]</span> —lo que refuerza la necesidad de
-  decisiones y controles de laboratorio más precisos en el manejo del ovocito.
+<p class="mb-2 max-w-4xl hyphens-auto text-justify text-[0.82rem] font-normal leading-snug text-unal-gray">
+  La reproducción asistida y el desarrollo embrionario tienen aplicaciones directas en la
+  <span class="font-semibold text-unal-blue">seguridad alimentaria</span> y la
+  <span class="font-semibold text-unal-blue">medicina humana</span>. En ambos campos, la
+  <span class="font-semibold">maduración citoplasmática del ovocito</span> es el prerrequisito
+  esencial para la competencia embrionaria — sin un ovocito maduro, la eficiencia de cualquier
+  técnica de reproducción asistida queda comprometida.
 </p>
 
-<!-- Dos columnas sin marcos ni líneas de acento -->
-<div class="grid min-h-0 w-full max-w-3xl grid-cols-1 gap-3 text-left sm:max-w-4xl sm:gap-4 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] lg:gap-6">
+<!-- Dos columnas -->
+<div class="grid w-full max-w-4xl grid-cols-1 gap-3 text-left lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-6">
 
   <div class="min-w-0">
-    <p class="mb-1.5 text-[11px] font-bold uppercase tracking-wide text-unal-blue sm:text-xs">
-      Uso y alcance (SART / ASRM, 2023)<span class="ml-0.5 font-semibold normal-case tracking-normal text-unal-blue">[1]</span>
+    <p class="mb-1 text-[10.5px] font-bold uppercase tracking-wide text-unal-blue">
+      Industria porcina (Chen et al., 2022)<span class="ml-0.5 font-semibold normal-case tracking-normal text-unal-blue">[33]</span>
     </p>
-    <ul class="list-disc space-y-0.5 pl-3 text-[11px] leading-snug text-unal-gray marker:text-unal-blue sm:text-xs sm:leading-snug">
-      <li><span class="font-semibold">95.860</span> bebés por IVF en 2023 (91.771 en 2022).</li>
-      <li>≈ <span class="font-semibold">2,6&nbsp;%</span> de nacimientos en EE.&nbsp;UU.</li>
-      <li><span class="font-semibold">432.641</span> ciclos en clínicas SART reportantes (389.993 en 2022).</li>
-      <li><span class="font-semibold">96,74&nbsp;%</span> de nacidos vivos en embarazos de feto único (similar a 2022).</li>
+    <ul class="list-disc space-y-0.5 pl-3 text-[11px] leading-snug text-unal-gray marker:text-unal-blue">
+      <li>Solo <span class="font-semibold">1 de cada 5</span> embriones producidos in vitro llega a término.</li>
+      <li>Técnicas avanzadas de selección mejoran esta proporción a <span class="font-semibold">1 de cada 3</span>.</li>
+      <li>La selección embrionaria in vitro (IVP) es el <span class="font-semibold text-unal-blue">nudo crítico</span> para optimizar las tasas de transferencia.</li>
     </ul>
   </div>
 
   <div class="min-w-0">
-    <p class="mb-0.5 text-[11px] font-bold uppercase leading-none tracking-tight text-unal-gray sm:text-sm">
-      Tasas de éxito de IVF en EE.&nbsp;UU. por edad materna
+    <p class="mb-1 text-[10.5px] font-bold uppercase tracking-wide text-unal-blue">
+      Medicina humana — necesidad clínica
     </p>
-    <figure class="m-0 min-w-0 max-w-full">
-      <IvfLiveBirthByAgeChart />
-      <figcaption lang="es" class="mt-3 max-w-full hyphens-auto break-words text-left text-[10px] leading-tight text-gray-600 sm:text-[11px] sm:leading-snug">
-        <span class="font-semibold text-unal-gray">Fig. 1.</span>
-        Tasas aprox. de nacidos vivos por edad materna (EE. UU., 0–60&nbsp;%)
-        <span class="ml-0.5 font-semibold text-unal-blue">[2]</span>.
-      </figcaption>
-    </figure>
+    <ul class="list-disc space-y-0.5 pl-3 text-[11px] leading-snug text-unal-gray marker:text-unal-blue">
+      <li>La efectividad de las TRA está <span class="font-semibold">estrechamente ligada a la edad materna</span> y, por tanto, a la calidad del ovocito.</li>
+      <li>El refinamiento de los protocolos de <span class="font-semibold text-unal-blue">maduración y selección ovocitaria</span> es una necesidad clínica urgente.</li>
+      <li>Se requieren métodos <span class="font-semibold">objetivos, precisos y no invasivos</span> que no comprometan la viabilidad del gameto.</li>
+    </ul>
   </div>
 
 </div>
+
+<!-- Recuadro de síntesis -->
+<div class="mt-2 rounded-md border-l-4 border-unal-green bg-unal-green/10 px-3 py-1.5">
+  <p class="text-[0.75rem] font-semibold leading-snug text-unal-gray">
+    En ambos dominios, mejorar la <span class="text-unal-blue">identificación de la madurez ovocitaria</span> tiene impacto directo
+    en las tasas de éxito — ese es el punto de partida de este trabajo.
+  </p>
 </div>
 
-<!-- Logos abajo a la derecha (misma distribución que el resto del deck desde Agenda) -->
+</div>
+
+<!-- Logos abajo a la derecha -->
 <div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
   <img
     src="../images/logos/gpima_logo.png"
@@ -67,59 +75,46 @@ deckSection: justificacion
 ---
 
 <div class="slide-deck-shell">
-  <header class="mb-2 text-left sm:mb-2">
-    <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Justificación</h1>
-    <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
-  </header>
-
-  <p class="mb-3 max-w-3xl hyphens-auto text-justify text-sm font-normal leading-snug text-unal-gray sm:mb-4 sm:max-w-4xl sm:text-[0.95rem] sm:leading-snug">
-    Detectar la madurez del ovocito y manipularlo con rapidez y el menor estrés posible —para alterarlo lo mínimo— condiciona la fecundación y el desarrollo embrionario en reproducción asistida
-    <span class="ml-0.5 font-semibold text-unal-blue">[3]</span><span class="font-semibold text-unal-blue">[4]</span>.
-    En la práctica la evaluación suele ser cualitativa; la microscopía de polarización no siempre apoya la selección y métodos con fluorescencia pueden comprometer la viabilidad del ovocito o del embrión
-    <span class="ml-0.5 font-semibold text-unal-blue">[5]</span><span class="font-semibold text-unal-blue">[6]</span><span class="font-semibold text-unal-blue">[7]</span>.
-    <!--
-      Citas extra (siguen en pages/10_referencias.md; reactivar = duplicar un <span> de cita y el número):
-        Itoi2022 → [9]   |   Azizi2020 → [10]   |   deSantiago2022 → [11]   |   Ma2023 → [12]
-    -->
-  </p>
-
-  <div class="grid min-h-0 min-w-0 flex-1 grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1.22fr)_minmax(0,0.78fr)] lg:gap-5">
-    <figure class="m-0 min-w-0 flex flex-col">
-      <img
-        src="../images/figures/oocytes/oocyte_diagram_002.png"
-        alt="Esquema del proceso de maduración de un ovocito"
-        class="h-auto max-h-[min(70vh,500px)] w-full object-contain"
-      />
-      <figcaption lang="es" class="mt-2 max-w-full text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
-        <span class="font-semibold text-unal-gray">Fig. 2.</span>
-        Esquema ilustrativo del proceso de maduración de un ovocito. Elaboración propia.
-      </figcaption>
-    </figure>
-    <figure class="m-0 min-w-0 flex flex-col">
-      <img
-        src="../images/figures/diagrams/oocyte_plm.png"
-        alt="Diagrama esquemático de microscopía de luz polarizada aplicada al ovocito"
-        class="mx-auto h-auto max-h-[min(19vh,210px)] w-full max-w-[90%] object-contain"
-      />
-      <figcaption lang="es" class="mt-2 max-w-full text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
-        <span class="font-semibold text-unal-gray">Fig. 3.</span>
-        Ovocito visualizado con microscopía de luz polarizada. Huso meiótico (s), zona pelúcida (zp), límite del citoplasma (c) y cuerpo polar (pb). Tomado de Rienzi et al.
-        <span class="ml-0.5 font-semibold text-unal-blue">[8]</span>.
-      </figcaption>
-    </figure>
-  </div>
+<header class="mb-1.5 text-left">
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Justificación</h1>
+  <div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
+</header>
+<p class="mb-2 max-w-4xl hyphens-auto text-justify text-[0.82rem] font-normal leading-snug text-unal-gray">
+  En el ser humano, la efectividad de las TRA está ligada a la edad materna —lo que hace que la
+  dependencia de la <span class="font-semibold text-unal-blue">calidad del ovocito</span> sea aún más evidente.
+  Según el reporte nacional preliminar de <span class="font-semibold">SART para 2024</span><span class="ml-0.5 font-semibold text-unal-blue">[34]</span>,
+  las tasas de éxito muestran una caída marcada con la edad materna — lo que refuerza la necesidad de
+  controles de laboratorio más precisos en el manejo del ovocito.
+</p>
+<div class="grid w-full max-w-4xl grid-cols-1 gap-4 text-left lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:gap-6">
+<div class="min-w-0">
+<p class="mb-1 text-[10.5px] font-bold uppercase tracking-wide text-unal-blue">
+  Uso y alcance (SART, 2024)<span class="ml-0.5 font-semibold normal-case tracking-normal text-unal-blue">[34]</span>
+</p>
+<ul class="list-disc space-y-0.5 pl-3 text-[11px] leading-snug text-unal-gray marker:text-unal-blue">
+  <li><span class="font-semibold">431.746</span> ciclos totales de TRA en 2024 (preliminar).</li>
+  <li>Nuevos pacientes <span class="font-semibold">&lt;35 años:</span> <span class="font-semibold text-unal-blue">50,3&nbsp;%</span> de éxito (nacimiento vivo).</li>
+  <li>Entre <span class="font-semibold">38–40 años:</span> <span class="font-semibold">27,2&nbsp;%</span>.</li>
+  <li>Mayores de <span class="font-semibold">42 años:</span> <span class="font-semibold text-red-600">4,1&nbsp;%</span> (óvulos propios).</li>
+  <li>Por recuperación: &lt;35 = <span class="font-semibold">41,7&nbsp;%</span> · &gt;42 = <span class="font-semibold">2,8&nbsp;%</span>.</li>
+</ul>
 </div>
-
-<!-- Logos abajo a la derecha (misma distribución que Agenda y resto del deck) -->
+<div class="min-w-0">
+<p class="mb-0.5 text-[10.5px] font-bold uppercase tracking-wide text-unal-gray">
+  Tasas de éxito de IVF en EE.&nbsp;UU. por edad materna
+</p>
+<figure class="m-0 min-w-0 max-w-full">
+<IvfLiveBirthByAgeChart />
+<figcaption lang="es" class="mt-3 max-w-full hyphens-auto break-words text-left text-[10px] leading-tight text-gray-600">
+  <span class="font-semibold text-unal-gray">Fig. 1.</span>
+  Tasas aprox. de nacidos vivos por edad materna (EE. UU., 2024&nbsp;—&nbsp;preliminar)
+  <span class="ml-0.5 font-semibold text-unal-blue">[34]</span>.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 <div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
-  <img
-    src="../images/logos/gpima_logo.png"
-    alt="GPIMA"
-    class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6"
-  />
-  <img
-    src="../images/logos/unal_logo_lateral.png"
-    alt="Universidad Nacional de Colombia"
-    class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14"
-  />
+  <img src="../images/logos/gpima_logo.png" alt="GPIMA" class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6" />
+  <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>

@@ -15,11 +15,11 @@ deckSection: estado
   </div>
   <div class="flex gap-2 text-[0.78rem] leading-snug text-unal-gray sm:text-[0.82rem]">
     <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-    <span>Evaluación manual: <span class="font-semibold">subjetiva</span>, alta variabilidad interobservador<span class="ml-0.5 font-semibold text-unal-blue">[15]</span></span>
+    <span>Evaluación manual: <span class="font-semibold">subjetiva</span>, depende de la experiencia del observador; alta variabilidad interobservador<span class="ml-0.5 font-semibold text-unal-blue">[15]</span></span>
   </div>
   <div class="flex gap-2 text-[0.78rem] leading-snug text-unal-gray sm:text-[0.82rem]">
     <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-    <span>PLM = técnica <span class="font-semibold">no invasiva</span>; visualiza <span class="font-semibold text-unal-blue">huso meiótico</span>, ZP, CP y citoplasma mediante <span class="font-semibold">birrefringencia</span></span>
+    <span>PLM = técnica <span class="font-semibold">no invasiva</span>; visualiza <span class="font-semibold text-unal-blue">huso meiótico</span>, ZP, CP y citoplasma mediante birrefringencia — se descubrió que el huso tiene <span class="font-semibold">birrefringencia en el punto apto para fecundación</span></span>
   </div>
   <div class="flex gap-2 text-[0.78rem] leading-snug text-unal-gray sm:text-[0.82rem]">
     <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
@@ -27,7 +27,7 @@ deckSection: estado
   </div>
   <div class="col-span-2 flex gap-2 text-[0.78rem] leading-snug text-unal-gray sm:text-[0.82rem]">
     <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-    <span>Sistemas AI existentes: <span class="font-semibold">MOMA</span> (Fjeldstad<span class="ml-0.5 font-semibold text-unal-blue">[15]</span>) — segmenta ZP y ooplasma · <span class="font-semibold">OoCount</span> (Folts<span class="ml-0.5 font-semibold text-unal-blue">[26]</span>) — conteo por estadio · Chaput et al.<span class="ml-0.5 font-semibold text-unal-blue">[27]</span> — visualización para rescate IVM · <span class="italic">ninguno entrena un detector multi-clase en PLM</span></span>
+    <span>Sistemas de automatización existentes realizan segmentación celular o conteos, pero <span class="font-semibold italic">ninguno aprovecha las ventajas PLM para detectar estos marcadores de madurez</span>: <span class="font-semibold">MOMA</span> (Fjeldstad<span class="ml-0.5 font-semibold text-unal-blue">[15]</span>) — segmenta ZP y ooplasma · <span class="font-semibold">OoCount</span> (Folts<span class="ml-0.5 font-semibold text-unal-blue">[26]</span>) — conteo por estadio · Chaput et al.<span class="ml-0.5 font-semibold text-unal-blue">[27]</span> — visualización para rescate IVM</span>
   </div>
 </div>
 <figure class="m-0 mb-2 min-w-0">
@@ -139,7 +139,7 @@ deckSection: estado
       </li>
       <li class="flex gap-2">
         <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span>Analogía: huso meiótico = elipsoide de <span class="font-semibold">bajo contraste</span> · física del huso (retardo ~4–6&nbsp;nm) permite <span class="font-semibold">síntesis realista</span> basada en modelos físicos<span class="ml-0.5 font-semibold text-unal-blue">[21]</span></span>
+        <span>Analogía: huso meiótico = elipsoide de <span class="font-semibold">bajo contraste</span> · física del huso permite <span class="font-semibold">síntesis realista</span> basada en modelos físicos<span class="ml-0.5 font-semibold text-unal-blue">[21]</span></span>
       </li>
       <li class="flex gap-2">
         <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
@@ -159,19 +159,101 @@ deckSection: estado
         GDXray+ (Mery<span class="ml-0.5 font-semibold text-unal-blue">[16]</span>): (a) fundición X-ray, (b) defectos simulados, (c) superposición, (d) detecciones.
       </figcaption>
     </figure>
-    <figure class="m-0 min-w-0">
-      <img
-        src="../images/figures/oocyte_synth.png"
-        alt="Imagen sintética generada de ovocito PLM"
-        class="h-auto max-h-[min(28vh,180px)] w-full object-contain"
-      />
-      <figcaption lang="es" class="mt-1 text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
-        <span class="font-semibold text-unal-gray">Fig. 8.</span>
-        Imagen sintética generada de ovocito PLM (s = huso, pb = cuerpo polar, zp = zona pelúcida, c = citoplasma).
-      </figcaption>
-    </figure>
+    <!-- Retardos reportados en la literatura -->
+    <div class="rounded-md border border-unal-blue/30 bg-unal-blue/5 px-3 py-2">
+      <p class="mb-1 text-[0.68rem] font-bold uppercase tracking-wide text-unal-blue">Retardos reportados (literatura)</p>
+      <ul class="list-none space-y-0.5 text-[0.72rem] leading-snug text-unal-gray">
+        <li>▸ Huso meiótico: <span class="font-semibold">2–6&nbsp;nm</span></li>
+        <li>▸ Zona pelúcida: <span class="font-semibold">~10–20&nbsp;nm</span></li>
+        <li>▸ Fondo (background): <span class="font-semibold">~0&nbsp;nm</span></li>
+      </ul>
+      <p class="mt-1 text-[0.65rem] text-unal-gray/70">Fuente: Shribak &amp; Oldenbourg (2003)<span class="ml-0.5 font-semibold text-unal-blue">[13]</span>; Rienzi et al.<span class="ml-0.5 font-semibold text-unal-blue">[8]</span></p>
+    </div>
   </div>
 </div>
+</div>
+<div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
+  <img
+    src="../images/logos/gpima_logo.png"
+    alt="GPIMA"
+    class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6"
+  />
+  <img
+    src="../images/logos/unal_logo_lateral.png"
+    alt="Universidad Nacional de Colombia"
+    class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14"
+  />
+</div>
+
+---
+transition: slide-up
+deckSection: estado
+---
+
+<div class="slide-deck-shell">
+<header class="mb-3 text-left">
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Medición de retardo: huso, zona pelúcida y fondo</h1>
+  <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
+</header>
+
+<div class="grid min-h-0 flex-1 grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,1fr)] lg:gap-4">
+
+  <!-- Huso meiótico -->
+  <div class="flex flex-col gap-2 text-left">
+    <p class="text-[0.72rem] font-bold uppercase tracking-wide text-unal-blue sm:text-[0.76rem]">Huso meiótico (spindle)</p>
+    <figure class="m-0 min-w-0 flex flex-col">
+      <img
+        src="../images/figures/diagrams/Diagramas_Tesis-oocyte-s.png"
+        alt="Diagrama del huso meiótico bajo PLM"
+        class="h-auto max-h-[min(28vh,180px)] w-full object-contain"
+      />
+    </figure>
+    <ul class="list-none space-y-1 text-[0.72rem] leading-snug text-unal-gray sm:text-[0.76rem]">
+      <li>▸ Retardo típico: <span class="font-semibold text-unal-blue">2–6&nbsp;nm</span></li>
+      <li>▸ Elipsoide de <span class="font-semibold">bajo contraste</span></li>
+      <li>▸ Birrefringencia presente solo en estadio <span class="font-semibold">MII</span></li>
+    </ul>
+  </div>
+
+  <!-- Zona pelúcida -->
+  <div class="flex flex-col gap-2 text-left">
+    <p class="text-[0.72rem] font-bold uppercase tracking-wide text-unal-blue sm:text-[0.76rem]">Zona pelúcida (ZP)</p>
+    <figure class="m-0 min-w-0 flex flex-col">
+      <img
+        src="../images/figures/diagrams/Diagramas_Tesis-oocyte-zp.png"
+        alt="Diagrama de la zona pelúcida bajo PLM"
+        class="h-auto max-h-[min(28vh,180px)] w-full object-contain"
+      />
+    </figure>
+    <ul class="list-none space-y-1 text-[0.72rem] leading-snug text-unal-gray sm:text-[0.76rem]">
+      <li>▸ Retardo: <span class="font-semibold text-unal-blue">~10–20&nbsp;nm</span></li>
+      <li>▸ Capa de <span class="font-semibold">glicoproteínas ordenadas</span></li>
+      <li>▸ Alta birrefringencia, estructura protectora</li>
+    </ul>
+  </div>
+
+  <!-- Fondo -->
+  <div class="flex flex-col gap-2 text-left">
+    <p class="text-[0.72rem] font-bold uppercase tracking-wide text-unal-blue sm:text-[0.76rem]">Fondo (background)</p>
+    <div class="flex flex-1 items-center justify-center rounded border-2 border-dashed border-unal-blue/50 px-3 py-4 text-center text-[0.68rem] leading-snug text-unal-blue/60 max-h-[min(28vh,180px)]">
+      [INSERTAR IMAGEN: región de fondo sin estructura birrefringente]
+    </div>
+    <ul class="list-none space-y-1 text-[0.72rem] leading-snug text-unal-gray sm:text-[0.76rem]">
+      <li>▸ Retardo: <span class="font-semibold text-unal-blue">~0&nbsp;nm</span></li>
+      <li>▸ Referencia de <span class="font-semibold">calibración</span> del sistema</li>
+      <li>▸ Sin estructura birrefringente visible</li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="mt-2 rounded-md border-l-4 border-unal-green bg-unal-green/10 px-3 py-1.5">
+  <p class="text-[0.75rem] font-semibold leading-snug text-unal-gray">
+    La diferencia cuantitativa entre estas tres regiones es la base física que hace posible la
+    <span class="text-unal-blue">síntesis realista de imágenes PLM</span> de ovocitos.
+  </p>
+</div>
+
 </div>
 <div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
   <img
@@ -197,7 +279,7 @@ deckSection: estado
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <p class="mb-3 max-w-4xl text-[0.8rem] leading-snug text-unal-gray sm:text-[0.84rem]">
-  Tras revisar más de 30 artículos, la familia <span class="font-semibold text-unal-blue">YOLO</span> se consolida como la plataforma más adoptada en detección en tiempo real<span class="ml-0.5 font-semibold text-unal-blue">[22]</span>, con aplicaciones en medicina, industria y objetos de bajo contraste. Arquitecturas revisadas:
+  La familia <span class="font-semibold text-unal-blue">YOLO</span> se consolida como la plataforma más adoptada en detección en tiempo real<span class="ml-0.5 font-semibold text-unal-blue">[22]</span>, con aplicaciones en medicina, industria y objetos de bajo contraste. Arquitecturas revisadas:
 </p>
 <div class="grid min-h-0 flex-1 grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-6">
   <div class="flex flex-col gap-3">
@@ -261,17 +343,10 @@ deckSection: estado
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="flex min-h-0 flex-1 flex-col gap-3">
-  <figure class="m-0 min-w-0 flex-1">
-    <img
-      src="../images/figures/Slide9.png"
-      alt="Línea del tiempo OD, maduración de ovocitos y bases de datos sintéticas 2017-2025"
-      class="h-auto max-h-[min(52vh,360px)] w-full object-contain"
-    />
-    <figcaption lang="es" class="mt-1.5 text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
-      <span class="font-semibold text-unal-gray">Fig. 9.</span>
-      Línea del tiempo de desarrollos relevantes en detección de objetos (OD), maduración de ovocitos (E) y bases de datos sintéticas (SD), 2017–2025.
-    </figcaption>
-  </figure>
+  <!-- Placeholder línea del tiempo -->
+  <div class="flex flex-1 items-center justify-center rounded border-2 border-dashed border-unal-blue/50 px-4 py-6 text-center text-[0.78rem] leading-snug text-unal-blue/60 max-h-[min(44vh,300px)]">
+    [INSERTAR IMAGEN: Línea del tiempo YOLO 2017–2025 — diagrama actualizado mostrando YOLOv9, YOLOv12 y RT-DETR]
+  </div>
   <ul class="list-none space-y-1.5 text-[0.78rem] leading-snug text-unal-gray sm:text-[0.82rem]">
     <li class="flex gap-2">
       <span class="mt-0.5 shrink-0 text-unal-blue">▸</span>

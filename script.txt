@@ -25,12 +25,10 @@ Según el reporte nacional preliminar de SART para 2024, se realizaron 431.746 c
 
 Estos datos confirman que el margen de éxito es sumamente estrecho y altamente sensible a la calidad del gameto femenino. El refinamiento de los protocolos de maduración y selección ovocitaria es una necesidad clínica urgente — ese es el punto de partida de este trabajo.
 
-SLIDE 5 (MARCO TEÓRICO I: OVOCITO, HUSO MEIÓTICO Y PLM):
-Entendamos la teoría detrás de este trabajo. El objetivo siempre es identificar cuál ovocito en estadio MII tiene mayor probabilidad de fecundación exitosa. Estadísticamente, solo entre el 5 y el 10 % de los ovocitos recuperados poseen el potencial de desarrollo completo. Es decir, se trabaja con márgenes muy estrechos.
+SLIDE 5 (MARCO TEÓRICO I: EL OVOCITO Y SUS MARCADORES DE MADUREZ):
+Solo el 5–10 % de los ovocitos recuperados poseen potencial de desarrollo completo — se trabaja con márgenes muy estrechos. Tres estructuras permiten evaluar esa madurez de forma directa: el huso meiótico, la zona pelúcida y el cuerpo polar, todas visibles en la figura de la izquierda.
 
-En el ovocito, tres estructuras son claves para evaluar la madurez: el huso meiótico, la zona pelúcida y el cuerpo polar, todas visibles en la imagen PLM de la izquierda.
-
-El huso meiótico es la estructura central de este trabajo. Aparece en metafase II y es responsable de la correcta segregación cromosómica. Hay un hecho clínico crítico: el cuerpo polar —el indicador más usado clínicamente— aparece antes de que el huso meiótico esté completamente ensamblado. La microscopía polarizada permite visualizar directamente si el huso ya está formado, dando una evaluación más precisa del momento óptimo para ICSI. Y a diferencia de los métodos con fluorescencia, PLM es no invasiva y expone al ovocito a menos luz que la microscopía convencional.
+El huso meiótico es la estructura central de este trabajo: segrega cromosomas en metafase II y su presencia confirma la madurez nuclear del ovocito. Hay un hecho clínico crítico: el cuerpo polar —el indicador más usado en clínica— aparece antes de que el huso esté completamente ensamblado. La microscopía polarizada permite verificar directamente si el huso ya está formado, ofreciendo una evaluación más precisa del momento óptimo para ICSI.
 
 SLIDE 6 (MARCO TEÓRICO II: PLM CUANTITATIVA — VISUAL):
 Esta diapositiva muestra cómo la PLM cuantitativa recupera información de cada píxel de la imagen. La idea central es la siguiente: en lugar de una sola imagen, el sistema captura cinco imágenes con distintos estados de polarización — I₀ hasta I₄. La imagen de la izquierda es un ejemplo de una de esas capturas de intensidad.

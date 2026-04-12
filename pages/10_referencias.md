@@ -15,6 +15,352 @@ deckSection: referencias
     <li class="flex gap-2">
       <span class="shrink-0 font-semibold text-unal-blue">[1]</span>
       <span>
+        Chen, S. et al.,
+        «In Vitro Porcine Embryo Production: Impacts on Epigenetics and Long-Term Consequences in Animals Born After Transfer»,
+        <em>Frontiers in Animal Science</em>, vol.&nbsp;3, art.&nbsp;826324, 2022.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.3389/fanim.2022.826324"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.3389/fanim.2022.826324</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[2]</span>
+      <span>
+        Society for Assisted Reproductive Technology (SART),
+        «SART National Summary Report — 2024 (Preliminary)»,
+        <em>SART</em>, 2024.
+        [Online].
+        Available:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://www.sart.org/patients/a-patients-guide-to-assisted-reproductive-technology/national-summary-data/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >https://www.sart.org/patients/a-patients-guide-to-assisted-reproductive-technology/national-summary-data/</a>.
+        Accessed: Apr. 2026.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[3]</span>
+      <span>
+        Rienzi, L., Vajta, G. y Ubaldi, F.,
+        «Predictive value of oocyte morphology in human IVF: a systematic review of the literature»,
+        <em>Human Reproduction Update</em>, vol.&nbsp;17, n.º&nbsp;1, pp.&nbsp;34–45, ene.–feb. 2011.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.1093/humupd/dmq029"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1093/humupd/dmq029</a>.
+        PMID:&nbsp;20639518; PMCID:&nbsp;PMC3001337.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[4]</span>
+      <span>
+        Shribak, M. y Oldenbourg, R.,
+        «Techniques for fast and sensitive measurements of two-dimensional birefringence distributions»,
+        <em>Applied Optics</em>, vol.&nbsp;42, n.º&nbsp;16, pp.&nbsp;3009–3017, jun. 2003.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.1364/AO.42.003009"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1364/AO.42.003009</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[5]</span>
+      <span>
+        Holubcová, Z. et al.,
+        «Egg maturity assessment prior to ICSI prevents premature fertilization of late-maturing oocytes»,
+        <em>Journal of Assisted Reproduction and Genetics</em>, vol.&nbsp;36, n.º&nbsp;3, pp.&nbsp;445–452, mar. 2019.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.1007/s10815-018-1393-0"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1007/s10815-018-1393-0</a>.
+        PMID:&nbsp;30635815.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[6]</span>
+      <span>
+        Fjeldstad, J. et al.,
+        «Segmentation of mature human oocytes provides interpretable and improved blastocyst outcome predictions by a machine learning model»,
+        <em>Scientific Reports</em>, vol.&nbsp;14, n.º&nbsp;1, 2024.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.1038/s41598-024-60901-1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1038/s41598-024-60901-1</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[7]</span>
+      <span>
+        Folts, L. et al.,
+        «OoCount: a machine-learning based approach to mouse ovarian follicle counting and classification»,
+        <em>bioRxiv</em>, 2024.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.1101/2024.05.13.593993"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1101/2024.05.13.593993</a>.
+        Preprint.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[8]</span>
+      <span>
+        Chaput, L. et al.,
+        «Analysis of maturation dynamics and oocyte nuclear quality after rescue-IVM and semi-automated vitrification»,
+        <em>Human Reproduction</em>, vol.&nbsp;40, n.º&nbsp;7, pp.&nbsp;1344–1356, 2025.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.1093/humrep/deaf078"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1093/humrep/deaf078</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[9]</span>
+      <span>
+        Tepla, O. et al.,
+        «Relative Position of the Meiotic Spindle and Polar Body as a Marker of Oocyte Maturation Improves the Utilization and Pregnancy Rates»,
+        <em>Research Square</em> (preprint), mar. 2021.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.21203/rs.3.rs-284509/v1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.21203/rs.3.rs-284509/v1</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[10]</span>
+      <span>
+        Beduschi, A.,
+        «Synthetic data protection: towards a paradigm change in data regulation?»,
+        <em>Big Data &amp; Society</em>, vol.&nbsp;11, n.º&nbsp;1, 2024.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.1177/20539517241231277"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1177/20539517241231277</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[11]</span>
+      <span>
+        Mery, D.,
+        «Aluminum Casting Inspection using Deep Object Detection Methods and Simulated Ellipsoidal Defects»,
+        <em>Machine Vision and Applications</em>, vol.&nbsp;32, n.º&nbsp;3, art.&nbsp;72, abr. 2021.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.1007/s00138-021-01195-5"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1007/s00138-021-01195-5</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[12]</span>
+      <span>
+        Mery, D. et al.,
+        «Target Detection by Target Simulation in X-ray Testing»,
+        <em>Journal of Nondestructive Evaluation</em>, vol.&nbsp;41, n.º&nbsp;1, art.&nbsp;21, feb. 2022.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.1007/s10921-022-00851-8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1007/s10921-022-00851-8</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[13]</span>
+      <span>
+        Eversberg, L. y Lambrecht, J.,
+        «Combining synthetic images and deep active learning: data-efficient training of an industrial object detection model»,
+        <em>Journal of Imaging</em>, vol.&nbsp;10, n.º&nbsp;1, art.&nbsp;16, 2024.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.3390/jimaging10010016"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.3390/jimaging10010016</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[14]</span>
+      <span>
+        Frid-Adar, M., Shalev-Shwartz, S. y Shamir, O.,
+        «Synthetic data for medical image analysis»,
+        <em>Medical Image Analysis</em>, vol.&nbsp;42, pp.&nbsp;1–10, 2018.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.1016/j.media.2018.01.001"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1016/j.media.2018.01.001</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[15]</span>
+      <span>
+        Kelleher, C. y Needleman, D.,
+        «The physical basis of self-organization of the mammalian oocyte spindle»,
+        arXiv preprint arXiv:2211.00883, 2022.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.48550/arXiv.2211.00883"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.48550/arXiv.2211.00883</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[16]</span>
+      <span>
+        Abubakr, A.&nbsp;G. et al.,
+        «On learning deep domain-invariant features from 2D synthetic images for industrial visual inspection»,
+        <em>Fifteenth International Conference on Quality Control by Artificial Vision</em>, p.&nbsp;28, 2021.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.1117/12.2589040"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1117/12.2589040</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[17]</span>
+      <span>
+        Redmon, J., Divvala, S., Girshick, R. y Farhadi, A.,
+        «You Only Look Once: Unified, Real-Time Object Detection»,
+        en <em>Proc. IEEE Conf. Computer Vision and Pattern Recognition (CVPR)</em>, pp.&nbsp;779–788, 2016.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[18]</span>
+      <span>
+        Lyu, S. et al.,
+        «YOLO-SCL: a lightweight detection model for citrus psyllid based on spatial channel interaction»,
+        <em>Frontiers in Plant Science</em>, vol.&nbsp;14, art.&nbsp;1276833, 2023.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.3389/fpls.2023.1276833"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.3389/fpls.2023.1276833</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[19]</span>
+      <span>
+        Jiang, L. et al.,
+        «MA-YOLO: A Method for Detecting Surface Defects of Aluminum Profiles With Attention Guidance»,
+        <em>IEEE Access</em>, vol.&nbsp;11, pp.&nbsp;71269–71286, 2023.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.1109/ACCESS.2023.3291598"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1109/ACCESS.2023.3291598</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[20]</span>
+      <span>
+        Wang, C.-Y., Yeh, I.-H. y Liao, H.-Y.&nbsp;M.,
+        «YOLOv9: Learning What You Want to Learn Using Programmable Gradient Information»,
+        arXiv preprint arXiv:2402.13616, 2024.
+        [Online].
+        Available:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://arxiv.org/abs/2402.13616"
+          target="_blank"
+          rel="noopener noreferrer"
+        >https://arxiv.org/abs/2402.13616</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[21]</span>
+      <span>
+        Tian, Y., Ye, Q. y Doermann, D.,
+        «YOLOv12: Attention-Centric Real-Time Object Detectors»,
+        arXiv preprint arXiv:2502.12524, 2025.
+        [Online].
+        Available:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://arxiv.org/abs/2502.12524"
+          target="_blank"
+          rel="noopener noreferrer"
+        >https://arxiv.org/abs/2502.12524</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[22]</span>
+      <span>
+        Zhao, Y. et al.,
+        «DETRs Beat YOLOs on Real-time Object Detection»,
+        arXiv preprint arXiv:2304.08069, 2024.
+        [Online].
+        Available:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://arxiv.org/abs/2304.08069"
+          target="_blank"
+          rel="noopener noreferrer"
+        >https://arxiv.org/abs/2304.08069</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[23]</span>
+      <span>
+        Eusse Naranjo, D. y Restrepo-Martínez, A.,
+        «Photoelastic and Stokes images through deep convolutional neural networks: a comparison of stress fields»,
+        en <em>Optical Measurement Systems for Industrial Inspection XIII</em>, SPIE, vol.&nbsp;12618, art.&nbsp;1261820, 2023.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.1117/12.2672129"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1117/12.2672129</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[24]</span>
+      <span>
         American Society for Reproductive Medicine (ASRM),
         «US IVF usage increases in 2023 leads to over 95&nbsp;000 babies born»,
         <em>ASRM News</em>, 2023.
@@ -30,7 +376,7 @@ deckSection: referencias
       </span>
     </li>
     <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[2]</span>
+      <span class="shrink-0 font-semibold text-unal-blue">[25]</span>
       <span>
         Pacific Fertility Center Los Angeles,
         «IVF success rates &amp; statistics»,
@@ -47,7 +393,7 @@ deckSection: referencias
       </span>
     </li>
     <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[3]</span>
+      <span class="shrink-0 font-semibold text-unal-blue">[26]</span>
       <span>
         Moghadam, A. R. E. et al.,
         «Oocyte quality and aging»,
@@ -63,7 +409,7 @@ deckSection: referencias
       </span>
     </li>
     <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[4]</span>
+      <span class="shrink-0 font-semibold text-unal-blue">[27]</span>
       <span>
         Öztürk, S.,
         «Selection of competent oocytes by morphological criteria for assisted reproductive technologies»,
@@ -79,7 +425,7 @@ deckSection: referencias
       </span>
     </li>
     <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[5]</span>
+      <span class="shrink-0 font-semibold text-unal-blue">[28]</span>
       <span>
         Aguila, L. et al.,
         «Oocyte Selection for In Vitro Embryo Production in Bovine Species: Noninvasive Approaches for New Challenges of Oocyte Competence»,
@@ -95,22 +441,7 @@ deckSection: referencias
       </span>
     </li>
     <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[6]</span>
-      <span>
-        Tepla, O. et al.,
-        «Relative Position of the Meiotic Spindle and Polar Body as a Marker of Oocyte Maturation Improves the Utilization and Pregnancy Rates»,
-        <em>Research Square</em> (preprint), mar. 2021.
-        DOI:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://doi.org/10.21203/rs.3.rs-284509/v1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >10.21203/rs.3.rs-284509/v1</a>.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[7]</span>
+      <span class="shrink-0 font-semibold text-unal-blue">[29]</span>
       <span>
         Wang, X. et al.,
         «Effect of the time interval between oocyte retrieval and ICSI on embryo development and reproductive outcomes: a systematic review»,
@@ -126,23 +457,7 @@ deckSection: referencias
       </span>
     </li>
     <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[8]</span>
-      <span>
-        Rienzi, L., Vajta, G. y Ubaldi, F.,
-        «Predictive value of oocyte morphology in human IVF: a systematic review of the literature»,
-        <em>Human Reproduction Update</em>, vol.&nbsp;17, n.º&nbsp;1, pp.&nbsp;34–45, ene.–feb. 2011.
-        DOI:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://doi.org/10.1093/humupd/dmq029"
-          target="_blank"
-          rel="noopener noreferrer"
-        >10.1093/humupd/dmq029</a>.
-        PMID:&nbsp;20639518; PMCID:&nbsp;PMC3001337.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[9]</span>
+      <span class="shrink-0 font-semibold text-unal-blue">[30]</span>
       <span>
         Itoi, F. et al.,
         «Importance of real-time measurement of sperm head morphology in intracytoplasmic sperm injection»,
@@ -158,7 +473,7 @@ deckSection: referencias
       </span>
     </li>
     <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[10]</span>
+      <span class="shrink-0 font-semibold text-unal-blue">[31]</span>
       <span>
         Azizi, E. et al.,
         «Does timing in ICSI cycle affect oocyte quality and reproductive outcomes? A prospective study»,
@@ -174,7 +489,7 @@ deckSection: referencias
       </span>
     </li>
     <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[11]</span>
+      <span class="shrink-0 font-semibold text-unal-blue">[32]</span>
       <span>
         de Santiago, I. y Polanski, L.,
         «Data-Driven Medicine in the Diagnosis and Treatment of Infertility»,
@@ -190,7 +505,7 @@ deckSection: referencias
       </span>
     </li>
     <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[12]</span>
+      <span class="shrink-0 font-semibold text-unal-blue">[33]</span>
       <span>
         Ma, C. et al.,
         «Carbendazim exposure inhibits mouse oocytes meiotic maturation in vitro by destroying spindle assembly»,
@@ -206,168 +521,7 @@ deckSection: referencias
       </span>
     </li>
     <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[13]</span>
-      <span>
-        Shribak, M. y Oldenbourg, R.,
-        «Techniques for fast and sensitive measurements of two-dimensional birefringence distributions»,
-        <em>Applied Optics</em>, vol.&nbsp;42, n.º&nbsp;16, pp.&nbsp;3009–3017, jun. 2003.
-        DOI:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://doi.org/10.1364/AO.42.003009"
-          target="_blank"
-          rel="noopener noreferrer"
-        >10.1364/AO.42.003009</a>.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[14]</span>
-      <span>
-        Holubcová, Z. et al.,
-        «Egg maturity assessment prior to ICSI prevents premature fertilization of late-maturing oocytes»,
-        <em>Journal of Assisted Reproduction and Genetics</em>, vol.&nbsp;36, n.º&nbsp;3, pp.&nbsp;445–452, mar. 2019.
-        DOI:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://doi.org/10.1007/s10815-018-1393-0"
-          target="_blank"
-          rel="noopener noreferrer"
-        >10.1007/s10815-018-1393-0</a>.
-        PMID:&nbsp;30635815.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[15]</span>
-      <span>
-        Fjeldstad, J. et al.,
-        «Segmentation of mature human oocytes provides interpretable and improved blastocyst outcome predictions by a machine learning model»,
-        <em>Scientific Reports</em>, vol.&nbsp;14, n.º&nbsp;1, 2024.
-        DOI:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://doi.org/10.1038/s41598-024-60901-1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >10.1038/s41598-024-60901-1</a>.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[16]</span>
-      <span>
-        Mery, D.,
-        «Aluminum Casting Inspection using Deep Object Detection Methods and Simulated Ellipsoidal Defects»,
-        <em>Machine Vision and Applications</em>, vol.&nbsp;32, n.º&nbsp;3, art.&nbsp;72, abr. 2021.
-        DOI:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://doi.org/10.1007/s00138-021-01195-5"
-          target="_blank"
-          rel="noopener noreferrer"
-        >10.1007/s00138-021-01195-5</a>.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[17]</span>
-      <span>
-        Mery, D. et al.,
-        «Target Detection by Target Simulation in X-ray Testing»,
-        <em>Journal of Nondestructive Evaluation</em>, vol.&nbsp;41, n.º&nbsp;1, art.&nbsp;21, feb. 2022.
-        DOI:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://doi.org/10.1007/s10921-022-00851-8"
-          target="_blank"
-          rel="noopener noreferrer"
-        >10.1007/s10921-022-00851-8</a>.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[18]</span>
-      <span>
-        Zhao, Y. et al.,
-        «DETRs Beat YOLOs on Real-time Object Detection»,
-        arXiv preprint arXiv:2304.08069, 2024.
-        [Online].
-        Available:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://arxiv.org/abs/2304.08069"
-          target="_blank"
-          rel="noopener noreferrer"
-        >https://arxiv.org/abs/2304.08069</a>.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[19]</span>
-      <span>
-        Beduschi, A.,
-        «Synthetic data protection: towards a paradigm change in data regulation?»,
-        <em>Big Data &amp; Society</em>, vol.&nbsp;11, n.º&nbsp;1, 2024.
-        DOI:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://doi.org/10.1177/20539517241231277"
-          target="_blank"
-          rel="noopener noreferrer"
-        >10.1177/20539517241231277</a>.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[20]</span>
-      <span>
-        Abubakr, A.&nbsp;G. et al.,
-        «On learning deep domain-invariant features from 2D synthetic images for industrial visual inspection»,
-        <em>Fifteenth International Conference on Quality Control by Artificial Vision</em>, p.&nbsp;28, 2021.
-        DOI:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://doi.org/10.1117/12.2589040"
-          target="_blank"
-          rel="noopener noreferrer"
-        >10.1117/12.2589040</a>.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[21]</span>
-      <span>
-        Kelleher, C. y Needleman, D.,
-        «The physical basis of self-organization of the mammalian oocyte spindle»,
-        arXiv preprint arXiv:2211.00883, 2022.
-        DOI:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://doi.org/10.48550/arXiv.2211.00883"
-          target="_blank"
-          rel="noopener noreferrer"
-        >10.48550/arXiv.2211.00883</a>.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[22]</span>
-      <span>
-        Redmon, J., Divvala, S., Girshick, R. y Farhadi, A.,
-        «You Only Look Once: Unified, Real-Time Object Detection»,
-        en <em>Proc. IEEE Conf. Computer Vision and Pattern Recognition (CVPR)</em>, pp.&nbsp;779–788, 2016.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[23]</span>
-      <span>
-        Wang, C.-Y., Yeh, I.-H. y Liao, H.-Y.&nbsp;M.,
-        «YOLOv9: Learning What You Want to Learn Using Programmable Gradient Information»,
-        arXiv preprint arXiv:2402.13616, 2024.
-        [Online].
-        Available:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://arxiv.org/abs/2402.13616"
-          target="_blank"
-          rel="noopener noreferrer"
-        >https://arxiv.org/abs/2402.13616</a>.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[24]</span>
+      <span class="shrink-0 font-semibold text-unal-blue">[34]</span>
       <span>
         Wang, A. et al.,
         «YOLOv10: Real-Time End-to-End Object Detection»,
@@ -380,160 +534,6 @@ deckSection: referencias
           target="_blank"
           rel="noopener noreferrer"
         >https://arxiv.org/abs/2405.14458</a>.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[25]</span>
-      <span>
-        Tian, Y., Ye, Q. y Doermann, D.,
-        «YOLOv12: Attention-Centric Real-Time Object Detectors»,
-        arXiv preprint arXiv:2502.12524, 2025.
-        [Online].
-        Available:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://arxiv.org/abs/2502.12524"
-          target="_blank"
-          rel="noopener noreferrer"
-        >https://arxiv.org/abs/2502.12524</a>.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[26]</span>
-      <span>
-        Folts, L. et al.,
-        «OoCount: a machine-learning based approach to mouse ovarian follicle counting and classification»,
-        <em>bioRxiv</em>, 2024.
-        DOI:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://doi.org/10.1101/2024.05.13.593993"
-          target="_blank"
-          rel="noopener noreferrer"
-        >10.1101/2024.05.13.593993</a>.
-        Preprint.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[27]</span>
-      <span>
-        Chaput, L. et al.,
-        «Analysis of maturation dynamics and oocyte nuclear quality after rescue-IVM and semi-automated vitrification»,
-        <em>Human Reproduction</em>, vol.&nbsp;40, n.º&nbsp;7, pp.&nbsp;1344–1356, 2025.
-        DOI:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://doi.org/10.1093/humrep/deaf078"
-          target="_blank"
-          rel="noopener noreferrer"
-        >10.1093/humrep/deaf078</a>.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[28]</span>
-      <span>
-        Eversberg, L. y Lambrecht, J.,
-        «Combining synthetic images and deep active learning: data-efficient training of an industrial object detection model»,
-        <em>Journal of Imaging</em>, vol.&nbsp;10, n.º&nbsp;1, art.&nbsp;16, 2024.
-        DOI:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://doi.org/10.3390/jimaging10010016"
-          target="_blank"
-          rel="noopener noreferrer"
-        >10.3390/jimaging10010016</a>.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[29]</span>
-      <span>
-        Frid-Adar, M., Shalev-Shwartz, S. y Shamir, O.,
-        «Synthetic data for medical image analysis»,
-        <em>Medical Image Analysis</em>, vol.&nbsp;42, pp.&nbsp;1–10, 2018.
-        DOI:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://doi.org/10.1016/j.media.2018.01.001"
-          target="_blank"
-          rel="noopener noreferrer"
-        >10.1016/j.media.2018.01.001</a>.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[30]</span>
-      <span>
-        Eusse Naranjo, D. y Restrepo-Martínez, A.,
-        «Photoelastic and Stokes images through deep convolutional neural networks: a comparison of stress fields»,
-        en <em>Optical Measurement Systems for Industrial Inspection XIII</em>, SPIE, vol.&nbsp;12618, art.&nbsp;1261820, 2023.
-        DOI:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://doi.org/10.1117/12.2672129"
-          target="_blank"
-          rel="noopener noreferrer"
-        >10.1117/12.2672129</a>.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[31]</span>
-      <span>
-        Jiang, L. et al.,
-        «MA-YOLO: A Method for Detecting Surface Defects of Aluminum Profiles With Attention Guidance»,
-        <em>IEEE Access</em>, vol.&nbsp;11, pp.&nbsp;71269–71286, 2023.
-        DOI:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://doi.org/10.1109/ACCESS.2023.3291598"
-          target="_blank"
-          rel="noopener noreferrer"
-        >10.1109/ACCESS.2023.3291598</a>.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[32]</span>
-      <span>
-        Lyu, S. et al.,
-        «YOLO-SCL: a lightweight detection model for citrus psyllid based on spatial channel interaction»,
-        <em>Frontiers in Plant Science</em>, vol.&nbsp;14, art.&nbsp;1276833, 2023.
-        DOI:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://doi.org/10.3389/fpls.2023.1276833"
-          target="_blank"
-          rel="noopener noreferrer"
-        >10.3389/fpls.2023.1276833</a>.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[33]</span>
-      <span>
-        Chen, S. et al.,
-        «In Vitro Porcine Embryo Production: Impacts on Epigenetics and Long-Term Consequences in Animals Born After Transfer»,
-        <em>Frontiers in Animal Science</em>, vol.&nbsp;3, art.&nbsp;826324, 2022.
-        DOI:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://doi.org/10.3389/fanim.2022.826324"
-          target="_blank"
-          rel="noopener noreferrer"
-        >10.3389/fanim.2022.826324</a>.
-      </span>
-    </li>
-    <li class="flex gap-2">
-      <span class="shrink-0 font-semibold text-unal-blue">[34]</span>
-      <span>
-        Society for Assisted Reproductive Technology (SART),
-        «SART National Summary Report — 2024 (Preliminary)»,
-        <em>SART</em>, 2024.
-        [Online].
-        Available:
-        <a
-          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
-          href="https://www.sart.org/patients/a-patients-guide-to-assisted-reproductive-technology/national-summary-data/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >https://www.sart.org/patients/a-patients-guide-to-assisted-reproductive-technology/national-summary-data/</a>.
-        Accessed: Apr. 2026.
       </span>
     </li>
   </ol>

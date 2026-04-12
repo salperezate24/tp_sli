@@ -8,13 +8,13 @@
 
 - [ ] **Quitar imagen de línea del tiempo de slide 13 ("YOLO & RT-DETR")** — la figura `Slide9.png` (Fig. 9, línea del tiempo OD/E/SD 2017–2025) ocupa demasiado espacio y el guion no la referencia. Reemplazar por contenido textual o dejar solo los tres bullets de YOLOv9, YOLOv12 y RT-DETR. (`pages/03_estado_del_arte.md`)
 
-- [ ] **Aumentar tamaño de letra en la diapositiva de Hipótesis** — el profe lo mencionó dos veces, está demasiado pequeño. (`text-[0.8rem]` → `text-[0.9rem]` o `text-sm` mínimo, en `pages/04_pregunta_hipotesis.md` líneas 19 y 27).
+- [x] **Aumentar tamaño de letra en la diapositiva de Hipótesis** — el profe lo mencionó dos veces, está demasiado pequeño. (`text-[0.8rem]` → `text-sm`/`text-[0.95rem]`, en `pages/04_pregunta_hipotesis.md`).
 - [ ] **Completar sección Metodología** (`pages/06_metodologia.md`) — actualmente tiene solo texto placeholder.
 - [ ] **Completar sección Resultados** (`pages/07_resultados.md`) — falta el análisis cualitativo (diapositiva 2 es placeholder).
 - [ ] **Terminar Estado del Arte** (`pages/03_estado_del_arte.md`) — aún no está finalizado según revisión.
 - [x] **Corregir inconsistencia mAP50-95 de YOLOv9m** — `pages/08_conclusiones.md` dice `0,627` pero la tabla en `pages/07_resultados.md` muestra `0.642`. Unificar o aclarar origen de cada cifra (¿diferente run? ¿con vs sin CBAM?). Prioritario: te lo van a preguntar en la defensa.
 - [ ] **Agregar slide introductorio a los videos de resultados** — antes de las secuencias YOLOv9m vs YOLOv9m-CBAM, incluir un slide que advierta que requiere internet y contextualice qué va a ver el jurado (duración, qué comparar, qué destacar).
-- [ ] **Revisar columnas en hipótesis en modo presentación real** — el layout `lg:columns-2` puede cortar texto en mitad de frase según la pantalla del jurado.
+- [x] **Revisar columnas en hipótesis en modo presentación real** — resuelto: se eliminó el layout `lg:columns-2` al reducir el texto de la hipótesis a una sola oración.
 
 ## Guion oral (`script.txt`)
 

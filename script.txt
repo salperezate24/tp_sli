@@ -21,16 +21,14 @@ Lo que ocurre en la industria animal es un reflejo directo de lo que ocurre en l
 SLIDE 4 (JUSTIFICACIÓN, PARTE 2 — DATOS HUMANOS SART 2024):
 En el ser humano, la efectividad de las técnicas de reproducción asistida está estrechamente ligada a la edad materna, lo que hace que la dependencia de la calidad del ovocito sea aún más evidente.
 
-Según el reporte nacional preliminar de SART para 2024, se realizaron 431.746 ciclos totales de reproducción asistida. Los nuevos pacientes menores de 35 años tienen una probabilidad de éxito — nacimiento vivo — del 50.3%. Sin embargo, esta probabilidad cae al 27.2% entre los 38 y 40 años, y se desploma al 4.1% en mujeres mayores de 42 años utilizando sus propios óvulos.
+Según el reporte nacional preliminar de SART para 2024, se realizaron 431.746 ciclos totales de reproducción asistida. Como vemos en el gráfico, la probabilidad de éxito — nacimiento vivo — cae dramáticamente con la edad: del 50.3% en menores de 35 años, hasta apenas el 4.1% en mujeres mayores de 42 años utilizando sus propios óvulos.
 
-Si analizamos la probabilidad de éxito por cada proceso de recuperación de óvulos, los datos de 2024 muestran que en menores de 35 años la tasa es del 41.7%, mientras que en mayores de 42 años es apenas del 2.8%.
-
-Estos datos confirman que el margen de éxito en humanos es sumamente estrecho y altamente sensible a la calidad del gameto femenino. El refinamiento de los protocolos de maduración y selección ovocitaria es una necesidad clínica urgente — ese es el punto de partida de este trabajo.
+Estos datos confirman que el margen de éxito es sumamente estrecho y altamente sensible a la calidad del gameto femenino. El refinamiento de los protocolos de maduración y selección ovocitaria es una necesidad clínica urgente — ese es el punto de partida de este trabajo.
 
 SLIDE 5 (MARCO TEÓRICO I: OVOCITO, HUSO MEIÓTICO Y PLM):
 Entendamos la teoría detrás de este trabajo. El objetivo siempre es identificar cuál ovocito en estadio MII tiene mayor probabilidad de fecundación exitosa. Estadísticamente, solo entre el 5 y el 10 % de los ovocitos recuperados poseen el potencial de desarrollo completo. Es decir, se trabaja con márgenes muy estrechos.
 
-En el ovocito, tres estructuras son claves para evaluar la madurez: el huso meiótico, la zona pelúcida y el cuerpo polar, todas visibles en la imagen PLM de la derecha.
+En el ovocito, tres estructuras son claves para evaluar la madurez: el huso meiótico, la zona pelúcida y el cuerpo polar, todas visibles en la imagen PLM de la izquierda.
 
 El huso meiótico es la estructura central de este trabajo. Aparece en metafase II y es responsable de la correcta segregación cromosómica. Hay un hecho clínico crítico: el cuerpo polar —el indicador más usado clínicamente— aparece antes de que el huso meiótico esté completamente ensamblado. La microscopía polarizada permite visualizar directamente si el huso ya está formado, dando una evaluación más precisa del momento óptimo para ICSI. Y a diferencia de los métodos con fluorescencia, PLM es no invasiva y expone al ovocito a menos luz que la microscopía convencional.
 
@@ -68,7 +66,7 @@ Recientemente se ha popularizado el uso de la microscopía polarizada para visua
 Se han desarrollado sistemas de automatización que realizan segmentación celular o conteos, pero ninguno aprovecha las ventajas que ofrece la PLM para detectar estos marcadores de madurez en la célula.
 
 SLIDE 11 (ESTADO DEL ARTE II: MICROSCOPÍA POLARIZADA Y BIRREFRINGENCIA):
-En esta imagen vemos exactamente lo que la PLM permite observar de forma no invasiva: el huso meiótico con un retardo óptico típico de 2 a 3 nanómetros, la zona pelúcida con su propia birrefringencia, y el cuerpo polar confirmando el fin de la primera división meiótica.
+En esta imagen vemos exactamente lo que la PLM permite observar de forma no invasiva: el huso meiótico con un retardo óptico típico de 2 a 6 nanómetros, la zona pelúcida con su propia birrefringencia, y el cuerpo polar confirmando el fin de la primera división meiótica.
 
 Lo que hace especialmente relevante esta imagen es que contiene toda la información necesaria para clasificar la madurez del ovocito, sin haberlo tocado ni comprometido. Y más aún: Tepla et al. encontraron que la posición relativa entre el huso y el cuerpo polar se asocia a mayores tasas de embarazo tras ICSI. Localizar espacialmente esas estructuras tiene valor clínico directo — y es exactamente lo que un detector de objetos puede aportar.
 
@@ -107,7 +105,7 @@ Con este panorama claro llegamos a la pregunta central: dado que ningún sistema
 La hipótesis propone que sí es posible. Al modificar parámetros clave de la red — el formato de imagen de entrada, la función de pérdida, las técnicas de predicción de cajas y los módulos de atención — puede desarrollarse un detector capaz de localizar y clasificar el ovocito, el huso meiótico y sus características birrefringentes, permitiendo caracterizar el estado de madurez sin manipular la muestra.
 
 SLIDE 18 (OBJETIVO GENERAL):
-Con la hipótesis planteada, el objetivo general del trabajo es desarrollar un modelo de red neuronal profunda para la identificación de ovocitos y sus características morfológicas a partir de imágenes de microscopía polarizada.
+Con la hipótesis planteada, el objetivo general del trabajo es desarrollar un modelo de red neuronal profunda para la identificación de ovocitos y algunas de sus características morfológicas a partir de imágenes de microscopía polarizada.
 
 Este objetivo integra los tres ejes que hemos construido a lo largo del marco teórico: el conocimiento del dominio —el ovocito y sus estructuras birrefringentes—, la herramienta —una red de detección de objetos—, y el dato de entrada —imágenes PLM. Los tres objetivos específicos que vemos en la siguiente diapositiva descomponen este objetivo en etapas concretas.
 

@@ -11,11 +11,11 @@ deckSection: estado
 <div class="mb-2 grid grid-cols-2 gap-x-6 gap-y-1.5 text-left">
   <div class="flex gap-2 text-[0.78rem] leading-snug text-unal-gray sm:text-[0.82rem]">
     <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-    <span>Holubcová et al.<span class="ml-0.5 font-semibold text-unal-blue">[14]</span>: detección del <span class="font-semibold text-unal-blue">huso meiótico</span> = indicador clave de madurez MII y aptitud para ICSI</span>
+    <span>Holubcová et al.<span class="ml-0.5 font-semibold text-unal-blue">[5]</span>: detección del <span class="font-semibold text-unal-blue">huso meiótico</span> = indicador clave de madurez MII y aptitud para ICSI</span>
   </div>
   <div class="flex gap-2 text-[0.78rem] leading-snug text-unal-gray sm:text-[0.82rem]">
     <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-    <span>Evaluación manual: <span class="font-semibold">subjetiva</span>, depende de la experiencia del observador; alta variabilidad interobservador<span class="ml-0.5 font-semibold text-unal-blue">[15]</span></span>
+    <span>Evaluación manual: <span class="font-semibold">subjetiva</span>, depende de la experiencia del observador; alta variabilidad interobservador<span class="ml-0.5 font-semibold text-unal-blue">[6]</span></span>
   </div>
   <div class="flex gap-2 text-[0.78rem] leading-snug text-unal-gray sm:text-[0.82rem]">
     <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
@@ -23,11 +23,11 @@ deckSection: estado
   </div>
   <div class="flex gap-2 text-[0.78rem] leading-snug text-unal-gray sm:text-[0.82rem]">
     <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-    <span>PolScope: retardo óptico cuantitativo por píxel<span class="ml-0.5 font-semibold text-unal-blue">[13]</span></span>
+    <span>PolScope: retardo óptico cuantitativo por píxel<span class="ml-0.5 font-semibold text-unal-blue">[4]</span></span>
   </div>
   <div class="col-span-2 flex gap-2 text-[0.78rem] leading-snug text-unal-gray sm:text-[0.82rem]">
     <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-    <span>Sistemas de automatización existentes realizan segmentación celular o conteos, pero <span class="font-semibold italic">ninguno aprovecha las ventajas PLM para detectar estos marcadores de madurez</span>: <span class="font-semibold">MOMA</span> (Fjeldstad<span class="ml-0.5 font-semibold text-unal-blue">[15]</span>) — segmenta ZP y ooplasma · <span class="font-semibold">OoCount</span> (Folts<span class="ml-0.5 font-semibold text-unal-blue">[26]</span>) — conteo por estadio · Chaput et al.<span class="ml-0.5 font-semibold text-unal-blue">[27]</span> — visualización para rescate IVM</span>
+    <span>Sistemas de automatización existentes realizan segmentación celular o conteos, pero <span class="font-semibold italic">ninguno aprovecha las ventajas PLM para detectar estos marcadores de madurez</span>: <span class="font-semibold">MOMA</span> (Fjeldstad<span class="ml-0.5 font-semibold text-unal-blue">[6]</span>) — segmenta ZP y ooplasma · <span class="font-semibold">OoCount</span> (Folts<span class="ml-0.5 font-semibold text-unal-blue">[7]</span>) — conteo por estadio · Chaput et al.<span class="ml-0.5 font-semibold text-unal-blue">[8]</span> — visualización para rescate IVM</span>
   </div>
 </div>
 <figure class="m-0 mb-2 min-w-0">
@@ -44,7 +44,7 @@ deckSection: estado
 <div class="rounded-md border-l-4 border-unal-blue bg-unal-blue/10 px-2 py-0.5">
   <p class="mb-0 text-[0.65rem] font-bold uppercase tracking-wide text-unal-blue">Brecha</p>
   <p class="text-[0.78rem] font-semibold leading-snug text-unal-gray">
-    Ningún sistema <span class="text-unal-blue">detecta y localiza simultáneamente</span> estructuras birrefringentes en PLM — MOMA<span class="ml-0.5 font-bold text-unal-blue">[15]</span>, OoCount<span class="ml-0.5 font-bold text-unal-blue">[26]</span>: segmentación/conteo, no detección de objetos multi-clase<span class="ml-0.5 font-bold text-unal-blue">[8][14]</span>
+    Ningún sistema <span class="text-unal-blue">detecta y localiza simultáneamente</span> estructuras birrefringentes en PLM — MOMA<span class="ml-0.5 font-bold text-unal-blue">[6]</span>, OoCount<span class="ml-0.5 font-bold text-unal-blue">[7]</span>: segmentación/conteo, no detección de objetos multi-clase<span class="ml-0.5 font-bold text-unal-blue">[3][5]</span>
   </p>
 </div>
 </div>
@@ -80,21 +80,21 @@ deckSection: estado
     />
     <figcaption lang="es" class="mt-1.5 text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
       <span class="font-semibold text-unal-gray">Fig. 5.</span>
-      Huso meiótico (s), ZP (zp), citoplasma (c) y cuerpo polar (pb) bajo PLM. Rienzi et al.<span class="ml-0.5 font-semibold text-unal-blue">[8]</span>.
+      Huso meiótico (s), ZP (zp), citoplasma (c) y cuerpo polar (pb) bajo PLM. Rienzi et al.<span class="ml-0.5 font-semibold text-unal-blue">[3]</span>.
     </figcaption>
   </figure>
   <ul class="list-none flex flex-col justify-center space-y-3 text-[0.82rem] leading-snug text-unal-gray sm:text-[0.86rem]">
     <li class="flex gap-2">
       <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-      <span><span class="font-semibold text-unal-blue">Huso meiótico</span> → segrega cromosomas → presencia indica MII; su morfología y posición predicen éxito de ICSI<span class="ml-0.5 font-semibold text-unal-blue">[14]</span></span>
+      <span><span class="font-semibold text-unal-blue">Huso meiótico</span> → segrega cromosomas → presencia indica MII; su morfología y posición predicen éxito de ICSI<span class="ml-0.5 font-semibold text-unal-blue">[5]</span></span>
     </li>
     <li class="flex gap-2">
       <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-      <span><span class="font-semibold">ZP</span> → unión espermática y protección del embrión; <span class="font-semibold">CP</span> → confirma fin de la 1.ª división meiótica<span class="ml-0.5 font-semibold text-unal-blue">[6][8]</span></span>
+      <span><span class="font-semibold">ZP</span> → unión espermática y protección del embrión; <span class="font-semibold">CP</span> → confirma fin de la 1.ª división meiótica<span class="ml-0.5 font-semibold text-unal-blue">[9][3]</span></span>
     </li>
     <li class="flex gap-2">
       <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-      <span>Tepla et al. 2021<span class="ml-0.5 font-semibold text-unal-blue">[6]</span>: posición relativa huso–CP se asocia a mayores tasas de embarazo tras ICSI</span>
+      <span>Tepla et al. 2021<span class="ml-0.5 font-semibold text-unal-blue">[9]</span>: posición relativa huso–CP se asocia a mayores tasas de embarazo tras ICSI</span>
     </li>
   </ul>
 </div>
@@ -127,23 +127,23 @@ deckSection: estado
     <ul class="list-none space-y-2 text-[0.78rem] leading-snug text-unal-gray sm:text-[0.82rem]">
       <li class="flex gap-2">
         <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span>Escasez de datos PLM anotados: privacidad, costo y tiempo<span class="ml-0.5 font-semibold text-unal-blue">[19]</span> → no existe ninguna base pública · Beduschi<span class="ml-0.5 font-semibold text-unal-blue">[19]</span>: datos sintéticos <span class="font-semibold">evitan barreras éticas y legales</span> de los datos clínicos</span>
+        <span>Escasez de datos PLM anotados: privacidad, costo y tiempo<span class="ml-0.5 font-semibold text-unal-blue">[10]</span> → no existe ninguna base pública · Beduschi<span class="ml-0.5 font-semibold text-unal-blue">[10]</span>: datos sintéticos <span class="font-semibold">evitan barreras éticas y legales</span> de los datos clínicos</span>
       </li>
       <li class="flex gap-2">
         <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span><span class="font-semibold text-unal-blue">Mery 2021–22</span><span class="ml-0.5 font-semibold text-unal-blue">[16][17]</span>: defectos elipsoidales simulados → detector transfiere a rayos X reales · <span class="font-semibold">Eversberg &amp; Lambrecht</span><span class="ml-0.5 font-semibold text-unal-blue">[28]</span>: 5&nbsp;000 imágenes sintéticas para detector industrial — mismo principio</span>
+        <span><span class="font-semibold text-unal-blue">Mery 2021–22</span><span class="ml-0.5 font-semibold text-unal-blue">[11][12]</span>: defectos elipsoidales simulados → detector transfiere a rayos X reales · <span class="font-semibold">Eversberg &amp; Lambrecht</span><span class="ml-0.5 font-semibold text-unal-blue">[13]</span>: 5&nbsp;000 imágenes sintéticas para detector industrial — mismo principio</span>
       </li>
       <li class="flex gap-2">
         <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span><span class="font-semibold">Frid-Adar et al.</span><span class="ml-0.5 font-semibold text-unal-blue">[29]</span>: síntesis de datos médicos como estrategia válida en dominios clínicos</span>
+        <span><span class="font-semibold">Frid-Adar et al.</span><span class="ml-0.5 font-semibold text-unal-blue">[14]</span>: síntesis de datos médicos como estrategia válida en dominios clínicos</span>
       </li>
       <li class="flex gap-2">
         <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span>Analogía: huso meiótico = elipsoide de <span class="font-semibold">bajo contraste</span> · física del huso permite <span class="font-semibold">síntesis realista</span> basada en modelos físicos<span class="ml-0.5 font-semibold text-unal-blue">[21]</span></span>
+        <span>Analogía: huso meiótico = elipsoide de <span class="font-semibold">bajo contraste</span> · física del huso permite <span class="font-semibold">síntesis realista</span> basada en modelos físicos<span class="ml-0.5 font-semibold text-unal-blue">[15]</span></span>
       </li>
       <li class="flex gap-2">
         <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span>Reto: <span class="font-semibold">domain shift</span> sintético→real; estrategias de transfer learning son esenciales<span class="ml-0.5 font-semibold text-unal-blue">[20]</span></span>
+        <span>Reto: <span class="font-semibold">domain shift</span> sintético→real; estrategias de transfer learning son esenciales<span class="ml-0.5 font-semibold text-unal-blue">[16]</span></span>
       </li>
     </ul>
   </div>
@@ -156,7 +156,7 @@ deckSection: estado
       />
       <figcaption lang="es" class="mt-1 text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
         <span class="font-semibold text-unal-gray">Fig. 7.</span>
-        GDXray+ (Mery<span class="ml-0.5 font-semibold text-unal-blue">[16]</span>): (a) fundición X-ray, (b) defectos simulados, (c) superposición, (d) detecciones.
+        GDXray+ (Mery<span class="ml-0.5 font-semibold text-unal-blue">[11]</span>): (a) fundición X-ray, (b) defectos simulados, (c) superposición, (d) detecciones.
       </figcaption>
     </figure>
     <!-- Retardos reportados en la literatura -->
@@ -167,7 +167,7 @@ deckSection: estado
         <li>▸ Zona pelúcida: <span class="font-semibold">~10–20&nbsp;nm</span></li>
         <li>▸ Fondo (background): <span class="font-semibold">~0&nbsp;nm</span></li>
       </ul>
-      <p class="mt-1 text-[0.65rem] text-unal-gray/70">Fuente: Shribak &amp; Oldenbourg (2003)<span class="ml-0.5 font-semibold text-unal-blue">[13]</span>; Rienzi et al.<span class="ml-0.5 font-semibold text-unal-blue">[8]</span></p>
+      <p class="mt-1 text-[0.65rem] text-unal-gray/70">Fuente: Shribak &amp; Oldenbourg (2003)<span class="ml-0.5 font-semibold text-unal-blue">[4]</span>; Rienzi et al.<span class="ml-0.5 font-semibold text-unal-blue">[3]</span></p>
     </div>
   </div>
 </div>
@@ -279,7 +279,7 @@ deckSection: estado
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <p class="mb-3 max-w-4xl text-[0.8rem] leading-snug text-unal-gray sm:text-[0.84rem]">
-  La familia <span class="font-semibold text-unal-blue">YOLO</span> se consolida como la plataforma más adoptada en detección en tiempo real<span class="ml-0.5 font-semibold text-unal-blue">[22]</span>, con aplicaciones en medicina, industria y objetos de bajo contraste. Arquitecturas revisadas:
+  La familia <span class="font-semibold text-unal-blue">YOLO</span> se consolida como la plataforma más adoptada en detección en tiempo real<span class="ml-0.5 font-semibold text-unal-blue">[17]</span>, con aplicaciones en medicina, industria y objetos de bajo contraste. Arquitecturas revisadas:
 </p>
 <div class="grid min-h-0 flex-1 grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-6">
   <div class="flex flex-col gap-3">
@@ -314,7 +314,7 @@ deckSection: estado
     </div>
     <div class="rounded-lg border border-gray-200 bg-white px-3 py-2 shadow-sm">
       <p class="mb-1 text-[0.68rem] font-bold uppercase tracking-wide text-unal-green">Atención</p>
-      <p class="text-[0.72rem] leading-snug text-unal-gray">SE, CBAM, ECA — recalibración espacial y de canal · YOLO-SCL<span class="ml-0.5 font-semibold text-unal-blue">[32]</span>, MA-YOLO<span class="ml-0.5 font-semibold text-unal-blue">[31]</span>: validados en dominios de bajo contraste</p>
+      <p class="text-[0.72rem] leading-snug text-unal-gray">SE, CBAM, ECA — recalibración espacial y de canal · YOLO-SCL<span class="ml-0.5 font-semibold text-unal-blue">[18]</span>, MA-YOLO<span class="ml-0.5 font-semibold text-unal-blue">[19]</span>: validados en dominios de bajo contraste</p>
     </div>
   </div>
 </div>
@@ -350,15 +350,15 @@ deckSection: estado
   <ul class="list-none space-y-1.5 text-[0.78rem] leading-snug text-unal-gray sm:text-[0.82rem]">
     <li class="flex gap-2">
       <span class="mt-0.5 shrink-0 text-unal-blue">▸</span>
-      <span><span class="font-semibold">YOLOv9</span><span class="ml-0.5 font-semibold text-unal-blue">[23]</span>: PGI — gradiente programable → mayor precisión incluso en configuraciones ligeras entrenadas desde cero</span>
+      <span><span class="font-semibold">YOLOv9</span><span class="ml-0.5 font-semibold text-unal-blue">[20]</span>: PGI — gradiente programable → mayor precisión incluso en configuraciones ligeras entrenadas desde cero</span>
     </li>
     <li class="flex gap-2">
       <span class="mt-0.5 shrink-0 text-unal-blue">▸</span>
-      <span><span class="font-semibold">YOLOv12</span><span class="ml-0.5 font-semibold text-unal-blue">[25]</span>: primer YOLO centrado en mecanismos de <span class="font-semibold">atención</span> — ruptura con el paradigma puramente convolucional</span>
+      <span><span class="font-semibold">YOLOv12</span><span class="ml-0.5 font-semibold text-unal-blue">[21]</span>: primer YOLO centrado en mecanismos de <span class="font-semibold">atención</span> — ruptura con el paradigma puramente convolucional</span>
     </li>
     <li class="flex gap-2">
       <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-      <span><span class="font-semibold">RT-DETR</span><span class="ml-0.5 font-semibold text-unal-blue">[18]</span>: Transformer end-to-end — elimina NMS; precisión competitiva con YOLO en tiempo real</span>
+      <span><span class="font-semibold">RT-DETR</span><span class="ml-0.5 font-semibold text-unal-blue">[22]</span>: Transformer end-to-end — elimina NMS; precisión competitiva con YOLO en tiempo real</span>
     </li>
   </ul>
 </div>
@@ -410,11 +410,11 @@ deckSection: estado
       </li>
       <li class="flex gap-2">
         <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span><span class="font-semibold">RT-DETR</span><span class="ml-0.5 font-semibold text-unal-blue">[18]</span>: atención cross-escala global elimina NMS y reduce dependencia de heurísticas de post-procesamiento</span>
+        <span><span class="font-semibold">RT-DETR</span><span class="ml-0.5 font-semibold text-unal-blue">[22]</span>: atención cross-escala global elimina NMS y reduce dependencia de heurísticas de post-procesamiento</span>
       </li>
       <li class="flex gap-2">
         <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span>Imágenes PLM: la codificación de entrada (p.&nbsp;ej. vector de Stokes) afecta la capacidad discriminativa del detector<span class="ml-0.5 font-semibold text-unal-blue">[30]</span></span>
+        <span>Imágenes PLM: la codificación de entrada (p.&nbsp;ej. vector de Stokes) afecta la capacidad discriminativa del detector<span class="ml-0.5 font-semibold text-unal-blue">[23]</span></span>
       </li>
       <li class="flex gap-2">
         <span class="mt-0.5 shrink-0 text-unal-blue">▸</span>

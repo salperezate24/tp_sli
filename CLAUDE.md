@@ -202,5 +202,5 @@ El archivo `script.txt` contiene el texto que se dirá en cada diapositiva duran
 - El directorio `archive/` contiene notas de reuniones y borradores — no es contenido de producción
 - Al editar contenido, mantener coherencia con la terminología técnica establecida (ovocitos, microscopía polarizada, red neuronal profunda, etc.)
 - Los logos GPIMA y UNAL deben aparecer siempre en la esquina inferior derecha — se implementan como HTML inline al final de cada slide (no vía ThesisFooter.vue)
-- Las referencias en `10_referencias.md` llegan actualmente hasta **[32]** — al agregar nuevas, continuar desde [33]
+- Las referencias en `10_referencias.md` llegan actualmente hasta **[34]** — al agregar nuevas, continuar desde [35]
 - **Tareas pendientes:** ver `BACKLOG.md` en la raíz del proyecto

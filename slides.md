@@ -89,6 +89,19 @@ transition: slide-left
 class: text-left
 ---
 
+<script setup>
+import { useNav } from '@slidev/client'
+const nav = useNav()
+
+function goToSection(id) {
+  const found = nav.slides.value.find(r => {
+    const fm = r.meta?.slide?.frontmatter
+    return typeof fm?.deckSection === 'string' && fm.deckSection === id
+  })
+  if (found?.no != null) nav.go(found.no, 0)
+}
+</script>
+
 <div class="mx-auto flex h-full max-w-6xl -translate-y-6 flex-col justify-center px-10 pb-10 md:-translate-y-10">
 
 <header class="mb-6">
@@ -101,22 +114,22 @@ class: text-left
 <div class="rounded-xl border border-gray-300/60 border-l-4 border-l-unal-blue bg-white/95 px-6 py-5 shadow-md ring-1 ring-gray-900/5 backdrop-blur-sm">
   <p class="mb-3 border-b border-gray-200/90 pb-2.5 text-[11px] font-bold uppercase tracking-wider text-unal-blue">Secciones 1–5</p>
   <ol class="list-decimal space-y-2.5 pl-5 text-sm leading-relaxed text-unal-gray marker:font-semibold marker:text-unal-blue sm:text-[0.95rem]">
-    <li><span class="font-semibold">Justificación</span></li>
-    <li><span class="font-semibold">Marco teórico</span></li>
-    <li><span class="font-semibold">Estado del arte</span></li>
-    <li><span class="font-semibold">Pregunta de investigación e hipótesis</span></li>
-    <li><span class="font-semibold">Objetivos</span></li>
+    <li><button type="button" class="font-semibold cursor-pointer border-0 bg-transparent p-0 text-inherit hover:text-unal-blue transition-colors duration-200" @click="goToSection('justificacion')">Justificación</button></li>
+    <li><button type="button" class="font-semibold cursor-pointer border-0 bg-transparent p-0 text-inherit hover:text-unal-blue transition-colors duration-200" @click="goToSection('marco')">Marco teórico</button></li>
+    <li><button type="button" class="font-semibold cursor-pointer border-0 bg-transparent p-0 text-inherit hover:text-unal-blue transition-colors duration-200" @click="goToSection('estado')">Estado del arte</button></li>
+    <li><button type="button" class="font-semibold cursor-pointer border-0 bg-transparent p-0 text-inherit hover:text-unal-blue transition-colors duration-200" @click="goToSection('pregunta')">Pregunta de investigación e hipótesis</button></li>
+    <li><button type="button" class="font-semibold cursor-pointer border-0 bg-transparent p-0 text-inherit hover:text-unal-blue transition-colors duration-200" @click="goToSection('objetivos')">Objetivos</button></li>
   </ol>
 </div>
 
 <div class="rounded-xl border border-gray-300/60 border-l-4 border-l-unal-green bg-white/95 px-6 py-5 shadow-md ring-1 ring-gray-900/5 backdrop-blur-sm">
   <p class="mb-3 border-b border-gray-200/90 pb-2.5 text-[11px] font-bold uppercase tracking-wider text-unal-blue">Secciones 6–10</p>
   <ol class="list-decimal space-y-2.5 pl-5 text-sm leading-relaxed text-unal-gray marker:font-semibold marker:text-unal-blue sm:text-[0.95rem]" start="6">
-    <li><span class="font-semibold">Metodología</span></li>
-    <li><span class="font-semibold">Resultados</span></li>
-    <li><span class="font-semibold">Conclusiones</span></li>
-    <li><span class="font-semibold">Trabajo futuro</span></li>
-    <li><span class="font-semibold">Referencias</span></li>
+    <li><button type="button" class="font-semibold cursor-pointer border-0 bg-transparent p-0 text-inherit hover:text-unal-blue transition-colors duration-200" @click="goToSection('metodologia')">Metodología</button></li>
+    <li><button type="button" class="font-semibold cursor-pointer border-0 bg-transparent p-0 text-inherit hover:text-unal-blue transition-colors duration-200" @click="goToSection('resultados')">Resultados</button></li>
+    <li><button type="button" class="font-semibold cursor-pointer border-0 bg-transparent p-0 text-inherit hover:text-unal-blue transition-colors duration-200" @click="goToSection('conclusiones')">Conclusiones</button></li>
+    <li><button type="button" class="font-semibold cursor-pointer border-0 bg-transparent p-0 text-inherit hover:text-unal-blue transition-colors duration-200" @click="goToSection('trabajo_futuro')">Trabajo futuro</button></li>
+    <li><button type="button" class="font-semibold cursor-pointer border-0 bg-transparent p-0 text-inherit hover:text-unal-blue transition-colors duration-200" @click="goToSection('referencias')">Referencias</button></li>
   </ol>
 </div>
 

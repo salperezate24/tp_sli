@@ -17,15 +17,15 @@ deckSection: pregunta
 Pregunta de investigación
 </p>
 <p class="hyphens-auto text-pretty text-justify text-[0.8rem] leading-[1.42] tracking-[0.01em] text-unal-gray sm:text-[0.82rem]">
-Si se aplican distintas modificaciones a una red neuronal de detección de objetos y comparan varios tipos de imagen, ¿cuál de las <span class="font-semibold text-unal-blue">arquitecturas</span> logra <span class="font-semibold text-unal-blue">identificar</span> distintos estados de maduración de ovocitos partiendo de imágenes de microscopía polarizada en un video en vivo?
+¿Cuál de las <span class="font-semibold text-unal-blue">arquitecturas</span> logra <span class="font-semibold text-unal-blue">identificar</span> distintos estados de maduración de ovocitos partiendo de imágenes de microscopía polarizada en un video en vivo?
 </p>
 </div>
 <div class="min-w-0 rounded-xl border border-gray-300/60 border-l-4 border-l-unal-green bg-white/95 px-4 pb-5 pt-3 shadow-md ring-1 ring-gray-900/5 backdrop-blur-sm sm:px-6 sm:pb-6 sm:pt-3.5">
 <p class="mb-2.5 border-b border-gray-200/90 pb-2 text-[11px] font-bold uppercase tracking-wider text-unal-blue">
 Hipótesis
 </p>
-<p class="hyphens-auto text-pretty text-justify text-[0.8rem] leading-[1.42] tracking-[0.01em] text-unal-gray sm:text-[0.82rem] lg:columns-2 lg:gap-x-6 lg:[column-fill:balance]">
-Al realizar diversas modificaciones en una red neuronal de detección de objetos, tales como la variación en el formato de entrada, utilizando estructuras de imagen, vectores de características u modelos de color diferentes; y optimizar los parámetros de la red, como la función de pérdida, técnicas de predicción de cajas delimitadoras y métodos de atención para la detección de objetos, es posible <span class="font-semibold text-unal-blue">desarrollar</span> una red capaz de <span class="font-semibold text-unal-blue">detectar</span> ovocitos en imágenes de microscopía polarizada. Además, esta red podría <span class="font-semibold text-unal-blue">identificar características morfológicas</span>, como la presencia del huso meiótico y sus propiedades de birrefringencia que permiten <span class="font-semibold text-unal-blue">caracterizar</span> el estado de madurez de dichos ovocitos.
+<p class="hyphens-auto text-pretty text-justify text-sm leading-[1.45] tracking-[0.01em] text-unal-gray sm:text-[0.95rem]">
+Es posible <span class="font-semibold text-unal-blue">desarrollar</span> una red neuronal capaz de <span class="font-semibold text-unal-blue">identificar características morfológicas</span>, como la presencia del huso meiótico y sus propiedades de birrefringencia que permiten <span class="font-semibold text-unal-blue">caracterizar</span> el estado de madurez de dichos ovocitos.
 </p>
 </div>
 </div>

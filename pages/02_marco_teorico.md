@@ -5,43 +5,39 @@ deckSection: marco
 
 <div class="slide-deck-shell pb-10">
 <header class="mb-1.5 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">El ovocito, el huso meiótico y la PLM</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">El ovocito y sus marcadores de madurez</h1>
   <div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
-<p class="mb-2 max-w-4xl hyphens-auto text-justify text-[0.82rem] font-normal leading-snug text-unal-gray">
-  El objetivo es identificar el ovocito en estadio <span class="font-semibold text-unal-blue">MII</span> con mayor probabilidad de fecundación exitosa.
-  Estadísticamente, solo entre el <span class="font-semibold">5 y el 10&nbsp;%</span> de los ovocitos recuperados poseen potencial de desarrollo completo —
-  determinar esa viabilidad sin manipular ni comprometer la célula es el desafío real.
-  La <span class="font-semibold text-unal-blue">microscopía de luz polarizada (PLM)</span> es no invasiva e incluso expone al ovocito
-  a menos luz que la microscopía convencional; combinada con visión por computador, permite objetivar y automatizar la selección.
+<p class="mb-2 max-w-4xl hyphens-auto text-justify text-sm font-normal leading-snug text-unal-gray">
+  Tres estructuras permiten evaluar la madurez del ovocito <span class="font-semibold text-unal-blue">MII</span> de forma directa:
 </p>
-<div class="grid w-full grid-cols-2 gap-4 lg:gap-5">
+<ul class="mt-1 list-none space-y-2 text-sm leading-snug text-unal-gray">
+<li class="flex gap-1.5">
+  <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
+  <span><span class="font-semibold text-unal-blue">Huso meiótico:</span> segrega cromosomas en MII; su presencia confirma la madurez nuclear del ovocito.</span>
+</li>
+<li class="flex gap-1.5">
+  <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
+  <span><span class="font-semibold text-unal-blue">Cuerpo polar:</span> indicador clínico habitual; aparece <span class="font-semibold">antes</span> de que el huso esté completamente ensamblado — PLM permite verificar directamente si el huso ya está formado.</span>
+</li>
+</ul>
+<div class="mt-4 grid w-full grid-cols-2 gap-4 lg:gap-5">
 <figure class="m-0 flex min-w-0 flex-col">
-<img src="../images/figures/diagrams/oocyte_plm.png" alt="Ovocito bajo PLM" class="mx-auto h-auto max-h-32 w-full object-contain" />
-<figcaption lang="es" class="mt-1 max-w-full text-left text-[10px] leading-snug text-gray-600">
-  <span class="font-semibold text-unal-gray">Fig. 3.</span>
+<img src="../images/figures/diagrams/oocyte_plm.png" alt="Ovocito bajo PLM" class="mx-auto h-auto max-h-52 w-full object-contain" />
+<figcaption lang="es" class="mt-1 max-w-full text-left text-[11px] leading-snug text-gray-600">
+  <span class="font-semibold text-unal-gray">Fig. 2.</span>
   Ovocito bajo PLM: huso meiótico (s), ZP (zp), citoplasma (c) y cuerpo polar (pb). Rienzi et al.
-  <span class="ml-0.5 font-semibold text-unal-blue">[8]</span>.
+  <span class="ml-0.5 font-semibold text-unal-blue">[3]</span>.
 </figcaption>
 </figure>
 <figure class="m-0 flex min-w-0 flex-col">
-<img src="../images/figures/oocytes/oocyte_diagram_002.png" alt="Esquema del proceso de maduración de un ovocito" class="h-auto max-h-32 w-full object-contain" />
-<figcaption lang="es" class="mt-1 max-w-full text-left text-[10px] leading-snug text-gray-600">
-  <span class="font-semibold text-unal-gray">Fig. 2.</span>
+<img src="../images/figures/oocytes/oocyte_diagram_002.png" alt="Esquema del proceso de maduración de un ovocito" class="h-auto max-h-60 w-full object-contain" />
+<figcaption lang="es" class="mt-1 max-w-full text-left text-[11px] leading-snug text-gray-600">
+  <span class="font-semibold text-unal-gray">Fig. 3.</span>
   Esquema ilustrativo del proceso de maduración de un ovocito. Elaboración propia.
 </figcaption>
 </figure>
 </div>
-<ul class="mt-2 list-none space-y-1.5 text-[0.78rem] leading-snug text-unal-gray">
-<li class="flex gap-1.5">
-  <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-  <span><span class="font-semibold text-unal-blue">Huso meiótico:</span> responsable de la segregación cromosómica en metafase II. Aparece en metafase II y su presencia confirma la madurez nuclear del ovocito.</span>
-</li>
-<li class="flex gap-1.5">
-  <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-  <span>El <span class="font-semibold">cuerpo polar</span> —indicador clínico habitual— aparece <span class="font-semibold">antes</span> de que el huso esté completamente ensamblado. PLM permite verificar directamente si el huso ya está formado, ofreciendo una evaluación más precisa del momento óptimo para ICSI.</span>
-</li>
-</ul>
 </div>
 
 <!-- Logos abajo a la derecha -->
@@ -98,7 +94,7 @@ deckSection: marco
       <figcaption lang="es" class="plm-figcaption">
         <span class="font-semibold">Fig. 4.</span>
         Mapa de magnitud de retardo (algoritmo de cinco cuadros, corrección de fondo) de un astero de microtúbulos reconstituido desde centrosoma. Blanco ≈ 1,2&nbsp;nm; negro, birrefringencia nula.
-        <span class="mt-1 block font-medium opacity-100">Fuente: Shribak &amp; Oldenbourg (2003) <span class="font-semibold text-unal-blue">[13]</span>.</span>
+        <span class="mt-1 block font-medium opacity-100">Fuente: Shribak &amp; Oldenbourg (2003) <span class="font-semibold text-unal-blue">[4]</span>.</span>
       </figcaption>
     </figure>
   </div>

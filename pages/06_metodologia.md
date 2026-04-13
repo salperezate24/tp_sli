@@ -38,19 +38,23 @@ deckSection: metodologia
       </ul>
     </div>
     <div class="flex flex-col gap-1.5 rounded-lg border-l-4 border-unal-green bg-unal-green/5 px-3 py-2.5">
-      <p class="text-[0.65rem] font-bold uppercase tracking-wide text-[#5a7a2a]">4 · Cap. 5</p>
+      <p class="text-[0.65rem] font-bold uppercase tracking-wide text-[#5a7a2a]">4 · Cap. 5–6</p>
       <p class="text-[0.82rem] font-semibold leading-snug text-unal-gray">Transfer learning</p>
       <ul class="mt-0.5 list-none space-y-0.5 text-[0.7rem] leading-snug text-unal-gray">
         <li>Adaptación sintético → real</li>
+        <li>Módulos de atención</li>
         <li>Evaluación comparativa</li>
-        <li>mAP50, mAP50-95, tiempo</li>
       </ul>
     </div>
   </div>
-  <div class="flex items-center justify-center gap-2">
-    <div class="h-0.5 flex-1 rounded-full bg-unal-blue/20" />
-    <span class="text-[0.68rem] font-semibold text-unal-blue">Pesos COCO → Sintético → Real PLM → Evaluación en video</span>
-    <div class="h-0.5 flex-1 rounded-full bg-unal-blue/20" />
+  <div class="flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 bg-gray-50 px-4 py-2">
+    <span class="text-[0.66rem] text-unal-gray/60">Pesos COCO</span>
+    <span class="text-unal-blue/40">→</span>
+    <span class="rounded-md bg-unal-blue/15 px-2 py-0.5 text-[0.66rem] font-bold text-unal-blue">Preentrenamiento sintético</span>
+    <span class="text-unal-blue/40">→</span>
+    <span class="rounded-md bg-unal-green/15 px-2 py-0.5 text-[0.66rem] font-semibold text-[#3a6a18]">Transfer learning real</span>
+    <span class="text-unal-blue/40">→</span>
+    <span class="text-[0.66rem] text-unal-gray/60">Evaluación en video</span>
   </div>
 </div>
 </div>
@@ -86,11 +90,7 @@ deckSection: metodologia
       </li>
       <li class="flex gap-2">
         <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span>Etiquetado <span class="font-semibold">100% automático</span> por definición paramétrica — sin anotación manual · implementación en MATLAB</span>
-      </li>
-      <li class="flex gap-2">
-        <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span>Ruido de fondo aleatorio (π/380) para simular variaciones de adquisición PLM real</span>
+        <span>Etiquetado <span class="font-semibold">100% automático</span> por definición paramétrica — sin anotación manual · ruido de fondo aleatorio para simular variaciones PLM reales · implementación en MATLAB</span>
       </li>
     </ul>
   </div>
@@ -120,11 +120,11 @@ deckSection: metodologia
 ---
 
 <div class="slide-deck-shell">
-<header class="mb-3 text-left">
+<header class="mb-4 text-left">
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Conjuntos de datos</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
-<div class="flex min-h-0 flex-1 flex-col justify-center gap-3">
+<div class="flex min-h-0 flex-1 flex-col gap-3">
   <div class="grid grid-cols-3 gap-4">
     <!-- Dataset 1: Sintético -->
     <div class="flex flex-col gap-2 rounded-lg border border-unal-blue/30 bg-unal-blue/5 px-3.5 py-3">
@@ -184,14 +184,30 @@ deckSection: metodologia
 
 <div class="slide-deck-shell">
 <header class="mb-3 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Arquitecturas y protocolo de entrenamiento</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Selección de arquitecturas — de GDXray a PLM</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
-<p class="mb-3 text-[0.8rem] leading-snug text-unal-gray sm:text-[0.84rem]">
-  Experimento preliminar en GDXray+ (Mery) → selección de candidatos. <span class="font-semibold text-unal-blue">13 configuraciones</span> evaluadas sobre el mismo protocolo:
-</p>
 <div class="grid min-h-0 flex-1 grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] gap-5">
-  <div class="flex flex-col gap-3">
+  <div class="flex flex-col gap-2.5">
+    <div class="rounded-md border-l-4 border-unal-blue bg-unal-blue/5 px-2.5 py-1.5 text-[0.72rem] leading-snug text-unal-gray">
+      <span class="font-semibold text-unal-blue">Prueba en dominio análogo:</span> GDXray+ (Mery, U. Católica de Chile) — defectos elipsoidales de bajo contraste sobre fondo uniforme en escala de grises. Mismo patrón que el huso meiótico en PLM.
+    </div>
+    <figure class="m-0 min-w-0">
+      <img
+        src="../images/figures/simulation.png"
+        alt="GDXray+: simulación de defectos análogos a PLM"
+        class="h-auto max-h-[min(28vh,180px)] w-full object-contain"
+      />
+      <figcaption lang="es" class="mt-1 text-left text-[10px] leading-snug text-gray-600">
+        <span class="font-semibold text-unal-gray">Fig.</span> GDXray+: imagen de fundición (a), defectos elípticos simulados (b), superposición de bajo contraste (c) y detecciones del modelo (d).
+      </figcaption>
+    </figure>
+    <p class="text-[0.72rem] leading-snug text-unal-gray">
+      Todas las configuraciones superaron <span class="font-semibold text-unal-blue">mAP50 ≥ 0.989</span> en GDXray+ → cualquier arquitectura es viable → selección por balance rendimiento-eficiencia.
+    </p>
+  </div>
+  <div class="flex flex-col gap-2.5">
+    <p class="text-[0.75rem] font-semibold text-unal-gray"><span class="text-unal-blue">13 configuraciones</span> para el protocolo PLM:</p>
     <div class="flex flex-wrap gap-1.5">
       <span class="rounded-full bg-gray-100 px-2.5 py-0.5 text-[0.72rem] font-medium text-unal-gray ring-1 ring-gray-300">YOLOv8s</span>
       <span class="rounded-full bg-gray-100 px-2.5 py-0.5 text-[0.72rem] font-medium text-unal-gray ring-1 ring-gray-300">YOLOv8m</span>
@@ -206,23 +222,6 @@ deckSection: metodologia
       <span class="rounded-full bg-unal-green/15 px-2.5 py-0.5 text-[0.72rem] font-semibold text-[#5a7a2a] ring-1 ring-unal-green/50">RT-DETR-R50</span>
       <span class="rounded-full bg-unal-green/15 px-2.5 py-0.5 text-[0.72rem] font-semibold text-[#5a7a2a] ring-1 ring-unal-green/50">RT-DETR-L</span>
       <span class="rounded-full bg-unal-green/15 px-2.5 py-0.5 text-[0.72rem] font-semibold text-[#5a7a2a] ring-1 ring-unal-green/50">RT-DETR-R101</span>
-    </div>
-    <div class="rounded-md border-l-4 border-unal-blue bg-unal-blue/5 px-2.5 py-1.5 text-[0.72rem] leading-snug text-unal-gray">
-      <span class="font-semibold text-unal-blue">Experimento control:</span> preentrenamiento sintético sin transfer learning → línea base para cuantificar el gap sintético-real
-    </div>
-  </div>
-  <div class="grid grid-cols-1 gap-2.5">
-    <div class="rounded-lg border border-gray-200 bg-white px-3 py-2 shadow-sm">
-      <p class="mb-1 text-[0.65rem] font-bold uppercase tracking-wide text-unal-blue">Entorno</p>
-      <p class="text-[0.7rem] leading-snug text-unal-gray">Google Colab · NVIDIA L4 (22.5 GB VRAM) · PyTorch + Ultralytics</p>
-    </div>
-    <div class="rounded-lg border border-gray-200 bg-white px-3 py-2 shadow-sm">
-      <p class="mb-1 text-[0.65rem] font-bold uppercase tracking-wide text-unal-blue">Etapa 1 — Sintético</p>
-      <p class="text-[0.7rem] leading-snug text-unal-gray">SGD · lr = 0.01 · batch = 16 · img 640 · 100 épocas (YOLO) / 200 (RT-DETR) · early stopping</p>
-    </div>
-    <div class="rounded-lg border border-gray-200 bg-white px-3 py-2 shadow-sm">
-      <p class="mb-1 text-[0.65rem] font-bold uppercase tracking-wide text-unal-blue">Métricas</p>
-      <p class="text-[0.7rem] leading-snug text-unal-gray">mAP50 · mAP50-95 · Precisión · Recall · Tiempo de inferencia (ms/img)</p>
     </div>
   </div>
 </div>
@@ -242,35 +241,28 @@ deckSection: metodologia
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Diseño e integración de módulos de atención</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
-<div class="flex min-h-0 flex-1 flex-col gap-3">
-  <div class="flex gap-2 text-[0.78rem] leading-snug text-unal-gray sm:text-[0.82rem]">
+<div class="flex min-h-0 flex-1 flex-col gap-2 pt-3">
+  <div class="flex gap-2 text-[0.75rem] leading-snug text-unal-gray">
     <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
     <span><span class="font-semibold">Motivación:</span> los modelos base presentan baja sensibilidad al <span class="font-semibold text-unal-blue">límite citoplasmático</span> y al <span class="font-semibold text-unal-blue">huso meiótico</span> — estructuras de bajo contraste sin precedente en bases de datos públicas → integración de atención para recalibrar respuesta espacial y de canal</span>
   </div>
-  <div class="grid grid-cols-2 gap-3">
-    <div class="flex flex-col gap-1.5 rounded-lg border border-unal-blue/30 bg-unal-blue/5 px-3 py-2.5">
+  <div class="grid grid-cols-2 gap-2">
+    <div class="flex flex-col gap-0.5 rounded-lg border border-unal-blue/30 bg-unal-blue/5 px-3 py-1.5">
       <p class="text-[0.65rem] font-bold uppercase tracking-wide text-unal-blue">YOLOv9m-CBAM</p>
-      <p class="text-[0.72rem] leading-snug text-unal-gray">CBAM en backbone · bloque P2/4 (128 ch) · después del primer RepNCSPELAN4 · atención canal + espacial secuencial</p>
-      <p class="text-[0.67rem] text-unal-gray">+0.01M params · +0.1 GFLOPs</p>
+      <p class="text-[0.71rem] leading-snug text-unal-gray">CBAM en backbone · bloque P2/4 (128 ch) · después del primer RepNCSPELAN4 · atención canal + espacial secuencial</p>
     </div>
-    <div class="flex flex-col gap-1.5 rounded-lg border border-unal-blue/30 bg-unal-blue/5 px-3 py-2.5">
+    <div class="flex flex-col gap-0.5 rounded-lg border border-unal-blue/30 bg-unal-blue/5 px-3 py-1.5">
       <p class="text-[0.65rem] font-bold uppercase tracking-wide text-unal-blue">YOLOv9m-Triple Attention</p>
-      <p class="text-[0.72rem] leading-snug text-unal-gray">Atención progresiva en 3 niveles: Channel Att. (P2/4) · Spatial Att. (P3/8) · CBAM (P4/16) — recalibración multi-escala</p>
-      <p class="text-[0.67rem] text-unal-gray">+0.14M params · +0.2 GFLOPs</p>
+      <p class="text-[0.71rem] leading-snug text-unal-gray">Atención progresiva en 3 niveles: Channel Att. (P2/4) · Spatial Att. (P3/8) · CBAM (P4/16) — recalibración multi-escala</p>
     </div>
-    <div class="flex flex-col gap-1.5 rounded-lg border border-unal-green/30 bg-unal-green/5 px-3 py-2.5">
+    <div class="flex flex-col gap-0.5 rounded-lg border border-unal-green/30 bg-unal-green/5 px-3 py-1.5">
       <p class="text-[0.65rem] font-bold uppercase tracking-wide text-[#3a6a18]">YOLO11m-Conservative Attention</p>
-      <p class="text-[0.72rem] leading-snug text-unal-gray">Channel Att. después del 1.er C3k2 (P2/4, 256 ch) · CBAM después del 2.° C3k2 (P3/8, 512 ch) — enfoque conservador</p>
-      <p class="text-[0.67rem] text-unal-gray">+0.33M params · +0.2 GFLOPs</p>
+      <p class="text-[0.71rem] leading-snug text-unal-gray">Channel Att. después del 1.er C3k2 (P2/4, 256 ch) · CBAM después del 2.° C3k2 (P3/8, 512 ch) — enfoque conservador</p>
     </div>
-    <div class="flex flex-col gap-1.5 rounded-lg border border-unal-green/30 bg-unal-green/5 px-3 py-2.5">
+    <div class="flex flex-col gap-0.5 rounded-lg border border-unal-green/30 bg-unal-green/5 px-3 py-1.5">
       <p class="text-[0.65rem] font-bold uppercase tracking-wide text-[#3a6a18]">YOLO11m-Transformer Enhanced</p>
-      <p class="text-[0.72rem] leading-snug text-unal-gray">Módulos C3TR + Attention en backbone — captura de relaciones globales en la imagen para complementar la convolución local</p>
-      <p class="text-[0.67rem] text-unal-gray">+0.40M params · +0.4 GFLOPs inferior</p>
+      <p class="text-[0.71rem] leading-snug text-unal-gray">Módulos C3TR + Attention en backbone — captura de relaciones globales en la imagen para complementar la convolución local</p>
     </div>
-  </div>
-  <div class="rounded-md border-l-4 border-unal-blue bg-unal-blue/10 px-2.5 py-1.5 text-[0.72rem] leading-snug text-unal-gray">
-    <span class="font-bold text-unal-blue">Criterio de diseño:</span> todos los modelos conservan la arquitectura base intacta y solo añaden atención en puntos estratégicos — overhead computacional mínimo, inferencia comparable al baseline
   </div>
 </div>
 </div>
@@ -280,7 +272,7 @@ deckSection: metodologia
 </div>
 
 ---
-transition: slide-left
+transition: slide-up
 deckSection: metodologia
 ---
 
@@ -332,6 +324,56 @@ deckSection: metodologia
         <span><span class="font-semibold">Experimento control</span> (sin Etapa 2) → cuantifica el gap sintético-real y valida la necesidad del TL</span>
       </li>
     </ul>
+  </div>
+</div>
+</div>
+<div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
+  <img src="../images/logos/gpima_logo.png" alt="GPIMA" class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6" />
+  <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
+</div>
+
+---
+transition: slide-left
+deckSection: metodologia
+---
+
+<div class="slide-deck-shell">
+<header class="mb-3 text-left">
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Protocolo de evaluación</h1>
+  <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
+</header>
+<div class="flex min-h-0 flex-1 flex-col gap-4">
+  <div class="grid grid-cols-2 gap-4">
+    <div class="flex flex-col gap-2 rounded-lg border border-unal-blue/30 bg-unal-blue/5 px-4 py-3">
+      <p class="text-[0.72rem] font-bold uppercase tracking-wide text-unal-blue">Evaluación cuantitativa</p>
+      <p class="text-[0.75rem] leading-snug text-unal-gray">
+        <span class="font-semibold">Conjunto de prueba:</span> 40 imágenes · 146 instancias anotadas (OocytePaperImages)
+      </p>
+      <ul class="list-none space-y-1 text-[0.72rem] leading-snug text-unal-gray">
+        <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><span class="font-semibold">mAP50</span> — umbral estándar de la comunidad</span></li>
+        <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><span class="font-semibold">mAP50-95</span> — promedio sobre 10 umbrales de IoU, más exigente</span></li>
+        <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span>Precisión · Recall · Tiempo de inferencia (ms/img)</span></li>
+      </ul>
+      <p class="mt-0.5 text-[0.67rem] italic leading-snug text-unal-gray/80">Mismo protocolo para las 13 configuraciones estándar y las 4 variantes con atención — comparación directa y justa</p>
+    </div>
+    <div class="flex flex-col gap-2 rounded-lg border border-unal-green/30 bg-unal-green/5 px-4 py-3">
+      <p class="text-[0.72rem] font-bold uppercase tracking-wide text-[#3a6a18]">Evaluación cualitativa en video</p>
+      <p class="text-[0.75rem] leading-snug text-unal-gray">
+        <span class="font-semibold">5 secuencias de video PLM</span> · sin anotaciones de referencia por fotograma
+      </p>
+      <ul class="list-none space-y-1 text-[0.72rem] leading-snug text-unal-gray">
+        <li class="flex gap-1.5"><span class="shrink-0 text-unal-green">▸</span><span>Deformación del ovocito durante microinyección</span></li>
+        <li class="flex gap-1.5"><span class="shrink-0 text-unal-green">▸</span><span>Cambio de forma del huso en la división meiótica</span></li>
+        <li class="flex gap-1.5"><span class="shrink-0 text-unal-green">▸</span><span>Herramientas de micromanipulación y artefactos</span></li>
+        <li class="flex gap-1.5"><span class="shrink-0 text-unal-green">▸</span><span>Falsos positivos ante objetos no presentes en entrenamiento</span></li>
+      </ul>
+      <p class="mt-0.5 text-[0.67rem] italic leading-snug text-unal-gray/80">Escenario más cercano al laboratorio clínico real</p>
+    </div>
+  </div>
+  <div class="flex items-center justify-center gap-2">
+    <div class="h-0.5 flex-1 rounded-full bg-unal-blue/20" />
+    <span class="text-[0.68rem] font-semibold text-unal-blue">Métricas en imágenes estáticas + evidencia visual en video → evaluación completa del rendimiento real</span>
+    <div class="h-0.5 flex-1 rounded-full bg-unal-blue/20" />
   </div>
 </div>
 </div>

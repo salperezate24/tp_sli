@@ -226,59 +226,152 @@ deckSection: resultados
 
 <div class="slide-deck-shell">
 <header class="mb-3 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Integración CBAM en YOLOv9m</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Rendimiento por clase: las 4 estructuras</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
-<div class="grid min-h-0 flex-1 grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] gap-5">
-  <div class="flex flex-col gap-3">
+<div class="grid min-h-0 flex-1 grid-cols-[minmax(0,1.35fr)_minmax(0,0.65fr)] gap-5">
+  <div class="flex flex-col gap-2.5">
+    <p class="text-[0.68rem] font-bold uppercase tracking-wide text-unal-blue">YOLOv9m tras transfer learning — mAP50 por clase</p>
     <div class="overflow-x-auto">
-      <table class="w-full border-collapse text-[0.7rem] leading-snug text-unal-gray sm:text-[0.73rem]">
+      <table class="w-full border-collapse text-[0.73rem] leading-snug text-unal-gray sm:text-[0.76rem]">
         <thead>
           <tr class="border-b-2 border-unal-gray">
-            <th class="py-1 pr-3 text-left font-semibold">Modelo</th>
-            <th class="px-2 py-1 text-center font-semibold">mAP50</th>
-            <th class="px-2 py-1 text-center font-semibold">mAP50-95</th>
-            <th class="px-2 py-1 text-center font-semibold">Citolimit</th>
-            <th class="px-2 py-1 text-center font-semibold">Inf. (ms)</th>
+            <th class="py-1 pr-3 text-left font-semibold">Estructura</th>
+            <th class="px-3 py-1 text-center font-semibold">mAP50</th>
+            <th class="px-3 py-1 text-center font-semibold">mAP50-95</th>
           </tr>
         </thead>
         <tbody>
-          <tr class="border-b border-gray-200">
-            <td class="py-1 pr-3 font-medium">YOLOv9m</td>
-            <td class="px-2 py-1 text-center font-semibold text-unal-blue">0.902</td>
-            <td class="px-2 py-1 text-center font-semibold text-unal-blue">0.627</td>
-            <td class="px-2 py-1 text-center">0.979</td>
-            <td class="px-2 py-1 text-center">7.4</td>
+          <tr class="border-b border-unal-green/30 bg-unal-green/5">
+            <td class="py-1.5 pr-3 font-semibold">Zona pelúcida</td>
+            <td class="px-3 py-1.5 text-center font-bold text-unal-green">0.995</td>
+            <td class="px-3 py-1.5 text-center text-unal-green">0.865</td>
           </tr>
-          <tr class="border-b border-unal-blue/20 bg-unal-blue/5">
-            <td class="py-1 pr-3 font-semibold text-unal-blue">YOLOv9m-CBAM</td>
-            <td class="px-2 py-1 text-center">0.868</td>
-            <td class="px-2 py-1 text-center">0.623</td>
-            <td class="px-2 py-1 text-center font-bold text-unal-blue">0.986</td>
-            <td class="px-2 py-1 text-center">7.0</td>
+          <tr class="border-b border-unal-green/30 bg-unal-green/5">
+            <td class="py-1.5 pr-3 font-semibold">Huso meiótico</td>
+            <td class="px-3 py-1.5 text-center font-bold text-unal-green">0.993</td>
+            <td class="px-3 py-1.5 text-center text-amber-600 font-semibold">0.481</td>
           </tr>
-          <tr class="border-b border-gray-200">
-            <td class="py-1 pr-3 font-medium">YOLOv9m-Triple Att.</td>
-            <td class="px-2 py-1 text-center">0.878</td>
-            <td class="px-2 py-1 text-center">0.618</td>
-            <td class="px-2 py-1 text-center">0.980</td>
-            <td class="px-2 py-1 text-center">7.5</td>
+          <tr class="border-b border-unal-blue/20">
+            <td class="py-1.5 pr-3 font-semibold">Límite citoplasmático</td>
+            <td class="px-3 py-1.5 text-center font-bold text-unal-blue">0.979</td>
+            <td class="px-3 py-1.5 text-center text-unal-blue">0.883</td>
+          </tr>
+          <tr class="bg-red-50/60">
+            <td class="py-1.5 pr-3 font-semibold">Cuerpo polar</td>
+            <td class="px-3 py-1.5 text-center font-bold text-red-500">0.642</td>
+            <td class="px-3 py-1.5 text-center text-red-400">0.281</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <ul class="list-none space-y-1.5 text-[0.76rem] leading-snug text-unal-gray">
+    <ul class="list-none space-y-1.5 text-[0.74rem] leading-snug text-unal-gray pt-1">
       <li class="flex gap-2">
-        <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span>CBAM insertado en backbone de YOLOv9m (P2/4, 128 canales) · overhead mínimo: +0.1 GFLOPs</span>
+        <span class="shrink-0 text-unal-green">▸</span>
+        <span><span class="font-semibold text-unal-green">ZP:</span> mAP50-95 = 0.865 — alta precisión de localización. <span class="font-semibold text-amber-600">Huso:</span> mAP50-95 = 0.481 — se detecta casi siempre (0.993) pero la caja no es ajustada; coherente con su morfología elongada y pequeña</span>
       </li>
       <li class="flex gap-2">
-        <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span><span class="font-semibold">Mejora citolimit</span>: 0.979 → <span class="font-semibold text-unal-blue">0.986</span> — estructura de bajo contraste, la más difícil de detectar</span>
+        <span class="shrink-0 text-unal-blue">▸</span>
+        <span><span class="font-semibold text-unal-blue">Citolimit:</span> mAP50-95 = 0.883 — error residual de <em>localización fina</em>, no de clasificación</span>
       </li>
       <li class="flex gap-2">
-        <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span>Ventaja cualitativa en video: CBAM elimina falsos positivos sobre aguja de inyección y detecta citolimit en secuencias donde YOLOv9m falla completamente (→ ver videos)</span>
+        <span class="shrink-0 text-red-400">▸</span>
+        <span><span class="font-semibold text-red-500">Cuerpo polar:</span> mAP50-95 = 0.281 — fallos tanto de detección como de ajuste; estructura de mayor variabilidad morfológica</span>
+      </li>
+    </ul>
+  </div>
+  <!-- Callout cuerpo polar -->
+  <div class="flex flex-col gap-3 pt-5">
+    <div class="rounded-lg border border-red-200 bg-red-50 px-3 py-3">
+      <p class="text-[0.63rem] font-bold uppercase tracking-wide text-red-600 mb-2">Cuerpo polar — el mayor desafío</p>
+      <div class="flex items-center justify-around py-1 gap-1">
+        <div class="text-center">
+          <p class="text-[1.5rem] font-extrabold leading-none text-red-300">0.012</p>
+          <p class="mt-1 text-[0.58rem] leading-snug text-gray-400">promedio sin TL</p>
+        </div>
+        <div class="text-lg font-bold text-unal-gray">→</div>
+        <div class="text-center">
+          <p class="text-[1.5rem] font-extrabold leading-none text-unal-blue">0.642</p>
+          <p class="mt-1 text-[0.58rem] leading-snug text-gray-500">YOLOv9m con TL</p>
+        </div>
+      </div>
+      <p class="mt-2 text-[0.63rem] leading-snug text-unal-gray">Morfología variable e inconsistente impide capturarlo sintéticamente — el TL sobre datos reales es indispensable.</p>
+    </div>
+    <div class="rounded-md border-l-4 border-unal-blue bg-unal-blue/10 px-2.5 py-1.5">
+      <p class="text-[0.67rem] leading-snug text-unal-gray"><span class="font-bold text-unal-blue">Clínicamente:</span> ZP y huso detectados con alta confianza → evaluación de madurez nuclear viable en tiempo real.</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
+  <img src="../images/logos/gpima_logo.png" alt="GPIMA" class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6" />
+  <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
+</div>
+
+---
+transition: slide-up
+deckSection: resultados
+---
+
+<div class="slide-deck-shell">
+<header class="mb-3 text-left">
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Módulos de atención — comparativa consolidada</h1>
+  <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
+</header>
+<div class="grid min-h-0 flex-1 grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] gap-5">
+  <div class="flex flex-col gap-2.5">
+    <div class="overflow-x-auto">
+      <table class="w-full border-collapse text-[0.69rem] leading-snug text-unal-gray sm:text-[0.72rem]">
+        <thead>
+          <tr class="border-b-2 border-unal-gray">
+            <th class="py-1 pr-2 text-left font-semibold">Modelo</th>
+            <th class="px-2 py-1 text-center font-semibold text-gray-500">Control</th>
+            <th class="px-2 py-1 text-center font-semibold">TL mAP50</th>
+            <th class="px-2 py-1 text-center font-semibold">Citolimit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-unal-blue/30 bg-unal-blue/5 font-semibold">
+            <td class="py-1.5 pr-2 text-unal-blue">YOLOv9m</td>
+            <td class="px-2 py-1.5 text-center text-gray-500">0.328</td>
+            <td class="px-2 py-1.5 text-center font-bold text-unal-blue">0.902</td>
+            <td class="px-2 py-1.5 text-center">0.979</td>
+          </tr>
+          <tr class="border-b border-gray-200">
+            <td class="py-1.5 pr-2 font-medium">YOLOv9m-CBAM</td>
+            <td class="px-2 py-1.5 text-center text-unal-green font-semibold">0.470</td>
+            <td class="px-2 py-1.5 text-center">0.868</td>
+            <td class="px-2 py-1.5 text-center font-bold text-unal-blue">0.986</td>
+          </tr>
+          <tr class="border-b border-gray-200 bg-unal-green/5">
+            <td class="py-1.5 pr-2 font-semibold text-[#3a6a18]">YOLOv9m-Triple Att.</td>
+            <td class="px-2 py-1.5 text-center font-bold text-unal-green">0.499</td>
+            <td class="px-2 py-1.5 text-center font-semibold text-[#3a6a18]">0.878</td>
+            <td class="px-2 py-1.5 text-center">0.980</td>
+          </tr>
+          <tr class="border-b border-gray-200">
+            <td class="py-1.5 pr-2 font-medium">YOLO11m-Cons. Att.</td>
+            <td class="px-2 py-1.5 text-center text-gray-400">0.319</td>
+            <td class="px-2 py-1.5 text-center">0.846</td>
+            <td class="px-2 py-1.5 text-center text-gray-400">—</td>
+          </tr>
+          <tr>
+            <td class="py-1.5 pr-2 font-medium">YOLO11m-Trans. Enh.</td>
+            <td class="px-2 py-1.5 text-center text-gray-400">0.381</td>
+            <td class="px-2 py-1.5 text-center">0.841</td>
+            <td class="px-2 py-1.5 text-center font-bold text-unal-blue">0.986</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ul class="list-none space-y-1.5 text-[0.72rem] leading-snug text-unal-gray pt-0.5">
+      <li class="flex gap-2">
+        <span class="shrink-0 text-unal-green">▸</span>
+        <span><span class="font-semibold text-unal-green">Sin TL:</span> Triple Att. (0.499) y CBAM (0.470) superan al baseline (0.328) — los módulos de atención mejoran la transferencia de dominio sintético→real</span>
+      </li>
+      <li class="flex gap-2">
+        <span class="shrink-0 text-unal-blue">▸</span>
+        <span><span class="font-semibold text-unal-blue">Con TL:</span> la brecha se reduce a &lt;3 puntos mAP50; CBAM lidera en citolimit (0.986) — ventaja que se confirma y amplía en video</span>
       </li>
     </ul>
   </div>
@@ -286,12 +379,12 @@ deckSection: resultados
     <figure class="m-0 min-w-0">
       <img
         src="../images/figures/results/stage18_features.png"
-        alt="Mapas de características YOLOv9m-CBAM — stage 18"
-        class="h-auto max-h-[min(50vh,320px)] w-full object-contain"
+        alt="Mapas de características YOLOv9m vs YOLOv9m-CBAM — stage 18"
+        class="h-auto max-h-[min(46vh,290px)] w-full object-contain"
       />
       <figcaption lang="es" class="mt-1.5 text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
         <span class="font-semibold text-unal-gray">Fig. 10.</span>
-        Mapas de características (stage 18) — YOLOv9m-CBAM muestra activaciones más localizadas en ZP y límite citoplasmático.
+        Mapas de activación (P4) — CBAM produce activaciones más localizadas en ZP y citolimit, explicando su ventaja en video.
       </figcaption>
     </figure>
   </div>

@@ -63,39 +63,47 @@ Recientemente se ha popularizado el uso de la microscopía polarizada para visua
 
 Se han desarrollado sistemas de automatización que realizan segmentación celular o conteos, pero ninguno aprovecha las ventajas que ofrece la PLM para detectar estos marcadores de madurez en la célula.
 
-SLIDE 11 (ESTADO DEL ARTE II: MICROSCOPÍA POLARIZADA Y BIRREFRINGENCIA):
-En esta imagen vemos exactamente lo que la PLM permite observar de forma no invasiva: el huso meiótico con un retardo óptico típico de 2 a 6 nanómetros, la zona pelúcida con su propia birrefringencia, y el cuerpo polar confirmando el fin de la primera división meiótica.
+SLIDE 11 (ESTADO DEL ARTE II: ESTRUCTURAS BIRREFRINGENTES BAJO PLM):
+En la diapositiva anterior vimos que la PLM se popularizó para visualizar ovocitos. Detengámonos ahora en qué estructuras son visibles y por qué.
 
-Lo que hace especialmente relevante esta imagen es que contiene toda la información necesaria para clasificar la madurez del ovocito, sin haberlo tocado ni comprometido. Y más aún: Tepla et al. encontraron que la posición relativa entre el huso y el cuerpo polar se asocia a mayores tasas de embarazo tras ICSI. Localizar espacialmente esas estructuras tiene valor clínico directo — y es exactamente lo que un detector de objetos puede aportar.
+En esta imagen de Rienzi et al. vemos el ovocito maduro bajo microscopía polarizada. Cuatro estructuras presentan birrefringencia: el huso meiótico, como una estructura elipsoidal de bajo contraste — su birrefringencia solo aparece en estadio MII, lo que lo convierte en el indicador directo de madurez. La zona pelúcida, con birrefringencia moderada producto de su organización glicoproteica. Y el cuerpo polar, que confirma que la primera división meiótica se completó — su posición relativa al huso predice el éxito en ICSI.
 
-SLIDE 12 (ESTADO DEL ARTE III: DATOS SINTÉTICOS — PARTE A):
-Para entrenar un detector de objetos se necesitan datos anotados. Aquí encontramos la primera barrera práctica: no existe ninguna base pública de imágenes PLM de ovocitos — los datos clínicos son privados, costosos de obtener y difíciles de anotar.
+Lo que hace especialmente relevante a la PLM es que el huso meiótico es completamente invisible en campo claro: esta es la única técnica no invasiva que lo revela.
 
-La solución, respaldada por la literatura, es la generación de datos sintéticos. Mery et al. demostraron — como vemos en la figura — que simular defectos elipsoidales sobre imágenes de rayos X permitía entrenar un detector que luego transfería correctamente a imágenes reales. Frid-Adar et al. validan esta estrategia en dominios médicos de manera más general.
+SLIDE 12 (ESTADO DEL ARTE III: RETARDO ÓPTICO DE LAS ESTRUCTURAS BIRREFRINGENTES):
+Ahora veamos los valores concretos que sustentan todo esto cuantitativamente.
 
-Lo clave para nuestro caso es la analogía física: el huso meiótico se comporta como un elipsoide de bajo contraste. Y como vemos en el recuadro de la derecha, los retardos reportados en la literatura para el huso son de 2 a 6 nanómetros, lo que permite una síntesis realista basada en sus propiedades físicas. El principal reto de este enfoque es el domain shift entre lo sintético y lo real, que se aborda con transfer learning.
+Esta figura de Bruguès y Needleman mide el retardo óptico del huso meiótico en ovocitos de ratón a distintos objetivos. Los perfiles del panel b confirman que en estadio MII el huso es consistentemente detectable. Los valores del panel c lo cuantifican: retardo entre 1 y 5.6 nanómetros — una señal extremadamente débil. Para referencia, la zona pelúcida presenta entre 0 y 2 nanómetros, y el fondo entre 0 y 1 nanómetro.
 
-SLIDE 13 (ESTADO DEL ARTE IV: MEDICIÓN DE RETARDO POR ESTRUCTURA — PARTE B):
-Ahora veamos los valores concretos de retardo por estructura. El huso meiótico, nuestro objetivo principal, tiene un retardo óptico de entre 2 y 6 nanómetros. Es un objeto de muy bajo contraste, casi invisible en microscopía convencional, pero perfectamente detectable con PLM cuantitativa gracias a esta señal de birrefringencia.
+Valores tan pequeños y tan próximos entre sí son exactamente el reto del problema: el huso no destaca visualmente con facilidad. Pero al mismo tiempo son valores físicamente bien definidos y cuantificables, lo que hace posible modelarlos de forma sintética con precisión — y esa es la base de lo que viene a continuación.
 
-La zona pelúcida, la capa externa del ovocito, presenta una birrefringencia considerablemente mayor, con retardos del orden de 10 a 20 nanómetros. Esto es producto de su estructura ordenada de glicoproteínas, que le da una alta anisotropía óptica.
+SLIDE 13 (ESTADO DEL ARTE IV: EL USO DE BASES DE DATOS SINTÉTICAS):
+Para entrenar un detector de objetos se necesitan imágenes anotadas. Aquí encontramos la primera barrera práctica: no existe ninguna base pública de imágenes PLM de ovocitos — los datos clínicos son privados, costosos y sujetos a restricciones éticas.
 
-El fondo, en cambio, tiene retardo cercano a cero y funciona como referencia de calibración del sistema. Estas tres regiones con valores bien separados son precisamente la razón por la cual una síntesis física del ovocito PLM es posible y realista — podemos modelar cada estructura con sus propias propiedades ópticas y generar imágenes que el detector aprenderá a reconocer.
+La solución, respaldada por la literatura, es la generación de datos sintéticos. Como vemos en la figura, Mery et al. demostraron que simular defectos elipsoidales sobre imágenes de rayos X permitía entrenar un detector que transfería correctamente a imágenes reales. Eversberg y Lambrecht, y Frid-Adar et al. validan esta estrategia en industria e imágenes médicas respectivamente.
+
+El fundamento físico para aplicarlo en PLM lo aportan Kelleher y Needleman y Bruguès y Needleman: el huso meiótico tiene morfología elipsoidal y retardo óptico cuantificable, lo que habilita un modelado sintético realista. El principal reto reportado en la literatura es el domain shift entre lo sintético y lo real, que se aborda con transfer learning.
 
 SLIDE 14 (ESTADO DEL ARTE V: AVANCES EN REDES NEURONALES):
-La detección de objetos con redes profundas ha evolucionado desde arquitecturas de dos etapas como Faster R-CNN, hacia detectores de una sola etapa que resuelven localización y clasificación simultáneamente. Esa evolución trajo consigo mejoras estructurales sistemáticas: backbones más eficientes para extraer características multi-escala, necks con FPN y PANet para detectar objetos pequeños, y cabezas desacopladas con pérdidas basadas en IoU para afinar la localización espacial. En la diapositiva vemos las principales arquitecturas revisadas, desde los detectores clásicos hasta las propuestas más recientes.
+La detección de objetos con redes profundas ha evolucionado desde arquitecturas de dos etapas — Faster R-CNN, RetinaNet — hacia detectores de una sola etapa que resuelven localización y clasificación simultáneamente. En la diapositiva vemos el panorama de arquitecturas revisadas; en azul, YOLOv9 y YOLOv11, los dos modelos centrales de este trabajo, y en verde RT-DETR como alternativa Transformer.
 
-SLIDE 15 (ESTADO DEL ARTE VI: FAMILIA YOLO):
-En ese panorama, la familia YOLO se consolidó como la plataforma dominante en detección en tiempo real. Más allá de la evolución de versiones, la literatura identifica tendencias estructurales claras: bloques de backbone cada vez más eficientes, fusión multi-escala mediante FPN y PANet en el neck, transición de esquemas anchor-based a anchor-free, y pérdidas basadas en variantes de IoU para mejorar la localización.
+Esta evolución trajo mejoras sistemáticas en cuatro componentes, que vemos en la parte inferior: el backbone extrae características multi-escala con bloques progresivamente más eficientes; el neck integra esas características mediante FPN y PANet para detectar objetos de distintos tamaños; la cabeza produce predicciones con esquemas anchor-free y pérdidas basadas en IoU; y los módulos de atención — SE, CBAM, ECA — recalibran la respuesta de la red para adaptarla a dominios específicos como las imágenes PLM.
 
-Las últimas versiones marcan saltos cualitativos importantes. YOLOv9 introdujo la planificación de rutas de gradiente, mejorando la precisión incluso en configuraciones ligeras entrenadas desde cero. YOLOv12 representa un cambio de paradigma al centrar toda la arquitectura en mecanismos de atención, rompiendo con el diseño puramente convolucional. Y RT-DETR propone detección end-to-end con atención global, eliminando por completo el post-procesamiento NMS.
+SLIDE 15 (ESTADO DEL ARTE VI: FAMILIA YOLO — EVOLUCIÓN Y MODELOS EVALUADOS):
+Esta línea del tiempo muestra la evolución de YOLO desde la versión 1 en 2016 hasta la versión 12 en 2025 — nueve años de desarrollo continuo. Tres modelos son centrales en este trabajo, marcados en azul y verde.
+
+YOLOv9, de 2024, introdujo la planificación de rutas de gradiente — un mecanismo que preserva la información a lo largo de la red y mejora la precisión incluso en configuraciones ligeras entrenadas desde cero. YOLOv11, también de 2024 y desarrollado por Ultralytics, introduce bloques C3k2 de mayor eficiencia y fue la arquitectura base sobre la cual integramos módulos de atención en este trabajo. Y RT-DETR, de Baidu en 2023, propone detección Transformer end-to-end: elimina el post-procesamiento NMS y ofrece una alternativa estructuralmente distinta a la familia convolucional.
 
 SLIDE 16 (ESTADO DEL ARTE VII: MECANISMOS DE ATENCIÓN):
-Mencionamos que YOLOv12 y RT-DETR se centran en mecanismos de atención — vale la pena detenerse un momento en qué significa eso y por qué se ha vuelto tan relevante.
+En la diapositiva anterior vimos que RT-DETR y las variantes más recientes de YOLO incorporan mecanismos de atención. Vale la pena detenerse en qué significa eso.
 
-Los mecanismos de atención permiten a la red enfocarse dinámicamente en las regiones más relevantes de la imagen: amplifican activaciones útiles y suprimen el ruido de fondo. A diferencia de las convoluciones, que tratan todas las posiciones por igual, la atención asigna pesos diferenciados según el contenido — lo que resulta especialmente valioso para detectar objetos pequeños o de bajo contraste.
+Existen varios módulos de atención ligeros que se integran en detectores existentes sin rediseñarlos. SE — Squeeze-and-Excitation — fue el pionero: comprime cada canal a un escalar y aprende un peso por canal. ECA lo hace de forma más eficiente con una convolución 1D. Ambos responden solo a la pregunta de qué canales activar.
 
-Los Transformers llevan este principio más lejos: aplican atención de forma global sobre toda la imagen, capturando relaciones entre regiones distantes que una convolución local no puede ver. Módulos como CBAM, SE y ECA ya se integran en variantes especializadas de YOLO. YOLOv12 es el primero construido completamente sobre este principio. Y RT-DETR lo adopta en su forma más pura: un Transformer end-to-end que elimina incluso el NMS.
+CBAM va un paso más allá. Como vemos en el diagrama y las dos ecuaciones, aplica primero atención de canal — M_c pondera cada canal combinando pooling promedio y máximo — y luego atención espacial — M_s hace lo mismo pero por posición en la imagen. Añade así la pregunta de dónde enfocar. Eso lo hace especialmente valioso en imágenes PLM, donde el huso meiótico y el cuerpo polar son estructuras pequeñas de muy bajo contraste. En este trabajo integramos CBAM en YOLOv9m precisamente por eso.
+
+RT-DETR lleva el principio más lejos. Un Transformer no recalibra canales ni posiciones locales — aplica atención entre todas las posiciones de la imagen simultáneamente: cada región puede "consultar" cualquier otra, sin importar la distancia. Esto captura relaciones globales que una convolución local nunca vería. En RT-DETR, un decodificador Transformer produce directamente las detecciones finales mediante consultas aprendidas, eliminando la necesidad del NMS como paso de post-procesamiento.
+
+Estos tres ejes — la brecha de datos PLM, la síntesis realista y los módulos de atención — plantean naturalmente la pregunta que organiza este trabajo.
 
 SLIDE 17 (HIPÓTESIS DE INVESTIGACIÓN):
 Con este panorama claro llegamos a la pregunta central: dado que ningún sistema existente detecta y localiza simultáneamente estructuras birrefringentes en imágenes PLM de ovocitos, ¿cuál configuración de red neuronal — variando arquitectura, formato de entrada y mecanismos de atención — logra identificar esas estructuras en un video en vivo de microscopía polarizada?
@@ -119,21 +127,234 @@ Y el tercero es evaluar el rendimiento de la red seleccionada, usando las métri
 Juntos, estos tres objetivos constituyen el esqueleto de la metodología que veremos a continuación.
 
 
-SLIDE 33 (CONCLUSIONES):
+SLIDE 20 (PIPELINE METODOLÓGICO):
+
+Con los objetivos claros, pasemos a la metodología. El trabajo se
+organizó en cuatro etapas, que vemos en la diapositiva.
+
+Las dos primeras corresponden al capítulo cuatro: generar las imágenes
+sintéticas de ovocitos PLM y conformar los conjuntos de entrenamiento,
+validación y evaluación. Las dos últimas, a los capítulos cinco y seis:
+seleccionar y entrenar arquitecturas estándar, y luego desarrollar
+variantes con módulos de atención.
+
+La clave del enfoque está en el preentrenamiento sintético — ese es el
+paso que le da al modelo una base morfológica del ovocito antes de ver
+una sola imagen real. A partir de ahí, el transfer learning sobre las
+200 imágenes PLM reales afina esas representaciones al dominio real, y
+finalmente evaluamos en video. Cada etapa construye sobre la anterior,
+y ese encadenamiento es lo que hace viable trabajar con datos reales
+tan limitados. Veamos cada etapa.
+
+
+SLIDE 21 (SÍNTESIS DE IMÁGENES PLM):
+
+El primer reto fue el dato. No existe ninguna base pública de imágenes
+PLM de ovocitos — los datos clínicos son privados, costosos y sujetos
+a restricciones éticas. La solución fue generar los datos
+sintéticamente a partir del modelo físico.
+
+Modelamos cuatro estructuras en MATLAB usando sus propiedades
+birrefringentes conocidas: el huso meiótico como una Gaussiana
+anisotrópica 2D con retardo de unos 5.6 nanómetros, la zona pelúcida
+como una banda elíptica con filtro Gaussiano, y adicionalmente el
+límite del citoplasma y el cuerpo polar. El sistema se calibró a 1
+píxel igual a 0.129 micrómetros — que corresponde a imágenes
+adquiridas a 400x con un ovocito de 120 micrómetros de diámetro.
+
+Al combinar 12 zonas pelúcidas, 18 configuraciones de huso y múltiples
+posiciones, obtuvimos 526 mil imágenes. De esas seleccionamos 21 600
+para entrenamiento. La ventaja clave: el etiquetado es 100% automático
+por definición paramétrica — sin ninguna intervención manual.
+
+
+SLIDE 22 (CONJUNTOS DE DATOS):
+
+Con las imágenes sintéticas generadas, conformamos tres conjuntos con
+roles completamente distintos.
+
+El primero, Oocyte_synthetic_2025b, tiene 21 600 imágenes y sirve para
+el preentrenamiento. Aporta la escala que no existe en el dominio real.
+El segundo, OocytePaperImages, tiene 200 imágenes PLM reales extraídas
+de publicaciones científicas — con etiquetado manual y preprocesado para
+eliminar texto y barras de escala de las figuras originales. Es pequeño,
+pero es el puente hacia el dominio real. El tercero son cinco secuencias
+de video PLM: una de time-lapse de meiosis del sistema OpenPolScope, dos
+de publicaciones y dos del repositorio Zenodo.
+
+Cada fuente tiene un rol específico: síntesis para escala, literatura
+para dominio real, video para validación práctica. Esa combinación es
+lo que hace viable el enfoque con datos tan limitados.
+
+
+SLIDE 23 (SELECCIÓN DE ARQUITECTURAS — DE GDXRAY A PLM):
+
+Antes de comprometer semanas de cómputo sobre datos PLM, necesitábamos
+una forma de comparar arquitecturas rápidamente. Para eso usamos el
+conjunto GDXray+ del profesor Mery, de la Universidad Católica de
+Chile: imágenes de rayos X de piezas fundidas con defectos elipsoidales
+superpuestos de bajo contraste. Como vemos en la figura, el problema es
+análogo al nuestro — elipses poco visibles sobre fondo uniforme en
+escala de grises. Una prueba en seco antes del dominio PLM.
+
+Evaluamos versiones de YOLOv8 hasta v12 en variantes pequeña y mediana,
+más tres configuraciones de RT-DETR. Todos superaron mAP50 de 0.989 en
+GDXray+, lo que confirmó que cualquiera era técnicamente viable. A
+partir de ahí seleccionamos las versiones más recientes — YOLOv5 y v6
+quedaron fuera porque las versiones nuevas las igualan o superan con
+mejor soporte — totalizando 13 configuraciones para el protocolo
+completo sobre datos PLM.
+
+
+SLIDE 24 (MÓDULOS DE ATENCIÓN):
+
+Con los modelos base entrenados, evaluamos si los módulos de atención
+podían mejorar el rendimiento. La motivación fue concreta: los modelos
+base mostraban baja sensibilidad al límite citoplasmático y al huso
+meiótico — las dos estructuras de menor contraste — que son exactamente
+donde el problema es más difícil.
+
+Desarrollamos cuatro variantes. Dos sobre YOLOv9m: CBAM insertado en
+el backbone en el nivel P2, que aplica atención de canal y espacial en
+secuencia; y Triple Attention, que aplica los tres mecanismos de forma
+progresiva en P2, P3 y P4 — de lo más temprano a lo más abstracto. Dos
+sobre YOLO11m: Conservative Attention, con módulos probados en puntos
+estratégicos; y Transformer Enhanced, que incorpora bloques C3TR para
+capturar relaciones globales en la imagen.
+
+El criterio fue consistente en los cuatro: no rediseñar la arquitectura
+sino añadir atención en posiciones estratégicas. El overhead
+computacional es menor al 0.5% en todos los casos.
+
+
+SLIDE 25 (PROTOCOLO DE TRANSFER LEARNING):
+
+El entrenamiento sigue tres etapas encadenadas. Empezamos con pesos
+COCO — representaciones genéricas de objetos naturales. En la primera
+etapa preentrenamos en datos sintéticos con SGD: el modelo aprende la
+morfología de las estructuras del ovocito en un entorno controlado. En
+la segunda aplicamos transfer learning sobre las 200 imágenes reales
+con AdamW, cuyas tasas de aprendizaje adaptativas son más eficientes
+para el salto de dominio sintético a real.
+
+Además de ese esquema principal, realizamos un experimento de control:
+evaluamos los modelos directamente sobre imágenes reales después del
+preentrenamiento sintético, sin pasar por la segunda etapa. Ese
+experimento nos permite cuantificar exactamente cuánto aporta el
+transfer learning y qué tan grande es la brecha entre dominios. Sin
+esa comparación no podríamos saber si el preentrenamiento sintético
+es necesario o si bastan los pesos COCO de partida.
+
+
+SLIDE 26 (PROTOCOLO DE EVALUACIÓN):
+
+La evaluación se hizo en dos niveles. El primero es cuantitativo:
+mAP50, mAP50-95, precisión, recall y tiempo de inferencia sobre 40
+imágenes de prueba con 146 instancias anotadas de OocytePaperImages.
+Todas las configuraciones se evaluaron bajo el mismo protocolo —
+mismos hiperparámetros, mismo conjunto de prueba — lo que garantiza
+una comparación justa entre las 13 configuraciones estándar y las 4
+variantes con atención.
+
+El segundo nivel es cualitativo: evaluación visual en las cinco
+secuencias de video. Sin anotaciones de referencia por fotograma, pero
+permiten observar el comportamiento en condiciones dinámicas reales —
+deformación del ovocito durante la inyección, cambio de forma del huso
+en la división meiótica, presencia de herramientas de micromanipulación,
+artefactos. El escenario más cercano al laboratorio clínico.
+
+Esa combinación — métricas cuantitativas en imágenes estáticas más
+evidencia visual en video — da una imagen mucho más completa del
+rendimiento real. Con esto, pasemos a los resultados.
+
+
+SLIDE 27 (RESULTADOS I — BASE DE DATOS SINTÉTICA):
+
+Con eso claro, pasemos a los resultados. El primer resultado es la base de datos sintética en sí misma, porque sin datos no hay modelo.
+
+Generamos 526.392 imágenes en MATLAB usando el modelo físico de retardo óptico — y de esas seleccionamos 21.600 para entrenamiento. La ventaja fundamental: el etiquetado es 100% automático por definición paramétrica. No hubo ninguna intervención manual. Como vemos en la figura de la izquierda, las imágenes sintéticas reproducen visualmente las características que veríamos en PLM real: la zona pelúcida como un anillo birrefringente, el huso como una elipse de bajo contraste, el cuerpo polar y el límite citoplasmático.
+
+El complemento real es OocytePaperImages: 200 imágenes PLM recopiladas de publicaciones científicas, curadas y anotadas manualmente, que actúan como el puente hacia el dominio real. Esta combinación — 21.600 sintéticas para escala, 200 reales para dominio — es lo que hace viable el enfoque con datos tan limitados.
+
+
+SLIDE 28 (RESULTADOS II — PREENTRENAMIENTO SINTÉTICO Y BRECHA DE DOMINIO):
+
+El primer experimento fue preentrenar todos los modelos en la base sintética. El resultado fue excelente: todos los modelos YOLO alcanzaron mAP50 de 0.995 con precisión y recall de 1.0. RT-DETR llegó a 0.986–0.992. El pipeline de síntesis produce datos de entrenamiento de altísima calidad.
+
+Pero ahí viene el problema que justifica todo lo demás. Cuando tomamos esos modelos — perfectos en datos sintéticos — y los evaluamos directamente sobre las 40 imágenes reales sin ningún ajuste adicional, el mAP50 colapsa a un rango de 0.241 a 0.698. Eso es la brecha sintético-real.
+
+Este resultado es esperado y es una confirmación positiva: el dataset sintético funciona para aprender morfología, pero el dominio visual difiere suficientemente del real como para requerir una segunda etapa de ajuste. Hay un hallazgo adicional aquí: los modelos con módulos de atención transfieren mejor, en particular YOLOv9m-Triple Attention alcanzó 0.499 sin ningún dato real de ajuste — más del doble que el modelo estándar en el mismo escenario.
+
+
+SLIDE 29 (RESULTADOS III — COMPARATIVA CUANTITATIVA — TRANSFER LEARNING):
+
+Con la segunda etapa de transfer learning sobre las 200 imágenes reales, el rendimiento cambia completamente. Esta tabla resume los resultados de las 13 configuraciones estándar; mostramos los cinco modelos más destacados.
+
+YOLOv9m y RT-DETR-R101 empatan en mAP50 de 0.902. La diferencia está en mAP50-95, que mide localización precisa con umbrales de IoU estrictos: YOLOv9m obtiene 0.627 frente a 0.612 de RT-DETR — y lo hace en 7.4 milisegundos de inferencia, frente a los 14.8 milisegundos de RT-DETR. Para una aplicación que necesita correr en tiempo real en el microscopio, ese factor 2 en velocidad importa.
+
+YOLOv12s es el más rápido en absoluto — 4 milisegundos — con un mAP50-95 de 0.622 comparable, pero su mAP50 de 0.855 es menor. En síntesis, YOLOv9m ofrece el mejor balance entre precisión, localización y velocidad, y es el modelo que tomamos como referencia para el análisis que sigue.
+
+
+SLIDE 30 (RESULTADOS IV — RENDIMIENTO POR CLASE: LAS 4 ESTRUCTURAS):
+
+Hasta ahora hemos visto métricas globales. Ahora veamos qué ocurre estructura por estructura, porque eso es lo que tiene significado clínico.
+
+Para YOLOv9m después de transfer learning: la zona pelúcida llega a mAP50 de 0.995 — prácticamente perfecta. El huso meiótico, que es el marcador principal de madurez nuclear, alcanza 0.993. El límite citoplasmático llega a 0.979.
+
+La estructura más difícil fue el cuerpo polar. Con transfer learning, el mejor modelo alcanza 0.642. Puede parecer bajo comparado con las otras estructuras, pero veamos de dónde venía: en el experimento de control, sin datos reales, el promedio entre todos los modelos era de 0.012 — prácticamente cero. El salto es de 0.012 a 0.642. Ese es el resultado más dramático de toda la evaluación, y confirma algo crucial: el cuerpo polar tiene morfología demasiado variable para ser capturado sintéticamente; la transferencia sobre datos reales es indispensable para detectarlo.
+
+
+SLIDE 31 (RESULTADOS V — MÓDULOS DE ATENCIÓN: COMPARATIVA CONSOLIDADA):
+
+Con el modelo base establecido, evaluamos si los módulos de atención podían mejorar el rendimiento. Desarrollamos cuatro variantes: CBAM y Triple Attention sobre YOLOv9m, y Conservative Attention y Transformer Enhanced sobre YOLO11m.
+
+El hallazgo más claro emerge en el escenario de control — sin datos reales de ajuste. YOLOv9m-Triple Attention alcanza mAP50 de 0.499 y YOLOv9m-CBAM de 0.470, frente al 0.328 del baseline estándar. Los módulos de atención mejoran significativamente la capacidad de transferir desde el dominio sintético al real.
+
+Con transfer learning la ventaja se reduce. Triple Attention es el mejor modelo desarrollado con 0.878 — solo 2.7 puntos por debajo del baseline. Pero CBAM muestra una ventaja específica: mAP50 de citolimit de 0.986 frente a 0.979 del baseline. Los mapas de activación que vemos a la derecha explican por qué: CBAM produce activaciones más localizadas y definidas para el límite citoplasmático, que es la estructura de menor contraste. Esa diferencia, pequeña en métricas estáticas, se magnifica en video.
+
+
+SLIDE 32 (RESULTADOS VI — SECUENCIA 1: OpenPolScope — MEIOSIS I):
+
+Pasemos ahora a la evaluación en video. Estos dos videos muestran el mismo segmento de la secuencia 1 — una grabación OpenPolScope del proceso de meiosis — procesado con YOLOv9m-CBAM a la izquierda y con YOLOv9m estándar a la derecha.
+
+La diferencia más llamativa está en el límite citoplasmático, marcado en la tabla. YOLOv9m lo detecta en apenas 4 de los 100 fotogramas. YOLOv9m-CBAM lo detecta en todos los 100, con una confianza notable y estable entre 0.90 y 0.96. No es una diferencia marginal: es la diferencia entre detectar o no detectar esa estructura en prácticamente toda la secuencia.
+
+En zona pelúcida, ambos modelos detectan en todos los fotogramas, pero la confianza de YOLOv9m varía entre 0.48 y 0.92 — inestable — mientras que CBAM mantiene entre 0.94 y 0.95 de forma consistente. Para el huso meiótico, ambos coinciden: lo pierden en el tramo de fotogramas 21 a 46, donde el huso cambia de posición durante la meiosis y su visibilidad disminuye incluso para el ojo experto.
+
+
+SLIDE 33 (RESULTADOS VII — SECUENCIA 2: OOSIGHT-SPINDLE VIEW — ICSI):
+
+Esta secuencia muestra algo más exigente: un procedimiento de ICSI real, con aguja de inyección dentro del campo visual. La aguja introduce un artefacto de alto contraste que confunde al modelo.
+
+YOLOv9m genera 538 detecciones de huso meiótico en 146 fotogramas — la mayoría son falsos positivos sobre la herramienta. La zona pelúcida solo la detecta en 17 fotogramas. El modelo estándar básicamente se pierde en presencia de la aguja.
+
+YOLOv9m-CBAM detecta zona pelúcida en todos los 150 fotogramas con confianza entre 0.81 y 0.96. Detecta el límite citoplasmático en 148 de los 150. El huso meiótico presenta solo 7 falsos positivos en toda la secuencia — nada comparado con los 538 del baseline. Incluso durante los fotogramas de deformación — cuando la aguja está en contacto y el ovocito se deforma visiblemente — CBAM mantiene las detecciones correctas.
+
+
+SLIDE 34 (RESULTADOS VIII — SECUENCIA 3: OptimFert — PRAGUE IVF):
+
+La tercera secuencia es la más larga: 660 fotogramas de un proceso completo de fecundación in vitro, con cambios morfológicos significativos. Hay un logotipo superpuesto en la imagen, una herramienta de micromanipulación, y el huso cambia de forma cuando el cuerpo polar se separa.
+
+YOLOv9m detecta zona pelúcida correctamente en toda la secuencia, pero confunde sistemáticamente el logotipo con huso meiótico, la herramienta con huso en múltiples tramos, y pierde el huso real a partir del fotograma 300. 1.710 detecciones de huso meiótico en 660 fotogramas — un número que por sí solo dice que algo va mal.
+
+YOLOv9m-CBAM detecta zona pelúcida y límite citoplasmático en todos los 660 fotogramas, con confianza estable. El huso meiótico se pierde temporalmente hacia el fotograma 390 — que es exactamente cuando está cambiando de forma durante la división — y se recupera hacia el 479. El fotograma 374, que vemos en la tabla, es especialmente ilustrativo: YOLOv9m no detecta ni huso ni cuerpo polar; CBAM detecta las cuatro estructuras correctamente.
+
+
+SLIDE 35 (CONCLUSIONES):
 El objetivo general del trabajo se cumplió en tres etapas secuenciales: primero generamos la base de datos sintética, luego aplicamos preentrenamiento y transferencia sobre imágenes PLM reales, y finalmente desarrollamos y evaluamos modelos con módulos de atención.
 
 Los tres objetivos específicos también se alcanzaron. El primero produjo oocyte_synthetic_2025b: más de 526.000 imágenes con etiquetado automático de cuatro estructuras. El segundo estableció un método sistemático de evaluación de arquitecturas, tanto estándar como con atención. El tercero completó una comparación exhaustiva de 13 configuraciones bajo el esquema sintético→real.
 
 El resultado principal de ese proceso fue YOLOv9m como modelo óptimo: mAP50 de 0,902 y mAP50-95 de 0,627, con detección robusta del huso meiótico, la zona pelúcida, el límite del citoplasma y el cuerpo polar — las cuatro estructuras clave para evaluar la madurez del ovocito.
 
-SLIDE 34 (HALLAZGOS Y APORTES):
+SLIDE 36 (HALLAZGOS Y APORTES):
 Este slide sintetiza lo que aprendimos y lo que dejamos a la comunidad.
 
 Entre los hallazgos: la transferencia de dominio no es opcional, es esencial. El preentrenamiento sintético solo produce modelos que apenas detectan; la transferencia sobre imágenes reales genera mejoras dramáticas: el cuerpo polar pasó de mAP50 de 0,012 a 0,516. Los módulos de atención mostraron su mayor valor precisamente cuando no hay fine-tuning disponible — YOLOv9m-triple-attention superó al modelo estándar en 17 puntos en ese escenario. Con transferencia la diferencia se reduce a menos de tres puntos, pero en video el CBAM detectó el citoplasma establemente donde el modelo estándar falló.
 
 Como aportes concretos dejamos tres cosas: la base sintética pública oocyte_synthetic_2025b, el marco metodológico sintético→real demostrado en imágenes PLM biomédicas, y una referencia comparativa de 13 configuraciones con YOLOv9m como punto de partida sólido para este problema.
 
-SLIDE 35 (TRABAJO FUTURO):
+SLIDE 37 (TRABAJO FUTURO):
 El trabajo abre cinco líneas naturales de continuación.
 
 La más urgente es construir una base de datos real PLM anotada por expertos — sin ella, la dependencia del esquema sintético→real seguirá siendo un supuesto que no hemos podido contrastar directamente.

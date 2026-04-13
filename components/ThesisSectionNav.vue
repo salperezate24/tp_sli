@@ -103,7 +103,7 @@ async function goToReferencias() {
         >·</span>
         <button
           type="button"
-          class="shrink-0 cursor-pointer whitespace-nowrap border-0 bg-transparent p-0 text-[7px] font-semibold uppercase tracking-[0.1em] transition-opacity duration-200 sm:text-[8px] sm:tracking-[0.14em] md:text-[9px] focus-visible:rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-unal-blue"
+          class="shrink-0 cursor-pointer whitespace-nowrap border-0 bg-transparent p-0 text-[6px] font-semibold uppercase tracking-[0.07em] transition-opacity duration-200 sm:text-[7px] sm:tracking-[0.1em] md:text-[8px] focus-visible:rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-unal-blue"
           :class="section === s.id
             ? 'text-unal-blue opacity-100'
             : 'text-unal-gray opacity-25 hover:opacity-60'"

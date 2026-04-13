@@ -77,9 +77,18 @@ deckSection: marco
   <!-- Columna izquierda: imagen de intensidad PLM -->
   <div class="flex flex-col gap-2">
     <p class="plm-section-label-center text-left font-semibold text-unal-blue text-[0.72rem] sm:text-[0.76rem]">Imagen de intensidad (I₀–I₄)</p>
-    <div class="flex flex-1 items-center justify-center rounded border-2 border-dashed border-unal-blue/60 px-4 py-6 text-center text-[0.72rem] leading-snug text-unal-blue/70 sm:text-[0.76rem]">
-      [INSERTAR IMAGEN: Ejemplo de una de las cinco capturas de intensidad PLM con distinto estado de polarización — campo oscuro del astero de microtúbulos]
-    </div>
+    <figure class="m-0 flex w-full min-w-0 flex-col items-stretch">
+      <img
+        src="../images/intensitites.png"
+        alt="Cinco imágenes de intensidad del astero con distintos ajustes de polarización"
+        class="h-auto w-full max-h-[min(42vh,280px)] object-contain"
+      />
+      <figcaption lang="es" class="plm-figcaption">
+        <span class="font-semibold">Fig. 4.</span>
+        Cinco imágenes de intensidad del astero con ajustes de polarización 0, 1, 2, 3 y 4 del compensador universal. Las imágenes fueron mejoradas en contraste para mayor visibilidad.
+        <span class="mt-1 block font-medium opacity-100">Fuente: Shribak &amp; Oldenbourg (2003) <span class="font-semibold text-unal-blue">[4]</span>.</span>
+      </figcaption>
+    </figure>
   </div>
 
   <!-- Columna derecha: mapa de retardo óptico -->
@@ -92,7 +101,7 @@ deckSection: marco
         class="plm-retardo-img"
       />
       <figcaption lang="es" class="plm-figcaption">
-        <span class="font-semibold">Fig. 4.</span>
+        <span class="font-semibold">Fig. 5.</span>
         Mapa de magnitud de retardo (algoritmo de cinco cuadros, corrección de fondo) de un astero de microtúbulos reconstituido desde centrosoma. Blanco ≈ 1,2&nbsp;nm; negro, birrefringencia nula.
         <span class="mt-1 block font-medium opacity-100">Fuente: Shribak &amp; Oldenbourg (2003) <span class="font-semibold text-unal-blue">[4]</span>.</span>
       </figcaption>
@@ -210,7 +219,7 @@ deckSection: marco
       class="mx-auto h-auto max-h-[min(52vh,410px)] w-full max-w-[96%] object-contain"
     />
     <figcaption lang="es" class="mt-2 text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
-      <span class="font-semibold text-unal-gray">Fig. 5.</span>
+      <span class="font-semibold text-unal-gray">Fig. 6.</span>
       Arquitectura general de los modelos YOLO.
       <span class="ml-0.5 font-semibold text-unal-blue">Elaboración propia.</span>
     </figcaption>

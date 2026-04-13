@@ -39,7 +39,7 @@ export default defineConfig({
       '[&_.katex-display]:my-0.5 [&_.katex-display]:text-left [&_.katex-display]:text-[0.48rem] sm:[&_.katex-display]:text-[0.52rem]',
     /** Imagen central PLM (compacta para 3 columnas). */
     'plm-retardo-img':
-      'relative mx-auto h-auto max-h-[min(22vh,150px)] w-full max-w-[min(100%,175px)] object-contain sm:max-h-[min(26vh,185px)]',
+      'relative mx-auto h-auto max-h-[min(14vh,100px)] w-full max-w-[min(100%,130px)] object-contain sm:max-h-[min(17vh,125px)]',
     /** Pie de figura bajo la imagen PLM (solo en uno.config). */
     'plm-figcaption':
       'm-0 mt-2 w-full max-w-full hyphens-auto break-words text-left text-[8px] leading-tight text-unal-gray opacity-90 sm:text-[9px] sm:leading-snug',

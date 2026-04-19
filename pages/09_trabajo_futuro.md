@@ -56,3 +56,17 @@ deckSection: trabajo_futuro
   <img src="../images/logos/gpima_logo.png" alt="GPIMA" class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6" />
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
+
+<!--
+El trabajo abre cinco líneas naturales de continuación.
+
+La más urgente es construir una base de datos real PLM anotada por expertos — sin ella, la dependencia del esquema sintético→real seguirá siendo un supuesto que no hemos podido contrastar directamente.
+
+La segunda línea es estudiar el efecto del zoom óptico: nuestros modelos se entrenaron con una relación micra-píxel específica, y no sabemos cómo se comportan con otras magnificaciones.
+
+Tercero, la evaluación en video necesita métricas cuantitativas por fotograma — hasta ahora solo tenemos evidencia visual.
+
+Cuarto, el cuerpo polar fue la estructura más difícil de detectar; ampliar su variabilidad en la síntesis podría cerrar esa brecha.
+
+Y quinto, la integración clínica: estudiar inferencia en tiempo real, usabilidad en el laboratorio, e impacto real en la toma de decisiones del embriólogo. Ese es, en última instancia, el objetivo del trabajo.
+-->

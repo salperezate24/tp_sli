@@ -52,6 +52,14 @@ deckSection: justificacion
   />
 </div>
 
+<!--
+La reproducción asistida y el desarrollo embrionario tienen aplicaciones relevantes tanto en la seguridad alimentaria como en la medicina humana. En ambos campos, la maduración citoplasmática del ovocito es el prerrequisito esencial para la competencia del desarrollo embrionario. Sin un ovocito maduro, la eficiencia de cualquier técnica de reproducción asistida queda comprometida.
+
+En la industria porcina, por ejemplo, la eficiencia sigue siendo un desafío: según Chen et al. (2022), típicamente solo 1 de cada 5 embriones producidos in vitro llega a término. Técnicas avanzadas de selección pueden elevar esta proporción a 1 de cada 3. Esta brecha subraya la necesidad de mejorar la selección de los embriones producidos in vitro (IVP) para optimizar las tasas de transferencia.
+
+Lo que ocurre en la industria animal es un reflejo directo de lo que ocurre en la reproducción humana asistida — y en ese campo, el impacto es aún más evidente dado el factor de la edad materna. Veamos eso en la siguiente diapositiva.
+-->
+
 ---
 transition: slide-left
 deckSection: justificacion
@@ -105,3 +113,11 @@ deckSection: justificacion
   <img src="../images/logos/gpima_logo.png" alt="GPIMA" class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6" />
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
+
+<!--
+En el ser humano, la efectividad de las técnicas de reproducción asistida está estrechamente ligada a la edad materna, lo que hace que la dependencia de la calidad del ovocito sea aún más evidente.
+
+Según el reporte nacional preliminar de SART para 2024, se realizaron 431.746 ciclos totales de reproducción asistida. Como vemos en el gráfico, la probabilidad de éxito — nacimiento vivo — cae dramáticamente con la edad: del 50.3% en menores de 35 años, hasta apenas el 4.1% en mujeres mayores de 42 años utilizando sus propios óvulos.
+
+Estos datos confirman que el margen de éxito es sumamente estrecho y altamente sensible a la calidad del gameto femenino. El refinamiento de los protocolos de maduración y selección ovocitaria es una necesidad clínica urgente — ese es el punto de partida de este trabajo.
+-->

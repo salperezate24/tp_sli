@@ -44,3 +44,6 @@ Production deploys use GitHub Pages only.
 - Vercel is not used for deployment in this repository.
 
 Learn more about Slidev at the [documentation](https://sli.dev/).
+
+
+claude --resume "methodology-section-restructure"

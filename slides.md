@@ -60,8 +60,8 @@ const formattedDate = new Intl.DateTimeFormat('es-CO', {
     {{ formattedDate }}
   </div>
 
-  <div class="mt-6 text-base">
-    Grupo de Promoción e Investigación en Mecánica Aplicada<br/>
+  <div class="mt-6 text-sm">
+    Maestría en Ingeniería — Analítica<br/>
     Departamento de Ciencias de la Computación<br/>
     Facultad de Minas<br/>
     Universidad Nacional de Colombia Sede Medellín
@@ -83,6 +83,14 @@ const formattedDate = new Intl.DateTimeFormat('es-CO', {
     class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14"
   />
 </div>
+
+<!--
+Buenos días, apreciados jurados, señoras y señores. Mi nombre es Salomón Pérez Atencia, ingeniero mecánico, y soy el autor de la tesis titulada "Desarrollo de un modelo de red neuronal profunda para la identificación de ovocitos y sus características a través de microscopía polarizada".
+
+Antes de comenzar, quiero agradecer especialmente a los jurados por su tiempo, por la lectura del documento y por estar presentes hoy en la defensa.
+
+El director de esta tesis es el profesor Alejandro Restrepo Martínez, y este trabajo se realizó en el marco del Grupo de Promoción e Investigación en Mecánica Aplicada (GPIMA) de la Facultad de Minas de la Universidad Nacional de Colombia, Sede Medellín.
+-->
 
 ---
 transition: slide-left
@@ -149,6 +157,12 @@ function goToSection(id) {
     class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14"
   />
 </div>
+
+<!--
+La presentación del día de hoy está estructurada de la siguiente manera:
+
+Comenzaremos con la justificación y relevancia de este trabajo; luego se presentará el marco teórico del problema de investigación, seguido por el estado del arte, a partir de estos estudios y conocimientos se planteará la hipótesis de investigación, seguidamente se presentan los objetivos, se explicará la metodología, se presentarán los resultados, se terminaremos con las conclusiones y un poco sobre el trabajo futuro.
+-->
 
 ---
 level: 2

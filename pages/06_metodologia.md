@@ -8,15 +8,15 @@ deckSection: metodologia
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Flujo metodológico</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
-<div class="flex min-h-0 flex-1 flex-col justify-center gap-3">
+<div class="flex min-h-0 flex-1 flex-col justify-center">
   <div class="grid grid-cols-[1fr_auto_1fr_auto_1fr] items-stretch gap-2">
     <!-- Fase 1 -->
-    <div class="flex flex-col gap-2 rounded-xl border-2 border-unal-blue/30 bg-unal-blue/5 px-4 py-3">
-      <div class="flex items-center gap-2">
-        <span class="rounded-full bg-unal-blue px-2.5 py-0.5 text-[0.6rem] font-bold uppercase tracking-wide text-white">Fase 1</span>
-        <span class="text-[0.78rem] font-bold text-unal-blue">Bases de datos</span>
+    <div class="flex flex-col gap-2.5 rounded-xl border-2 border-unal-blue/30 bg-unal-blue/5 px-4 py-3">
+      <div class="flex flex-col gap-0.5">
+        <span class="text-[0.58rem] font-bold uppercase tracking-widest text-unal-blue/60">Fase 1</span>
+        <span class="text-[0.9rem] font-bold leading-tight text-unal-blue">Bases de datos</span>
       </div>
-      <ul class="mt-0.5 list-none space-y-1.5 text-[0.72rem] leading-snug text-unal-gray">
+      <ul class="list-none space-y-1.5 text-[0.72rem] leading-snug text-unal-gray">
         <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span>Síntesis de imágenes PLM</span></li>
         <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span>Búsqueda y curaduría de datos reales</span></li>
         <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span>Caracterización de los conjuntos</span></li>
@@ -27,12 +27,12 @@ deckSection: metodologia
       <span class="text-2xl font-bold text-unal-blue/40">→</span>
     </div>
     <!-- Fase 2 -->
-    <div class="flex flex-col gap-2 rounded-xl border-2 border-unal-blue/50 bg-unal-blue/10 px-4 py-3">
-      <div class="flex items-center gap-2">
-        <span class="rounded-full bg-unal-blue px-2.5 py-0.5 text-[0.6rem] font-bold uppercase tracking-wide text-white">Fase 2</span>
-        <span class="text-[0.78rem] font-bold text-unal-blue">Evaluación comparativa de redes estándar</span>
+    <div class="flex flex-col gap-2.5 rounded-xl border-2 border-unal-blue/50 bg-unal-blue/10 px-4 py-3">
+      <div class="flex flex-col gap-0.5">
+        <span class="text-[0.58rem] font-bold uppercase tracking-widest text-unal-blue/60">Fase 2</span>
+        <span class="text-[0.9rem] font-bold leading-tight text-unal-blue">Evaluación comparativa de redes estándar</span>
       </div>
-      <ul class="mt-0.5 list-none space-y-1.5 text-[0.72rem] leading-snug text-unal-gray">
+      <ul class="list-none space-y-1.5 text-[0.72rem] leading-snug text-unal-gray">
         <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span>Selección de arquitecturas</span></li>
         <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span>Protocolo control + transferencia de aprendizaje</span></li>
       </ul>
@@ -42,32 +42,20 @@ deckSection: metodologia
       <span class="text-2xl font-bold text-unal-green/60">→</span>
     </div>
     <!-- Fase 3 — APORTE -->
-    <div class="flex flex-col gap-2 rounded-xl border-2 border-unal-green/50 bg-unal-green/10 px-4 py-3">
-      <div class="flex items-center justify-between gap-1">
+    <div class="flex flex-col gap-2.5 rounded-xl border-2 border-unal-green/50 bg-unal-green/10 px-4 py-3">
+      <div class="flex flex-col gap-0.5">
         <div class="flex items-center gap-2">
-          <span class="rounded-full bg-unal-green px-2.5 py-0.5 text-[0.6rem] font-bold uppercase tracking-wide text-white">Fase 3</span>
-          <span class="text-[0.78rem] font-bold text-[#3a6a18]">Redes personalizadas</span>
+          <span class="text-[0.58rem] font-bold uppercase tracking-widest text-[#3a6a18]/60">Fase 3</span>
+          <span class="rounded-md bg-unal-green/25 px-1.5 py-0.5 text-[0.55rem] font-bold text-[#3a6a18] ring-1 ring-unal-green/50">★ Aporte</span>
         </div>
-        <span class="shrink-0 rounded-md bg-unal-green/25 px-2 py-0.5 text-[0.58rem] font-bold text-[#3a6a18] ring-1 ring-unal-green/50">★ Aporte</span>
+        <span class="text-[0.9rem] font-bold leading-tight text-[#3a6a18]">Redes personalizadas</span>
       </div>
-      <ul class="mt-0.5 list-none space-y-1.5 text-[0.72rem] leading-snug text-unal-gray">
+      <ul class="list-none space-y-1.5 text-[0.72rem] leading-snug text-unal-gray">
         <li class="flex gap-1.5"><span class="shrink-0 text-[#3a6a18]">▸</span><span>Módulos de atención (CBAM / Transformer)</span></li>
         <li class="flex gap-1.5"><span class="shrink-0 text-[#3a6a18]">▸</span><span>Protocolo comparativo</span></li>
         <li class="flex gap-1.5"><span class="shrink-0 text-[#3a6a18]">▸</span><span>Evaluación en video</span></li>
       </ul>
     </div>
-  </div>
-  <!-- Training flow mini-bar -->
-  <div class="flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 bg-gray-50 px-4 py-1.5">
-    <span class="text-[0.63rem] text-unal-gray/55">Pesos COCO</span>
-    <span class="text-[0.7rem] text-unal-blue/40">→</span>
-    <span class="rounded-md bg-unal-blue/15 px-2 py-0.5 text-[0.63rem] font-semibold text-unal-blue">Preentrenamiento sintético</span>
-    <span class="text-[0.7rem] text-unal-blue/40">→</span>
-    <span class="rounded-md bg-unal-blue/25 px-2 py-0.5 text-[0.63rem] font-semibold text-unal-blue">Transferencia de aprendizaje real</span>
-    <span class="text-[0.7rem] text-unal-green/50">→</span>
-    <span class="rounded-md bg-unal-green/20 px-2 py-0.5 text-[0.63rem] font-semibold text-[#3a6a18]">Redes personalizadas</span>
-    <span class="text-[0.7rem] text-unal-green/50">→</span>
-    <span class="text-[0.63rem] text-unal-gray/55">Evaluación en video</span>
   </div>
 </div>
 </div>
@@ -89,53 +77,55 @@ transition: slide-up
 deckSection: metodologia
 ---
 
-<div class="slide-deck-shell">
-<header class="mb-3 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Síntesis de imágenes PLM</h1>
-  <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
-</header>
-<div class="grid min-h-0 flex-1 grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] gap-6">
-  <div class="flex flex-col justify-center gap-2.5">
-    <div class="rounded-md border-l-4 border-unal-green/60 bg-unal-green/5 px-2.5 py-1.5 text-[0.7rem] leading-snug text-unal-gray">
-      <span class="font-semibold text-[#3a6a18]">Vínculo con el marco teórico:</span> la birrefringencia de cada estructura determina su retardo óptico → se modela como intensidad de imagen PLM → <span class="font-semibold">Gaussiana anisotrópica 2D</span> para el huso meiótico (retardo ~5,6 nm)
-    </div>
-    <ul class="list-none space-y-2 text-[0.8rem] leading-snug text-unal-gray sm:text-[0.84rem]">
-      <li class="flex gap-2">
-        <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span><span class="font-semibold text-unal-blue">4 clases modeladas</span>: huso meiótico (Gaussiana anisotrópica 2D · 18 configuraciones), ZP (banda elíptica + filtro Gaussiano · 12 configuraciones), límite citoplasmático, cuerpo polar</span>
-      </li>
-      <li class="flex gap-2">
-        <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span>Calibración: <span class="font-semibold">1 px = 0,129 μm</span> (referencia: 930 px = 120 μm de diámetro de ovocito MII)</span>
-      </li>
-      <li class="flex gap-2">
-        <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span>12 ZP × 18 husos × posiciones → <span class="font-semibold">526 392 imágenes generadas</span></span>
-      </li>
-      <li class="flex gap-2">
-        <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span>Etiquetado <span class="font-semibold">100% automático</span> por definición paramétrica — sin anotación manual · ruido de fondo aleatorio · implementación en MATLAB</span>
-      </li>
-    </ul>
-  </div>
-  <div class="flex flex-col justify-center gap-3">
-    <figure class="m-0 min-w-0">
-      <img
-        src="../images/figures/oocyte_synth.png"
-        alt="Imagen sintética generada de ovocito PLM"
-        class="h-auto max-h-[min(44vh,280px)] w-full object-contain"
-      />
-      <figcaption lang="es" class="mt-1.5 text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
-        <span class="font-semibold text-unal-gray">Fig. 8.</span>
-        Imagen sintética de ovocito PLM: huso (s), cuerpo polar (pb), zona pelúcida (zp), citoplasma (c).
-      </figcaption>
-    </figure>
-  </div>
+<div class="mb-2 text-left">
+<h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Síntesis de imágenes PLM</h1>
+<div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </div>
-</div>
+
+```mermaid {scale: 0.5}
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#EFF6FF', 'primaryTextColor': '#1e4a7a', 'primaryBorderColor': '#3981BF', 'lineColor': '#9CA3AF', 'clusterBkg': '#F8FAFC', 'clusterBorder': '#D1D5DB', 'fontSize': '13px'}}}%%
+flowchart LR
+  subgraph GEN["Generación de Elementos"]
+    direction TB
+    P["Parámetros de\nModelación"]:::purple
+    GP["Generación\nParamétrica"]:::blue
+    CP[("1 cuerpo\npolar")]:::amber
+    H[("18 husos\nmeióticos")]:::amber
+    ZP[("12 ZP + borde\nde citoplasma")]:::amber
+    P --> GP
+    GP --> CP
+    GP --> H
+    GP --> ZP
+  end
+  subgraph SIN["Síntesis de Imágenes"]
+    direction TB
+    COMB["Combinación de Elementos\nIterando posiciones CP y huso\nruido y normalización"]:::blue
+    IMG[("Conjunto general\n526 392 imgs PNG")]:::green
+    SEL["Selección\nAleatoria"]:::blue
+    SUB[("Subconjunto\nde imágenes")]:::amber
+    COMB --> IMG
+    IMG --> SEL
+    SEL --> SUB
+  end
+  subgraph ORG["Organización"]
+    direction TB
+    SCR["Script de Etiquetado\ny Organización"]:::blue
+    DS[("oocyte_synthetic_2025b\n15 120 · 3 240 · 3 240")]:::green
+    SCR --> DS
+  end
+  CP --> COMB
+  H --> COMB
+  ZP --> COMB
+  SUB --> SCR
+  classDef blue fill:#EFF6FF,stroke:#3981BF,color:#1e4a7a
+  classDef green fill:#F0FDF4,stroke:#A0BF5E,color:#3a6a18
+  classDef amber fill:#FFFBEB,stroke:#F59E0B,color:#92400E
+  classDef purple fill:#F3E8FF,stroke:#A855F7,color:#6B21A8
+```
+
 <div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
-  <img src="../images/logos/gpima_logo.png" alt="GPIMA" class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6" />
-  <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
+<img src="../images/logos/gpima_logo.png" alt="GPIMA" class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6" />
+<img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
 <!--
@@ -317,8 +307,8 @@ deckSection: metodologia
         alt="GDXray+: simulación de defectos análogos a PLM"
         class="h-auto max-h-[min(26vh,170px)] w-full object-contain"
       />
-      <figcaption lang="es" class="mt-1 text-left text-[10px] leading-snug text-gray-600">
-        <span class="font-semibold text-unal-gray">Fig.</span> GDXray+: imagen de fundición (a), defectos elípticos simulados (b), superposición de bajo contraste (c) y detecciones del modelo (d).
+      <figcaption lang="es" class="plm-figcaption">
+        <span class="font-semibold text-unal-gray">Fig. 11.</span> GDXray+: imagen de fundición (a), defectos elípticos simulados (b), superposición de bajo contraste (c) y detecciones del modelo (d). Mery <span class="font-semibold text-unal-blue">[13]</span>
       </figcaption>
     </figure>
     <p class="text-[0.72rem] leading-snug text-unal-gray">
@@ -505,7 +495,7 @@ deckSection: metodologia
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="flex min-h-0 flex-1 flex-col justify-center gap-4">
-  <p class="text-[0.78rem] leading-snug text-unal-gray">Las redes personalizadas se evalúan con el <span class="font-semibold text-unal-blue">mismo protocolo de Fase 2</span> — cualquier diferencia en los resultados se debe exclusivamente a los módulos de atención.</p>
+  <p class="text-[0.82rem] leading-snug text-unal-gray">Las redes personalizadas se evalúan con el <span class="font-semibold text-unal-blue">mismo protocolo de Fase 2</span> — cualquier diferencia en los resultados se debe exclusivamente a los módulos de atención.</p>
   <!-- Tabla comparativa -->
   <div class="overflow-hidden rounded-xl border border-gray-200">
     <table class="w-full text-[0.72rem] leading-snug">

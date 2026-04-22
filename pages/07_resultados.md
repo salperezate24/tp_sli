@@ -16,7 +16,7 @@ deckSection: resultados
         alt="Imagen sintética PLM de ovocito"
         class="h-auto max-h-[min(38vh,240px)] w-full object-contain"
       />
-      <figcaption lang="es" class="mt-1 text-center text-[10px] leading-snug text-gray-600 sm:text-[11px]">
+      <figcaption lang="es" class="plm-figcaption text-center">
         <span class="font-semibold text-unal-gray">Sintético</span> — imagen generada en MATLAB
       </figcaption>
     </figure>
@@ -26,13 +26,13 @@ deckSection: resultados
         alt="Imagen PLM real de ovocito"
         class="h-auto max-h-[min(18vh,110px)] w-full object-contain"
       />
-      <figcaption lang="es" class="mt-1 text-center text-[10px] leading-snug text-gray-600 sm:text-[11px]">
+      <figcaption lang="es" class="plm-figcaption text-center">
         <span class="font-semibold text-unal-gray">Real</span> — imagen PLM de literatura
       </figcaption>
     </figure>
   </div>
   <div class="flex flex-col justify-center gap-2.5">
-    <ul class="list-none space-y-2 text-[0.8rem] leading-snug text-unal-gray sm:text-[0.84rem]">
+    <ul class="list-none space-y-2 text-sm leading-snug text-unal-gray sm:text-sm">
       <li class="flex gap-2">
         <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
         <span><span class="font-semibold text-unal-blue">526 392 imágenes</span> generadas · subconjunto de <span class="font-semibold">21 600</span> usado para entrenamiento (15 120 / 3 240 / 3 240)</span>
@@ -85,7 +85,7 @@ deckSection: resultados
   <!-- Panel izquierdo: preentrenamiento sintético -->
   <div class="flex flex-col gap-2 rounded-lg border border-unal-blue/30 bg-unal-blue/5 px-3.5 py-3">
     <p class="text-[0.68rem] font-bold uppercase tracking-wide text-unal-blue">Etapa 1 — Preentrenamiento sintético</p>
-    <ul class="list-none space-y-1.5 text-[0.76rem] leading-snug text-unal-gray">
+    <ul class="list-none space-y-1.5 text-[0.8rem] leading-snug text-unal-gray">
       <li class="flex gap-2">
         <span class="shrink-0 text-unal-green">▸</span>
         <span>Todos los modelos YOLO: <span class="font-semibold text-unal-blue">mAP50 ≈ 0,995</span> · mAP50-95 ≈ 0,995</span>
@@ -110,7 +110,7 @@ deckSection: resultados
   <!-- Panel derecho: experimento control -->
   <div class="flex flex-col gap-2 rounded-lg border border-gray-300 bg-gray-50 px-3.5 py-3">
     <p class="text-[0.68rem] font-bold uppercase tracking-wide text-unal-gray">Experimento control — Sin transferencia de aprendizaje</p>
-    <ul class="list-none space-y-1.5 text-[0.76rem] leading-snug text-unal-gray">
+    <ul class="list-none space-y-1.5 text-[0.8rem] leading-snug text-unal-gray">
       <li class="flex gap-2">
         <span class="shrink-0 text-red-400">▸</span>
         <span>mAP50 sobre imágenes reales: <span class="font-semibold text-red-500">0,241 – 0,698</span></span>
@@ -285,11 +285,11 @@ deckSection: resultados
 <script setup>
 const dumbbell3Rows = [
   { label: 'YOLOv9m',             leftVal: 0.328, rightVal: 0.902, highlight: true },
-  { label: 'YOLOv9m-CBAM',        leftVal: 0.470, rightVal: 0.868 },
-  { label: 'YOLOv9m-Triple Att.', leftVal: 0.499, rightVal: 0.878 },
+  { label: 'YOLOv9m-CBAM',        leftVal: 0.470, rightVal: 0.868, rightColor: '#A0BF5E' },
+  { label: 'YOLOv9m-Triple Att.', leftVal: 0.499, rightVal: 0.878, rightColor: '#A0BF5E' },
   { label: 'YOLO11m',             leftVal: 0.501, rightVal: 0.849, separator: true },
-  { label: 'YOLO11m-Cons. Att.',  leftVal: 0.319, rightVal: 0.846 },
-  { label: 'YOLO11m-Trans. Enh.', leftVal: 0.381, rightVal: 0.841 },
+  { label: 'YOLO11m-Cons. Att.',  leftVal: 0.319, rightVal: 0.846, rightColor: '#A0BF5E' },
+  { label: 'YOLO11m-Trans. Enh.', leftVal: 0.381, rightVal: 0.841, rightColor: '#A0BF5E' },
 ]
 </script>
 
@@ -307,7 +307,7 @@ const dumbbell3Rows = [
     <DumbbellPlot
       :rows="dumbbell3Rows"
       leftLabel="Control"
-      rightLabel="Con TL"
+      rightLabel="Con TL (azul = estándar · verde = atención)"
       :compact="false"
     />
     <div class="grid grid-cols-2 gap-2 mt-1">
@@ -330,9 +330,9 @@ const dumbbell3Rows = [
         alt="Mapas de características YOLOv9m vs YOLOv9m-CBAM — stage 18"
         class="h-auto max-h-[min(42vh,260px)] w-full object-contain"
       />
-      <figcaption lang="es" class="mt-1.5 text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
-        <span class="font-semibold text-unal-gray">Fig. 10.</span>
-        Mapas de activación (P4) — CBAM produce activaciones más localizadas en ZP y citolimit. Esta diferencia, pequeña en mAP50 estático, se magnifica en video.
+      <figcaption lang="es" class="plm-figcaption">
+        <span class="font-semibold text-unal-gray">Fig. 14.</span>
+        Mapas de activación (P4) — CBAM produce activaciones más localizadas en ZP y citolimit.
       </figcaption>
     </figure>
   </div>
@@ -452,7 +452,7 @@ deckSection: resultados
           allowfullscreen
         />
       </div>
-      <figcaption lang="es" class="mt-1 text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
+      <figcaption lang="es" class="plm-figcaption">
         <span class="font-semibold text-unal-gray">Video 1.</span>
         YOLOv9m — detección en secuencia 1 (<span class="font-mono">OpenPolScope</span>, meiosis I).
       </figcaption>
@@ -469,7 +469,7 @@ deckSection: resultados
           allowfullscreen
         />
       </div>
-      <figcaption lang="es" class="mt-1 text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
+      <figcaption lang="es" class="plm-figcaption">
         <span class="font-semibold text-unal-gray">Video 2.</span>
         YOLOv9m-CBAM — detección en secuencia 1 (<span class="font-mono">OpenPolScope</span>, meiosis I).
       </figcaption>
@@ -585,7 +585,7 @@ deckSection: resultados
           allowfullscreen
         />
       </div>
-      <figcaption lang="es" class="mt-1 text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
+      <figcaption lang="es" class="plm-figcaption">
         <span class="font-semibold text-unal-gray">Video 3.</span>
         YOLOv9m — detección en secuencia 2 (<span class="font-mono">OOSIGHT-Spindle View</span>, ICSI).
       </figcaption>
@@ -602,7 +602,7 @@ deckSection: resultados
           allowfullscreen
         />
       </div>
-      <figcaption lang="es" class="mt-1 text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
+      <figcaption lang="es" class="plm-figcaption">
         <span class="font-semibold text-unal-gray">Video 4.</span>
         YOLOv9m-CBAM — detección en secuencia 2 (<span class="font-mono">OOSIGHT-Spindle View</span>, ICSI).
       </figcaption>
@@ -723,7 +723,7 @@ deckSection: resultados
           allowfullscreen
         />
       </div>
-      <figcaption lang="es" class="mt-1 text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
+      <figcaption lang="es" class="plm-figcaption">
         <span class="font-semibold text-unal-gray">Video 5.</span>
         YOLOv9m — detección en secuencia 3 (<span class="font-mono">OptimFert</span>, <span class="font-mono">Prague IVF</span>).
       </figcaption>
@@ -740,7 +740,7 @@ deckSection: resultados
           allowfullscreen
         />
       </div>
-      <figcaption lang="es" class="mt-1 text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
+      <figcaption lang="es" class="plm-figcaption">
         <span class="font-semibold text-unal-gray">Video 6.</span>
         YOLOv9m-CBAM — detección en secuencia 3 (<span class="font-mono">OptimFert</span>, <span class="font-mono">Prague IVF</span>).
       </figcaption>

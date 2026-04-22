@@ -46,7 +46,7 @@ const CHART_W = W - LABEL_W - DELTA_W // 378
 const PAD_TOP = 20
 const PAD_BOT = 20
 const SEP_EXTRA = 7
-const DOT_R = 4.5
+const DOT_R = 6
 
 const RH = computed(() => (props.compact ? 14 : 20))
 
@@ -97,14 +97,14 @@ function deltaFill(row: DumbbellRow): string {
       :key="`g${t}`"
       :x1="xPx(t)" :x2="xPx(t)"
       :y1="PAD_TOP - 4" :y2="svgH - PAD_BOT"
-      stroke="#f3f4f6" stroke-width="1"
+      stroke="#EDECEA" stroke-width="1.5"
     />
 
     <!-- Legend -->
     <circle :cx="CHART_L + 5" :cy="10" :r="DOT_R - 1" :fill="leftColor" />
-    <text :x="CHART_L + 14" y="14" font-size="8" fill="#6b7280" font-family="inherit">{{ leftLabel }}</text>
+    <text :x="CHART_L + 14" y="14" font-size="8" fill="#6b7280" font-family="IBM Plex Sans,sans-serif">{{ leftLabel }}</text>
     <circle :cx="CHART_L + 118" :cy="10" :r="DOT_R - 1" :fill="rightColor" />
-    <text :x="CHART_L + 127" y="14" font-size="8" fill="#6b7280" font-family="inherit">{{ rightLabel }}</text>
+    <text :x="CHART_L + 127" y="14" font-size="8" fill="#6b7280" font-family="IBM Plex Sans,sans-serif">{{ rightLabel }}</text>
 
     <!-- Data rows -->
     <g v-for="(row, i) in rows" :key="`r${i}`">
@@ -125,7 +125,7 @@ function deltaFill(row: DumbbellRow): string {
         text-anchor="end"
         :fill="row.highlight ? '#3981BF' : '#374151'"
         :font-weight="row.highlight ? '700' : '400'"
-        font-family="inherit"
+        font-family="IBM Plex Sans,sans-serif"
       >{{ row.label }}</text>
 
       <!-- Connecting track between dots -->
@@ -133,21 +133,21 @@ function deltaFill(row: DumbbellRow): string {
         :x1="xPx(Math.min(row.leftVal, row.rightVal))"
         :x2="xPx(Math.max(row.leftVal, row.rightVal))"
         :y1="rowYs[i]" :y2="rowYs[i]"
-        stroke="#e5e7eb" stroke-width="2.5"
+        stroke="#E5E7EB" stroke-width="4"
       />
 
       <!-- Left dot (control) -->
       <circle
         :cx="xPx(row.leftVal)" :cy="rowYs[i]"
         :r="DOT_R" :fill="rowLeftColor(row)"
-        stroke="white" stroke-width="1.5"
+        stroke="white" stroke-width="2.5"
       />
 
       <!-- Right dot (TL or custom) -->
       <circle
         :cx="xPx(row.rightVal)" :cy="rowYs[i]"
         :r="DOT_R" :fill="rowRightColor(row)"
-        stroke="white" stroke-width="1.5"
+        stroke="white" stroke-width="2.5"
       />
 
       <!-- Delta annotation in fixed right column -->
@@ -156,7 +156,7 @@ function deltaFill(row: DumbbellRow): string {
         :x="W - DELTA_W + 2" :y="rowYs[i] + 3.5"
         font-size="8" font-weight="600"
         :fill="deltaFill(row)"
-        font-family="inherit"
+        font-family="IBM Plex Sans,sans-serif"
       >{{ fmtDelta(row) }}</text>
     </g>
 
@@ -177,7 +177,7 @@ function deltaFill(row: DumbbellRow): string {
       <text
         :x="xPx(t)" :y="svgH - PAD_BOT + 13"
         font-size="7.5" text-anchor="middle"
-        fill="#9ca3af" font-family="inherit"
+        fill="#9ca3af" font-family="IBM Plex Sans,sans-serif"
       >{{ t.toFixed(2) }}</text>
     </g>
 
@@ -185,7 +185,7 @@ function deltaFill(row: DumbbellRow): string {
     <text
       :x="CHART_L + CHART_W / 2" :y="svgH - 2"
       font-size="8" text-anchor="middle"
-      fill="#6b7280" font-weight="500" font-family="inherit"
+      fill="#6b7280" font-weight="500" font-family="IBM Plex Sans,sans-serif"
     >{{ xLabel }}</text>
   </svg>
 </template>

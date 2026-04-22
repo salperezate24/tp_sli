@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* Texto de cuerpo en peso regular — referencia usa 400 para body (.fb) */
+.slidev-layout li,
+.slidev-layout p {
+  font-weight: 400;
+}
+
+/* Títulos de diapositivas en negro oscuro (sobreescribe el teal del tema seriph) */
+.slidev-layout h1 {
+  color: #262626 !important;
+}
+
+/* Contenedor de ecuaciones — fondo sutil + esquinas redondeadas */
+.eqc {
+  background: rgba(0, 0, 0, 0.025);
+  border-radius: 8px;
+  padding: 10px 18px;
+}
+
+/* Aplicar automáticamente a todos los bloques KaTeX display ($$...$$) */
+.katex-display {
+  background: rgba(0, 0, 0, 0.025);
+  border-radius: 8px;
+  padding: 8px 16px !important;
+  margin: 6px 0 !important;
+}
+
+html,
+body,
+.slidev-layout,
+.slidev-page {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  background-color: #F2F2F0;
+}
+
+/* Portada y agenda en blanco */
+.slidev-page-1,
+.slidev-page-2 {
+  background-color: #FFFFFF !important;
+}
+
+.slidev-layout *:not(.katex):not(.katex *) {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+}

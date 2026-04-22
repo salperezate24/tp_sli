@@ -18,23 +18,27 @@ deckSection: marco
 </li>
 <li class="flex gap-1.5">
   <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
+  <span><span class="font-semibold text-unal-blue">Zona pelúcida:</span> capa glicoproteica externa; su integridad es indicador de calidad ovocitaria.</span>
+</li>
+<li class="flex gap-1.5">
+  <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
   <span><span class="font-semibold text-unal-blue">Cuerpo polar:</span> indicador clínico habitual; aparece <span class="font-semibold">antes</span> de que el huso esté completamente ensamblado — PLM permite verificar directamente si el huso ya está formado.</span>
 </li>
 </ul>
 <div class="mt-4 grid w-full grid-cols-2 gap-4 lg:gap-5">
 <figure class="m-0 flex min-w-0 flex-col">
-<img src="../images/figures/diagrams/oocyte_plm.png" alt="Ovocito bajo PLM" class="mx-auto h-auto max-h-52 w-full object-contain" />
-<figcaption lang="es" class="mt-1 max-w-full text-left text-[11px] leading-snug text-gray-600">
+<img src="../images/figures/diagrams/oocyte_plm.png" alt="Ovocito bajo PLM" class="mx-auto h-auto max-h-[10.5rem] w-full object-contain" />
+<figcaption lang="es" class="plm-figcaption">
   <span class="font-semibold text-unal-gray">Fig. 2.</span>
-  Ovocito bajo PLM: huso meiótico (s), ZP (zp), citoplasma (c) y cuerpo polar (pb). Rienzi et al.
+  Ovocito bajo PLM: huso meiótico (s), zona pelúcida (zp), citoplasma (c) y cuerpo polar (pb). Rienzi et al.
   <span class="ml-0.5 font-semibold text-unal-blue">[3]</span>.
 </figcaption>
 </figure>
 <figure class="m-0 flex min-w-0 flex-col">
 <img src="../images/figures/oocytes/oocyte_diagram_002.png" alt="Esquema del proceso de maduración de un ovocito" class="h-auto max-h-60 w-full object-contain" />
-<figcaption lang="es" class="mt-1 max-w-full text-left text-[11px] leading-snug text-gray-600">
+<figcaption lang="es" class="plm-figcaption">
   <span class="font-semibold text-unal-gray">Fig. 3.</span>
-  Esquema ilustrativo del proceso de maduración de un ovocito. Elaboración propia.
+  Esquema del proceso de maduración. Elaboración propia.
 </figcaption>
 </figure>
 </div>
@@ -82,7 +86,7 @@ deckSection: marco
 
   <!-- Columna izquierda: imagen de intensidad PLM -->
   <div class="flex flex-col gap-2">
-    <p class="plm-section-label-center text-left font-semibold text-unal-blue text-[0.72rem] sm:text-[0.76rem]">Imagen de intensidad (I₀–I₄)</p>
+    <p class="plm-section-label-center text-left text-[0.72rem] sm:text-[0.8rem]">Imagen de intensidad (I₀–I₄)</p>
     <figure class="m-0 flex w-full min-w-0 flex-col items-stretch">
       <img
         src="../images/intensitites.png"
@@ -90,16 +94,15 @@ deckSection: marco
         class="h-auto w-full max-h-[min(42vh,280px)] object-contain"
       />
       <figcaption lang="es" class="plm-figcaption">
-        <span class="font-semibold">Fig. 4.</span>
-        Cinco imágenes de intensidad del astero con ajustes de polarización 0, 1, 2, 3 y 4 del compensador universal. Las imágenes fueron mejoradas en contraste para mayor visibilidad.
-        <span class="mt-1 block font-medium opacity-100">Fuente: Shribak &amp; Oldenbourg (2003) <span class="font-semibold text-unal-blue">[4]</span>.</span>
+        <span class="font-semibold text-unal-gray">Fig. 4.</span>
+        Cinco imágenes de intensidad del astero con ajustes de polarización 0–4. Shribak &amp; Oldenbourg (2003) <span class="font-semibold text-unal-blue">[4]</span>
       </figcaption>
     </figure>
   </div>
 
   <!-- Columna derecha: mapa de retardo óptico -->
   <div class="relative z-0 min-w-0 flex flex-col items-center justify-start self-start px-0.5">
-    <p class="plm-section-label-center text-left font-semibold text-unal-blue text-[0.72rem] sm:text-[0.76rem]">Retardo óptico (Δ)</p>
+    <p class="plm-section-label-center text-left text-[0.72rem] sm:text-[0.8rem]">Retardo óptico (Δ)</p>
     <figure class="m-0 flex w-full min-w-0 flex-col items-stretch">
       <img
         src="../images/figures/diagrams/Diagramas_Tesis-Pagina-2.png"
@@ -107,9 +110,8 @@ deckSection: marco
         class="plm-retardo-img"
       />
       <figcaption lang="es" class="plm-figcaption">
-        <span class="font-semibold">Fig. 5.</span>
-        Mapa de magnitud de retardo (algoritmo de cinco cuadros, corrección de fondo) de un astero de microtúbulos reconstituido desde centrosoma. Blanco ≈ 1,2&nbsp;nm; negro, birrefringencia nula.
-        <span class="mt-1 block font-medium opacity-100">Fuente: Shribak &amp; Oldenbourg (2003) <span class="font-semibold text-unal-blue">[4]</span>.</span>
+        <span class="font-semibold text-unal-gray">Fig. 5.</span>
+        Mapa de magnitud de retardo de un astero de microtúbulos reconstituido desde centrosoma. Blanco ≈ 1,2&nbsp;nm; negro, birrefringencia nula. Shribak &amp; Oldenbourg (2003) <span class="font-semibold text-unal-blue">[4]</span>
       </figcaption>
     </figure>
   </div>
@@ -151,7 +153,7 @@ deckSection: marco
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 
-<div class="mt-2 grid w-full grid-cols-1 gap-2 [&_.katex-display]:my-1.5 [&_.katex-display]:text-[0.78rem] lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-6">
+<div class="mt-2 grid w-full grid-cols-1 gap-2 [&_.katex-display]:my-1.5 [&_.katex-display]:text-[0.82rem] lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-6">
 <div class="min-w-0 text-left text-unal-gray">
 <p class="plm-section-label mb-2">Ecuaciones de intensidad</p>
 
@@ -210,25 +212,25 @@ deckSection: marco
 ---
 
 <div class="slide-deck-shell">
-<header class="mb-3 text-left">
+<header class="mb-2 text-left">
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Redes Neuronales para Detección de Objetos</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 
-<div class="grid min-h-0 min-w-0 flex-1 grid-cols-1 gap-4 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-6">
+<div class="grid min-h-0 min-w-0 flex-1 grid-cols-1 gap-3 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-4">
   <div class="min-w-0 text-left">
-    <p class="mb-3 max-w-3xl hyphens-auto text-justify text-sm leading-snug text-unal-gray sm:text-base">
+    <p class="mb-1.5 max-w-3xl hyphens-auto text-justify text-xs leading-snug text-unal-gray">
       La detección de objetos integra <span class="font-semibold text-unal-blue">localización</span>,
       <span class="font-semibold text-unal-blue">clasificación</span> y
       <span class="font-semibold text-unal-blue">confianza</span> en una misma predicción.
     </p>
-    <ul class="mb-3 list-disc space-y-1.5 pl-4 text-xs leading-snug text-unal-gray marker:text-unal-blue sm:text-sm">
+    <ul class="mb-1.5 list-disc space-y-1 pl-4 text-xs leading-snug text-unal-gray marker:text-unal-blue">
       <li><span class="font-semibold">Paso 1 - Extracción de características:</span> la red obtiene descriptores de la imagen.</li>
       <li><span class="font-semibold">Paso 2 - Predicción de cajas:</span> localiza cada objeto candidato.</li>
       <li><span class="font-semibold">Paso 3 - Clase y confianza:</span> asigna etiqueta y puntaje por detección.</li>
     </ul>
-    <p class="mb-1 text-[11px] font-semibold uppercase tracking-wide text-unal-blue sm:text-xs">Dos etapas vs una etapa</p>
-    <ul class="list-disc space-y-1.5 pl-4 text-xs leading-snug text-unal-gray marker:text-unal-blue sm:text-sm">
+    <p class="mb-1 text-[11px] font-semibold uppercase tracking-wide text-unal-blue">Dos etapas vs una etapa</p>
+    <ul class="list-disc space-y-1 pl-4 text-xs leading-snug text-unal-gray marker:text-unal-blue">
       <li><span class="font-semibold text-unal-blue">Dos etapas (multi-pass):</span> primero generan propuestas de región y luego clasifican/refinan cada caja.</li>
       <li><span class="font-semibold text-unal-blue">Una etapa (YOLO):</span> localiza y clasifica en una sola pasada sobre la imagen completa — inferencia en <span class="font-semibold">tiempo real</span> (&lt;&thinsp;10&thinsp;ms/img), viable para integración directa en el microscopio.</li>
     </ul>
@@ -238,12 +240,12 @@ deckSection: marco
     <img
       src="../images/figures/diagrams/ann_diagram.png"
       alt="Arquitectura general de los modelos YOLO"
-      class="mx-auto h-auto max-h-[min(52vh,410px)] w-full max-w-[96%] object-contain"
+      class="mx-auto h-auto max-h-[min(44vh,340px)] w-full max-w-[96%] object-contain"
     />
-    <figcaption lang="es" class="mt-2 text-left text-[10px] leading-snug text-gray-600 sm:text-[11px]">
+    <figcaption lang="es" class="plm-figcaption">
       <span class="font-semibold text-unal-gray">Fig. 6.</span>
       Arquitectura general de los modelos YOLO.
-      <span class="ml-0.5 font-semibold text-unal-blue">Elaboración propia.</span>
+      Elaboración propia.
     </figcaption>
   </figure>
 </div>
@@ -276,58 +278,48 @@ deckSection: marco
 ---
 
 <div class="slide-deck-shell">
-<header class="mb-3 text-left">
+<header class="mb-2 text-left">
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Métricas de evaluación de la detección de objetos</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 
-<div class="grid min-h-0 min-w-0 flex-1 grid-cols-1 gap-3 lg:grid-cols-[minmax(0,0.5fr)_minmax(0,0.5fr)] lg:gap-5">
+<div class="grid min-h-0 min-w-0 flex-1 grid-cols-1 gap-2 lg:grid-cols-[minmax(0,0.5fr)_minmax(0,0.5fr)] lg:gap-4 [&_.katex-display]:!my-0 [&_.katex-display]:!py-1 [&_.katex-display]:!px-3 [&_.katex-display]:text-[0.62rem]">
 <div class="min-w-0 text-left">
-<p class="mb-0.5 text-xs leading-snug text-unal-gray sm:text-sm"><span class="font-semibold text-unal-blue">IoU:</span> solapamiento entre caja predicha y caja de referencia.</p>
-<div class="mb-0.5 text-[78%] leading-none">
-$$
-IoU=\frac{\operatorname{Area}(B_{pred}\cap B_{gt})}{\operatorname{Area}(B_{pred}\cup B_{gt})}
-$$
-</div>
-<p class="mb-0.5 text-xs leading-snug text-unal-gray sm:text-sm"><span class="font-semibold text-unal-blue">mAP:</span> promedio de AP en todas las clases.</p>
-<div class="mb-0.5 text-[78%] leading-none">
-$$
-mAP=\frac{1}{N}\sum_{i=1}^{N}AP_i
-$$
-</div>
-<p class="mb-0.5 text-xs leading-snug text-unal-gray sm:text-sm"><span class="font-semibold text-unal-blue">mAP&#64;50:</span> AP promedio con criterio de acierto si IoU &ge; 0.5.</p>
-<div class="mb-0.5 text-[78%] leading-none">
-$$
-\mathrm{mAP}_{50}=\frac{1}{N}\sum_{i=1}^{N}AP_i(IoU\geq0.5)
-$$
-</div>
-<p class="mb-0.5 text-xs leading-snug text-unal-gray sm:text-sm"><span class="font-semibold text-unal-blue">mAP&#64;50-95:</span> promedio en umbrales de IoU entre 0.50 y 0.95.</p>
-<div class="mb-0.5 text-[74%] leading-none">
-$$
-\mathrm{mAP}_{50:95}=\frac{1}{10}\sum_{t\in\{0.50,\ldots,0.95\}}\mathrm{mAP}_t
-$$
-</div>
+<p class="mb-px text-xs leading-snug text-unal-gray"><span class="font-semibold text-unal-blue">IoU:</span> solapamiento entre caja predicha y caja de referencia.</p>
+
+$$IoU=\frac{\operatorname{Area}(B_{pred}\cap B_{gt})}{\operatorname{Area}(B_{pred}\cup B_{gt})}$$
+
+<p class="mb-px text-xs leading-snug text-unal-gray"><span class="font-semibold text-unal-blue">mAP:</span> promedio de AP en todas las clases.</p>
+
+$$mAP=\frac{1}{N}\sum_{i=1}^{N}AP_i$$
+
+<p class="mb-px text-xs leading-snug text-unal-gray"><span class="font-semibold text-unal-blue">mAP&#64;50:</span> AP promedio con criterio de acierto si IoU &ge; 0.5.</p>
+
+$$\mathrm{mAP}_{50}=\frac{1}{N}\sum_{i=1}^{N}AP_i(IoU\geq0.5)$$
+
+<p class="mb-px text-xs leading-snug text-unal-gray"><span class="font-semibold text-unal-blue">mAP&#64;50-95:</span> promedio en umbrales de IoU entre 0.50 y 0.95.</p>
+
+$$\mathrm{mAP}_{50:95}=\frac{1}{10}\sum_{t\in\{0.50,\ldots,0.95\}}\mathrm{mAP}_t$$
+
 </div>
 
 <div class="min-w-0 text-left">
-<p class="mb-0.5 text-xs leading-snug text-unal-gray sm:text-sm"><span class="font-semibold text-unal-blue">Precisión (P):</span> proporción de detecciones positivas que son correctas.</p>
-<div class="mb-0.5 text-[78%] leading-none">
-$$
-P=\frac{TP}{TP+FP}
-$$
+<p class="mb-px text-xs leading-snug text-unal-gray"><span class="font-semibold text-unal-blue">Precisión (P):</span> proporción de detecciones positivas que son correctas.</p>
+
+$$P=\frac{TP}{TP+FP}$$
+
+<p class="mb-px text-xs leading-snug text-unal-gray"><span class="font-semibold text-unal-blue">Sensibilidad (R):</span> proporción de positivos reales detectados.</p>
+
+$$R=\frac{TP}{TP+FN}$$
+
+<p class="mb-px text-xs leading-snug text-unal-gray"><span class="font-semibold text-unal-blue">Tasa de falsos positivos (FPR):</span> proporción de negativos clasificados como positivos.</p>
+
+$$FPR=\frac{FP}{FP+TN}$$
+
+<div class="mt-2 rounded-[10px] border-l-4 border-unal-blue bg-unal-blue/10 px-4 py-3 text-xs leading-snug text-unal-gray">
+  En diagnóstico preferimos <span class="font-semibold">alta sensibilidad</span> — es preferible una falsa alarma que no detectar un huso real.
 </div>
-<p class="mb-0.5 text-xs leading-snug text-unal-gray sm:text-sm"><span class="font-semibold text-unal-blue">Sensibilidad (R):</span> proporción de positivos reales detectados.</p>
-<div class="mb-0.5 text-[78%] leading-none">
-$$
-R=\frac{TP}{TP+FN}
-$$
-</div>
-<p class="mb-0.5 text-xs leading-snug text-unal-gray sm:text-sm"><span class="font-semibold text-unal-blue">Tasa de falsos positivos (FPR):</span> proporción de negativos clasificados como positivos.</p>
-<div class="mb-0.5 text-[78%] leading-none">
-$$
-FPR=\frac{FP}{FP+TN}
-$$
-</div>
+
 </div>
 </div>
 

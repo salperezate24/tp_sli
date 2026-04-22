@@ -18,7 +18,7 @@ deckSection: justificacion
 </p>
 
 <div class="max-w-4xl">
-  <p class="mb-1.5 text-[11.5px] font-bold uppercase tracking-wide text-unal-blue">
+  <p class="mb-1.5 text-[11.5px] !font-bold uppercase tracking-wide text-unal-blue">
     Industria porcina (Chen et al., 2022)<span class="ml-0.5 font-semibold normal-case tracking-normal text-unal-blue">[1]</span>
   </p>
   <ul class="list-disc space-y-1.5 pl-3 text-[14px] leading-snug text-unal-gray marker:text-unal-blue">
@@ -30,7 +30,7 @@ deckSection: justificacion
 
 <!-- Transición hacia la siguiente diapositiva -->
 <!-- <div class="mt-4 rounded-md border-l-4 border-unal-blue bg-unal-blue/10 px-3 py-1.5">
-  <p class="text-[0.8rem] font-semibold leading-snug text-unal-gray">
+  <p class="text-sm font-semibold leading-snug text-unal-gray">
     Lo anterior se replica en la <span class="text-unal-blue">reproducción humana asistida</span>, donde la
     <span class="text-unal-blue">edad materna</span> hace aún más evidente la dependencia de la calidad del ovocito.
   </p>
@@ -79,7 +79,7 @@ deckSection: justificacion
 </p>
 <div class="grid w-full max-w-4xl grid-cols-1 gap-4 text-left lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:gap-6">
 <div class="min-w-0">
-<p class="mb-1 text-[11.5px] font-bold uppercase tracking-wide text-unal-blue">
+<p class="mb-1 text-[11.5px] !font-bold uppercase tracking-wide text-unal-blue">
   Uso y alcance (SART, 2024)<span class="ml-0.5 font-semibold normal-case tracking-normal text-unal-blue">[2]</span>
 </p>
 <ul class="list-disc space-y-1 pl-3 text-[14px] leading-snug text-unal-gray marker:text-unal-blue">
@@ -89,12 +89,12 @@ deckSection: justificacion
 </ul>
 </div>
 <div class="min-w-0">
-<p class="mb-0.5 text-[11.5px] font-bold uppercase tracking-wide text-unal-gray">
+<p class="mb-0.5 text-[11.5px] !font-bold uppercase tracking-wide text-unal-gray">
   Tasas de éxito de IVF en EE.&nbsp;UU. por edad materna
 </p>
 <figure class="m-0 min-w-0 max-w-full">
 <IvfLiveBirthByAgeChart />
-<figcaption lang="es" class="mt-3 max-w-full hyphens-auto break-words text-left text-[10px] leading-tight text-gray-600">
+<figcaption lang="es" class="plm-figcaption">
   <span class="font-semibold text-unal-gray">Fig. 1.</span>
   Tasas aprox. de nacidos vivos por edad materna (EE. UU., 2024&nbsp;—&nbsp;preliminar)
   <span class="ml-0.5 font-semibold text-unal-blue">[2]</span>.
@@ -103,7 +103,7 @@ deckSection: justificacion
 </div>
 </div>
 <!-- <div class="mt-3 rounded-md border-l-4 border-unal-green bg-unal-green/10 px-3 py-1.5">
-  <p class="text-[0.8rem] font-semibold leading-snug text-unal-gray">
+  <p class="text-sm font-semibold leading-snug text-unal-gray">
     El refinamiento de los protocolos de <span class="text-unal-blue">maduración y selección ovocitaria</span> es una
     necesidad clínica urgente — ese es el punto de partida de este trabajo.
   </p>

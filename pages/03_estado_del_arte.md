@@ -11,18 +11,7 @@ deckSection: estado
 <div class="grid min-h-0 flex-1 grid-cols-2 gap-5">
   <!-- Columna izquierda: PLM detecta el huso -->
   <div class="flex flex-col gap-2 min-w-0">
-    <figure class="m-0 min-w-0">
-      <img
-        src="../images/60058fig3large.jpg"
-        alt="Huso meiótico invisible en campo claro, visible con fluorescencia y con PLM — Holubcová et al."
-        class="h-auto max-h-[min(32vh,200px)] w-full object-contain object-top"
-      />
-      <figcaption lang="es" class="mt-1 text-left text-[12px] leading-snug text-gray-600 sm:text-[11px]">
-        <span class="font-semibold text-unal-gray">Fig. 2.</span>
-        Huso meiótico (flecha): invisible en campo claro, visible por fluorescencia y por <span class="font-semibold">PLM</span> (fila inferior). Holubcová et al.<span class="ml-0.5 font-semibold text-unal-blue">[5]</span>
-      </figcaption>
-    </figure>
-    <ul class="list-none space-y-1.5 text-[0.78rem] leading-snug text-unal-gray sm:text-[0.82rem]">
+    <ul class="list-none space-y-1.5 text-[0.82rem] leading-snug text-unal-gray">
       <li class="flex gap-2">
         <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
         <span><span class="font-semibold text-unal-blue">Huso meiótico</span> → indicador clave de madurez MII y aptitud para ICSI; detección manual <span class="font-semibold">subjetiva</span> e interobservador-variable<span class="ml-0.5 font-semibold text-unal-blue">[5][6]</span></span>
@@ -32,26 +21,37 @@ deckSection: estado
         <span><span class="font-semibold">PLM / PolScope</span> → visualización no invasiva del huso, ZP, CP y citoplasma; retardo óptico cuantitativo por píxel<span class="ml-0.5 font-semibold text-unal-blue">[4]</span></span>
       </li>
     </ul>
+    <figure class="m-0 min-w-0">
+      <img
+        src="../images/60058fig3large.jpg"
+        alt="Huso meiótico invisible en campo claro, visible con fluorescencia y con PLM — Holubcová et al."
+        class="h-auto max-h-[min(32vh,200px)] w-full object-contain object-top"
+      />
+      <figcaption lang="es" class="plm-figcaption">
+        <span class="font-semibold text-unal-gray">Fig. 7.</span>
+        Huso meiótico: invisible en campo claro, visible con fluorescencia y con <span class="font-semibold">PLM</span>. Holubcová et al. <span class="ml-0.5 font-semibold text-unal-blue">[5]</span>
+      </figcaption>
+    </figure>
   </div>
   <!-- Columna derecha: sistemas existentes sin PLM ni huso -->
   <div class="flex flex-col gap-2 min-w-0">
+    <ul class="list-none space-y-1.5 text-[0.82rem] leading-snug text-unal-gray">
+      <li class="flex gap-2">
+        <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
+        <span>Sistemas existentes — <span class="font-semibold">MOMA</span><span class="ml-0.5 font-semibold text-unal-blue">[6]</span>, <span class="font-semibold">OoCount</span><span class="ml-0.5 font-semibold text-unal-blue">[7]</span>, Chaput et al.<span class="ml-0.5 font-semibold text-unal-blue">[8]</span>: segmentación o conteo en campo claro, <span class="font-semibold italic">sin aprovechar PLM ni detectar el huso</span></span>
+      </li>
+    </ul>
     <figure class="m-0 min-w-0">
       <img
         src="../images/segmentation_ooplasm.png"
         alt="MOMA: segmentación de ZP y ooplasma en campo claro — sin PLM ni huso meiótico"
         class="h-auto max-h-[min(32vh,200px)] w-full object-contain object-top"
       />
-      <figcaption lang="es" class="mt-1 text-left text-[12px] leading-snug text-gray-600 sm:text-[11px]">
-        <span class="font-semibold text-unal-gray">Fig. 3.</span>
+      <figcaption lang="es" class="plm-figcaption">
+        <span class="font-semibold text-unal-gray">Fig. 8.</span>
         MOMA (Fjeldstad<span class="ml-0.5 font-semibold text-unal-blue">[6]</span>): segmentación de ZP y ooplasma en <span class="font-semibold">campo claro</span> — sin PLM, sin huso meiótico.
       </figcaption>
     </figure>
-    <ul class="list-none space-y-1.5 text-[0.78rem] leading-snug text-unal-gray sm:text-[0.82rem]">
-      <li class="flex gap-2">
-        <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span>Sistemas existentes — <span class="font-semibold">MOMA</span><span class="ml-0.5 font-semibold text-unal-blue">[6]</span>, <span class="font-semibold">OoCount</span><span class="ml-0.5 font-semibold text-unal-blue">[7]</span>, Chaput et al.<span class="ml-0.5 font-semibold text-unal-blue">[8]</span>: segmentación o conteo en campo claro, <span class="font-semibold italic">sin aprovechar PLM ni detectar el huso</span></span>
-      </li>
-    </ul>
   </div>
 </div>
 </div>
@@ -88,18 +88,7 @@ deckSection: estado
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Estructuras birrefringentes bajo PLM</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
-<div class="grid min-h-0 flex-1 grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] gap-6">
-  <figure class="m-0 min-w-0 flex flex-col justify-center">
-    <img
-      src="../images/figures/diagrams/oocyte_plm.png"
-      alt="Huso meiótico, zona pelúcida, cuerpo polar y citoplasma bajo PLM"
-      class="h-auto max-h-[min(40vh,260px)] w-full object-contain"
-    />
-    <figcaption lang="es" class="mt-1.5 text-left text-[12px] leading-snug text-gray-600 sm:text-[11px]">
-      <span class="font-semibold text-unal-gray">Fig. 5.</span>
-      Huso meiótico (s), ZP (zp), citoplasma (c) y cuerpo polar (pb) bajo PLM. Rienzi et al.<span class="ml-0.5 font-semibold text-unal-blue">[3]</span>.
-    </figcaption>
-  </figure>
+<div class="grid min-h-0 flex-1 grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] gap-6">
   <ul class="list-none flex flex-col justify-center space-y-3 text-[0.82rem] leading-snug text-unal-gray sm:text-[0.86rem]">
     <li class="flex gap-2">
       <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
@@ -114,6 +103,17 @@ deckSection: estado
       <span><span class="font-semibold">Cuerpo polar (CP)</span> → confirma fin de la 1.ª división meiótica; posición relativa al huso predice éxito en ICSI<span class="ml-0.5 font-semibold text-unal-blue">[10][3]</span>; <span class="italic text-gray-500">en PLM pierde contraste (baja birrefringencia → borde negro) → aparece como región oscura</span></span>
     </li>
   </ul>
+  <figure class="m-0 min-w-0 flex flex-col justify-center">
+    <img
+      src="../images/figures/diagrams/oocyte_plm.png"
+      alt="Huso meiótico, zona pelúcida, cuerpo polar y citoplasma bajo PLM"
+      class="h-auto max-h-[min(40vh,260px)] w-full object-contain"
+    />
+    <figcaption lang="es" class="plm-figcaption">
+      <span class="font-semibold text-unal-gray">Fig. 9.</span>
+      Huso meiótico (s), zona pelúcida (zp), citoplasma (c) y cuerpo polar (pb). Rienzi et al. <span class="ml-0.5 font-semibold text-unal-blue">[3]</span>
+    </figcaption>
+  </figure>
 </div>
 </div>
 <div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
@@ -147,20 +147,9 @@ deckSection: estado
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Retardo óptico de las estructuras birrefringentes</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
-<div class="grid min-h-0 flex-1 grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] gap-5">
-  <figure class="m-0 min-w-0 flex flex-col justify-center">
-    <img
-      src="../images/spindle_retardance.png"
-      alt="Medición de retardo óptico del huso meiótico en ovocitos de ratón a distintos objetivos"
-      class="h-auto max-h-[min(42vh,270px)] w-full object-contain"
-    />
-    <figcaption lang="es" class="mt-1.5 text-left text-[12px] leading-snug text-gray-600 sm:text-[11px]">
-      <span class="font-semibold text-unal-gray">Fig. 6.</span>
-      (a) Huso meiótico bajo PLM a 4×, 10× y 100×. (b) Perfiles de retardo en MI y MII. (c) Retardo máximo y relativo al fondo. Kelleher &amp; Needleman<span class="ml-0.5 font-semibold text-unal-blue">[11]</span>.
-    </figcaption>
-  </figure>
+<div class="grid min-h-0 flex-1 grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] gap-5">
   <div class="flex flex-col justify-center gap-3">
-    <ul class="list-none space-y-2.5 text-[0.80rem] leading-snug text-unal-gray sm:text-[0.84rem]">
+    <ul class="list-none space-y-2.5 text-[0.80rem] leading-snug text-unal-gray sm:text-sm">
       <li class="flex gap-2">
         <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
         <span><span class="font-semibold text-unal-blue">Huso meiótico:</span> retardo <span class="font-semibold">1–5.6&nbsp;nm</span> — bajo contraste, difícil de detectar automáticamente<span class="ml-0.5 font-semibold text-unal-blue">[9][11]</span></span>
@@ -180,6 +169,17 @@ deckSection: estado
       </p>
     </div>
   </div>
+  <figure class="m-0 min-w-0 flex flex-col justify-center">
+    <img
+      src="../images/spindle_retardance.png"
+      alt="Medición de retardo óptico del huso meiótico en ovocitos de ratón a distintos objetivos"
+      class="h-auto max-h-[min(42vh,270px)] w-full object-contain"
+    />
+    <figcaption lang="es" class="plm-figcaption">
+      <span class="font-semibold text-unal-gray">Fig. 10.</span>
+      Huso bajo PLM (4×, 10×, 100×); perfiles de retardo en MI y MII. Kelleher &amp; Needleman <span class="ml-0.5 font-semibold text-unal-blue">[11]</span>
+    </figcaption>
+  </figure>
 </div>
 </div>
 <div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
@@ -213,36 +213,34 @@ deckSection: estado
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">El uso de bases de datos sintéticas</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
-<div class="grid min-h-0 flex-1 grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-6">
-  <div class="flex flex-col justify-start gap-3 text-left">
-    <ul class="list-none space-y-3 text-[0.78rem] leading-snug text-unal-gray sm:text-[0.82rem]">
-      <li class="flex gap-2">
-        <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span><span class="font-semibold">Escasez de datos:</span> no existe base PLM de ovocitos anotada y pública — barreras éticas, de privacidad y costo de adquisición<span class="ml-0.5 font-semibold text-unal-blue">[12]</span></span>
-      </li>
-      <li class="flex gap-2">
-        <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span><span class="font-semibold">Síntesis validada en otros dominios:</span> Mery<span class="ml-0.5 font-semibold text-unal-blue">[13][14]</span> (rayos X industriales), Eversberg &amp; Lambrecht<span class="ml-0.5 font-semibold text-unal-blue">[15]</span> (industria), Frid-Adar et al.<span class="ml-0.5 font-semibold text-unal-blue">[16]</span> (imágenes médicas) — datos sintéticos permiten entrenar detectores que <span class="font-semibold">generalizan a imágenes reales</span></span>
-      </li>
-      <li class="flex gap-2">
-        <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span><span class="font-semibold">Base física para síntesis en PLM:</span> el huso meiótico presenta morfología elipsoidal con retardo óptico cuantificable<span class="ml-0.5 font-semibold text-unal-blue">[9][11]</span> — su física habilita el modelado sintético realista · reto reportado: <span class="font-semibold italic">cambio de dominio</span> sintético→real requiere transferencia de aprendizaje<span class="ml-0.5 font-semibold text-unal-blue">[17]</span></span>
-      </li>
-    </ul>
-  </div>
-  <div class="flex flex-col gap-3 min-w-0">
-    <figure class="m-0 min-w-0">
-      <img
-        src="../images/figures/simulation.png"
-        alt="GDXray+ Mery: fundición X-ray, elipses simuladas, superposición y detecciones"
-        class="h-auto max-h-[min(38vh,240px)] w-full object-contain"
-      />
-      <figcaption lang="es" class="mt-1 text-left text-[12px] leading-snug text-gray-600 sm:text-[11px]">
-        <span class="font-semibold text-unal-gray">Fig. 7.</span>
-        GDXray+ (Mery<span class="ml-0.5 font-semibold text-unal-blue">[13]</span>): (a) fundición X-ray, (b) defectos simulados, (c) superposición, (d) detecciones.
-      </figcaption>
-    </figure>
-  </div>
+<div class="flex min-h-0 flex-1 flex-col gap-2 text-left">
+  <ul class="list-none space-y-2 text-[0.82rem] leading-snug text-unal-gray">
+    <li class="flex gap-2">
+      <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
+      <span><span class="font-semibold">Escasez de datos:</span> no existe base PLM de ovocitos anotada y pública — barreras éticas, de privacidad y costo de adquisición<span class="ml-0.5 font-semibold text-unal-blue">[12]</span></span>
+    </li>
+    <li class="flex gap-2">
+      <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
+      <span><span class="font-semibold">Síntesis validada en otros dominios:</span> Mery<span class="ml-0.5 font-semibold text-unal-blue">[13][14]</span> (rayos X industriales), Eversberg &amp; Lambrecht<span class="ml-0.5 font-semibold text-unal-blue">[15]</span> (industria), Frid-Adar et al.<span class="ml-0.5 font-semibold text-unal-blue">[16]</span> (imágenes médicas) — datos sintéticos permiten entrenar detectores que <span class="font-semibold">generalizan a imágenes reales</span></span>
+    </li>
+  </ul>
+  <figure class="m-0 min-w-0">
+    <img
+      src="../images/figures/simulation.png"
+      alt="GDXray+ Mery: fundición X-ray, elipses simuladas, superposición y detecciones"
+      class="h-auto max-h-[min(28vh,175px)] w-full object-contain"
+    />
+    <figcaption lang="es" class="plm-figcaption text-center">
+      <span class="font-semibold text-unal-gray">Fig. 11.</span>
+      GDXray+ (Mery<span class="ml-0.5 font-semibold text-unal-blue">[13]</span>): (a) fundición X-ray, (b) defectos simulados, (c) superposición, (d) detecciones.
+    </figcaption>
+  </figure>
+  <ul class="list-none text-[0.82rem] leading-snug text-unal-gray">
+    <li class="flex gap-2">
+      <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
+      <span><span class="font-semibold">Base física para síntesis en PLM:</span> el huso meiótico presenta morfología elipsoidal con retardo óptico cuantificable<span class="ml-0.5 font-semibold text-unal-blue">[9][11]</span> — su física habilita el modelado sintético realista · reto reportado: <span class="font-semibold italic">cambio de dominio</span> sintético→real requiere transferencia de aprendizaje<span class="ml-0.5 font-semibold text-unal-blue">[17]</span></span>
+    </li>
+  </ul>
 </div>
 </div>
 <div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
@@ -310,22 +308,26 @@ deckSection: estado
       </div>
     </div>
   </div>
-  <div class="grid min-h-0 flex-1 grid-cols-4 gap-2">
-    <div class="rounded-lg border border-gray-200 bg-white px-3 py-2.5 shadow-sm">
-      <p class="mb-1.5 text-[0.68rem] font-bold uppercase tracking-wide text-unal-blue">Columna vertebral</p>
-      <p class="text-[0.72rem] leading-snug text-unal-gray">Bloques eficientes: CSP, C3, C2f — extracción de características multi-escala</p>
+  <div class="flex min-h-0 flex-1 gap-2">
+    <!-- Estructura de la red: Columna vertebral + Cuello + Cabeza -->
+    <div class="flex flex-1 gap-2 rounded-xl border border-unal-blue/25 bg-unal-blue/5 p-1.5">
+      <div class="flex flex-1 flex-col rounded-lg border border-gray-200 bg-white px-2.5 py-2 shadow-sm">
+        <p class="mb-0 text-[0.65rem] !font-bold uppercase tracking-wide text-unal-blue">Columna vertebral</p>
+        <p class="text-[0.68rem] leading-snug text-unal-gray !mt-0">Bloques eficientes: CSP, C3, C2f — extracción de características multi-escala.</p>
+      </div>
+      <div class="flex flex-1 flex-col rounded-lg border border-gray-200 bg-white px-2.5 py-2 shadow-sm">
+        <p class="mb-0 text-[0.65rem] !font-bold uppercase tracking-wide text-unal-blue">Cuello (Neck)</p>
+        <p class="text-[0.68rem] leading-snug text-unal-gray !mt-0">FPN / PANet — fusión multi-escala; mejora detección de objetos pequeños.</p>
+      </div>
+      <div class="flex flex-1 flex-col rounded-lg border border-gray-200 bg-white px-2.5 py-2 shadow-sm">
+        <p class="mb-0 text-[0.65rem] !font-bold uppercase tracking-wide text-unal-blue">Cabeza (Head)</p>
+        <p class="text-[0.68rem] leading-snug text-unal-gray !mt-0">Anchor-free → IoU-based losses — mejor localización espacial.</p>
+      </div>
     </div>
-    <div class="rounded-lg border border-gray-200 bg-white px-3 py-2.5 shadow-sm">
-      <p class="mb-1.5 text-[0.68rem] font-bold uppercase tracking-wide text-unal-blue">Cuello (Neck)</p>
-      <p class="text-[0.72rem] leading-snug text-unal-gray">FPN / PANet — fusión multi-escala; mejora detección de objetos pequeños</p>
-    </div>
-    <div class="rounded-lg border border-gray-200 bg-white px-3 py-2.5 shadow-sm">
-      <p class="mb-1.5 text-[0.68rem] font-bold uppercase tracking-wide text-unal-blue">Cabeza (Head)</p>
-      <p class="text-[0.72rem] leading-snug text-unal-gray">Anchor-free → IoU-based losses — mejor localización espacial</p>
-    </div>
-    <div class="rounded-lg border border-gray-200 bg-white px-3 py-2.5 shadow-sm">
-      <p class="mb-1.5 text-[0.68rem] font-bold uppercase tracking-wide text-unal-green">Atención</p>
-      <p class="text-[0.72rem] leading-snug text-unal-gray">SE, CBAM, ECA — recalibración espacial y de canal · YOLO-SCL<span class="ml-0.5 font-semibold text-unal-blue">[18]</span>, MA-YOLO<span class="ml-0.5 font-semibold text-unal-blue">[19]</span>: validados en dominios de bajo contraste</p>
+    <!-- Atención: componente aparte -->
+    <div class="flex w-[27%] shrink-0 flex-col rounded-lg border border-l-4 border-unal-green/30 border-l-unal-green bg-white px-2.5 py-2 shadow-sm">
+      <p class="mb-0 text-[0.65rem] !font-bold uppercase tracking-wide text-unal-green">Atención</p>
+      <p class="text-[0.64rem] leading-snug text-unal-gray !mt-0">SE, CBAM, ECA — recalibración espacial y de canal · YOLO-SCL<span class="ml-0.5 font-semibold text-unal-blue">[18]</span>, MA-YOLO<span class="ml-0.5 font-semibold text-unal-blue">[19]</span>: validados en dominios de bajo contraste.</p>
     </div>
   </div>
 </div>
@@ -465,18 +467,18 @@ deckSection: estado
     </div>
   </div>
   <!-- Bullets -->
-  <ul class="list-none space-y-1.5 text-[0.78rem] leading-snug text-unal-gray sm:text-[0.82rem]">
+  <ul class="list-none space-y-1.5 text-[0.82rem] leading-snug text-unal-gray sm:text-[0.82rem]">
     <li class="flex gap-2">
       <span class="mt-0.5 shrink-0 text-unal-blue">▸</span>
-      <span><span class="font-semibold">YOLOv9</span><span class="ml-0.5 font-semibold text-unal-blue">[20]</span>: PGI — gradiente programable → mayor precisión incluso en configuraciones ligeras entrenadas desde cero</span>
+      <span><span class="font-semibold">YOLOv9</span><span class="ml-0.5 font-semibold text-unal-blue">[20]</span>: PGI — gradiente programable → mayor precisión incluso en configuraciones ligeras entrenadas desde cero.</span>
     </li>
     <li class="flex gap-2">
       <span class="mt-0.5 shrink-0 text-unal-blue">▸</span>
-      <span><span class="font-semibold">YOLOv11</span><span class="ml-0.5 font-semibold text-unal-blue">[21]</span>: bloques C3k2 de Ultralytics — arquitectura base para integración de módulos de atención en este trabajo</span>
+      <span><span class="font-semibold">YOLOv11</span><span class="ml-0.5 font-semibold text-unal-blue">[21]</span>: bloques C3k2 de Ultralytics — arquitectura base para integración de módulos de atención en este trabajo.</span>
     </li>
     <li class="flex gap-2">
       <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-      <span><span class="font-semibold">RT-DETR</span><span class="ml-0.5 font-semibold text-unal-blue">[22]</span>: Transformer end-to-end — elimina NMS; precisión competitiva con YOLO en tiempo real</span>
+      <span><span class="font-semibold text-unal-green">RT-DETR</span><span class="ml-0.5 font-semibold text-unal-blue">[22]</span>: Transformer end-to-end — elimina NMS; precisión competitiva con YOLO en tiempo real.</span>
     </li>
   </ul>
 </div>
@@ -510,34 +512,58 @@ deckSection: estado
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Atención &amp; Transformers</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
-<div class="grid min-h-0 flex-1 grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-5 [&_.katex-display]:my-1 [&_.katex-display]:text-[0.68rem]">
-<div class="min-w-0 flex flex-col gap-2">
-<img src="../images/figures/diagrams/cbam_module.png" alt="Módulo CBAM" class="h-auto max-h-[min(28vh,190px)] w-full object-contain" />
-<p class="mt-0.5 text-[11px] leading-snug text-gray-600"><span class="font-semibold text-unal-gray">Fig. 10.</span> Módulo CBAM: refinamiento secuencial por canal y por espacio.</p>
-<div class="rounded-md bg-gray-50 px-3 py-1">
+<div class="flex min-h-0 flex-1 flex-col gap-2 [&_.katex-display]:my-1 [&_.katex-display]:text-[0.68rem]">
+
+<!-- Bullets -->
+<ul class="list-none space-y-1.5 text-sm leading-snug text-unal-gray">
+<li class="flex gap-2">
+<span class="mt-0.5 shrink-0 text-unal-green">▸</span>
+<span><span class="font-semibold">CBAM, SE, ECA</span>: recalibran respuesta espacial y de canal — adaptan el detector a dominios específicos sin rediseño completo.</span>
+</li>
+<li class="flex gap-2">
+<span class="mt-0.5 shrink-0 text-unal-green">▸</span>
+<span>En este trabajo: <span class="font-semibold text-unal-blue">CBAM integrado en YOLOv9m</span> → mejora detección de estructuras pequeñas (huso meiótico, cuerpo polar).</span>
+</li>
+<li class="flex gap-2">
+<span class="mt-0.5 shrink-0 text-unal-green">▸</span>
+<span><span class="font-semibold text-unal-green">RT-DETR</span><span class="ml-0.5 font-semibold text-unal-blue">[22]</span>: atención global elimina NMS — alternativa Transformer end-to-end a la familia convolucional.</span>
+</li>
+</ul>
+
+<!-- Ecuaciones -->
+<div class="rounded-md bg-gray-50 px-3 py-0.5">
 
 $$\text{Canal:}\quad M_c(\mathbf{F}) = \sigma\!\left(\mathrm{MLP}(\mathrm{AvgPool}(\mathbf{F})) + \mathrm{MLP}(\mathrm{MaxPool}(\mathbf{F}))\right)$$
 
 $$\text{Espacial:}\quad M_s(\mathbf{F}) = \sigma\!\left(f^{7\times7}\!\left([\mathrm{AvgPool}(\mathbf{F});\,\mathrm{MaxPool}(\mathbf{F})]\right)\right)$$
 
 </div>
-</div>
-<div class="flex flex-col justify-start gap-3 text-left">
-<ul class="list-none space-y-2.5 text-[0.8rem] leading-snug text-unal-gray sm:text-[0.84rem]">
-<li class="flex gap-2">
-<span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-<span><span class="font-semibold">CBAM, SE, ECA</span>: recalibran respuesta espacial y de canal — adaptan el detector a dominios específicos sin rediseño completo</span>
-</li>
-<li class="flex gap-2">
-<span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-<span>En este trabajo: <span class="font-semibold text-unal-blue">CBAM integrado en YOLOv9m</span> → mejora detección de estructuras pequeñas (huso meiótico, cuerpo polar)</span>
-</li>
-<li class="flex gap-2">
-<span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-<span><span class="font-semibold">RT-DETR</span><span class="ml-0.5 font-semibold text-unal-blue">[22]</span>: atención global elimina NMS — alternativa Transformer end-to-end a la familia convolucional</span>
-</li>
-</ul>
-</div>
+
+<!-- Diagrama CBAM ancho completo -->
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E8E8E8', 'primaryBorderColor': '#808080', 'primaryTextColor': '#262626', 'lineColor': '#555555', 'fontSize': '13px', 'edgeLabelBackground': '#F2F2F0'}}}%%
+graph LR
+    Input["Entrada x<br/>(B, C, H, W)"]
+    Output["Salida<br/>(B, C, H, W)"]
+
+    subgraph cbam["Módulo CBAM"]
+        direction LR
+        CA["self.channel_attention<br/>(Bloque Atención Canal)"]
+        SA["self.spatial_attention<br/>(Bloque Atención Espacial)"]
+        CA -->|"Rasgos Refinados por Canal"| SA
+    end
+
+    Input -->|"Rasgos Crudos"| CA
+    SA -->|"Rasgos Refinados Espacialmente"| Output
+
+    style Input fill:#BDD7EE,stroke:#4472C4,stroke-width:2px,color:#262626
+    style Output fill:#BDD7EE,stroke:#4472C4,stroke-width:2px,color:#262626
+    style CA fill:#E8E8E8,stroke:#808080,stroke-width:1.5px,color:#262626
+    style SA fill:#E8E8E8,stroke:#808080,stroke-width:1.5px,color:#262626
+    style cbam fill:#ffffff,stroke:#808080,stroke-dasharray:5 5,color:#262626
+```
+<p class="text-center text-[11px] leading-snug text-gray-500"><span class="font-semibold text-unal-gray">Fig. 12.</span> Módulo CBAM: refinamiento secuencial por canal y por espacio.</p>
+
 </div>
 </div>
 <div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">

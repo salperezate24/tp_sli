@@ -351,4 +351,6 @@ $$
 Para evaluar un detector usamos métricas espaciales y de clasificación. En cuanto a métricas espaciales: el IoU mide el solapamiento entre la caja predicha y la de referencia — es el criterio base para decidir si una detección fue correcta. El mAP es el promedio de las precisiones promedio sobre todas las clases; lo reportamos en dos versiones: mAP@50, con umbral de IoU de 0.5, y mAP@50-95, que promedia sobre diez umbrales y es considerablemente más exigente.
 
 En cuanto a métricas de clasificación: la Precisión mide qué proporción de las detecciones positivas son realmente correctas; la Sensibilidad, cuántos objetos reales fueron detectados; y la Tasa de Falsos Positivos, cuántos negativos fueron clasificados erróneamente como positivos. Con estas seis métricas tenemos una evaluación completa del modelo.
+
+En diagnóstico clínico preferimos alta sensibilidad sobre baja tasa de falsos positivos — es preferible decirle a alguien que podría tener cáncer y no tenerlo, que no detectarle uno que sí tiene. Ese principio aplica directamente aquí: preferimos no perder un huso meiótico real aunque eso implique alguna falsa alarma ocasional.
 -->

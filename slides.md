@@ -85,7 +85,7 @@ const formattedDate = new Intl.DateTimeFormat('es-CO', {
 </div>
 
 <!--
-Buenos días, apreciados jurados, señoras y señores. Mi nombre es Salomón Pérez Atencia, ingeniero mecánico, y soy el autor de la tesis titulada "Desarrollo de un modelo de red neuronal profunda para la identificación de ovocitos y sus características a través de microscopía polarizada".
+Buenos días, apreciados jurados, señoras y señores. Mi nombre es Salomón Pérez Atencia, ingeniero mecánico, y soy el autor de la tesis titulada "Desarrollo de un modelo de red neuronal profunda para la identificación de ovocitos y sus características a través de microscopía polarizada" para optar al título de Magíster en Ingeniería - Analítica
 
 Antes de comenzar, quiero agradecer especialmente a los jurados por su tiempo, por la lectura del documento y por estar presentes hoy en la defensa.
 

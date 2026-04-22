@@ -73,9 +73,9 @@ Con este marco teórico claro pasamos a revisar el estado del arte, empezando po
 
 Está claro que la detección del huso meiótico es un indicador clave de madurez MII y aptitud para ICSI. También, explicamos que se sigue realizando una evaluación manual de la madurez del ovocito, pero esta es subjetiva y depende de la experiencia del observador. Estudios indican que incluso hay variabilidad interobservador, por lo que se requiere un método más objetivo.
 
-Recientemente se ha popularizado el uso de la microscopía polarizada para visualizar los ovocitos. Esta técnica permite visualizar la birrefringencia de la muestra y se ha descubierto que el huso meiótico tiene birrefringencia precisamente en el punto en que es apto para fecundación.
+Recientemente se ha popularizado el uso de la microscopía polarizada para visualizar los ovocitos. Esta técnica permite visualizar la birrefringencia de la muestra y se ha descubierto que el huso meiótico tiene birrefringencia precisamente en el punto en que es apto para fecundación. La imagen de la izquierda —de Holubcová et al.— ilustra esto: en la fila superior vemos el ovocito en campo claro, donde el huso es completamente invisible; con fluorescencia se hace visible pero requiere marcadores que comprometen la viabilidad de la célula; en la fila inferior, la PLM lo revela sin ninguna intervención química.
 
-Se han desarrollado sistemas de automatización que realizan segmentación celular o conteos, pero ninguno aprovecha las ventajas que ofrece la PLM para detectar estos marcadores de madurez en la célula.
+Se han desarrollado sistemas de automatización que realizan segmentación celular o conteos, pero ninguno aprovecha las ventajas que ofrece la PLM para detectar estos marcadores de madurez en la célula. La imagen de la derecha —MOMA, de Fjeldstad— es un ejemplo representativo: segmenta la zona pelúcida y el ooplasma en campo claro, sin detectar el huso meiótico ni usar PLM.
 -->
 
 ---

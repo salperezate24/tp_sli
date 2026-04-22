@@ -139,7 +139,7 @@ deckSection: metodologia
 </div>
 
 <!--
-No existe ninguna base pública de imágenes PLM de ovocitos — los datos clínicos son privados, costosos y sujetos a restricciones éticas. La solución fue generar los datos sintéticamente a partir del modelo físico, conectando directamente con el marco teórico: la birrefringencia de cada estructura determina su retardo óptico, y ese retardo se convierte en la intensidad que modela la imagen PLM.
+No existe ninguna base pública de imágenes PLM de ovocitos — los datos clínicos son privados, costosos y sujetos a restricciones éticas. La solución fue generar los datos sintéticamente a partir del modelo físico, conectando directamente con el marco teórico: la birrefringencia de cada estructura determina su retardo óptico.
 
 Modelamos cuatro estructuras en MATLAB. El huso meiótico es una Gaussiana anisotrópica 2D con retardo de unos 5,6 nanómetros — igual al que reporta la literatura para ovocitos humanos. La zona pelúcida es una banda elíptica con filtro Gaussiano. También incluimos el límite citoplasmático y el cuerpo polar. El sistema se calibró a 1 píxel igual a 0,129 micrómetros, correspondiente a 400x con ovocito de 120 micrómetros de diámetro.
 
@@ -214,7 +214,7 @@ deckSection: metodologia
 <!--
 Los datos reales provienen de dos fuentes con metodologías distintas.
 
-Para las imágenes PLM, recopilamos 200 imágenes de publicaciones científicas y libros de texto sobre ovocitos, microscopía polarizada e ICSI. El criterio de inclusión fue que cada imagen contuviera al menos una de las cuatro estructuras objetivo visibles. Las imágenes de publicaciones llegaban con texto, barras de escala y gráficos superpuestos — cada una requirió curaduría manual para limpiarla. Luego se anotaron manualmente con cajas delimitadoras, usando el mismo esquema de clases del conjunto sintético, y se estandarizaron a 640 × 640 píxeles.
+Para las imágenes PLM, recopilamos 200 imágenes de publicaciones científicas y libros de texto sobre ovocitos, microscopía polarizada e ICSI. El criterio de inclusión fue que cada imagen contuviera al menos una de las cuatro estructuras objetivo visibles. Las imágenes de publicaciones llegaban con texto, barras de escala y gráficos superpuestos — cada una requirió curaduría manual para limpiarla. Luego se anotaron manualmente con cajas delimitadoras, usando el mismo esquema de clases del conjunto sintético.
 
 Para los videos, usamos cinco secuencias de escenarios distintos: la primera es un time-lapse de meiosis I del sistema OpenPolScope, con 109 fotogramas que incluyen un tramo donde el huso es casi invisible — ideal para probar robustez. Las secuencias dos y tres son videos publicados de procedimientos ICSI y de extrusión del primer cuerpo polar. Las secuencias cuatro y cinco son imágenes TIF del repositorio público Zenodo, convertidas a video. Ninguna de las cinco secuencias tiene anotaciones por fotograma — se usan exclusivamente para evaluación cualitativa.
 -->

@@ -18,7 +18,7 @@ deckSection: justificacion
 </p>
 
 <div class="max-w-4xl">
-  <p class="mb-1.5 text-[11.5px] font-bold uppercase tracking-wide text-unal-blue">
+  <p class="mb-1.5 text-[11.5px] !font-bold uppercase tracking-wide text-unal-blue">
     Industria porcina (Chen et al., 2022)<span class="ml-0.5 font-semibold normal-case tracking-normal text-unal-blue">[1]</span>
   </p>
   <ul class="list-disc space-y-1.5 pl-3 text-[14px] leading-snug text-unal-gray marker:text-unal-blue">
@@ -30,7 +30,7 @@ deckSection: justificacion
 
 <!-- Transición hacia la siguiente diapositiva -->
 <!-- <div class="mt-4 rounded-md border-l-4 border-unal-blue bg-unal-blue/10 px-3 py-1.5">
-  <p class="text-[0.8rem] font-semibold leading-snug text-unal-gray">
+  <p class="text-sm font-semibold leading-snug text-unal-gray">
     Lo anterior se replica en la <span class="text-unal-blue">reproducción humana asistida</span>, donde la
     <span class="text-unal-blue">edad materna</span> hace aún más evidente la dependencia de la calidad del ovocito.
   </p>
@@ -52,6 +52,14 @@ deckSection: justificacion
   />
 </div>
 
+<!--
+La reproducción asistida y el desarrollo embrionario tienen aplicaciones relevantes tanto en la seguridad alimentaria como en la medicina humana. En ambos campos, la maduración citoplasmática del ovocito es el prerrequisito esencial para la competencia del desarrollo embrionario. Sin un ovocito maduro, la eficiencia de cualquier técnica de reproducción asistida queda comprometida.
+
+En la industria porcina, por ejemplo, la eficiencia sigue siendo un desafío: según Chen et al. (2022), típicamente solo 1 de cada 5 embriones producidos in vitro llega a término. Técnicas avanzadas de selección pueden elevar esta proporción a 1 de cada 3. Esta brecha subraya la necesidad de mejorar la selección de los embriones producidos in vitro (IVP) para optimizar las tasas de transferencia.
+
+Lo que ocurre en la industria animal es un reflejo directo de lo que ocurre en la reproducción humana asistida — y en ese campo, el impacto es aún más evidente dado el factor de la edad materna. Veamos eso en la siguiente diapositiva.
+-->
+
 ---
 transition: slide-left
 deckSection: justificacion
@@ -71,7 +79,7 @@ deckSection: justificacion
 </p>
 <div class="grid w-full max-w-4xl grid-cols-1 gap-4 text-left lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:gap-6">
 <div class="min-w-0">
-<p class="mb-1 text-[11.5px] font-bold uppercase tracking-wide text-unal-blue">
+<p class="mb-1 text-[11.5px] !font-bold uppercase tracking-wide text-unal-blue">
   Uso y alcance (SART, 2024)<span class="ml-0.5 font-semibold normal-case tracking-normal text-unal-blue">[2]</span>
 </p>
 <ul class="list-disc space-y-1 pl-3 text-[14px] leading-snug text-unal-gray marker:text-unal-blue">
@@ -81,12 +89,12 @@ deckSection: justificacion
 </ul>
 </div>
 <div class="min-w-0">
-<p class="mb-0.5 text-[11.5px] font-bold uppercase tracking-wide text-unal-gray">
+<p class="mb-0.5 text-[11.5px] !font-bold uppercase tracking-wide text-unal-gray">
   Tasas de éxito de IVF en EE.&nbsp;UU. por edad materna
 </p>
 <figure class="m-0 min-w-0 max-w-full">
 <IvfLiveBirthByAgeChart />
-<figcaption lang="es" class="mt-3 max-w-full hyphens-auto break-words text-left text-[10px] leading-tight text-gray-600">
+<figcaption lang="es" class="plm-figcaption">
   <span class="font-semibold text-unal-gray">Fig. 1.</span>
   Tasas aprox. de nacidos vivos por edad materna (EE. UU., 2024&nbsp;—&nbsp;preliminar)
   <span class="ml-0.5 font-semibold text-unal-blue">[2]</span>.
@@ -95,7 +103,7 @@ deckSection: justificacion
 </div>
 </div>
 <!-- <div class="mt-3 rounded-md border-l-4 border-unal-green bg-unal-green/10 px-3 py-1.5">
-  <p class="text-[0.8rem] font-semibold leading-snug text-unal-gray">
+  <p class="text-sm font-semibold leading-snug text-unal-gray">
     El refinamiento de los protocolos de <span class="text-unal-blue">maduración y selección ovocitaria</span> es una
     necesidad clínica urgente — ese es el punto de partida de este trabajo.
   </p>
@@ -105,3 +113,11 @@ deckSection: justificacion
   <img src="../images/logos/gpima_logo.png" alt="GPIMA" class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6" />
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
+
+<!--
+En el ser humano, la efectividad de las técnicas de reproducción asistida está estrechamente ligada a la edad materna, lo que hace que la dependencia de la calidad del ovocito sea aún más evidente.
+
+Según el reporte nacional preliminar de SART para 2024, se realizaron 431.746 ciclos totales de reproducción asistida. Como vemos en el gráfico, la probabilidad de éxito — nacimiento vivo — cae dramáticamente con la edad: del 50.3% en menores de 35 años, hasta apenas el 4.1% en mujeres mayores de 42 años utilizando sus propios óvulos.
+
+Estos datos confirman que el margen de éxito es sumamente estrecho y altamente sensible a la calidad del gameto femenino. El refinamiento de los protocolos de maduración y selección ovocitaria es una necesidad clínica urgente — ese es el punto de partida de este trabajo.
+-->

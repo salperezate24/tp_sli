@@ -1,0 +1,160 @@
+00:00:02:01 - 00:00:26:09
+Speaker 1
+Buenos días, apreciados jurados. Señoras y señores. Mi nombre es Salomón, ingeniero mecánico y soy el autor de la tesis titulada Desarrollo de un modelo de red neuronal profunda para la identificación de ovocitos y sus características a través de microscopía polarizada. Antes de comenzar, quiero agradecer especialmente a los jurados por su tiempo, por la lectura del documento y por estar presentes el día de hoy en la defensa.
+
+00:00:26:11 - 00:00:40:13
+Speaker 1
+Director de esta tesis, el profesor Alejandro Restrepo. Y Este trabajo se realizó en el marco del Grupo de Promoción e Investigación en Mecánica Aplicada de la Facultad de Minas de la Universidad Nacional de Colombia, sede Medellín.
+
+00:00:40:15 - 00:00:45:20
+Speaker 1
+Diapositiva dos.
+
+00:00:45:22 - 00:01:07:03
+Speaker 1
+La presentación del día de hoy está estructurada de la siguiente manera. Comenzaremos con la justificación y relevancia de este trabajo. Luego se presentará el marco teórico del problema de investigación, seguido por el estado del arte. A partir de estos estudios y conocimientos se planteará la hipótesis de investigación seguido por el estado del arte a partir de estos estudios y conocimiento.
+
+00:01:07:09 - 00:01:20:02
+Speaker 1
+Perdón. Seguidamente se presentan los objetivos, se explicará la metodología, se presentarán los resultados y terminaremos con conclusiones y un poco sobre el trabajo futuro.
+
+00:01:20:04 - 00:02:01:03
+Speaker 1
+Diapositiva número tres La reproducción asistida y el desarrollo embrionario tienen aplicaciones relevantes tanto en la seguridad alimentaria como en la medicina humana. En ambos campos, la maduración cito plasmática del ovocito es el prerrequisito esencial para la competencia embrionaria Sin un ovocito maduro. La eficiencia de cualquier técnica de reproducción asistida queda comprometida en la industria porcina, por ejemplo, la eficiencia sigue siendo un desafío, según Chen y otros, un estudio realizado en 2022, típicamente solo uno de cada cinco embriones producidos in vitro llega a término.
+
+00:02:01:05 - 00:02:29:15
+Speaker 1
+Técnicas más avanzadas de selección pueden llegar pueden elevar esta proporción a uno de cada tres. Esta brecha subraya la necesidad de mejorar la selección de los embriones producidos in vitro para optimizar las tasas de transferencia. Lo que ocurre en la industria animal es un reflejo directo de lo que ocurre en la industria de reproducción humana asistida. Y en ese campo el impacto es aún más evidente dado el factor de la edad materna.
+
+00:02:29:19 - 00:02:56:14
+Speaker 1
+Veamos esto. La siguiente diapositiva. En el ser humano, la efectividad de las técnicas de reproducción asistida está estrechamente ligada a la edad materna, lo que hace que la dependencia de la calidad de los datos sea aún más evidente. Según el Reporte Nacional Preliminar del SAR, para 2024 se realizaron más de 400.000 ciclos totales en el ciclo de reproducción asistida.
+
+00:02:56:16 - 00:03:27:18
+Speaker 1
+Como se puede ver en el gráfico, la probabilidad de éxito de nacimiento vivo cae dramáticamente con la edad cerca al 50% en menores de 35 años hasta apenas 4% en mujeres mayores de 42 años utilizando sus propios óvulos. Estos datos confirman que el máximo el margen de éxito es sumamente estrecho y altamente sensible, sensible a la calidad del gameto femenino.
+
+00:03:27:20 - 00:03:59:03
+Speaker 1
+El refinamiento de estos protocolos de maduración y selección de ovocitos es una necesidad clínica urgente y ese es el punto de partida de este trabajo. Siguiente diapositiva cinco. Solo entre el cinco y el 10% de los óvulos recuperados poseen potencial para el desarrollo completo. Se trabaja con márgenes muy estrechos. Hay tres estructuras que permiten madurar esta madurez. Evaluar la madurez de los óvulos de forma directa.
+
+00:03:59:05 - 00:04:30:04
+Speaker 1
+El uso mediático, la zona pelusilla y el cuerpo polar. Todas visibles en la figura de la izquierda. El uso biótico es la estructura central de este trabajo. Segrega cromosomas en beta fase dos y su presencia confirma la madurez nuclear del ovocito. Hay un hecho clínico crítico y es el cuerpo polar. Es el indicador más utilizado en clínica y aparece justo antes de que el uso esté completamente ensamblado.
+
+00:04:30:06 - 00:04:44:15
+Speaker 1
+La microscopía polarizada permite verificar directamente si el uso ya está formado. Ofreciendo una evaluación más precisa al momento óptimo para técnicas como por ejemplo ICSI.
+
+00:04:44:17 - 00:05:14:12
+Speaker 1
+Siguiente apoyo. En esta diapositiva podemos ver cómo la PLM cuantitativa recupera información de cada píxel de la imagen. La idea central es la siguiente En lugar de una sola imagen, el sistema captura cinco imágenes con distintos estados de despolarización, desde la intensidad cero hasta la intensidad cuatro, que son las de la imagen de la izquierda, que las pueden ver en la imagen de la izquierda.
+
+00:05:14:14 - 00:05:47:22
+Speaker 1
+Y con esas cinco intensidades se pueden construir unos términos auxiliares A y B que permiten estimar para cada píxel algo que vamos a llamar el retardo óptico delta que cuantifica la ausencia de la estructura y el azimut que indica la orientación de esta. La orientación molecular. A la derecha vemos un resultado práctico, un mapa de retardo de un aster de microtúbulos donde los puntos brillantes corresponden a zonas de alta y referencia.
+
+00:05:47:24 - 00:06:11:20
+Speaker 1
+Ese mismo proceso es el que permite medir cuantitativamente el uso mediático de los hitos Estructura por estructura píxel a píxel. Este es el modelo matemático que hace posible esa medición. Ya pasé de las cinco ecuaciones de intensidad. Son las que pueden ver en pantalla. Aparecen en la izquierda y describen físicamente cómo cada píxel reacciona en función del retardo óptico.
+
+00:06:11:20 - 00:06:42:16
+Speaker 1
+Delta y el azimut, en fin, de la estructura ingente que contiene. Para simplificar el cálculo, primero se definen unos términos auxiliares A y B que separan algebraicamente la información de orientación y amplitud de la referencia y con A y B en mano es posible calcular las ecuaciones de retardo y azimut que pueden ver abajo a la derecha. Se puede estimar entonces delta y phi para cada pixel de forma directa.
+
+00:06:42:18 - 00:06:59:02
+Speaker 1
+Este modelo matemático es el sustento de la síntesis realista, conociendo propiedades no solo para la para el usuario, sino en general de imágenes de polarización, para pasar de polarización a retardo o de retardo a polarización.
+
+00:06:59:04 - 00:07:25:13
+Speaker 1
+Esto es lo que nos va a permitir eventualmente simular e las imágenes de retardo de los ovocitos. Siguiente imagen. Las redes neuronales es otro tema importante dentro del marco teórico para la detección de objetos. Las redes neuronales realizan tres tareas principales la extracción de características, la predicción de cajas y la clase de confianza en la extracción de características.
+
+00:07:25:13 - 00:08:02:17
+Speaker 1
+La red obtiene descriptores de la imagen en la predicción de cajas se realiza una ubicación espacial de cada objeto candidato y finalmente se asigna una etiqueta y un puntaje de confianza a cada uno de estos objetos. Históricamente esto se hacía en dos etapas. Primero se generan los candidatos de región y luego se clasifican y refinan. Pero últimamente arquitecturas de una sola etapa como la de la familia YOLO, que es la que se usa este trabajo, Hacen todo en una sola pasada sobre la imagen, lo que la hace más eficiente sin sacrificar precisión en la arquitectura de la derecha.
+
+00:08:02:19 - 00:08:33:19
+Speaker 1
+En la figura de la derecha podemos ver su arquitectura general. Hay una columna vertebral en donde se extraen las características, un cuello donde se integran y se agregan las características y finalmente una cabeza donde se hacen las predicciones finales. Esta estructura no hace que bueno, eso omite su siguiente diapositiva. El último. Finalmente, en el marco teórico tenemos las métricas de evaluación de detección de objetos.
+
+00:08:33:21 - 00:09:11:00
+Speaker 1
+Para evaluar un detector utilizamos métricas espaciales y métricas de clasificación. Las métricas espaciales encontramos el i o el intersección y unión. El mina verdad es precisión y esto lo tenemos para diferentes valores de intersección. Unión El interceptor en la intersección unión básicamente es La traducción es el solapamiento entre la capa predicha y la caja de referencia. Este criterio es el criterio base para decidir si una detección fue correcta o no, y el min a veraz precisión es el promedio de las precisiones promedio sobre las clases.
+
+00:09:11:02 - 00:09:40:13
+Speaker 1
+Este se puede reportar en diferentes escalas de intersección desde el punto cinco en adelante. En este trabajo se reportan de punto cinco y desde punto cinco hasta punto 95, que promedia sobre diez umbrales diferentes y es considerablemente más exigente. En cuanto a las métricas de clasificación, tenemos la precisión, la sensibilidad y la tasa de falsos positivos. La precisión mide qué proporción de las detecciones positivas son realmente correctas.
+
+00:09:40:15 - 00:10:23:10
+Speaker 1
+La sensibilidad en Inglés Recall me dice cuántos objetos reales fueron detectados y la tasa de falsos positivos. ¿Cuántos negativos fueron clasificados erróneamente como positivos? ¿Eh? En salud, es preferible tener una mayor sensibilidad a tener una mayor tasa de equivocación, porque es mejor y por feo que suene, es mejor decirle a un paciente que tiene cáncer que el que se le había dicho que tenía cáncer, que no tiene a decirle que alguien que se que no se lo había identificado que sí tenía.
+
+00:10:23:10 - 00:10:29:22
+Speaker 1
+Entonces eh, eso es un ejemplo exagerado, pero ese es el caso.
+
+00:10:29:24 - 00:10:51:05
+Speaker 1
+Con este marco teórico, entonces pasamos a revisar el estado del arte, empezando por los métodos de evaluación de la madurez de los ovocitos. Está claro que sin la detección del uso mediático, perdón, que la detección del uso mediático es un indicador clave de la maduración de madurez en meta fase dos y aptitud para ICSI. De estos de estas células.
+
+00:10:51:07 - 00:11:25:21
+Speaker 1
+También explicamos que esto por lo general se sigue realizando de forma manual y esto hace que sea algo subjetivo y que dependa de la experiencia del observador. Estudios indican que incluso hay variabilidad entre el observador, por lo que se requiere un método más objetivo. Recientemente se ha popularizado el uso de microscopía polarizada para visualizar los objetivos. Esta técnica permite visualizar la frecuencia de la muestra y se ha descubierto que el uso mediático tiene incidencia precisamente en el punto en que es apto para la fecundación.
+
+00:11:25:23 - 00:11:50:23
+Speaker 1
+Se han desarrollado sistemas de automatización que realizan segmentación celular o conteos, pero ninguno realmente aprovecha las ventajas que ofrece esta este descubrimiento de la de PLM para detectar estos marcadores de la madurez en las células. En esta diapositiva estamos en la diapositiva diez. No estoy haciendo referencia a ninguna de las dos imágenes. Entonces hay que agregar eso al guion, integrar eso al guion en lo que ya está.
+
+00:11:50:23 - 00:12:13:24
+Speaker 1
+Para hacer referencia a las imágenes también hace falta hacer referencia a lo de la fluorescencia, porque la imagen de la izquierda presenta esos objetivos, pues está un campo brillante, está en campo brillante con fluorescencia y esta luego la la microscopia polarizada, pero no está haciendo referencia ninguna de las dos imágenes. Eso está en la imagen de la izquierda.
+
+00:12:14:01 - 00:12:41:01
+Speaker 1
+Entonces hay que incluir eso en el guion y. ¿Y no sé si esos títulos, esos textos que están ahí, eh? Bueno, creo que sí aportan, pero no estoy seguro. Bueno, diapositiva 11 En la diapositiva anterior vimos que la PLM eh Bueno, con la popularización de la PLM también hay que comenzar en esta diapositiva. Bien, así, con la popularización de la PLM para visualizar objetivos ovocitos.
+
+00:12:41:01 - 00:13:15:03
+Speaker 1
+Perdón. ¿Vale la pena entonces detenernos ahora en qué estructuras son visibles y por qué? En esta imagen de Renzo y otros vemos el objetivo el ovocito maduro bajo microscopía polarizada cuatro estructuras están pre se presentan en la agencia el uso biótico que se puede ver como la estructura elipsoidal de menor contraste subir frecuencia solo aparece en el estado de beta fase dos, lo que la convierte en un indicador excelente de madurez.
+
+00:13:15:05 - 00:13:43:00
+Speaker 1
+La zona velocidad que tiene una frecuencia moderada alta dependiendo del tipo de ovocito que esté analizando, es producto de la organización. Glicerol proteica Eh Es el aro que ven alrededor de la célula y el cuerpo polar que confirma que la primera división médica se completó. Es es el cuerpo o pues la parte oscura que se ve entre la zona velocidad, el límite de la del citoplasma interno.
+
+00:13:43:00 - 00:14:11:24
+Speaker 1
+Ahí está cerquita al uso mediático. De hecho, estudios afirman que en el cuerpo afirman que la posición relativa del cuerpo polar predice el éxito en ese, aunque es visible en campo claro, el en PLM pierde contraste. Su esencia hace Bueno, aquí yo dije una cosa y el guion está diferente. Hay que ver cómo de pronto se pueden integrar las dos.
+
+00:14:12:01 - 00:14:47:22
+Speaker 1
+En lo que hace especialmente relevante a la PLM es que el uso médico es completamente invisible en campo. Claro, esta es la única técnica no invasiva que lo revela. Ahora veamos los valores concretos que sustentan todo esto. Cuantitativamente. Esta figura de Burguess in edema mide el retardo óptico del uso mediático en ositos de ratón a distintos objetivos. Los perfiles del panel B confirman en que estadio en que el estadio Ventas.
+
+00:14:47:22 - 00:15:24:10
+Speaker 1
+Fase dos El uso mediático es consistentemente detectable. Los valores del de la parte de la imagen lo cuantifican entre uno y 5.6 nanómetros. ¿Es una señal bastante débil, eh? ¿Y para referencia a la zona velocidad eh? Y bueno, de acuerdo a esta imagen y a otros papers analizados, la zona velocidad se presenta entre cero y dos nanómetros y el fondo entre cero y uno metro que se sí se puede observar aquí en la imagen.
+
+00:15:24:12 - 00:15:48:21
+Speaker 1
+Valores tan pequeños y tan próximos entre sí son exactamente el reto del problema. El uso no destaca fácil visualmente con facilidad, pero al mismo tiempo son valores físicamente bien definidos y cuantificables, lo que hace posible moderar los de forma sintética con precisión. Y esa es la base de lo que viene a continuación. Para entrenar un detector de objetos se necesitan imágenes anotadas.
+
+00:15:48:24 - 00:16:25:24
+Speaker 1
+Aquí hay una barrera práctica porque no hay una base de datos públicas de ovocitos en polarización. ¿Los datos clínicos suelen ser privados, costosos o sujetos a restricciones éticas, EH? La solución respaldada por la literatura es la generación de datos sintéticos, como vemos en la figura del profesor Domingo Mery. Aquí simulan defectos. Realizó ideales sobre imágenes de rayos X y esto permitió entrenar un detector que transfería correctamente a imágenes reales, defectos de fundición.
+
+00:16:26:01 - 00:17:00:19
+Speaker 1
+Lambert y otros validaron una estrategia similar en otra industria y los últimos en imágenes médicas. Entonces tenemos un fundamento físico que acabo de explicar sobre polarización para poder hacer la simulación de datos sintéticos. El uso mediático tiene una morfología elipsoidal, tiene un retardo óptico cuantificable. ¿Ya explicamos matemáticamente como el retardo inclusive nos puede, lo podemos, nos podemos devolver del retardo a la polarización, eh?
+
+00:17:00:21 - 00:17:44:02
+Speaker 1
+¿Si tenemos el el azimut eh? Esto habilita un modelo sintético realista. Entonces el principal reto reportado aquí en la literatura es el cambio de dominio entre lo sintético y lo real. Y eso se aborda con la transferencia, eh Con la transferencia de aprendizaje. Finalmente, en cuanto a lo último desarrollado en redes neuronales para la detección de objetos, estas eh han evolucionado mucho en los últimos años, desde arquitecturas de dos etapas como la Faster, R, CNN, la S a Single Shot, eh, SSD, eh, la retina.
+
+00:17:44:02 - 00:18:24:18
+Speaker 1
+NET han emergido la mayoría ah detectores de una sola etapa que resuelven la localización y la clasificación de manera simultánea. ¿Eh Aquí tenemos la descripción de algunas de la familia YOLO, eh? Y vemos el panorama de estas arquitecturas, la evolución de YOLO y esta eh llamada Realtime Detector que tiene EH. Transformers es una alternativa con Transformers ha involucrado diferentes mejoras en cada una de las diferentes partes de la arquitectura de estas redes.
+
+00:18:24:20 - 00:18:57:19
+Speaker 1
+Por ejemplo, en la columna vertebral se ha incorporado la bloques que permiten la extracción de características en multiescala en el cuello se han involucrado módulos que permiten la fusión. ¿Luego de estas características, más rápidamente se ha mejorado la detección en objetos pequeños, Eh? Y en la cabeza se ha eh reemplazado. Por ejemplo, los puntos de anchors ya no se utiliza, lo que generaba.
+

@@ -4,7 +4,7 @@ title: Pregunta de investigación e hipótesis
 deckSection: pregunta
 ---
 
-<div class="flex h-full min-h-0 flex-col pb-[6.5rem] pr-2 sm:pb-[7rem]">
+<div class="slide-deck-shell">
 <div class="mx-auto w-full max-w-6xl text-left">
 <header class="mb-3 sm:mb-4">
 <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Pregunta de investigación e hipótesis</h1>
@@ -13,15 +13,15 @@ deckSection: pregunta
 <!-- Pregunta: columna más estrecha (más líneas / “más alta”); hipótesis: más ancha + texto en 2 columnas para bajar altura -->
 <div class="grid grid-cols-1 gap-4 lg:grid-cols-[minmax(0,0.36fr)_minmax(0,0.64fr)] lg:items-start lg:gap-6">
 <div class="min-w-0 rounded-xl border border-gray-300/60 border-l-4 border-l-unal-blue bg-white/95 px-4 pb-4 pt-3 shadow-md ring-1 ring-gray-900/5 backdrop-blur-sm sm:px-5 sm:pb-5 sm:pt-3.5">
-<p class="mb-2.5 border-b border-gray-200/90 pb-2 text-[11px] font-bold uppercase tracking-wider text-unal-blue">
+<p class="mb-2.5 border-b border-gray-200/90 pb-2 text-[11px] !font-bold uppercase tracking-wider text-unal-blue">
 Pregunta de investigación
 </p>
-<p class="hyphens-auto text-pretty text-justify text-[0.8rem] leading-[1.42] tracking-[0.01em] text-unal-gray sm:text-[0.82rem]">
+<p class="hyphens-auto text-pretty text-justify text-sm leading-[1.42] tracking-[0.01em] text-unal-gray sm:text-[0.82rem]">
 ¿Cuál de las <span class="font-semibold text-unal-blue">arquitecturas</span> logra <span class="font-semibold text-unal-blue">identificar</span> distintos estados de maduración de ovocitos partiendo de imágenes de microscopía polarizada en un video en vivo?
 </p>
 </div>
 <div class="min-w-0 rounded-xl border border-gray-300/60 border-l-4 border-l-unal-green bg-white/95 px-4 pb-5 pt-3 shadow-md ring-1 ring-gray-900/5 backdrop-blur-sm sm:px-6 sm:pb-6 sm:pt-3.5">
-<p class="mb-2.5 border-b border-gray-200/90 pb-2 text-[11px] font-bold uppercase tracking-wider text-unal-blue">
+<p class="mb-2.5 border-b border-gray-200/90 pb-2 text-[11px] !font-bold uppercase tracking-wider text-unal-blue">
 Hipótesis
 </p>
 <p class="hyphens-auto text-pretty text-justify text-sm leading-[1.45] tracking-[0.01em] text-unal-gray sm:text-[0.95rem]">
@@ -44,3 +44,9 @@ Es posible <span class="font-semibold text-unal-blue">desarrollar</span> una red
     class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14"
   />
 </div>
+
+<!--
+Con este panorama claro llegamos a la pregunta central: dado que ningún sistema existente detecta y localiza simultáneamente estructuras birrefringentes en imágenes PLM de ovocitos, ¿cuál configuración de red neuronal — variando arquitectura, formato de entrada y mecanismos de atención — logra identificar esas estructuras en un video en vivo de microscopía polarizada?
+
+La hipótesis propone que sí es posible. Al modificar parámetros clave de la red — el formato de imagen de entrada, la función de pérdida, las técnicas de predicción de cajas y los módulos de atención — puede desarrollarse un detector capaz de localizar y clasificar el ovocito, el huso meiótico y sus características birrefringentes, permitiendo caracterizar el estado de madurez sin manipular la muestra.
+-->

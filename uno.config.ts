@@ -29,9 +29,9 @@ export default defineConfig({
   shortcuts: {
     /** Subtítulos pequeños en columnas PLM (arbitrary aquí; en .md no usar `text-[9px]` / `text-[#…]` → Vue). */
     'plm-section-label':
-      'mb-1 text-[9px] font-bold uppercase tracking-wide text-unal-blue sm:text-[10px]',
+      'mb-1 text-[9px] !font-bold uppercase tracking-wide text-unal-blue sm:text-[10px]',
     'plm-section-label-center':
-      'mb-1 w-full text-center text-[9px] font-bold uppercase tracking-wide text-unal-blue sm:text-[10px]',
+      'mb-1 w-full text-center text-[9px] !font-bold uppercase tracking-wide text-unal-blue sm:text-[10px]',
     /** KaTeX dentro de columnas estrechas. */
     'plm-katex-col-left':
       '[&_.katex-display]:my-1 [&_.katex-display]:text-[0.56rem] sm:[&_.katex-display]:text-[0.62rem]',
@@ -42,7 +42,7 @@ export default defineConfig({
       'relative mx-auto h-auto max-h-[min(14vh,100px)] w-full max-w-[min(100%,130px)] object-contain sm:max-h-[min(17vh,125px)]',
     /** Pie de figura bajo la imagen PLM (solo en uno.config). */
     'plm-figcaption':
-      'm-0 mt-2 w-full max-w-full hyphens-auto break-words text-left text-[8px] leading-tight text-unal-gray opacity-90 sm:text-[9px] sm:leading-snug',
+      'mt-2 w-full max-w-full hyphens-auto break-words text-left text-[11px] leading-snug text-gray-500',
     /** Contenedor slide (evita `pb-[6rem]` en .md → Vue/Markdown). */
     'slide-deck-shell':
       'relative flex h-full min-h-0 flex-col pb-[6rem] pr-1 sm:pb-[6.5rem]',

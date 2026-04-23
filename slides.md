@@ -6,7 +6,7 @@ title: Desarrollo de un modelo de red neuronal profunda para la identificación 
 # Pie de página: visible desde la diapositiva 2 (portada sin pie; ver `ThesisFooter.vue`)
 shortAuthor: Salomón Pérez Atencia
 shortInstitute: Facultad de Minas
-shortTitle: Sustentación de tesis de maestría
+shortTitle: Sustentación de Tesis de Maestría
 # Sin `class: text-center` global: la portada se centra con su propio div; el resto se alinea mejor a la izquierda (p. ej. `class: text-left` en la agenda).
 info: |
   Sustentación de tesis de maestría — presentación en Slidev.

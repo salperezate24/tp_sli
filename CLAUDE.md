@@ -18,7 +18,6 @@ Presentación de defensa de tesis de Maestría construida con **Slidev** (framew
 
 ```
 slides.md              # Punto de entrada principal (orquesta todos los pages/)
-script.txt             # Guion oral de la defensa (lo que se dice en cada diapositiva)
 pages/                 # Contenido modular por sección
   01_justificacion.md
   02_marco_teorico.md
@@ -38,6 +37,8 @@ components/            # Componentes Vue personalizados
 layouts/               # Plantillas de layout para Slidev
 images/                # Logos institucionales (GPIMA, UNAL) y figuras
 archive/               # Versiones anteriores, transcripciones de reuniones y borradores
+  script_20260420.txt       # Guion oral completo (665 líneas, slides 1–39)
+  Thesis Slides.html        # Versión HTML alternativa — referencia de diseño y maquetación
   oocyte_maturity.txt       # Protocolo clínico de PLM para ICSI (fuente de referencia para el guion)
   discovering_human_ooocyte.txt  # Conferencia sobre PLM cuantitativa (fuente de referencia para el guion)
 BACKLOG.md             # Tareas pendientes (contenido, slides, externos)
@@ -119,6 +120,36 @@ Los hex solo aparecen en `uno.config.ts` (definición canónica) y en comentario
 
 ---
 
+## Convenciones anti-overflow (slides 16:9)
+
+Los slides tienen altura fija sin scroll. Estas reglas evitan desbordamiento vertical/horizontal:
+
+**Texto dentro de contenedores flex:**
+- Usar `<span>` en lugar de `<p>` — los `<p>` tienen `margin: 1em 0` por defecto que rompe el layout.
+- Si se necesita usar `<p>`, agregar `my-0` explícitamente.
+- Para agrupar líneas de texto: `<div class="flex flex-col gap-0.5 leading-none">` con `<span>` hijos.
+
+**Contenedores flexbox:**
+- El contenedor principal del contenido siempre: `flex min-h-0 flex-1 flex-col gap-X`
+- Grillas que deben estirarse verticalmente: `grid min-h-0 flex-1 grid-cols-N`
+- Nunca usar `style="flex: N 1 0"` (colapsa a altura 0) — preferir `flex-1 min-h-0` en Tailwind.
+
+**Diagramas horizontales:**
+- Usar `flex items-center` con anchos porcentuales fijos (`w-[16%]`, `w-[22%]`, etc.) en lugar de `grid-cols` con `auto` o `1fr` — los porcentuales garantizan que la suma sea 100% sin overflow horizontal.
+- Flechas como columnas de ancho fijo: `w-[5%]` o `w-[7%]`.
+
+**Patrón de caja `.co.bl` (del archivo HTML de referencia):**
+```html
+<div class="rounded-lg border-l-4 border-unal-blue/60 bg-unal-blue/[0.07] px-3 py-1.5 text-[0.72rem] leading-[1.45] text-unal-gray">
+```
+Equivalente verde: `border-unal-green/60 bg-unal-green/[0.08]`
+
+**`line-height` recomendado:** `leading-[1.45]` para texto descriptivo (más legible que `leading-tight` sin ocupar más espacio significativo).
+
+**Referencia de diseño:** `archive/Thesis Slides.html` contiene una versión HTML alternativa con CSS propio. Antes de refactorizar un slide complejo, revisar cómo lo resuelve esa versión — sus clases `.attn`, `.co`, `.g2` son buenas referencias de proporciones y espaciado.
+
+---
+
 ## Estructura de la presentación
 
 **Duración:** 45 min | **Límite:** máximo 40 diapositivas (las referencias no se cuentan)
@@ -128,15 +159,15 @@ Los hex solo aparecen en `uno.config.ts` (definición canónica) y en comentario
 | Portada | 1 | 1 | ✓ |
 | Agenda | 1 | 1 | ✓ |
 | Justificación | 2 | 2 | ✓ |
-| Marco teórico | 4 | 4 | ✓ |
-| Estado del arte | 6 | 6 | ✓ |
+| Marco teórico | 4 | 5 | ✓ |
+| Estado del arte | 6 | 7 | ✓ |
 | Problema / Hipótesis | 1 | 1 | ✓ |
 | Objetivos | 2 | 2 | ✓ |
-| Metodología | 8 | 6 | ✓ |
-| Resultados | 10 | 7 | ✓ |
+| Metodología | 8 | 9 | ✓ |
+| Resultados | 10 | 9 | ✓ |
 | Conclusiones | 2 | 2 | ✓ |
 | Trabajo futuro | 1 | 1 | ✓ |
-| **Total** | **38** | **33** | |
+| **Total** | **38** | **40** | ⚠️ 2 sobre el sugerido · = límite máximo |
 
 > Resultados incluye 3 slides con videos de YouTube (Secuencias 1-3) comparando YOLOv9m vs YOLOv9m-CBAM — requiere conexión a internet en la defensa.
 
@@ -169,26 +200,16 @@ Al redactar o completar slides, leer primero el capítulo correspondiente para m
 
 ---
 
-## Guion oral (`script.txt`)
+## Guion oral (`archive/script_20260420.txt`)
 
-El archivo `script.txt` contiene el texto que se dirá en cada diapositiva durante la defensa.
+El guion oral vive en `archive/script_20260420.txt` (665 líneas). Contiene el texto que se dirá en cada diapositiva durante la defensa.
 
 **Convenciones:**
 - Cada bloque empieza con `SLIDE N:` (número correlativo al orden de la presentación)
 - Máximo ~1 minuto por diapositiva ≈ 130–150 palabras a ritmo normal
 - El guion debe ser coherente con el contenido visual de la diapositiva correspondiente y con los datos de la tesis
 
-**Estado actual del guion:**
-
-| Slides | Sección | Estado |
-|---|---|---|
-| 1–2 | Portada y Agenda | ✓ guionizados |
-| 3–4 | Justificación | ✓ guionizados |
-| 5–8 | Marco teórico | ✓ guionizados |
-| 9–14 | Estado del arte (6 slides) | ✓ guionizados (slide 9 tiene dos versiones activas) |
-| 15 | Pregunta e hipótesis | ✓ guionizado |
-| 16–17 | Objetivos general y específicos | ✓ guionizados |
-| 18+ | Metodología en adelante | pendiente |
+**Estado actual del guion:** ✓ completo — cubre slides 1–39 (toda la presentación)
 
 **Fuentes de referencia para redactar el guion:**
 - `archive/oocyte_maturity.txt` — protocolo clínico de PLM para ICSI; útil para slides de justificación y marco teórico

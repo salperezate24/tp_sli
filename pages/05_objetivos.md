@@ -25,11 +25,6 @@ deckSection: objetivos
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
-<!--
-Con la hipótesis planteada, el objetivo general del trabajo es desarrollar un modelo de red neuronal profunda para la identificación de ovocitos y algunas de sus características morfológicas a partir de imágenes de microscopía polarizada.
-
-Este objetivo integra los tres ejes que hemos construido a lo largo del marco teórico: el conocimiento del dominio —el ovocito y sus estructuras birrefringentes—, la herramienta —una red de detección de objetos—, y el dato de entrada —imágenes PLM. Los tres objetivos específicos que vemos en la siguiente diapositiva descomponen este objetivo en etapas concretas.
--->
 
 ---
 transition: slide-left
@@ -60,14 +55,3 @@ deckSection: objetivos
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
-<!--
-Los tres objetivos específicos traducen el objetivo general en etapas de trabajo concretas.
-
-El primero es diseñar el método para generar la base de datos de imágenes PLM de ovocitos — responde directamente a la ausencia de datos públicos identificada en el estado del arte, y es donde los datos sintéticos tienen su rol central.
-
-El segundo es desarrollar el método para determinar la arquitectura, estructura y parámetros de la red — es decir, el proceso de selección, modificación y entrenamiento del modelo.
-
-Y el tercero es evaluar el rendimiento de la red seleccionada, usando las métricas que presentamos en el marco teórico: mAP, IoU, precisión y sensibilidad.
-
-Juntos, estos tres objetivos constituyen el esqueleto de la metodología que veremos a continuación.
--->

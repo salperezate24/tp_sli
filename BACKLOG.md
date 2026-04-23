@@ -24,11 +24,11 @@
 
 ## Pendientes mayores — requieren imágenes, diagramas o rediseño estructural
 
-- [ ] **Pipeline metodológico: rediseño visual como diagrama de flujo** — el profe: "el éxito está en que sea más gráfico en líneas, crea un flujo". Las 4 cajas actuales no tienen conexiones visuales. Rediseñar con flechas conectoras; alinear etiquetas con los títulos de los slides siguientes; hacer visible "Desarrollo de redes personalizadas" como sub-paso (es un aporte). (`pages/06_metodologia.md` ~línea 1–64)
+- [x] **Pipeline metodológico: rediseño visual como diagrama de flujo** — reemplazado el diagrama Mermaid por un flujo HTML/CSS de 3 pasos con flechas conectoras (Modelación Física → Síntesis Combinatoria → Etiquetado y Organización). (`pages/06_metodologia.md`)
 
-- [ ] **Resultados: convertir tablas a gráficos de barras** — el profe: "esos datos en gráficos, porque ese número no se lee ni se entiende". 4 slides: (28) preentrenamiento + control, (29) TL comparativa, (30) rendimiento por clase, (31) módulos de atención. Requiere implementar gráficos (CSS barras o componente Vue). (`pages/07_resultados.md` ~líneas 66–396)
+- [x] **Resultados: convertir tablas a gráficos de barras** — implementado componente `DumbbellPlot.vue`; slides 28–31 ahora usan gráficos comparativos de tipo dumbbell en lugar de tablas numéricas. (`pages/07_resultados.md`, `components/DumbbellPlot.vue`)
 
-- [ ] **Mapas de activación: mostrar comparativa con y sin atención** — agregar el mapa de activación de YOLOv9m estándar junto al de CBAM. Primero verificar si existe imagen baseline en `images/`; si no, generar. (`pages/07_resultados.md` ~línea 311)
+- [x] **Mapas de activación: mostrar comparativa con y sin atención** — agregadas imágenes `stage18_yolov9m_features.png` (baseline) y `stage19_yolov9m_cbam_features.png` (CBAM); slide de mapas de activación muestra ambos modelos en paralelo. (`pages/07_resultados.md`, `images/figures/results/`)
 
 - [ ] **Vincular base sintética con marco teórico en slide de Metodología** — la diapositiva de síntesis PLM tiene los datos técnicos pero no hace el vínculo explícito con las propiedades físicas (birrefringencia, retardo óptico) fundamentadas en el marco teórico. (`pages/06_metodologia.md`)
 

@@ -17,12 +17,14 @@ const props = withDefaults(
     xMin?: number
     xMax?: number
     xLabel?: string
+    caption?: string
     leftLabel?: string
     rightLabel?: string
     leftColor?: string
     rightColor?: string
     showDelta?: boolean
     compact?: boolean
+    chartWidth?: string
   }>(),
   {
     xMin: 0,
@@ -34,23 +36,28 @@ const props = withDefaults(
     rightColor: '#3981BF',
     showDelta: true,
     compact: false,
+    chartWidth: '77%',
   },
 )
 
-// Internal SVG coordinate system (560 wide, height computed from rows)
-const W = 560
-const LABEL_W = 132
-const DELTA_W = 50
+// ── Layout ──────────────────────────────────────────────────────────────────
+// W=1640 mirrors the reference dumbbell() in archive/thesis-charts.js.
+// The Slidev canvas is ~870px wide, so the SVG scales DOWN to 0.53× — this
+// is the only reliable way to avoid row-stacking in a flex container.
+const W       = 1640
+const LABEL_W = 330
+const DELTA_W = 130
 const CHART_L = LABEL_W
-const CHART_W = W - LABEL_W - DELTA_W // 378
-const PAD_TOP = 20
-const PAD_BOT = 20
-const SEP_EXTRA = 7
-const DOT_R = 6
+const CHART_W = W - LABEL_W - DELTA_W  // 1180
 
-const RH = computed(() => (props.compact ? 14 : 20))
+const PAD_TOP   = 44
+const PAD_BOT   = 130
+const SEP_EXTRA = 20
+const DOT_R     = 9
 
-// Cumulative Y center for each row, accounting for separator gaps
+const RH = computed(() => (props.compact ? 38 : 60))
+
+// ── Geometry ────────────────────────────────────────────────────────────────
 const rowYs = computed<number[]>(() => {
   const ys: number[] = []
   let y = PAD_TOP
@@ -73,6 +80,7 @@ function xPx(v: number): number {
 
 const ticks = [0, 0.25, 0.5, 0.75, 1.0]
 
+// ── Helpers ──────────────────────────────────────────────────────────────────
 function fmtDelta(row: DumbbellRow): string {
   const d = row.rightVal - row.leftVal
   return `${d >= 0 ? '+' : ''}${d.toFixed(3)}`
@@ -87,105 +95,129 @@ function rowRightColor(row: DumbbellRow): string {
 function deltaFill(row: DumbbellRow): string {
   return row.rightVal >= row.leftVal ? rowRightColor(row) : '#ef4444'
 }
+
+// Track color + weight encode jump magnitude: larger Δ → darker, thicker
+function trackStroke(row: DumbbellRow): string {
+  const d = Math.abs(row.rightVal - row.leftVal)
+  if (d >= 0.50) return '#A3AEBF'
+  if (d >= 0.36) return '#C8D0DC'
+  return '#DFE4EC'
+}
+function trackWidth(row: DumbbellRow): number {
+  const d = Math.abs(row.rightVal - row.leftVal)
+  if (d >= 0.50) return 6
+  if (d >= 0.36) return 5
+  return 4
+}
 </script>
 
 <template>
-  <svg :viewBox="`0 0 ${W} ${svgH}`" style="width: 100%; height: auto; display: block">
-    <!-- Vertical grid lines -->
+  <svg
+    :viewBox="`0 0 ${W} ${svgH}`"
+    :style="`width:${chartWidth};height:auto;display:block`"
+  >
+    <!-- ── Background grid lines ─────────────────────────────────────────── -->
     <line
       v-for="t in ticks"
       :key="`g${t}`"
       :x1="xPx(t)" :x2="xPx(t)"
       :y1="PAD_TOP - 4" :y2="svgH - PAD_BOT"
-      stroke="#EDECEA" stroke-width="1.5"
+      stroke="#ECEAE8" stroke-width="1"
     />
 
-    <!-- Legend -->
-    <circle :cx="CHART_L + 5" :cy="10" :r="DOT_R - 1" :fill="leftColor" />
-    <text :x="CHART_L + 14" y="14" font-size="8" fill="#6b7280" font-family="IBM Plex Sans,sans-serif">{{ leftLabel }}</text>
-    <circle :cx="CHART_L + 118" :cy="10" :r="DOT_R - 1" :fill="rightColor" />
-    <text :x="CHART_L + 127" y="14" font-size="8" fill="#6b7280" font-family="IBM Plex Sans,sans-serif">{{ rightLabel }}</text>
+    <!-- ── Legend ────────────────────────────────────────────────────────── -->
+    <circle :cx="CHART_L + 14"  :cy="22" :r="DOT_R - 2" :fill="leftColor" />
+    <text   :x="CHART_L + 30"   y="28"  font-size="7" fill="#9CA3AF" font-family="IBM Plex Sans,sans-serif">{{ leftLabel }}</text>
+    <circle :cx="CHART_L + 380" :cy="22" :r="DOT_R - 2" :fill="rightColor" />
+    <text   :x="CHART_L + 396"  y="28"  font-size="7" fill="#9CA3AF" font-family="IBM Plex Sans,sans-serif">{{ rightLabel }}</text>
 
-    <!-- Data rows -->
+    <!-- ── Data rows ─────────────────────────────────────────────────────── -->
     <g v-for="(row, i) in rows" :key="`r${i}`">
-      <!-- Dashed separator line above this row -->
+
+      <!-- Family separator: dashed rule + extra whitespace above this row -->
       <line
         v-if="row.separator && i > 0"
-        :x1="CHART_L - 4" :x2="CHART_L + CHART_W"
+        :x1="CHART_L - 6" :x2="CHART_L + CHART_W"
         :y1="rowYs[i] - RH / 2 - SEP_EXTRA / 2"
         :y2="rowYs[i] - RH / 2 - SEP_EXTRA / 2"
-        stroke="#e5e7eb" stroke-width="0.75" stroke-dasharray="3 2"
+        stroke="#D1D5DB" stroke-width="0.75" stroke-dasharray="4 3"
       />
 
-      <!-- Row label -->
+      <!-- Row label — highlighted models in UNAL blue, heavier weight -->
       <text
-        :x="CHART_L - 5"
-        :y="rowYs[i] + 3.5"
-        font-size="9.5"
+        :x="CHART_L - 14"
+        :y="rowYs[i] + 7"
+        font-size="7"
         text-anchor="end"
         :fill="row.highlight ? '#3981BF' : '#374151'"
         :font-weight="row.highlight ? '700' : '400'"
         font-family="IBM Plex Sans,sans-serif"
       >{{ row.label }}</text>
 
-      <!-- Connecting track between dots -->
+      <!-- Connecting track — darker/thicker when the jump is large -->
       <line
         :x1="xPx(Math.min(row.leftVal, row.rightVal))"
         :x2="xPx(Math.max(row.leftVal, row.rightVal))"
         :y1="rowYs[i]" :y2="rowYs[i]"
-        stroke="#E5E7EB" stroke-width="4"
+        :stroke="trackStroke(row)"
+        :stroke-width="trackWidth(row)"
+        stroke-linecap="round"
       />
 
-      <!-- Left dot (control) -->
+      <!-- Left dot — control (no TL) -->
       <circle
         :cx="xPx(row.leftVal)" :cy="rowYs[i]"
         :r="DOT_R" :fill="rowLeftColor(row)"
-        stroke="white" stroke-width="2.5"
+        stroke="white" stroke-width="2"
       />
 
-      <!-- Right dot (TL or custom) -->
+      <!-- Right dot — with TL (or custom color) -->
       <circle
         :cx="xPx(row.rightVal)" :cy="rowYs[i]"
         :r="DOT_R" :fill="rowRightColor(row)"
-        stroke="white" stroke-width="2.5"
+        stroke="white" stroke-width="2"
       />
 
-      <!-- Delta annotation in fixed right column -->
+      <!-- Delta column — styled as key insight: bold, full right-dot color -->
       <text
         v-if="showDelta"
-        :x="W - DELTA_W + 2" :y="rowYs[i] + 3.5"
-        font-size="8" font-weight="600"
+        :x="W - DELTA_W + 8" :y="rowYs[i] + 7"
+        font-size="7" font-weight="600"
         :fill="deltaFill(row)"
         font-family="IBM Plex Sans,sans-serif"
       >{{ fmtDelta(row) }}</text>
     </g>
 
-    <!-- X axis line -->
+    <!-- ── X axis ─────────────────────────────────────────────────────────── -->
     <line
       :x1="CHART_L" :x2="CHART_L + CHART_W"
       :y1="svgH - PAD_BOT" :y2="svgH - PAD_BOT"
-      stroke="#d1d5db" stroke-width="1"
+      stroke="#CBD5E1" stroke-width="1"
     />
-
-    <!-- Tick marks and value labels -->
     <g v-for="t in ticks" :key="`t${t}`">
       <line
         :x1="xPx(t)" :x2="xPx(t)"
         :y1="svgH - PAD_BOT" :y2="svgH - PAD_BOT + 3"
-        stroke="#d1d5db" stroke-width="1"
+        stroke="#CBD5E1" stroke-width="1"
       />
       <text
-        :x="xPx(t)" :y="svgH - PAD_BOT + 13"
-        font-size="7.5" text-anchor="middle"
-        fill="#9ca3af" font-family="IBM Plex Sans,sans-serif"
+        :x="xPx(t)" :y="svgH - PAD_BOT + 28"
+        font-size="7" text-anchor="middle"
+        fill="#9CA3AF" font-family="IBM Plex Sans,sans-serif"
       >{{ t.toFixed(2) }}</text>
     </g>
-
-    <!-- X axis label -->
     <text
-      :x="CHART_L + CHART_W / 2" :y="svgH - 2"
-      font-size="8" text-anchor="middle"
-      fill="#6b7280" font-weight="500" font-family="IBM Plex Sans,sans-serif"
+      :x="CHART_L + CHART_W / 2" :y="svgH - 60"
+      font-size="7" text-anchor="middle"
+      fill="#6B7280" font-weight="500" font-family="IBM Plex Sans,sans-serif"
     >{{ xLabel }}</text>
+
+    <!-- ── Caption ───────────────────────────────────────────────────────── -->
+    <text
+      v-if="caption"
+      :x="CHART_L + CHART_W / 2" :y="svgH - 24"
+      font-size="7" font-style="italic" text-anchor="middle"
+      fill="#9CA3AF" font-family="IBM Plex Sans,sans-serif"
+    >{{ caption }}</text>
   </svg>
 </template>

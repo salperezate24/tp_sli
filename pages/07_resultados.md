@@ -4,13 +4,13 @@ deckSection: resultados
 ---
 
 <div class="slide-deck-shell">
-<header class="mb-3 text-left">
+<header class="mb-5 text-left">
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Resultados: base de datos sintética</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="flex min-h-0 flex-1 flex-col gap-2">
   <!-- Texto arriba -->
-  <div class="flex flex-col gap-1.5">
+  <div class="flex flex-col gap-1.5 mt-1">
     <ul class="list-none space-y-1 text-[0.75rem] leading-snug text-unal-gray">
       <li class="flex gap-2">
         <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
@@ -68,13 +68,6 @@ deckSection: resultados
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
-<!--
-Con eso claro, pasemos a los resultados. El primer resultado es la base de datos sintética en sí misma, porque sin datos no hay modelo.
-
-Generamos 526,392 imágenes en MATLAB usando el modelo físico de retardo óptico — y de esas seleccionamos 21,600 para entrenamiento. La ventaja fundamental: el etiquetado es 100% automático por definición paramétrica. No hubo ninguna intervención manual. Como vemos en la figura de la izquierda, las imágenes sintéticas reproducen visualmente las características que veríamos en PLM real: la zona pelúcida como un anillo birrefringente, el huso como una elipse de bajo contraste, el cuerpo polar y el límite citoplasmático.
-
-El complemento real es OocytePaperImages: 200 imágenes PLM recopiladas de publicaciones científicas, curadas y anotadas manualmente, que actúan como el puente hacia el dominio real. Esta combinación — 21,600 sintéticas para escala, 200 reales para dominio — es lo que hace viable el enfoque con datos tan limitados.
--->
 
 ---
 transition: slide-up
@@ -144,13 +137,6 @@ deckSection: resultados
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
-<!--
-El primer experimento fue preentrenar todos los modelos en la base sintética. El resultado fue excelente: todos los modelos YOLO alcanzaron mAP50 de 0,995 con precisión y recall de 1,0. RT-DETR llegó a 0,986–0,992. El flujo de síntesis produce datos de entrenamiento de altísima calidad.
-
-Pero ahí viene el problema que justifica todo lo demás. Cuando tomamos esos modelos — perfectos en datos sintéticos — y los evaluamos directamente sobre las 40 imágenes reales sin ningún ajuste adicional, el mAP50 colapsa a un rango de 0,241 a 0,698. Eso es la brecha sintético-real.
-
-Este resultado es esperado y es una confirmación positiva: el conjunto sintético funciona para aprender morfología, pero el dominio visual difiere suficientemente del real como para requerir una segunda etapa de ajuste. Hay un hallazgo adicional aquí: los modelos con módulos de atención transfieren mejor, en particular YOLOv9m-Triple Attention alcanzó 0,499 sin ningún dato real de ajuste — más del doble que el modelo estándar en el mismo escenario.
--->
 
 ---
 transition: slide-up
@@ -214,13 +200,6 @@ const dumbbell1Rows = [
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
-<!--
-Con la transferencia de aprendizaje, el rendimiento cambia completamente. Este gráfico muestra los 13 modelos evaluados. El punto gris es el mAP50 en el experimento de control — solo con preentrenamiento sintético, sin datos reales. El punto azul es el mAP50 después de la transferencia de aprendizaje. La línea que los conecta es la mancuerna: su longitud muestra el salto.
-
-El patrón es consistente en los 13 modelos: todos mejoran. El rango de control va de 0,195 a 0,521. Después de la transferencia, el rango sube a 0,833–0,902. Los dos mejores — YOLOv9m y RT-DETR-R101 — empatan en mAP50 de 0,902. La diferencia está en mAP50-95 y velocidad: YOLOv9m obtiene 0,627 en mAP50-95 en 7,4 milisegundos, frente a 0,612 y 14,8 milisegundos de RT-DETR. YOLOv12s tiene el salto más grande — Δ+0,660 — porque partía del control más bajo.
-
-YOLOv9m queda como el modelo de referencia para el análisis que sigue.
--->
 
 ---
 transition: slide-up
@@ -282,15 +261,6 @@ const dumbbell2Rows = [
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
-<!--
-Hasta ahora hemos visto métricas globales. Ahora veamos qué ocurre estructura por estructura, porque eso es lo que tiene significado clínico.
-
-Los puntos rojos muestran el rendimiento en control — solo preentrenamiento sintético. Los azules, tras la transferencia de aprendizaje. Zona pelúcida, huso meiótico y límite citoplasmático ya tienen un punto de control relativamente alto porque el modelo sintético los captura bien. La transferencia los lleva a 0,979–0,995.
-
-El cuerpo polar es diferente. Su punto rojo está prácticamente en cero — 0,007 — porque su morfología variable no se puede capturar sintéticamente. La mancuerna más larga de este gráfico es también la más importante: de 0,007 a 0,642. Ese Δ+0,635 confirma algo crucial: el cuerpo polar requiere datos reales. Sin la segunda etapa de transferencia, esta estructura sería indetectable.
-
-Clínicamente, lo que importa es el huso meiótico a 0,993 — el marcador de madurez nuclear — y la zona pelúcida a 0,995. Con esos dos valores, la evaluación de madurez en tiempo real es viable.
--->
 
 ---
 transition: slide-up
@@ -344,13 +314,6 @@ const dumbbell3Rows = [
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
-<!--
-Con el modelo base establecido, evaluamos si los módulos de atención podían mejorar el rendimiento. Desarrollamos cuatro variantes: CBAM y Triple Attention sobre YOLOv9m, y Conservative Attention y Transformer Enhanced sobre YOLO11m.
-
-El hallazgo más claro emerge en el escenario de control — sin datos reales de ajuste. YOLOv9m-Triple Attention alcanza mAP50 de 0,499 y YOLOv9m-CBAM de 0,470, frente al 0,328 del baseline estándar. Los módulos de atención mejoran significativamente la capacidad de transferir desde el dominio sintético al real.
-
-Con la transferencia de aprendizaje la ventaja se reduce. Triple Attention es el mejor modelo desarrollado con 0,878 — solo 2,7 puntos por debajo del baseline. Pero CBAM muestra una ventaja específica que persiste: citolimit de 0,986 frente a 0,979 del baseline. ¿Qué explica esa diferencia? Los mapas de activación de la siguiente diapositiva lo muestran directamente.
--->
 
 ---
 transition: slide-up
@@ -399,13 +362,6 @@ deckSection: resultados
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
-<!--
-Estos son los mapas de características en el nivel P4 — submuestreo 1/16 — para la misma imagen de entrada en ambos modelos.
-
-En YOLOv9m, izquierda, la respuesta es difusa: la activación se distribuye sin concentrarse en ninguna estructura particular. En YOLOv9m-CBAM, derecha, las activaciones sobre zona pelúcida y límite citoplasmático son notablemente más compactas y localizadas.
-
-CBAM lo logra en dos pasos: primero atención de canal, que suprime los canales poco informativos; luego atención espacial, que enfatiza las regiones relevantes. El resultado es que la cabeza de detección recibe un mapa más preciso — y eso explica por qué CBAM detecta citolimit de forma estable en video cuando el modelo base falla.
--->
 
 ---
 transition: slide-up
@@ -470,11 +426,6 @@ deckSection: resultados
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
-<!--
-Hasta aquí hemos visto los resultados cuantitativos. Vamos ahora a la evaluación en video — que es, en última instancia, el escenario más cercano al uso clínico real.
-
-Vamos a ver tres secuencias PLM reales. En cada una se comparan dos modelos en paralelo: YOLOv9m estándar a la izquierda y YOLOv9m-CBAM a la derecha. Los videos requieren conexión a internet.
--->
 
 ---
 transition: slide-up
@@ -601,13 +552,6 @@ deckSection: resultados
   />
 </div>
 
-<!--
-Pasemos a la primera secuencia. Estos dos videos muestran el mismo segmento — una grabación OpenPolScope del proceso de meiosis — procesado con YOLOv9m estándar a la izquierda y con YOLOv9m-CBAM a la derecha.
-
-La diferencia más llamativa está en el límite citoplasmático, marcado en la tabla. YOLOv9m lo detecta en apenas 4 de los 100 fotogramas. YOLOv9m-CBAM lo detecta en todos los 100, con una confianza notable y estable entre 0,90 y 0,96. No es una diferencia marginal: es la diferencia entre detectar o no detectar esa estructura en prácticamente toda la secuencia.
-
-En zona pelúcida, ambos modelos detectan en todos los fotogramas, pero la confianza de YOLOv9m varía entre 0,48 y 0,92 — inestable — mientras que CBAM mantiene entre 0,94 y 0,95 de forma consistente. Para el huso meiótico, ambos coinciden: lo pierden en el tramo de fotogramas 21 a 46, donde el huso cambia de posición durante la meiosis y su visibilidad disminuye incluso para el ojo experto.
--->
 
 ---
 transition: slide-up
@@ -739,13 +683,6 @@ deckSection: resultados
   />
 </div>
 
-<!--
-Esta secuencia muestra algo más exigente: un procedimiento de ICSI real, con aguja de inyección dentro del campo visual. La aguja introduce un artefacto de alto contraste que confunde al modelo.
-
-YOLOv9m genera 538 detecciones de huso meiótico en 146 fotogramas — la mayoría son falsos positivos sobre la herramienta. La zona pelúcida solo la detecta en 17 fotogramas. El modelo estándar básicamente se pierde en presencia de la aguja.
-
-YOLOv9m-CBAM detecta zona pelúcida en todos los 150 fotogramas con confianza entre 0,81 y 0,96. Detecta el límite citoplasmático en 148 de los 150. El huso meiótico presenta solo 7 falsos positivos en toda la secuencia — nada comparado con los 538 del baseline. Incluso durante los fotogramas de deformación — cuando la aguja está en contacto y el ovocito se deforma visiblemente — CBAM mantiene las detecciones correctas.
--->
 
 ---
 transition: slide-left
@@ -877,11 +814,4 @@ deckSection: resultados
   />
 </div>
 
-<!--
-La tercera secuencia es la más larga: 660 fotogramas de un proceso completo de fecundación in vitro, con cambios morfológicos significativos. Hay un logotipo superpuesto en la imagen, una herramienta de micromanipulación, y el huso cambia de forma cuando el cuerpo polar se separa.
-
-YOLOv9m detecta zona pelúcida correctamente en toda la secuencia, pero confunde sistemáticamente el logotipo con huso meiótico, la herramienta con huso en múltiples tramos, y pierde el huso real a partir del fotograma 300. 1,710 detecciones de huso meiótico en 660 fotogramas — un número que por sí solo dice que algo va mal.
-
-YOLOv9m-CBAM detecta zona pelúcida y límite citoplasmático en todos los 660 fotogramas, con confianza estable. El huso meiótico se pierde temporalmente hacia el fotograma 390 — que es exactamente cuando está cambiando de forma durante la división — y se recupera hacia el 479. El fotograma 374, que vemos en la tabla, es especialmente ilustrativo: YOLOv9m no detecta ni huso ni cuerpo polar; CBAM detecta las cuatro estructuras correctamente.
--->
 

@@ -58,11 +58,6 @@ deckSection: marco
   />
 </div>
 
-<!--
-Solo el 5–10 % de los ovocitos recuperados poseen potencial de desarrollo completo — se trabaja con márgenes muy estrechos. Tres estructuras permiten evaluar esa madurez de forma directa: el huso meiótico, la zona pelúcida y el cuerpo polar, todas visibles en la figura de la izquierda.
-
-El huso meiótico es la estructura central de este trabajo: segrega cromosomas en metafase II y su presencia confirma la madurez nuclear del ovocito. Hay un hecho clínico crítico: el cuerpo polar —el indicador más usado en clínica— aparece antes de que el huso esté completamente ensamblado. La microscopía polarizada permite verificar directamente si el huso ya está formado, ofreciendo una evaluación más precisa del momento óptimo para ICSI.
--->
 
 ---
 transition: slide-up
@@ -134,13 +129,6 @@ deckSection: marco
   />
 </div>
 
-<!--
-Esta diapositiva muestra cómo la PLM cuantitativa recupera información de cada píxel de la imagen. La idea central es la siguiente: en lugar de una sola imagen, el sistema captura cinco imágenes con distintos estados de polarización — I₀ hasta I₄. La imagen de la izquierda es un ejemplo de una de esas capturas de intensidad.
-
-Con esas cinco intensidades se construyen dos términos auxiliares, A y B, que permiten estimar para cada píxel el retardo óptico Δ — que cuantifica la birrefringencia de la estructura — y el azimut φ, que indica la orientación molecular.
-
-A la derecha vemos el resultado práctico: un mapa de retardo de un áster de microtúbulos, donde los puntos brillantes corresponden a zonas de alta birrefringencia. Este mismo proceso es el que permite medir cuantitativamente el huso meiótico del ovocito, estructura por estructura, píxel a píxel.
--->
 
 ---
 transition: slide-up
@@ -198,13 +186,6 @@ $$\phi = \tfrac{1}{2}\arctan\!\left(\tfrac{A}{B}\right)$$
   />
 </div>
 
-<!--
-Veamos ahora el modelo matemático que hace posible esa medición. Las cinco ecuaciones de intensidad, que aparecen a la izquierda, describen físicamente cómo cada píxel de la imagen reacciona en función del retardo óptico Δ y el azimut φ de la estructura birrefringente que contiene.
-
-Para simplificar el cálculo se definen dos términos auxiliares, A y B, que separan algebraicamente la información de orientación y de amplitud de la birrefringencia. Con A y B en mano, las ecuaciones de retardo y azimut que aparecen a la derecha permiten estimar Δ y φ para cada píxel de forma directa.
-
-Este modelo matemático es el sustento de la síntesis realista: conociendo las propiedades físicas del huso meiótico — su forma, su retardo óptico, su orientación — podemos simular con precisión las cinco imágenes de intensidad que produciría el PolScope para un ovocito dado. Eso es lo que hace posible la base de datos sintética.
--->
 
 ---
 transition: slide-up
@@ -266,11 +247,6 @@ deckSection: marco
   />
 </div>
 
-<!--
-Las redes neuronales para detección de objetos resuelven tres tareas simultáneamente: extraen características de la imagen, predicen la ubicación de cada objeto mediante una caja delimitadora, y asignan a cada caja una clase y un puntaje de confianza.
-
-Históricamente esto se hacía en dos etapas: primero generar candidatos de región y luego clasificarlos y refinarlos. Las arquitecturas de una sola etapa, como la familia YOLO — que es la que usamos en este trabajo —, hacen todo en una sola pasada sobre la imagen, lo que las hace más eficientes sin sacrificar precisión. En la figura de la derecha vemos su arquitectura general: columna vertebral para extracción de características, cuello para integración multiescala, y cabeza para las predicciones finales.
--->
 
 ---
 transition: slide-left
@@ -339,10 +315,3 @@ $$FPR=\frac{FP}{FP+TN}$$
   />
 </div>
 
-<!--
-Para evaluar un detector usamos métricas espaciales y de clasificación. En cuanto a métricas espaciales: el IoU mide el solapamiento entre la caja predicha y la de referencia — es el criterio base para decidir si una detección fue correcta. El mAP es el promedio de las precisiones promedio sobre todas las clases; lo reportamos en dos versiones: mAP@50, con umbral de IoU de 0.5, y mAP@50-95, que promedia sobre diez umbrales y es considerablemente más exigente.
-
-En cuanto a métricas de clasificación: la Precisión mide qué proporción de las detecciones positivas son realmente correctas; la Sensibilidad, cuántos objetos reales fueron detectados; y la Tasa de Falsos Positivos, cuántos negativos fueron clasificados erróneamente como positivos. Con estas seis métricas tenemos una evaluación completa del modelo.
-
-En diagnóstico clínico preferimos alta sensibilidad sobre baja tasa de falsos positivos — es preferible decirle a alguien que podría tener cáncer y no tenerlo, que no detectarle uno que sí tiene. Ese principio aplica directamente aquí: preferimos no perder un huso meiótico real aunque eso implique alguna falsa alarma ocasional.
--->

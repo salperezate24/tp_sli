@@ -40,13 +40,6 @@ title: Conclusiones
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
-<!--
-El objetivo general del trabajo se cumplió en tres etapas secuenciales: primero generamos la base de datos sintética, luego aplicamos preentrenamiento y transferencia sobre imágenes PLM reales, y finalmente desarrollamos y evaluamos modelos con módulos de atención.
-
-Los tres objetivos específicos también se alcanzaron. El primero produjo oocyte_synthetic_2025b: más de 526.000 imágenes con etiquetado automático de cuatro estructuras. El segundo estableció un método sistemático de evaluación de arquitecturas, tanto estándar como con atención. El tercero completó una comparación exhaustiva de 13 configuraciones bajo el esquema sintético→real.
-
-El resultado principal de ese proceso fue YOLOv9m como modelo óptimo: mAP50 de 0,902 y mAP50-95 de 0,627, con detección robusta del huso meiótico, la zona pelúcida, el límite del citoplasma y el cuerpo polar — las cuatro estructuras clave para evaluar la madurez del ovocito.
--->
 
 ---
 transition: slide-left
@@ -90,10 +83,3 @@ title: Hallazgos y aportes
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
-<!--
-Este slide sintetiza lo que aprendimos y lo que dejamos a la comunidad.
-
-Entre los hallazgos: la transferencia de dominio no es opcional, es esencial. El preentrenamiento sintético solo produce modelos que apenas detectan; la transferencia sobre imágenes reales genera mejoras dramáticas: el cuerpo polar pasó de mAP50 de 0,012 a 0,516. Los módulos de atención mostraron su mayor valor precisamente cuando no hay ajuste fino disponible — YOLOv9m-triple-attention superó al modelo estándar en 17 puntos en ese escenario. Con transferencia la diferencia se reduce a menos de tres puntos, pero en video el CBAM detectó el citoplasma establemente donde el modelo estándar falló.
-
-Como aportes concretos dejamos tres cosas: la base sintética pública oocyte_synthetic_2025b, el marco metodológico sintético→real demostrado en imágenes PLM biomédicas, y una referencia comparativa de 13 configuraciones con YOLOv9m como punto de partida sólido para este problema.
--->

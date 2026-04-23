@@ -45,8 +45,3 @@ Es posible <span class="font-semibold text-unal-blue">desarrollar</span> una red
   />
 </div>
 
-<!--
-Con este panorama claro llegamos a la pregunta central: dado que ningún sistema existente detecta y localiza simultáneamente estructuras birrefringentes en imágenes PLM de ovocitos, ¿cuál configuración de red neuronal — variando arquitectura, formato de entrada y mecanismos de atención — logra identificar esas estructuras en un video en vivo de microscopía polarizada?
-
-La hipótesis propone que sí es posible. Al modificar parámetros clave de la red — el formato de imagen de entrada, la función de pérdida, las técnicas de predicción de cajas y los módulos de atención — puede desarrollarse un detector capaz de localizar y clasificar el ovocito, el huso meiótico y sus características birrefringentes, permitiendo caracterizar el estado de madurez sin manipular la muestra.
--->

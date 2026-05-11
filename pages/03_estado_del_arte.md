@@ -68,6 +68,15 @@ deckSection: estado
   />
 </div>
 
+<!--
+Con este marco teórico claro pasamos a revisar el estado del arte, empezando por los métodos de evaluación de madurez de ovocitos.
+
+Está claro que la detección del huso meiótico es un indicador clave de madurez MII y aptitud para ICSI. También, explicamos que se sigue realizando una evaluación manual de la madurez del ovocito, pero esta es subjetiva y depende de la experiencia del observador. Estudios indican que incluso hay variabilidad interobservador, por lo que se requiere un método más objetivo.
+
+Recientemente se ha popularizado el uso de la microscopía polarizada para visualizar los ovocitos. Esta técnica permite visualizar la birrefringencia de la muestra y se ha descubierto que el huso meiótico tiene birrefringencia precisamente en el punto en que es apto para fecundación. La imagen de la izquierda —de Holubcová et al.— ilustra esto: en la fila superior vemos el ovocito en campo claro, donde el huso es completamente invisible; con fluorescencia se hace visible pero requiere marcadores que comprometen la viabilidad de la célula; en la fila inferior, la PLM lo revela sin ninguna intervención química.
+
+Se han desarrollado sistemas de automatización que realizan segmentación celular o conteos, pero ninguno aprovecha las ventajas que ofrece la PLM para detectar estos marcadores de madurez en la célula. La imagen de la derecha —MOMA, de Fjeldstad— es un ejemplo representativo: segmenta la zona pelúcida y el ooplasma en campo claro, sin detectar el huso meiótico ni usar PLM.
+-->
 
 ---
 transition: slide-up
@@ -120,6 +129,13 @@ deckSection: estado
   />
 </div>
 
+<!--
+En la diapositiva anterior vimos que la PLM se popularizó para visualizar ovocitos. Detengámonos ahora en qué estructuras son visibles y por qué.
+
+En esta imagen de Rienzi et al. vemos el ovocito maduro bajo microscopía polarizada. Cuatro estructuras presentan birrefringencia: el huso meiótico, como una estructura elipsoidal de bajo contraste — su birrefringencia solo aparece en estadio MII, lo que lo convierte en el indicador directo de madurez. La zona pelúcida, con birrefringencia moderada producto de su organización glicoproteica. Y el cuerpo polar, que confirma que la primera división meiótica se completó — su posición relativa al huso predice el éxito en ICSI. Aunque es visible en campo claro, en PLM pierde contraste: su baja birrefringencia hace que su borde aparezca negro, prácticamente indistinguible del fondo — no es un hueco en la imagen sino una región de bajo retardo que se vuelve invisible en polarización.
+
+Lo que hace especialmente relevante a la PLM es que el huso meiótico es completamente invisible en campo claro: esta es la única técnica no invasiva que lo revela.
+-->
 
 ---
 transition: slide-up
@@ -179,6 +195,13 @@ deckSection: estado
   />
 </div>
 
+<!--
+Ahora veamos los valores concretos que sustentan todo esto cuantitativamente.
+
+Esta figura de Bruguès y Needleman mide el retardo óptico del huso meiótico en ovocitos de ratón a distintos objetivos. Los perfiles del panel b confirman que en estadio MII el huso es consistentemente detectable. Los valores del panel c lo cuantifican: retardo entre 1 y 5.6 nanómetros — una señal extremadamente débil. Para referencia, la zona pelúcida presenta entre 0 y 2 nanómetros, y el fondo entre 0 y 1 nanómetro.
+
+Valores tan pequeños y tan próximos entre sí son exactamente el reto del problema: el huso no destaca visualmente con facilidad. Pero al mismo tiempo son valores físicamente bien definidos y cuantificables, lo que hace posible modelarlos de forma sintética con precisión — y esa es la base de lo que viene a continuación.
+-->
 
 ---
 transition: slide-up
@@ -233,6 +256,13 @@ deckSection: estado
   />
 </div>
 
+<!--
+Para entrenar un detector de objetos se necesitan imágenes anotadas. Aquí encontramos la primera barrera práctica: no existe ninguna base pública de imágenes PLM de ovocitos — los datos clínicos son privados, costosos y sujetos a restricciones éticas.
+
+La solución, respaldada por la literatura, es la generación de datos sintéticos. Como vemos en la figura, Mery et al. demostraron que simular defectos elipsoidales sobre imágenes de rayos X permitía entrenar un detector que transfería correctamente a imágenes reales. Eversberg y Lambrecht, y Frid-Adar et al. validan esta estrategia en industria e imágenes médicas respectivamente.
+
+El fundamento físico para aplicarlo en PLM lo aportan Kelleher y Needleman y Bruguès y Needleman: el huso meiótico tiene morfología elipsoidal y retardo óptico cuantificable, lo que habilita un modelado sintético realista. El principal reto reportado en la literatura es el cambio de dominio entre lo sintético y lo real, que se aborda con transferencia de aprendizaje.
+-->
 
 ---
 transition: slide-up
@@ -315,6 +345,11 @@ deckSection: estado
   />
 </div>
 
+<!--
+La detección de objetos con redes profundas ha evolucionado desde arquitecturas de dos etapas — Faster R-CNN, RetinaNet — hacia detectores de una sola etapa que resuelven localización y clasificación simultáneamente. En la diapositiva vemos el panorama de arquitecturas revisadas; en azul, YOLOv9 y YOLOv11, los dos modelos centrales de este trabajo, y en verde RT-DETR como alternativa Transformer.
+
+Esta evolución trajo mejoras sistemáticas en cuatro componentes, que vemos en la parte inferior: la columna vertebral extrae características multi-escala con bloques progresivamente más eficientes; el cuello integra esas características mediante FPN y PANet para detectar objetos de distintos tamaños; la cabeza produce predicciones con esquemas anchor-free y pérdidas basadas en IoU; y los módulos de atención — SE, CBAM, ECA — recalibran la respuesta de la red para adaptarla a dominios específicos como las imágenes PLM.
+-->
 
 ---
 transition: slide-up
@@ -461,6 +496,11 @@ deckSection: estado
   />
 </div>
 
+<!--
+Esta línea del tiempo muestra la evolución de YOLO desde la versión 1 en 2016 hasta la versión 12 en 2025 — nueve años de desarrollo continuo. Tres modelos son centrales en este trabajo, marcados en azul y verde.
+
+YOLOv9, de 2024, introdujo la planificación de rutas de gradiente — un mecanismo que preserva la información a lo largo de la red y mejora la precisión incluso en configuraciones ligeras entrenadas desde cero. YOLOv11, también de 2024 y desarrollado por Ultralytics, introduce bloques C3k2 de mayor eficiencia y fue la arquitectura base sobre la cual integramos módulos de atención en este trabajo. Y RT-DETR, de Baidu en 2023, propone detección Transformer end-to-end: elimina el post-procesamiento NMS y ofrece una alternativa estructuralmente distinta a la familia convolucional.
+-->
 
 ---
 transition: slide-left
@@ -539,3 +579,14 @@ graph LR
   />
 </div>
 
+<!--
+En la diapositiva anterior vimos que RT-DETR y las variantes más recientes de YOLO incorporan mecanismos de atención. Vale la pena detenerse en qué significa eso.
+
+Existen varios módulos de atención ligeros que se integran en detectores existentes sin rediseñarlos. SE — Squeeze-and-Excitation — fue el pionero: comprime cada canal a un escalar y aprende un peso por canal. ECA lo hace de forma más eficiente con una convolución 1D. Ambos responden solo a la pregunta de qué canales activar.
+
+CBAM va un paso más allá. Como vemos en el diagrama y las dos ecuaciones, aplica primero atención de canal — M_c pondera cada canal combinando pooling promedio y máximo — y luego atención espacial — M_s hace lo mismo pero por posición en la imagen. Añade así la pregunta de dónde enfocar. Eso lo hace especialmente valioso en imágenes PLM, donde el huso meiótico y el cuerpo polar son estructuras pequeñas de muy bajo contraste. En este trabajo integramos CBAM en YOLOv9m precisamente por eso.
+
+RT-DETR lleva el principio más lejos. Un Transformer no recalibra canales ni posiciones locales — aplica atención entre todas las posiciones de la imagen simultáneamente: cada región puede "consultar" cualquier otra, sin importar la distancia. Esto captura relaciones globales que una convolución local nunca vería. En RT-DETR, un decodificador Transformer produce directamente las detecciones finales mediante consultas aprendidas, eliminando la necesidad del NMS como paso de post-procesamiento.
+
+Estos tres ejes — la brecha de datos PLM, la síntesis realista y los módulos de atención — plantean naturalmente la pregunta que organiza este trabajo.
+-->

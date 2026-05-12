@@ -166,7 +166,9 @@ function goToSection(id) {
 <!--
 La presentación del día de hoy está estructurada de la siguiente manera:
 
-Comenzaremos con la justificación y relevancia de este trabajo; luego se presentará el marco teórico del problema de investigación, seguido por el estado del arte, a partir de estos estudios y conocimientos se planteará la hipótesis de investigación, seguidamente se presentan los objetivos, se explicará la metodología, se presentarán los resultados, y terminaremos con las conclusiones y un poco sobre el trabajo futuro.
+Comenzaremos con la justificación y relevancia de este trabajo; luego se presentará el marco teórico del problema de investigación, seguido por el estado del arte, a partir de estos estudios y conocimientos se planteará la hipótesis de investigación, se presentarán los objetivos, se explicará la metodología, los resultados, y terminaremos con las conclusiones y un poco sobre el trabajo futuro.
+
+Comencemos con la justificación.
 -->
 
 ---

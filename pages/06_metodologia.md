@@ -5,7 +5,7 @@ deckSection: metodologia
 
 <div class="slide-deck-shell">
 <header class="mb-3 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Flujo metodológico</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Diseño experimental: tres fases</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="flex min-h-0 flex-1 flex-col justify-center">
@@ -79,7 +79,7 @@ deckSection: metodologia
 
 <div class="slide-deck-shell">
 <header class="mb-3 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Síntesis de imágenes PLM</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Generación de la base de datos sintética</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <p class="mb-3 text-[0.78rem] leading-snug text-unal-gray">Ante la <span class="font-semibold text-unal-blue">ausencia de bases de datos públicas</span> de imágenes PLM de ovocitos, este trabajo propone generar los datos de entrenamiento <span class="font-semibold text-unal-blue">sintéticamente</span> a partir de un modelo físico fundamentado en la birrefringencia óptica.</p>
@@ -154,7 +154,7 @@ deckSection: metodologia
 
 <div class="slide-deck-shell">
 <header class="mb-3 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Búsqueda y curaduría de datos reales</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Conjunto de datos real: OocytePaperImages</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="grid min-h-0 flex-1 grid-cols-2 gap-5">
@@ -301,7 +301,7 @@ deckSection: metodologia
 
 <div class="slide-deck-shell">
 <header class="mb-3 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Selección de arquitecturas — de GDXray a PLM</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Selección de arquitecturas base</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="grid min-h-0 flex-1 grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] gap-5">
@@ -364,7 +364,7 @@ deckSection: metodologia
 
 <div class="slide-deck-shell">
 <header class="mb-1.5 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Protocolo de entrenamiento y evaluación</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Transferencia de aprendizaje sintético-a-real</h1>
   <div class="mt-0 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="flex min-h-0 flex-1 flex-col gap-1.5" style="flex: 0 1 auto; max-height: 100%;">
@@ -458,35 +458,35 @@ deckSection: metodologia
 ---
 
 <div class="slide-deck-shell">
-<header class="mb-1.5 text-left">
+<header class="mb-3 text-left">
   <div class="flex items-center gap-3">
     <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Desarrollo de redes personalizadas</h1>
     <span class="shrink-0 rounded-md bg-unal-green/25 px-2.5 py-0.5 text-[0.65rem] font-bold text-[#3a6a18] ring-1 ring-unal-green/50">★ Aporte</span>
   </div>
-  <span class="mt-0.5 block text-[0.68rem] text-unal-gray/70">Módulos de atención para estructuras de bajo contraste</span>
   <div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
+  <span class="mt-1.5 block text-[0.68rem] text-unal-gray/70">Módulos de atención para estructuras de bajo contraste</span>
 </header>
-<div class="flex min-h-0 flex-1 flex-col gap-1.5">
+<div class="flex min-h-0 flex-1 flex-col gap-2">
   <!-- Motivación como caja .co.bl -->
-  <div class="shrink-0 rounded-lg border-l-4 border-unal-blue/60 bg-unal-blue/[0.07] px-3 py-1.5 text-[0.72rem] leading-[1.45] text-unal-gray">
+  <div class="shrink-0 rounded-lg border-l-4 border-unal-blue/60 bg-unal-blue/[0.07] px-3 py-2 text-[0.75rem] leading-[1.45] text-unal-gray">
     <span class="font-semibold text-unal-blue">Motivación:</span> los modelos base presentan baja sensibilidad al <span class="font-semibold text-unal-blue">límite citoplasmático</span> y al <span class="font-semibold text-unal-blue">huso meiótico</span> — estructuras de bajo contraste sin precedente en bases de datos públicas → integración de atención para recalibrar respuesta espacial y de canal sin rediseñar la arquitectura completa
   </div>
-  <div class="grid min-h-0 flex-1 grid-cols-2 gap-2">
-    <div class="flex flex-col gap-2 rounded-lg border border-unal-blue/30 bg-unal-blue/[0.07] px-3 py-2">
+  <div class="grid min-h-0 flex-1 grid-cols-2 gap-3">
+    <div class="flex flex-col gap-2.5 rounded-lg border border-unal-blue/30 bg-unal-blue/[0.07] px-4 py-3">
       <span class="text-[0.65rem] font-bold uppercase tracking-wide text-unal-blue">YOLOv9m-CBAM</span>
-      <span class="text-[0.68rem] leading-[1.45] text-unal-gray">CBAM en columna vertebral · bloque P2/4 (128 ch) · después del primer RepNCSPELAN4 · atención canal + espacial secuencial</span>
+      <span class="text-[0.75rem] leading-[1.45] text-unal-gray">CBAM en columna vertebral · bloque P2/4 (128 ch) · después del primer RepNCSPELAN4 · atención canal + espacial secuencial</span>
     </div>
-    <div class="flex flex-col gap-2 rounded-lg border border-unal-blue/30 bg-unal-blue/[0.07] px-3 py-2">
+    <div class="flex flex-col gap-2.5 rounded-lg border border-unal-blue/30 bg-unal-blue/[0.07] px-4 py-3">
       <span class="text-[0.65rem] font-bold uppercase tracking-wide text-unal-blue">YOLOv9m-Triple Attention</span>
-      <span class="text-[0.68rem] leading-[1.45] text-unal-gray">Atención progresiva en 3 niveles: Channel Att. (P2/4) · Spatial Att. (P3/8) · CBAM (P4/16) — recalibración multi-escala</span>
+      <span class="text-[0.75rem] leading-[1.45] text-unal-gray">Atención progresiva en 3 niveles: Channel Att. (P2/4) · Spatial Att. (P3/8) · CBAM (P4/16) — recalibración multi-escala</span>
     </div>
-    <div class="flex flex-col gap-2 rounded-lg border border-unal-green/40 bg-unal-green/[0.08] px-3 py-2">
+    <div class="flex flex-col gap-2.5 rounded-lg border border-unal-green/40 bg-unal-green/[0.08] px-4 py-3">
       <span class="text-[0.65rem] font-bold uppercase tracking-wide text-[#3a6a18]">YOLO11m-Conservative Attention</span>
-      <span class="text-[0.68rem] leading-[1.45] text-unal-gray">Channel Att. después del 1.er C3k2 (P2/4, 256 ch) · CBAM después del 2.° C3k2 (P3/8, 512 ch) — enfoque conservador</span>
+      <span class="text-[0.75rem] leading-[1.45] text-unal-gray">Channel Att. después del 1.er C3k2 (P2/4, 256 ch) · CBAM después del 2.° C3k2 (P3/8, 512 ch) — enfoque conservador</span>
     </div>
-    <div class="flex flex-col gap-2 rounded-lg border border-unal-green/40 bg-unal-green/[0.08] px-3 py-2">
+    <div class="flex flex-col gap-2.5 rounded-lg border border-unal-green/40 bg-unal-green/[0.08] px-4 py-3">
       <span class="text-[0.65rem] font-bold uppercase tracking-wide text-[#3a6a18]">YOLO11m-Transformer Enhanced</span>
-      <span class="text-[0.68rem] leading-[1.45] text-unal-gray">Módulos C3TR + Atención en columna vertebral — captura de relaciones globales en la imagen para complementar la convolución local</span>
+      <span class="text-[0.75rem] leading-[1.45] text-unal-gray">Módulos C3TR + Atención en columna vertebral — captura de relaciones globales en la imagen para complementar la convolución local</span>
     </div>
   </div>
   <span class="shrink-0 text-[0.62rem] italic text-unal-gray/60">Criterio consistente: añadir atención en posiciones estratégicas · overhead computacional &lt; 0,5% en todos los casos</span>
@@ -552,12 +552,12 @@ deckSection: metodologia
 ---
 
 <div class="slide-deck-shell">
-<header class="mb-2 text-left">
+<header class="mb-3 text-left">
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Protocolo comparativo — Fase 3</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
+  <p class="mt-2 text-[0.82rem] leading-snug text-unal-gray">Las redes personalizadas se evalúan con el <span class="font-semibold text-unal-blue">mismo protocolo de Fase 2</span> — cualquier diferencia en los resultados se debe exclusivamente a los módulos de atención.</p>
 </header>
-<div class="flex min-h-0 flex-1 flex-col justify-center gap-2">
-  <p class="text-[0.82rem] leading-snug text-unal-gray">Las redes personalizadas se evalúan con el <span class="font-semibold text-unal-blue">mismo protocolo de Fase 2</span> — cualquier diferencia en los resultados se debe exclusivamente a los módulos de atención.</p>
+<div class="flex min-h-0 flex-1 flex-col gap-2">
   <!-- Tabla comparativa -->
   <div class="rounded-xl border border-gray-200">
     <table class="w-full text-[0.72rem] leading-snug">

@@ -551,6 +551,22 @@ deckSection: referencias
         >https://arxiv.org/abs/2405.14458</a>.
       </span>
     </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[36]</span>
+      <span>
+        Holubcová, Z. et al.,
+        «Egg maturity assessment prior to ICSI prevents premature fertilization of late-maturing oocytes»,
+        <em>Journal of Assisted Reproduction and Genetics</em>, vol.&nbsp;36, n.º&nbsp;3, pp.&nbsp;445–452, mar. 2019.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.1007/s10815-018-1393-0"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1007/s10815-018-1393-0</a>.
+        PMID:&nbsp;30635815.
+      </span>
+    </li>
   </ol>
 </div><!-- cierre scroll -->
 

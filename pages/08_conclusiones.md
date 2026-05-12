@@ -43,19 +43,19 @@ El objetivo general del trabajo se cumplió en tres etapas secuenciales: primero
 
 Los tres objetivos específicos también se alcanzaron. El primero produjo oocyte_synthetic_2025b: más de 526.000 imágenes con etiquetado automático de cuatro estructuras. El segundo estableció un método sistemático de evaluación de arquitecturas, tanto estándar como con atención. El tercero completó una comparación exhaustiva de 13 configuraciones bajo el esquema sintético→real.
 
-El resultado principal de ese proceso fue YOLOv9m como modelo óptimo: mAP50 de 0,902 y mAP50-95 de 0,627, con detección robusta del huso meiótico, la zona pelúcida, el límite del citoplasma y el cuerpo polar — las cuatro estructuras clave para evaluar la madurez del ovocito.
+En métricas estáticas, YOLOv9m lidera con mAP50 de 0,902 y mAP50-95 de 0,627, con detección robusta del huso meiótico, la zona pelúcida, el límite del citoplasma y el cuerpo polar — las cuatro estructuras clave para evaluar la madurez del ovocito. YOLOv9m-CBAM es el modelo de referencia para aplicación clínica, por su generalización superior y comportamiento estable en video.
 -->
 
 ---
 transition: slide-left
 deckSection: conclusiones
-title: Hallazgos y aportes
+title: Contribuciones
 ---
 
 <div class="slide-deck-shell">
   <div class="mx-auto w-full max-w-6xl text-left">
     <header class="mb-1.5 sm:mb-2">
-      <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Hallazgos y aportes</h1>
+      <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Contribuciones</h1>
       <div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
     </header>
     <div class="flex w-full flex-col gap-2 pt-1 text-left">
@@ -63,7 +63,7 @@ title: Hallazgos y aportes
       <p class="my-0 mb-1.5 border-b border-gray-200/90 pb-1 text-xs uppercase tracking-wider text-unal-blue" style="font-weight:800">
         Hallazgos
       </p>
-      <ul class="list-disc space-y-1 pl-4.5 text-[0.68rem] leading-[1.35] text-unal-gray marker:font-semibold marker:text-unal-blue sm:text-[0.76rem]">
+      <ul class="list-disc space-y-1 pl-4.5 text-[0.72rem] leading-[1.35] text-unal-gray marker:font-semibold marker:text-unal-blue sm:text-[0.82rem]">
         <li><span class="font-semibold text-unal-blue">Transferencia esencial:</span> la transferencia de aprendizaje es esencial — cuerpo polar 0,012 → 0,516 <span class="font-semibold">(+0,504)</span>; huso meiótico +0,579; ZP y citoplasma ≥ 0,975.</li>
         <li><span class="font-semibold text-unal-blue">Módulos de atención:</span> ventaja significativa sin ajuste fino. En video, CBAM detectó el citoplasma establemente donde YOLOv9m falló.</li>
         <li><span class="font-semibold text-unal-blue">RT-DETR</span> competitivo en métricas estáticas; <span class="font-semibold text-unal-blue">YOLOv9m-CBAM</span> es la referencia clínica — generalización sin TL <span class="font-semibold">+14,2 pp</span>, sin falsos positivos en 660 fotogramas, confianza estable.</li>
@@ -73,10 +73,11 @@ title: Hallazgos y aportes
       <p class="my-0 mb-1.5 border-b border-gray-200/90 pb-1 text-xs uppercase tracking-wider text-unal-blue" style="font-weight:800">
         Aportes
       </p>
-      <ul class="list-disc space-y-1 pl-4.5 text-[0.68rem] leading-[1.35] text-unal-gray marker:font-semibold marker:text-unal-blue sm:text-[0.76rem]">
+      <ul class="list-disc space-y-1 pl-4.5 text-[0.72rem] leading-[1.35] text-unal-gray marker:font-semibold marker:text-unal-blue sm:text-[0.82rem]">
         <li>Base sintética <code class="rounded bg-gray-100/90 px-1 py-0.5 font-mono text-[0.63rem] text-unal-gray">oocyte_synthetic_2025b</code>: +526.000 imágenes con etiquetado automático — recurso público inexistente hasta la fecha.</li>
         <li>Marco <span class="font-semibold text-unal-blue">sintético → real</span> demostrado efectivo para imágenes PLM biomédicas con datos reales escasos.</li>
-        <li>Referencia comparativa de <span class="font-semibold">13 configuraciones</span> YOLO/RT-DETR; <span class="font-semibold text-unal-blue">YOLOv9m-CBAM</span> como punto de partida para aplicación clínica en imágenes PLM.</li>
+        <li>Referencia comparativa de <span class="font-semibold">13 configuraciones</span> YOLO/RT-DETR; <span class="font-semibold text-unal-blue">YOLOv9m-CBAM</span> como referencia clínica en PLM.</li>
+        <li>Artículo en preparación sobre detección con módulos de atención en imágenes PLM de ovocitos.</li>
       </ul>
     </div>
     </div>
@@ -95,6 +96,6 @@ El hallazgo de modelo de referencia para aplicación clínica es YOLOv9m-CBAM. L
 
 Quiero ser transparente sobre las limitaciones. Los experimentos se realizaron con una semilla fija, por lo que diferencias menores a un punto porcentual entre modelos son indicativas, no definitivas. El proceso de anotación fue realizado por un único investigador siguiendo protocolo clínico PLM, sin validación interobservador formal. Ambas son limitaciones metodológicas reales, identificadas como trabajo futuro prioritario.
 
-Como aportes concretos dejamos tres cosas: la base sintética pública oocyte_synthetic_2025b, el marco metodológico sintético→real demostrado en imágenes PLM biomédicas, y una referencia comparativa de 13 configuraciones con YOLOv9m-CBAM como punto de partida sólido para aplicación clínica.
+Como aportes concretos dejamos cuatro cosas: la base sintética pública oocyte_synthetic_2025b, el marco metodológico sintético→real demostrado en imágenes PLM biomédicas, una referencia comparativa de 13 configuraciones con YOLOv9m-CBAM como punto de partida para aplicación clínica, y un artículo en preparación que documenta el método y los resultados con módulos de atención.
 -->
 

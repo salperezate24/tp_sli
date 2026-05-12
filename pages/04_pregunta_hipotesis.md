@@ -16,7 +16,7 @@ deckSection: pregunta
 <p class="mb-2.5 border-b border-gray-200/90 pb-2 text-[11px] !font-bold uppercase tracking-wider text-unal-blue">
 Pregunta de investigación
 </p>
-<p class="hyphens-auto text-pretty text-justify text-sm leading-[1.42] tracking-[0.01em] text-unal-gray sm:text-[0.82rem]">
+<p class="hyphens-auto text-pretty text-justify text-sm leading-[1.42] tracking-[0.01em] text-unal-gray sm:text-sm">
 ¿Cuál de las <span class="font-semibold text-unal-blue">arquitecturas</span> logra <span class="font-semibold text-unal-blue">identificar</span> distintos estados de maduración de ovocitos partiendo de imágenes de microscopía polarizada en un video en vivo?
 </p>
 </div>

@@ -5,7 +5,7 @@ deckSection: resultados
 
 <div class="slide-deck-shell">
 <header class="mb-5 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Resultados: base de datos sintética</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Base de datos sintética</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="flex min-h-0 flex-1 flex-col gap-2">
@@ -83,7 +83,7 @@ deckSection: resultados
 
 <div class="slide-deck-shell">
 <header class="mb-3 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Preentrenamiento sintético y experimento control</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Preentrenamiento sintético</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="grid min-h-0 flex-1 grid-cols-2 gap-5">
@@ -145,9 +145,9 @@ deckSection: resultados
 </div>
 
 <!--
-El primer experimento fue preentrenar todos los modelos en la base sintética. El resultado fue excelente: todos los modelos YOLO alcanzaron mAP50 de 0,995 con precisión y recall de 1,0. RT-DETR llegó a 0,986–0,992. El flujo de síntesis produce datos de entrenamiento de altísima calidad.
+El primer experimento fue preentrenar todos los modelos en la base sintética. El resultado fue el esperado: todos los modelos YOLO alcanzaron mAP50 de 0,995 con precisión y recall de 1,0. RT-DETR llegó a 0,986–0,992. El flujo de síntesis produce datos de entrenamiento de alta consistencia.
 
-Pero ahí viene el problema que justifica todo lo demás. Cuando tomamos esos modelos — perfectos en datos sintéticos — y los evaluamos directamente sobre las 40 imágenes reales sin ningún ajuste adicional, el mAP50 colapsa a un rango de 0,241 a 0,698. Eso es la brecha sintético-real.
+Pero ahí viene el problema que justifica todo lo demás. Cuando tomamos esos modelos — con métricas cercanas al máximo en datos sintéticos — y los evaluamos directamente sobre las 40 imágenes reales sin ningún ajuste adicional, el mAP50 colapsa a un rango de 0,241 a 0,698. Eso es la brecha sintético-real.
 
 Este resultado es esperado y es una confirmación positiva: el conjunto sintético funciona para aprender morfología, pero el dominio visual difiere suficientemente del real como para requerir una segunda etapa de ajuste. Los modelos con módulos de atención transfieren mejor: YOLOv9m-Triple Attention alcanzó 0,499 sin ningún dato real de ajuste — más del doble que el modelo estándar en el mismo escenario.
 -->
@@ -177,7 +177,7 @@ const dumbbell1Rows = [
 
 <div class="slide-deck-shell">
 <header class="mb-2 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Impacto de la transferencia de aprendizaje</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Transferencia de aprendizaje en imágenes reales</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="flex min-h-0 flex-1 flex-col gap-2">
@@ -227,20 +227,20 @@ deckSection: resultados
 
 <script setup>
 const dumbbell2Rows = [
-  { label: 'Zona pelúcida',      leftVal: 0.457, rightVal: 0.995 },
-  { label: 'Huso meiótico',      leftVal: 0.504, rightVal: 0.993 },
+  { label: 'Zona pelúcida',       leftVal: 0.457, rightVal: 0.995 },
+  { label: 'Huso meiótico',       leftVal: 0.504, rightVal: 0.993 },
   { label: 'Lím. citoplasmático', leftVal: 0.344, rightVal: 0.979 },
-  { label: 'Cuerpo polar',       leftVal: 0.007, rightVal: 0.642, highlight: true, leftColor: '#ef4444' },
+  { label: 'Cuerpo polar',        leftVal: 0.007, rightVal: 0.642, highlight: true, leftColor: '#ef4444' },
 ]
 </script>
 
 <div class="slide-deck-shell">
 <header class="mb-2 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Rendimiento por clase — lo que los promedios ocultan</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Análisis de rendimiento por clase</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
-<div class="flex min-h-0 flex-1 flex-col gap-4">
-  <!-- Tarjetas arriba — compactas -->
+<div class="flex min-h-0 flex-1 flex-col gap-2">
+  <!-- Tarjetas arriba — sin cambios -->
   <div class="grid shrink-0 grid-cols-2 gap-2">
     <div class="rounded-md border-l-4 border-unal-green bg-unal-green/10 px-2.5 py-2">
       <span class="text-[0.72rem] font-bold text-[#3a6a18]">Clínicamente relevante:</span><span class="text-[0.72rem] leading-snug text-unal-gray"> ZP (0,995) y huso meiótico (0,993) — los marcadores de madurez nuclear — alcanzan detección casi perfecta.</span>
@@ -262,18 +262,59 @@ const dumbbell2Rows = [
       <span class="text-[0.58rem] text-unal-gray/50 text-center">P = 0,69 · R = 0,44 — la detección aún es imperfecta</span>
     </div>
   </div>
-  <!-- Gráfico -->
-  <div class="w-full shrink-0 overflow-hidden">
-    <DumbbellPlot
-      :rows="dumbbell2Rows"
-      leftLabel="Control (sin TL)"
-      rightLabel="Con transferencia de aprendizaje"
-      :compact="false"
-      leftColor="#9ca3af"
-      chartWidth="85%"
-      caption="mAP50 por clase · YOLOv9m: control vs. transferencia de aprendizaje"
-    />
+  <!-- Fila inferior: dos curvas P-R (imágenes reales recortadas) -->
+  <div class="grid min-h-0 flex-1 grid-cols-2 gap-3">
+    <!-- Control -->
+    <div class="flex min-w-0 flex-col gap-1">
+      <!-- Recorte: oculta leyenda derecha (~30%) y título superior (~7%) -->
+      <div class="shrink-0" style="height:210px">
+        <img
+          src="../images/figures/results/pr_curve_v9m_control.png"
+          alt="Curva P-R YOLOv9m — control (sin TL)"
+          class="h-full w-full object-contain"
+        />
+      </div>
+      <div class="shrink-0 rounded bg-gray-50 px-2 py-1 text-[0.58rem] leading-snug text-unal-gray">
+        <span class="text-[0.5rem] font-semibold uppercase tracking-wide text-unal-gray/50">Control (sin TL) · mAP50</span><br/>
+        <span class="font-semibold text-amber-500">ZP</span> 0,457 ·
+        <span class="font-semibold text-unal-blue">Huso</span> 0,504 ·
+        <span class="font-semibold text-unal-green">Citolimit</span> 0,344 ·
+        <span class="font-semibold text-red-500">PB</span> 0,007
+      </div>
+    </div>
+    <!-- Con TL -->
+    <div class="flex min-w-0 flex-col gap-1">
+      <div class="shrink-0" style="height:210px">
+        <img
+          src="../images/figures/results/pr_curve_v9m_tl.png"
+          alt="Curva P-R YOLOv9m — con transferencia de aprendizaje"
+          class="h-full w-full object-contain"
+        />
+      </div>
+      <div class="shrink-0 rounded bg-gray-50 px-2 py-1 text-[0.58rem] leading-snug text-unal-gray">
+        <span class="text-[0.5rem] font-semibold uppercase tracking-wide text-unal-gray/50">Con transferencia de aprendizaje · mAP50</span><br/>
+        <span class="font-semibold text-amber-500">ZP</span> 0,995 ·
+        <span class="font-semibold text-unal-blue">Huso</span> 0,993 ·
+        <span class="font-semibold text-unal-green">Citolimit</span> 0,979 ·
+        <span class="font-semibold text-red-500">PB</span> 0,642
+      </div>
+    </div>
   </div>
+  <!--
+  <div class="grid min-h-0 flex-1 grid-cols-[55fr_45fr] gap-3 items-center">
+    <div class="min-w-0 overflow-hidden">
+      <DumbbellPlot
+        :rows="dumbbell2Rows"
+        leftLabel="Control (sin TL)"
+        rightLabel="Con transferencia de aprendizaje"
+        :compact="false"
+        leftColor="#9ca3af"
+        chartWidth="100%"
+        caption="mAP50 por clase · YOLOv9m: control vs. transferencia de aprendizaje"
+      />
+    </div>
+  </div>
+  -->
 </div>
 </div>
 <div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
@@ -284,11 +325,13 @@ const dumbbell2Rows = [
 <!--
 Hasta ahora hemos visto métricas globales. Ahora veamos qué ocurre estructura por estructura, porque eso es lo que tiene significado clínico.
 
-Los puntos rojos muestran el rendimiento en control — solo preentrenamiento sintético. Los azules, tras la transferencia de aprendizaje. Zona pelúcida, huso meiótico y límite citoplasmático ya tienen un punto de control relativamente alto porque el modelo sintético los captura bien. La transferencia los lleva a 0,979–0,995.
+Estas son las curvas de precisión y recall reales del experimento. La gráfica de la izquierda corresponde al experimento de control — solo con preentrenamiento sintético, sin datos reales. La de la derecha es después de la transferencia de aprendizaje.
 
-El cuerpo polar es diferente. Su punto rojo está prácticamente en cero — 0,007 — porque su morfología variable no se puede capturar sintéticamente. La mancuerna más larga de este gráfico es también la más importante: de 0,007 a 0,642. Ese Δ+0,635 confirma algo crucial: el cuerpo polar requiere datos reales. Sin la segunda etapa de transferencia, esta estructura sería indetectable.
+El contraste es inmediato. En control, todas las curvas degradan gradualmente: la precisión cae a medida que aumenta el recall, y el cuerpo polar — en rojo — colapsa prácticamente a cero desde el inicio, con un AP de apenas 0,007. Eso confirma que los datos sintéticos no capturan su morfología variable.
 
-Clínicamente, lo que importa es el huso meiótico a 0,993 — el marcador de madurez nuclear — y la zona pelúcida a 0,995. Con esos dos valores, la evaluación de madurez en tiempo real es viable.
+Con transferencia de aprendizaje, el panorama cambia completamente. Zona pelúcida, huso meiótico y límite citoplasmático alcanzan AP de 0,995, 0,993 y 0,979 respectivamente — curvas que se mantienen cerca de precisión 1 a lo largo de todo el rango de recall antes de caer bruscamente al final. Ese es el patrón de un detector robusto y bien calibrado. El cuerpo polar mejora sustancialmente a 0,642, pero su curva sigue siendo más irregular — lo que refleja que con P=0,69 y R=0,44 la detección aún no es robusta.
+
+Clínicamente, lo que importa son el huso meiótico a 0,993 y la zona pelúcida a 0,995. Con esos dos valores, la evaluación de madurez en tiempo real es viable.
 -->
 
 ---
@@ -310,7 +353,7 @@ const dumbbell3Rows = [
 <div class="slide-deck-shell">
 <header class="mb-2 text-left">
   <div class="flex items-center gap-3">
-    <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Módulos de atención — ventaja en control, convergencia con TL</h1>
+    <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Arquitecturas con módulos de atención</h1>
     <span class="shrink-0 rounded-md bg-unal-green/25 px-2.5 py-0.5 text-[0.65rem] font-bold text-[#3a6a18] ring-1 ring-unal-green/50">★ Aporte</span>
   </div>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
@@ -420,7 +463,7 @@ deckSection: resultados
 
 <div class="slide-deck-shell">
 <header class="mb-2 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Evaluación en video</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Evaluación en secuencias de video</h1>
   <div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="flex min-h-0 flex-1 flex-col gap-2">
@@ -489,7 +532,7 @@ deckSection: resultados
 
 <div class="slide-deck-shell pb-20">
 <header class="mb-2 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Secuencia 1: <span class="font-mono text-unal-blue">OpenPolScope</span> — meiosis I</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Secuencia 1: <span class="font-mono text-unal-blue">OpenPolScope</span> (meiosis I)</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="flex min-h-0 flex-1 flex-col gap-2">
@@ -628,7 +671,7 @@ deckSection: resultados
 <!--
 Pasemos a la primera secuencia. Estos dos videos muestran el mismo segmento — una grabación OpenPolScope del proceso de meiosis — procesado con YOLOv9m estándar a la izquierda y con YOLOv9m-CBAM a la derecha.
 
-La diferencia más llamativa está en el límite citoplasmático, marcado en la tabla. YOLOv9m lo detecta en apenas 4 de los 100 fotogramas. YOLOv9m-CBAM lo detecta en todos los 100, con una confianza notable y estable entre 0,90 y 0,96. No es una diferencia marginal: es la diferencia entre detectar o no detectar esa estructura en prácticamente toda la secuencia.
+La diferencia más llamativa está en el límite citoplasmático, marcado en la tabla. YOLOv9m lo detecta en apenas 4 de los 100 fotogramas. YOLOv9m-CBAM lo detecta en todos los 100, con una confianza alta y estable entre 0,90 y 0,96. No es una diferencia marginal: es la diferencia entre detectar o no detectar esa estructura en prácticamente toda la secuencia.
 
 En zona pelúcida, ambos modelos detectan en todos los fotogramas, pero la confianza de YOLOv9m varía entre 0,48 y 0,92 — inestable — mientras que CBAM mantiene entre 0,94 y 0,95 de forma consistente. Para el huso meiótico, ambos coinciden: lo pierden en el tramo de fotogramas 21 a 46, donde el huso cambia de posición durante la meiosis y su visibilidad disminuye incluso para el ojo experto.
 -->
@@ -640,7 +683,7 @@ deckSection: resultados
 
 <div class="slide-deck-shell pb-20">
 <header class="mb-2 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Secuencia 2: <span class="font-mono text-unal-blue">OOSIGHT-Spindle View</span> — ICSI</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Secuencia 2: <span class="font-mono text-unal-blue">OOSIGHT-Spindle View</span> (ICSI)</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="flex min-h-0 flex-1 flex-col gap-2">
@@ -796,7 +839,7 @@ deckSection: resultados
 
 <div class="slide-deck-shell pb-20">
 <header class="mb-2 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Secuencia 3: <span class="font-mono text-unal-blue">OptimFert</span> — <span class="font-mono text-unal-blue">Prague IVF</span></h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Secuencia 3: <span class="font-mono text-unal-blue">OptimFert</span> · <span class="font-mono text-unal-blue">Prague IVF</span></h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="flex min-h-0 flex-1 flex-col gap-2">
@@ -943,5 +986,60 @@ La tercera secuencia es la más larga: 660 fotogramas de un proceso completo de 
 YOLOv9m detecta zona pelúcida correctamente en toda la secuencia, pero confunde sistemáticamente el logotipo con huso meiótico, la herramienta con huso en múltiples tramos, y pierde el huso real a partir del fotograma 300. 1.710 detecciones de huso meiótico en 660 fotogramas — un número que por sí solo dice que algo va mal.
 
 YOLOv9m-CBAM detecta zona pelúcida y límite citoplasmático en todos los 660 fotogramas, con confianza estable. El huso meiótico se pierde temporalmente hacia el fotograma 390 — que es exactamente cuando está cambiando de forma durante la división — y se recupera hacia el 479. El fotograma 374, que vemos en la tabla, es especialmente ilustrativo: YOLOv9m no detecta ni huso ni cuerpo polar; CBAM detecta las cuatro estructuras correctamente.
+-->
+
+---
+transition: slide-up
+deckSection: resultados
+---
+
+<div class="slide-deck-shell">
+<header class="mb-1 text-left">
+  <div class="flex items-center gap-3">
+    <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Imagen ampliada Zenodo</h1>
+    <span class="shrink-0 rounded-md bg-unal-green/25 px-2.5 py-0.5 text-[0.65rem] font-bold text-[#3a6a18] ring-1 ring-unal-green/50">★ Aporte</span>
+  </div>
+  <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
+</header>
+<div class="grid min-h-0 flex-1 grid-cols-2 gap-3">
+  <!-- Normal (izquierda) -->
+  <figure class="m-0 flex flex-col gap-0.5 min-h-0">
+    <div class="shrink-0 rounded bg-gray-100 px-2 py-0.5 text-center text-[0.72rem] font-bold uppercase tracking-wide text-unal-gray">YOLOv9m (estándar)</div>
+    <img
+      src="../images/figures/results/detection_normal_real.jpg"
+      alt="Detección YOLOv9m en imagen real multi-ovocito"
+      class="min-h-0 flex-1 w-full object-contain rounded"
+    />
+    <div class="shrink-0 rounded bg-gray-50 border border-gray-200 px-2 py-0.5 text-[0.72rem] leading-snug text-unal-gray">
+      <span class="font-semibold text-unal-gray">2 clases detectadas:</span>
+      zp · huso ×3 — confianzas 0,54–0,92 · <span class="font-semibold text-red-500">zrpb y citolimit no detectados</span>
+    </div>
+  </figure>
+  <!-- CBAM (derecha) -->
+  <figure class="m-0 flex flex-col gap-0.5 min-h-0">
+    <div class="shrink-0 rounded bg-unal-green/15 px-2 py-0.5 text-center text-[0.72rem] font-bold uppercase tracking-wide text-[#3a6a18]">YOLOv9m-CBAM (personalizado)</div>
+    <img
+      src="../images/figures/results/detection_cbam_real.jpg"
+      alt="Detección YOLOv9m-CBAM en imagen real multi-ovocito"
+      class="min-h-0 flex-1 w-full object-contain rounded"
+    />
+    <div class="shrink-0 rounded bg-unal-green/10 px-2 py-0.5 text-[0.72rem] leading-snug text-unal-gray">
+      <span class="font-semibold text-[#3a6a18]">4 clases detectadas:</span>
+      zp · zrpb · huso ×4 · citolimit — confianzas 0,63–0,85
+    </div>
+  </figure>
+</div>
+</div>
+<div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
+  <img src="../images/logos/gpima_logo.png" alt="GPIMA" class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6" />
+  <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
+</div>
+
+<!--
+Esta imagen resume visualmente todo lo que las métricas cuantitativas ya mostraron. Es una imagen real con múltiples ovocitos, tomada bajo las mismas condiciones de microscopía polarizada.
+
+A la izquierda, YOLOv9m estándar detecta únicamente zona pelúcida y huso meiótico. Las estructuras zrpb y citolimit son completamente invisibles para el modelo sin atención. A la derecha, YOLOv9m-CBAM identifica cuatro clases estructurales: zona pelúcida, zona radiopaca, huso meiótico —en cuatro instancias distintas dentro del campo— y límite citoplasmático.
+
+Noten que el modelo estándar tiene confianzas de huso más altas —hasta 0,92— pero detecta menos clases. CBAM cubre más el espacio estructural a costa de confianzas ligeramente menores, lo que en un contexto clínico es la decisión correcta: más información, no menos.
 -->
 

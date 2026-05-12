@@ -5,7 +5,7 @@ deckSection: marco
 
 <div class="slide-deck-shell pb-10">
 <header class="mb-1.5 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">El ovocito y sus marcadores de madurez</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Ovocito: marcadores de madurez nuclear</h1>
   <div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <p class="mb-2 max-w-4xl hyphens-auto text-justify text-sm font-normal leading-snug text-unal-gray">
@@ -71,7 +71,7 @@ deckSection: marco
 
 <div class="slide-deck-shell">
 <header class="mb-2 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Recuperación cuantitativa del retardo</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Recuperación cuantitativa del retardo óptico</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 
@@ -149,7 +149,7 @@ deckSection: marco
 
 <div class="slide-deck-shell pb-16">
 <header class="mb-1 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">PLM cuantitativa: modelo matemático</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Modelo matemático de PLM cuantitativa</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 
@@ -217,7 +217,7 @@ deckSection: marco
 
 <div class="slide-deck-shell">
 <header class="mb-2 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Redes Neuronales para Detección de Objetos</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Redes neuronales para detección de objetos</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 
@@ -283,7 +283,7 @@ deckSection: marco
 
 <div class="slide-deck-shell">
 <header class="mb-2 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Métricas de evaluación de la detección de objetos</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Métricas de evaluación de la detección</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 

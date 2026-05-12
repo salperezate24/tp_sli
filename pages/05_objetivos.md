@@ -13,7 +13,7 @@ deckSection: objetivos
       <p class="mb-2 border-b border-gray-200/90 pb-1.5 text-[11px] font-bold uppercase tracking-wider text-unal-blue sm:text-xs">
         Objetivo general
       </p>
-      <p class="text-[0.82rem] leading-[1.42] text-unal-gray sm:text-sm">
+      <p class="text-[0.82rem] leading-[1.42] text-unal-gray sm:text-[1rem]">
         Desarrollar un modelo de <span class="font-semibold text-unal-blue">red neuronal profunda</span> para la identificación de ovocitos y algunas <span class="font-semibold text-unal-blue">características morfológicas</span> de ovocitos partiendo de imágenes de <span class="font-semibold text-unal-blue">microscopía polarizada</span>.
       </p>
     </div>
@@ -46,7 +46,7 @@ deckSection: objetivos
       <p class="mb-2 border-b border-gray-200/90 pb-1.5 text-[11px] font-bold uppercase tracking-wider text-unal-blue sm:text-xs">
         Objetivos específicos
       </p>
-      <ul class="list-disc space-y-2 pl-4.5 text-[0.82rem] leading-[1.4] text-unal-gray marker:font-semibold marker:text-unal-blue sm:text-sm">
+      <ul class="list-disc space-y-2 pl-4.5 text-[0.82rem] leading-[1.4] text-unal-gray marker:font-semibold marker:text-unal-blue sm:text-[0.95rem]">
         <li>Diseñar un método para la generación de una <span class="font-semibold text-unal-blue">base de datos</span> de <span class="font-semibold text-unal-blue">imágenes polarizadas</span> de ovocitos con distintas <span class="font-semibold text-unal-blue">características morfológicas</span>.</li>
         <li>Desarrollar un método para determinar la <span class="font-semibold text-unal-blue">estructura, arquitectura y parámetros</span> de una <span class="font-semibold text-unal-blue">red neuronal</span> para identificar los ovocitos y sus <span class="font-semibold text-unal-blue">características morfológicas</span>.</li>
         <li><span class="font-semibold text-unal-blue">Evaluar</span> el rendimiento de la red neuronal seleccionada.</li>

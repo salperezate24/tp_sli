@@ -46,9 +46,9 @@ const props = withDefaults(
 // is the only reliable way to avoid row-stacking in a flex container.
 const W       = 1640
 const LABEL_W = 330
-const DELTA_W = 130
+const DELTA_W = 250
 const CHART_L = LABEL_W
-const CHART_W = W - LABEL_W - DELTA_W  // 1180
+const CHART_W = W - LABEL_W - DELTA_W  // 1060
 
 const PAD_TOP   = 44
 const PAD_BOT   = 130
@@ -78,7 +78,22 @@ function xPx(v: number): number {
   return CHART_L + ((v - props.xMin) / (props.xMax - props.xMin)) * CHART_W
 }
 
-const ticks = [0, 0.25, 0.5, 0.75, 1.0]
+const ticks = computed(() => {
+  const step = 0.25
+  const result: number[] = []
+  for (let t = props.xMin; t <= props.xMax + 0.001; t = Math.round((t + step) * 1000) / 1000)
+    result.push(t)
+  return result
+})
+
+const maxDeltaIndex = computed(() => {
+  let maxD = -Infinity, idx = -1
+  props.rows.forEach((row, i) => {
+    const d = row.rightVal - row.leftVal
+    if (d > maxD) { maxD = d; idx = i }
+  })
+  return idx
+})
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 function fmtDelta(row: DumbbellRow): string {
@@ -92,10 +107,6 @@ function rowLeftColor(row: DumbbellRow): string {
 function rowRightColor(row: DumbbellRow): string {
   return row.rightColor ?? props.rightColor
 }
-function deltaFill(row: DumbbellRow): string {
-  return row.rightVal >= row.leftVal ? rowRightColor(row) : '#ef4444'
-}
-
 // Track color + weight encode jump magnitude: larger Δ → darker, thicker
 function trackStroke(row: DumbbellRow): string {
   const d = Math.abs(row.rightVal - row.leftVal)
@@ -130,6 +141,7 @@ function trackWidth(row: DumbbellRow): number {
     <text   :x="CHART_L + 30"   y="28"  font-size="7" fill="#9CA3AF" font-family="IBM Plex Sans,sans-serif">{{ leftLabel }}</text>
     <circle :cx="CHART_L + 380" :cy="22" :r="DOT_R - 2" :fill="rightColor" />
     <text   :x="CHART_L + 396"  y="28"  font-size="7" fill="#9CA3AF" font-family="IBM Plex Sans,sans-serif">{{ rightLabel }}</text>
+    <text   v-if="showDelta" :x="W - DELTA_W + 8" y="28" font-size="6" fill="#9CA3AF" font-family="IBM Plex Sans,sans-serif">Con TL</text>
 
     <!-- ── Data rows ─────────────────────────────────────────────────────── -->
     <g v-for="(row, i) in rows" :key="`r${i}`">
@@ -178,14 +190,21 @@ function trackWidth(row: DumbbellRow): number {
         stroke="white" stroke-width="2"
       />
 
-      <!-- Delta column — styled as key insight: bold, full right-dot color -->
+      <!-- Valor real del punto derecho (con TL) — color neutro -->
       <text
         v-if="showDelta"
-        :x="W - DELTA_W + 8" :y="rowYs[i] + 7"
-        font-size="7" font-weight="600"
-        :fill="deltaFill(row)"
+        :x="W - DELTA_W + 8" :y="rowYs[i] + 5"
+        font-size="7" font-weight="600" fill="#374151"
         font-family="IBM Plex Sans,sans-serif"
-      >{{ fmtDelta(row) }}</text>
+      >{{ row.rightVal.toFixed(3) }}</text>
+
+      <!-- Delta solo para la fila con mayor salto — sub-columna a la derecha del valor -->
+      <text
+        v-if="showDelta && i === maxDeltaIndex"
+        :x="W - DELTA_W + 140" :y="rowYs[i] + 5"
+        font-size="5.5" font-weight="400" fill="#9CA3AF"
+        font-family="IBM Plex Sans,sans-serif"
+      >(Δ{{ fmtDelta(row) }})</text>
     </g>
 
     <!-- ── X axis ─────────────────────────────────────────────────────────── -->

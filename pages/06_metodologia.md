@@ -5,7 +5,7 @@ deckSection: metodologia
 
 <div class="slide-deck-shell">
 <header class="mb-3 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Flujo metodológico</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Diseño experimental: tres fases</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="flex min-h-0 flex-1 flex-col justify-center">
@@ -64,6 +64,13 @@ deckSection: metodologia
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
+<!--
+Con los objetivos planteados, la metodología se organiza en tres fases. La primera construye las bases de datos: generamos imágenes PLM sintéticas a partir del modelo físico, recopilamos datos reales de publicaciones científicas y video, y caracterizamos los conjuntos resultantes.
+
+La segunda es la evaluación comparativa de redes estándar: seleccionamos las arquitecturas más prometedoras usando un dominio análogo, y evaluamos dos protocolos — un experimento de control sin transferencia de aprendizaje, y el flujo completo de dos etapas con adaptación al dominio real.
+
+La tercera — y el aporte central del trabajo — es el desarrollo de redes personalizadas: modificamos las arquitecturas seleccionadas con módulos de atención, repetimos el mismo protocolo comparativo y evaluamos en video. Este orden define también la estructura de la sección de resultados.
+-->
 
 ---
 transition: slide-up
@@ -72,7 +79,7 @@ deckSection: metodologia
 
 <div class="slide-deck-shell">
 <header class="mb-3 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Síntesis de imágenes PLM</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Generación de la base de datos sintética</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <p class="mb-3 text-[0.78rem] leading-snug text-unal-gray">Ante la <span class="font-semibold text-unal-blue">ausencia de bases de datos públicas</span> de imágenes PLM de ovocitos, este trabajo propone generar los datos de entrenamiento <span class="font-semibold text-unal-blue">sintéticamente</span> a partir de un modelo físico fundamentado en la birrefringencia óptica.</p>
@@ -99,6 +106,7 @@ deckSection: metodologia
       </div>
       <ul class="list-none space-y-1.5 text-[0.72rem] leading-snug text-unal-gray">
         <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Calibración espacial:</b> 1 px = 0,129 µm (Ovocito de 120 µm)</span></li>
+        <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Normalización:</b> 0 nm (fondo) → 5,6 nm (máx.) → imagen 8-bit [0, 255]</span></li>
         <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span>Iteración de posiciones (18 husos, 12 ZP) + Ruido de fondo</span></li>
         <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Volumen generado:</b> 526 392 imágenes sintéticas</span></li>
       </ul>
@@ -129,6 +137,15 @@ deckSection: metodologia
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
+<!--
+Para entrenar los modelos nos enfrentamos a una barrera crítica: los datos clínicos de imágenes PLM de ovocitos son privados, costosos y sujetos a restricciones éticas. Al no existir bases de datos públicas, la solución fue generar los datos sintéticamente a partir del modelo físico en MATLAB — conectando directamente el marco teórico con la programación.
+
+Paso 1: Modelamos cuatro estructuras. El huso meiótico es una Gaussiana anisotrópica 2D con retardo de 5,6 nanómetros — exactamente el valor reportado por la literatura para ovocitos humanos. La zona pelúcida es una banda elíptica con filtro Gaussiano. También incluimos el límite citoplasmático y el cuerpo polar.
+
+Paso 2: Calibramos el sistema a 1 píxel igual a 0,129 micrómetros — correspondiente a 400× con un ovocito de 120 µm. Antes de continuar: el retardo óptico varía entre 0 nanómetros en el fondo y 5,6 nanómetros en el máximo modelado para el huso meiótico. Esa señal en nanómetros se escala linealmente a una imagen de 8 bits entre 0 y 255, lo que la hace compatible con los modelos pre-entrenados en COCO. Al iterar las 18 configuraciones de huso y las 12 zonas pelúcidas en múltiples posiciones, sumando ruido de fondo para simular la realidad clínica, el pipeline generó más de 526 mil imágenes.
+
+Paso 3: Extrajimos un subconjunto curado de 21 600 imágenes. La ventaja metodológica clave: el etiquetado es 100% automático por definición paramétrica — cero intervención manual, lo que elimina por completo el sesgo humano en las anotaciones. El impacto visual de este modelo es lo que evaluaremos en la sección de resultados.
+-->
 
 ---
 transition: slide-up
@@ -137,7 +154,7 @@ deckSection: metodologia
 
 <div class="slide-deck-shell">
 <header class="mb-3 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Búsqueda y curaduría de datos reales</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Conjunto de datos real: OocytePaperImages</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="grid min-h-0 flex-1 grid-cols-2 gap-5">
@@ -195,6 +212,13 @@ deckSection: metodologia
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
+<!--
+Los datos reales provienen de dos fuentes con metodologías distintas.
+
+Para las imágenes PLM, recopilamos 200 imágenes de publicaciones científicas y libros de texto sobre ovocitos, microscopía polarizada e ICSI. El criterio de inclusión fue que cada imagen contuviera al menos una de las cuatro estructuras objetivo visibles. Las imágenes de publicaciones llegaban con texto, barras de escala y gráficos superpuestos — cada una requirió curaduría manual para limpiarla. Luego se anotaron manualmente con cajas delimitadoras, usando el mismo esquema de clases del conjunto sintético.
+
+Para los videos, usamos cinco secuencias de escenarios distintos: la primera es un time-lapse de meiosis I del sistema OpenPolScope, con 109 fotogramas que incluyen un tramo donde el huso es casi invisible — ideal para probar robustez. Las secuencias dos y tres son videos publicados de procedimientos ICSI y de extrusión del primer cuerpo polar. Las secuencias cuatro y cinco son imágenes TIF del repositorio público Zenodo, convertidas a video. Ninguna de las cinco secuencias tiene anotaciones por fotograma — se usan exclusivamente para evaluación cualitativa.
+-->
 
 ---
 transition: slide-up
@@ -260,6 +284,15 @@ deckSection: metodologia
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
+<!--
+El resultado de la Fase 1 son tres conjuntos con roles completamente distintos.
+
+Oocyte_synthetic_2025b tiene 21 600 imágenes de las 526 mil generadas. Se tomó ese subconjunto por dos razones: límites de cómputo — tiempo de entrenamiento, GPU y almacenamiento — y para evitar sobreajustar el modelo al dominio sintético antes de la transferencia de aprendizaje. Las 21 600 se dividen en 15 120 de entrenamiento, 3 240 de validación y 3 240 de prueba. Etiquetado 100% automático.
+
+OocytePaperImages tiene 200 imágenes PLM reales: 160 para entrenamiento y 40 para prueba. Esas 40 imágenes de prueba contienen 146 instancias anotadas — ese es el conjunto sobre el que se calculan todas las métricas cuantitativas.
+
+Las cinco secuencias de video no tienen anotaciones por fotograma y se usan solo para evaluación cualitativa práctica. Estos tres conjuntos suman datos a tres escalas diferentes: síntesis para escala, literatura para dominio real, video para validación en condiciones dinámicas.
+-->
 
 ---
 transition: slide-up
@@ -268,7 +301,7 @@ deckSection: metodologia
 
 <div class="slide-deck-shell">
 <header class="mb-3 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Selección de arquitecturas — de GDXray a PLM</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Selección de arquitecturas base</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="grid min-h-0 flex-1 grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] gap-5">
@@ -283,7 +316,7 @@ deckSection: metodologia
         class="h-auto max-h-[min(26vh,170px)] w-full object-contain"
       />
       <figcaption lang="es" class="plm-figcaption">
-        <span class="font-semibold text-unal-gray">Fig. 11.</span> GDXray+: imagen de fundición (a), defectos elípticos simulados (b), superposición de bajo contraste (c) y detecciones del modelo (d). Mery <span class="font-semibold text-unal-blue">[13]</span>
+        <span class="font-semibold text-unal-gray">Fig. 11.</span> GDXray+: rayos X industriales de fundición metálica — defectos elípticos simulados (b), superposición de bajo contraste (c) y detecciones del modelo (d). Mery <span class="font-semibold text-unal-blue">[13]</span>
       </figcaption>
     </figure>
     <p class="text-[0.72rem] leading-snug text-unal-gray">
@@ -318,6 +351,11 @@ deckSection: metodologia
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
+<!--
+Antes de comprometer semanas de cómputo sobre datos PLM, necesitábamos una forma de comparar arquitecturas rápidamente. Para eso usamos el conjunto GDXray+ del profesor Mery, de la Universidad Católica de Chile: imágenes de rayos X de piezas fundidas con defectos elipsoidales superpuestos de bajo contraste. Como vemos en la figura, el problema es análogo al nuestro — elipses poco visibles sobre fondo uniforme en escala de grises. Una prueba en seco antes del dominio PLM.
+
+Evaluamos versiones de YOLOv8 hasta v12 en variantes pequeña y mediana, más tres configuraciones de RT-DETR. Todos superaron mAP50 de 0,989 en GDXray+, lo que confirmó que cualquiera era técnicamente viable. A partir de ahí seleccionamos las versiones más recientes — YOLOv5 y v6 quedaron fuera porque las versiones nuevas las igualan o superan con mejor soporte — totalizando 13 configuraciones para el protocolo completo sobre datos PLM. Las de mayor rendimiento en Fase 2 serán las candidatas a recibir módulos de atención en Fase 3.
+-->
 
 ---
 transition: slide-up
@@ -326,7 +364,7 @@ deckSection: metodologia
 
 <div class="slide-deck-shell">
 <header class="mb-1.5 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Protocolo de entrenamiento y evaluación</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Transferencia de aprendizaje sintético-a-real</h1>
   <div class="mt-0 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="flex min-h-0 flex-1 flex-col gap-1.5" style="flex: 0 1 auto; max-height: 100%;">
@@ -387,6 +425,7 @@ deckSection: metodologia
         <li><span class="font-semibold">Etapa 1:</span> SGD · 100 épocas YOLO / 150 RT-DETR · early stopping</li>
         <li><span class="font-semibold">Etapa 2:</span> AdamW · 200 épocas YOLO / 300 RT-DETR · early stopping</li>
         <li><span class="font-semibold">Control:</span> mide el gap sintético-real y valida la necesidad del TL</li>
+        <li><span class="font-semibold">Aumentación en línea:</span> HSV · traslación · escalado · flip-H (p=0,5) · mosaico (p=1,0) + Albumentations: Blur, MedianBlur, ToGray, CLAHE (p=0,01 c/u) — sin rotación ni flip-V para preservar plausibilidad biológica</li>
       </ul>
     </div>
     <div class="flex min-h-0 flex-1 flex-col gap-1.5 rounded-lg border border-gray-200 border-l-4 border-l-unal-green/60 bg-white px-3 py-2">
@@ -405,6 +444,13 @@ deckSection: metodologia
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
+<!--
+El protocolo tiene dos caminos que se comparan entre sí. En el camino principal partimos de pesos COCO, preentrenamos en datos sintéticos con SGD — 100 épocas para YOLO y 150 para RT-DETR — y aplicamos transferencia de aprendizaje sobre las 200 imágenes reales con AdamW, cuyas tasas de aprendizaje adaptativas son más eficientes para el salto de dominio sintético a real — 200 épocas para YOLO y 300 para RT-DETR.
+
+El camino paralelo es el experimento de control: tomamos los pesos del preentrenamiento sintético y los evaluamos directamente sobre el conjunto real, sin pasar por la segunda etapa. Esa comparación nos permite cuantificar exactamente cuánto aporta la transferencia de aprendizaje y medir la brecha entre dominios.
+
+La evaluación cuantitativa usa el conjunto de prueba — 40 imágenes con 146 instancias anotadas — midiendo mAP50, mAP50-95, precisión, recall y tiempo de inferencia. El mismo protocolo se aplica a todas las 13 configuraciones estándar y, en Fase 3, a las 4 redes personalizadas.
+-->
 
 ---
 transition: slide-up
@@ -412,35 +458,35 @@ deckSection: metodologia
 ---
 
 <div class="slide-deck-shell">
-<header class="mb-1.5 text-left">
+<header class="mb-3 text-left">
   <div class="flex items-center gap-3">
     <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Desarrollo de redes personalizadas</h1>
     <span class="shrink-0 rounded-md bg-unal-green/25 px-2.5 py-0.5 text-[0.65rem] font-bold text-[#3a6a18] ring-1 ring-unal-green/50">★ Aporte</span>
   </div>
-  <span class="mt-0.5 block text-[0.68rem] text-unal-gray/70">Módulos de atención para estructuras de bajo contraste</span>
   <div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
+  <span class="mt-1.5 block text-[0.68rem] text-unal-gray/70">Módulos de atención para estructuras de bajo contraste</span>
 </header>
-<div class="flex min-h-0 flex-1 flex-col gap-1.5">
+<div class="flex min-h-0 flex-1 flex-col gap-2">
   <!-- Motivación como caja .co.bl -->
-  <div class="shrink-0 rounded-lg border-l-4 border-unal-blue/60 bg-unal-blue/[0.07] px-3 py-1.5 text-[0.72rem] leading-[1.45] text-unal-gray">
+  <div class="shrink-0 rounded-lg border-l-4 border-unal-blue/60 bg-unal-blue/[0.07] px-3 py-2 text-[0.75rem] leading-[1.45] text-unal-gray">
     <span class="font-semibold text-unal-blue">Motivación:</span> los modelos base presentan baja sensibilidad al <span class="font-semibold text-unal-blue">límite citoplasmático</span> y al <span class="font-semibold text-unal-blue">huso meiótico</span> — estructuras de bajo contraste sin precedente en bases de datos públicas → integración de atención para recalibrar respuesta espacial y de canal sin rediseñar la arquitectura completa
   </div>
-  <div class="grid min-h-0 flex-1 grid-cols-2 gap-2">
-    <div class="flex flex-col gap-2 rounded-lg border border-unal-blue/30 bg-unal-blue/[0.07] px-3 py-2">
+  <div class="grid min-h-0 flex-1 grid-cols-2 gap-3">
+    <div class="flex flex-col gap-2.5 rounded-lg border border-unal-blue/30 bg-unal-blue/[0.07] px-4 py-3">
       <span class="text-[0.65rem] font-bold uppercase tracking-wide text-unal-blue">YOLOv9m-CBAM</span>
-      <span class="text-[0.68rem] leading-[1.45] text-unal-gray">CBAM en columna vertebral · bloque P2/4 (128 ch) · después del primer RepNCSPELAN4 · atención canal + espacial secuencial</span>
+      <span class="text-[0.75rem] leading-[1.45] text-unal-gray">CBAM en columna vertebral · bloque P2/4 (128 ch) · después del primer RepNCSPELAN4 · atención canal + espacial secuencial</span>
     </div>
-    <div class="flex flex-col gap-2 rounded-lg border border-unal-blue/30 bg-unal-blue/[0.07] px-3 py-2">
+    <div class="flex flex-col gap-2.5 rounded-lg border border-unal-blue/30 bg-unal-blue/[0.07] px-4 py-3">
       <span class="text-[0.65rem] font-bold uppercase tracking-wide text-unal-blue">YOLOv9m-Triple Attention</span>
-      <span class="text-[0.68rem] leading-[1.45] text-unal-gray">Atención progresiva en 3 niveles: Channel Att. (P2/4) · Spatial Att. (P3/8) · CBAM (P4/16) — recalibración multi-escala</span>
+      <span class="text-[0.75rem] leading-[1.45] text-unal-gray">Atención progresiva en 3 niveles: Channel Att. (P2/4) · Spatial Att. (P3/8) · CBAM (P4/16) — recalibración multi-escala</span>
     </div>
-    <div class="flex flex-col gap-2 rounded-lg border border-unal-green/40 bg-unal-green/[0.08] px-3 py-2">
+    <div class="flex flex-col gap-2.5 rounded-lg border border-unal-green/40 bg-unal-green/[0.08] px-4 py-3">
       <span class="text-[0.65rem] font-bold uppercase tracking-wide text-[#3a6a18]">YOLO11m-Conservative Attention</span>
-      <span class="text-[0.68rem] leading-[1.45] text-unal-gray">Channel Att. después del 1.er C3k2 (P2/4, 256 ch) · CBAM después del 2.° C3k2 (P3/8, 512 ch) — enfoque conservador</span>
+      <span class="text-[0.75rem] leading-[1.45] text-unal-gray">Channel Att. después del 1.er C3k2 (P2/4, 256 ch) · CBAM después del 2.° C3k2 (P3/8, 512 ch) — enfoque conservador</span>
     </div>
-    <div class="flex flex-col gap-2 rounded-lg border border-unal-green/40 bg-unal-green/[0.08] px-3 py-2">
+    <div class="flex flex-col gap-2.5 rounded-lg border border-unal-green/40 bg-unal-green/[0.08] px-4 py-3">
       <span class="text-[0.65rem] font-bold uppercase tracking-wide text-[#3a6a18]">YOLO11m-Transformer Enhanced</span>
-      <span class="text-[0.68rem] leading-[1.45] text-unal-gray">Módulos C3TR + Atención en columna vertebral — captura de relaciones globales en la imagen para complementar la convolución local</span>
+      <span class="text-[0.75rem] leading-[1.45] text-unal-gray">Módulos C3TR + Atención en columna vertebral — captura de relaciones globales en la imagen para complementar la convolución local</span>
     </div>
   </div>
   <span class="shrink-0 text-[0.62rem] italic text-unal-gray/60">Criterio consistente: añadir atención en posiciones estratégicas · overhead computacional &lt; 0,5% en todos los casos</span>
@@ -451,6 +497,13 @@ deckSection: metodologia
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
+<!--
+Con la evaluación comparativa de redes estándar establecida, pasamos al aporte central del trabajo: modificar las arquitecturas seleccionadas para mejorar la sensibilidad a estructuras de bajo contraste — el huso meiótico y el límite citoplasmático — sin rediseñar la red completa. La estrategia fue añadir módulos de atención en posiciones estratégicas de la columna vertebral, recalibrando la respuesta donde el modelo base falla.
+
+Desarrollamos cuatro variantes. Dos sobre YOLOv9m: CBAM insertado en la columna vertebral en el nivel P2, que aplica atención de canal y espacial en secuencia; y Triple Attention, que aplica los tres mecanismos de forma progresiva en P2, P3 y P4. Dos sobre YOLO11m: Conservative Attention, con módulos en puntos estratégicos; y Transformer Enhanced, que incorpora bloques C3TR para capturar relaciones globales en la imagen.
+
+El criterio fue consistente: no rediseñar sino añadir atención selectiva. La sobrecarga computacional es menor al 0,5% en todos los casos.
+-->
 
 ---
 transition: slide-up
@@ -485,6 +538,13 @@ deckSection: metodologia
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
 
+<!--
+Este diagrama muestra exactamente dónde interviene CBAM en YOLOv9m. En la columna vertebral, después del primer bloque RepNCSPELAN4 — en el nivel P2, que procesa características a un cuarto de la resolución de entrada con 128 canales — se inserta el módulo completo de atención.
+
+Esa posición es deliberada por dos razones. Primera, en P2 la resolución espacial es suficiente para discriminar el huso meiótico, cuyo diámetro proyectado oscila entre 10 y 20 píxeles; en P3 ya sería demasiado pequeño para ser recalibrado con precisión. Segunda, es el nivel donde la información de bajo contraste — el retardo de 2 a 5 nanómetros del huso y el límite citoplasmático — todavía no ha sido suprimida por los bloques de reducción de P3 y P4.
+
+CBAM actúa aquí como un filtro en dos pasos: recalibra canales y luego concentra la respuesta espacial. Después de ese módulo, la información fluye normalmente hacia el cuello y la cabeza de detección.
+-->
 
 ---
 transition: slide-left
@@ -492,12 +552,12 @@ deckSection: metodologia
 ---
 
 <div class="slide-deck-shell">
-<header class="mb-2 text-left">
+<header class="mb-3 text-left">
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Protocolo comparativo — Fase 3</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
+  <p class="mt-2 text-[0.82rem] leading-snug text-unal-gray">Las redes personalizadas se evalúan con el <span class="font-semibold text-unal-blue">mismo protocolo de Fase 2</span> — cualquier diferencia en los resultados se debe exclusivamente a los módulos de atención.</p>
 </header>
-<div class="flex min-h-0 flex-1 flex-col justify-center gap-2">
-  <p class="text-[0.82rem] leading-snug text-unal-gray">Las redes personalizadas se evalúan con el <span class="font-semibold text-unal-blue">mismo protocolo de Fase 2</span> — cualquier diferencia en los resultados se debe exclusivamente a los módulos de atención.</p>
+<div class="flex min-h-0 flex-1 flex-col gap-2">
   <!-- Tabla comparativa -->
   <div class="rounded-xl border border-gray-200">
     <table class="w-full text-[0.72rem] leading-snug">
@@ -553,4 +613,10 @@ deckSection: metodologia
   <img src="../images/logos/gpima_logo.png" alt="GPIMA" class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6" />
   <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
 </div>
+
+<!--
+Las redes personalizadas se evalúan con exactamente el mismo protocolo de Fase 2: mismo flujo de entrenamiento de dos etapas, mismo experimento de control, mismo conjunto de prueba de 40 imágenes y las mismas métricas. Esa equivalencia es deliberada — garantiza que cualquier diferencia en los resultados se deba exclusivamente a los módulos de atención, y no a variaciones en el entrenamiento o la evaluación.
+
+La diferencia de Fase 3 es la evaluación en video: las cinco secuencias PLM se aplican únicamente a las redes personalizadas y a sus equivalentes estándar, permitiendo una comparación directa en condiciones dinámicas reales. Con esto, pasemos a los resultados.
+-->
 

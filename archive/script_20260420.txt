@@ -75,6 +75,50 @@ es una necesidad clínica urgente — ese es el punto de partida de
 este trabajo.
 
 
+[NUEVO — reemplaza slides 3 y 4 una vez que se eliminen A y B]
+
+SLIDE NUEVO-A (JUSTIFICACIÓN — MADURACIÓN IN VITRO: EL PROCESO):
+
+El proceso comienza con la obtención del ovario — generalmente del
+matadero en el contexto de investigación porcina — del que se
+extraen los ovocitos. Estos son denudados, eliminándoles las
+células de granulosa, y se colocan en cultivo a 37 grados, 5% de
+CO₂ y 6% de O₂, durante 40 a 48 horas.
+
+En ese tiempo, el ovocito debe progresar hasta metafase II — el
+estado óptimo para la ICSI. Pero la maduración no es simultánea:
+distintos ovocitos del mismo cultivo progresan a ritmos diferentes.
+
+Lo más crítico: el indicador definitivo de MII es el huso meiótico,
+que emerge alrededor de las 38 a 40 horas y es visible durante
+apenas 2 horas. Un dato clave: el cuerpo polar puede aparecer
+antes de que el huso esté completamente ensamblado, lo que hace
+que su presencia sola no sea suficiente para confirmar la madurez.
+Esa es exactamente la ventana que necesitamos capturar.
+
+
+SLIDE NUEVO-B (JUSTIFICACIÓN — RELEVANCIA CLÍNICA E INDUSTRIAL):
+
+Para entender la magnitud del problema, miremos los números en dos
+contextos donde la madurez del ovocito es determinante.
+
+En la industria porcina, la eficiencia de la producción in vitro
+sigue siendo un desafío: según Chen et al. (2022), solo 1 de cada
+5 embriones producidos in vitro llega a término. Técnicas avanzadas
+de selección pueden elevar eso a 1 de cada 3 — lo que evidencia el
+impacto de mejorar la identificación del ovocito en el momento
+correcto. Este es precisamente el modelo experimental del trabajo.
+
+En medicina humana, el impacto es aún más evidente: según el
+reporte preliminar de SART para 2024, la probabilidad de éxito cae
+drásticamente con la edad materna — del 50% en menores de 35 años,
+a apenas el 4% en mayores de 42 con sus propios óvulos.
+
+En ambos contextos, el resultado depende críticamente de identificar
+el ovocito en el estado óptimo de madurez. Ese es el punto de
+partida de este trabajo.
+
+
 SLIDE 5 (MARCO TEÓRICO I: EL OVOCITO Y SUS MARCADORES DE MADUREZ):
 
 Solo el 5–10 % de los ovocitos recuperados poseen potencial de

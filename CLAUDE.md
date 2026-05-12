@@ -200,16 +200,15 @@ Al redactar o completar slides, leer primero el capítulo correspondiente para m
 
 ---
 
-## Guion oral (`archive/script_20260420.txt`)
+## Guion oral (notas del presentador)
 
-El guion oral vive en `archive/script_20260420.txt` (665 líneas). Contiene el texto que se dirá en cada diapositiva durante la defensa.
+El guion oral vive en los bloques de comentario `<!-- ... -->` al final de cada slide, dentro de los archivos `pages/XX_seccion.md`. Slidev los muestra como notas del presentador en la vista de presentación (tecla `S`).
 
-**Convenciones:**
-- Cada bloque empieza con `SLIDE N:` (número correlativo al orden de la presentación)
-- Máximo ~1 minuto por diapositiva ≈ 130–150 palabras a ritmo normal
-- El guion debe ser coherente con el contenido visual de la diapositiva correspondiente y con los datos de la tesis
+**Regla:** al crear o modificar un slide, siempre actualizar el bloque `<!-- -->` en el mismo archivo con el guion correspondiente. El guion debe ser coherente con el contenido visual y con los datos de la tesis.
 
-**Estado actual del guion:** ✓ completo — cubre slides 1–39 (toda la presentación)
+**Límite:** máximo ~1 minuto por diapositiva ≈ 130–150 palabras a ritmo normal.
+
+**`archive/script_20260420.txt`:** archivo legacy con el guion anterior completo (665 líneas). Solo sirve como referencia histórica — no actualizar.
 
 **Fuentes de referencia para redactar el guion:**
 - `archive/oocyte_maturity.txt` — protocolo clínico de PLM para ICSI; útil para slides de justificación y marco teórico

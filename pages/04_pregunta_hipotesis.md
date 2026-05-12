@@ -16,7 +16,7 @@ deckSection: pregunta
 <p class="mb-2.5 border-b border-gray-200/90 pb-2 text-[11px] !font-bold uppercase tracking-wider text-unal-blue">
 Pregunta de investigación
 </p>
-<p class="hyphens-auto text-pretty text-justify text-sm leading-[1.42] tracking-[0.01em] text-unal-gray sm:text-[0.82rem]">
+<p class="hyphens-auto text-pretty text-justify text-sm leading-[1.42] tracking-[0.01em] text-unal-gray sm:text-sm">
 ¿Cuál de las <span class="font-semibold text-unal-blue">arquitecturas</span> logra <span class="font-semibold text-unal-blue">identificar</span> distintos estados de maduración de ovocitos partiendo de imágenes de microscopía polarizada en un video en vivo?
 </p>
 </div>
@@ -44,4 +44,10 @@ Es posible <span class="font-semibold text-unal-blue">desarrollar</span> una red
     class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14"
   />
 </div>
+
+<!--
+La pregunta tiene dos términos que quiero precisar antes de continuar. Primero: "identificar distintos estados de maduración". En microscopía PLM, la detección del huso meiótico no es un prerrequisito para determinar el estado de madurez — es la determinación del estado de madurez. Huso presente en la imagen equivale a MII, maduro, apto para ICSI. Huso ausente equivale a GV o MI, no maduro. No hay una capa de inferencia adicional entre detección y diagnóstico. Segundo: "video en vivo". Esto no significa integración directa con el controlador del microscopio en tiempo real — eso es ingeniería de sistema y queda como trabajo futuro. Significa que el tiempo de inferencia de los modelos, siete punto cuatro milisegundos por imagen en YOLOv9m, es sustancialmente inferior al período de trama de la cámara PLM. La arquitectura es compatible con ese escenario desde el punto de vista computacional.
+
+La hipótesis propone que sí es posible. Al modificar parámetros clave de la red — el formato de imagen de entrada, la función de pérdida, las técnicas de predicción de cajas y los módulos de atención — puede desarrollarse un detector capaz de localizar y clasificar el ovocito, el huso meiótico y sus características birrefringentes, permitiendo caracterizar el estado de madurez sin manipular la muestra.
+-->
 

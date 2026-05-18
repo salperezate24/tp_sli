@@ -31,8 +31,7 @@ deckSection: marco
       <img src="../images/figures/diagrams/oocyte_plm.png" alt="Ovocito bajo PLM" class="w-full max-h-[12rem] object-contain" />
       <figcaption lang="es" class="plm-figcaption">
         <span class="font-semibold text-unal-gray">Fig. 2.</span>
-        Ovocito bajo PLM: huso meiótico (s), zona pelúcida (zp), citoplasma (c) y cuerpo polar (pb). Rienzi et al.
-        <span class="ml-0.5 font-semibold text-unal-blue">[3]</span>.
+        Ovocito bajo PLM: huso meiótico (s), zona pelúcida (zp), citoplasma (c) y cuerpo polar (pb). Rienzi et al. (2011).
       </figcaption>
     </figure>
     <figure class="m-0 flex flex-col">
@@ -162,7 +161,7 @@ deckSection: marco
       />
       <figcaption lang="es" class="plm-figcaption">
         <span class="font-semibold text-unal-gray">Fig. 4.</span>
-        I₀–I₄: cinco estados de polarización capturados sobre un áster de microtúbulos. Shribak &amp; Oldenbourg (2003) <span class="font-semibold text-unal-blue">[4]</span>
+        I₀–I₄: cinco estados de polarización capturados sobre un áster de microtúbulos. Shribak &amp; Oldenbourg (2003)
       </figcaption>
     </figure>
   </div>
@@ -178,7 +177,7 @@ deckSection: marco
       />
       <figcaption lang="es" class="plm-figcaption">
         <span class="font-semibold text-unal-gray">Fig. 5.</span>
-        Mapa de retardo óptico del mismo áster: blanco ≈ 1,2&nbsp;nm (alta birrefringencia); negro, nula. Shribak &amp; Oldenbourg (2003) <span class="font-semibold text-unal-blue">[4]</span>
+        Mapa de retardo óptico del mismo áster: blanco ≈ 1,2&nbsp;nm (alta birrefringencia); negro, nula. Shribak &amp; Oldenbourg (2003)
       </figcaption>
     </figure>
   </div>

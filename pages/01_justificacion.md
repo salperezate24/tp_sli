@@ -20,7 +20,7 @@ deckSection: justificacion
 
 <div class="max-w-4xl">
   <p class="mb-1.5 text-[11.5px] !font-bold uppercase tracking-wide text-unal-blue">
-    Industria porcina (Chen et al., 2022)<span class="ml-0.5 font-semibold normal-case tracking-normal text-unal-blue">[1]</span>
+    Industria porcina (Chen et al., 2022)
   </p>
   <ul class="list-disc space-y-1.5 pl-3 text-[14px] leading-snug text-unal-gray marker:text-unal-blue">
     <li>Solo <span class="font-semibold">1 de cada 5</span> embriones producidos in vitro llega a término.</li>
@@ -76,13 +76,13 @@ deckSection: justificacion
   En humanos, la efectividad de las TRA cae marcadamente con la
   <span class="font-semibold text-unal-blue">edad materna</span>, evidenciando la dependencia de la
   <span class="font-semibold text-unal-blue">calidad del ovocito</span>. Según el reporte preliminar de
-  <span class="font-semibold">SART 2024</span><span class="ml-0.5 font-semibold text-unal-blue">[2]</span>,
+  <span class="font-semibold">SART 2024</span>,
   esto refuerza la necesidad de controles de laboratorio más precisos.
 </p>
 <div class="grid w-full max-w-4xl grid-cols-1 gap-4 text-left lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:gap-6">
 <div class="min-w-0">
 <p class="mb-1 text-[11.5px] !font-bold uppercase tracking-wide text-unal-blue">
-  Uso y alcance (SART, 2024)<span class="ml-0.5 font-semibold normal-case tracking-normal text-unal-blue">[2]</span>
+  Uso y alcance (SART, 2024)
 </p>
 <ul class="list-disc space-y-1 pl-3 text-[14px] leading-snug text-unal-gray marker:text-unal-blue">
   <li><span class="font-semibold">431.746</span> ciclos totales de TRA en 2024 (preliminar).</li>
@@ -99,7 +99,7 @@ deckSection: justificacion
 <figcaption lang="es" class="plm-figcaption">
   <span class="font-semibold text-unal-gray">Fig. 1.</span>
   Tasas aprox. de nacidos vivos por edad materna (EE. UU., 2024&nbsp;—&nbsp;preliminar)
-  <span class="ml-0.5 font-semibold text-unal-blue">[2]</span>.
+  <span class="ml-0.5 font-semibold text-unal-blue">(SART, 2024)</span>.
 </figcaption>
 </figure>
 </div>
@@ -136,7 +136,7 @@ deckSection: justificacion
 </header>
 <div class="grid min-h-0 flex-1 grid-cols-2 gap-5">
 <div class="flex flex-col gap-2.5">
-  <p class="mb-0.5 text-[11.5px] font-bold uppercase tracking-wide text-unal-gray">Industria Porcina · Chen et al., 2022 <span class="font-semibold">[1]</span></p>
+  <p class="mb-0.5 text-[11.5px] font-bold uppercase tracking-wide text-unal-gray">Industria Porcina · Chen et al. (2022)</p>
   <div class="flex flex-col rounded-xl border border-unal-blue/25 bg-unal-blue/[0.05] px-5 py-3">
     <span class="text-[3.1rem] font-black leading-none tracking-tight text-unal-blue">1 de 5</span>
     <span class="mt-1 text-[11.5px] font-semibold leading-snug text-unal-gray/80">embriones in vitro llega a término</span>
@@ -159,7 +159,7 @@ deckSection: justificacion
     <IvfLiveBirthByAgeChart />
   </div>
   <div class="rounded-lg border-l-4 border-unal-blue/60 bg-unal-blue/[0.07] px-3 py-1.5 text-[0.72rem] leading-[1.45] text-unal-gray">
-    Del <span class="font-semibold">50 %</span> (&lt;35 años) al <span class="font-semibold text-red-500">4 %</span> (&gt;42 años) — el margen de éxito depende críticamente de la calidad del ovocito. <span class="font-semibold text-unal-blue">[2]</span>
+    Del <span class="font-semibold">50 %</span> (&lt;35 años) al <span class="font-semibold text-red-500">4 %</span> (&gt;42 años) — el margen de éxito depende críticamente de la calidad del ovocito. <span class="font-semibold text-unal-blue">(SART, 2024)</span>
   </div>
 </div>
 </div>
@@ -219,7 +219,7 @@ deckSection: justificacion
 </div>
 <div class="grid min-h-0 flex-1 grid-cols-2 gap-5">
   <div class="flex flex-col gap-3">
-    <div class="text-[11.5px] font-bold uppercase tracking-widest text-unal-gray/50">Eficiencia actual · porcinos <span class="font-semibold">[1]</span></div>
+    <div class="text-[11.5px] font-bold uppercase tracking-widest text-unal-gray/50">Eficiencia actual · porcinos <span class="font-semibold">(Chen et al., 2022)</span></div>
     <div class="flex items-end gap-3 rounded-xl border border-unal-blue/25 bg-unal-blue/[0.05] px-5 py-3">
       <span class="text-[3.8rem] font-black leading-none tracking-tight text-unal-blue">~50%</span>
       <div class="mb-1 flex flex-col gap-0.5">
@@ -245,7 +245,7 @@ deckSection: justificacion
         </div>
         <span class="text-[13px] font-semibold leading-snug text-unal-gray">Señal insuficiente</span>
         <span class="text-[12px] leading-snug text-unal-gray/60">Aparece <span class="font-semibold">antes</span> del huso</span>
-        <span class="text-[12px] leading-snug text-unal-gray/60"><span class="font-semibold text-red-500">No confirma</span> MII <span class="font-semibold">[36]</span></span>
+        <span class="text-[12px] leading-snug text-unal-gray/60"><span class="font-semibold text-red-500">No confirma</span> MII <span class="font-semibold">(Holubcová et al., 2019)</span></span>
       </div>
       <div class="flex flex-col gap-1.5 rounded-xl border border-unal-green/40 bg-unal-green/[0.07] px-3 py-2.5">
         <div class="flex items-center gap-1.5">

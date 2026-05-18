@@ -567,6 +567,78 @@ deckSection: referencias
         PMID:&nbsp;30635815.
       </span>
     </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[37]</span>
+      <span>
+        Kelleher, C. P., Rana, Y. P., & Needleman, D. J. (2024). Long-range repulsion between chromosomes in mammalian oocyte spindles. <em>Science Advances</em>, <em>10</em>(39), eadq7540.
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.1126/sciadv.adq7540"
+          target="_blank"
+          rel="noopener noreferrer"
+        >https://doi.org/10.1126/sciadv.adq7540</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[38]</span>
+      <span>
+        Rienzi, L., Balaban, B., Ebner, T., & Mandelbaum, J. (2012). The oocyte. <em>Human Reproduction</em>, <em>27</em>(Suppl 1), i2–i21.
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.1093/humrep/des200"
+          target="_blank"
+          rel="noopener noreferrer"
+        >https://doi.org/10.1093/humrep/des200</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[39]</span>
+      <span>
+        OpenPolScope. (2024). <em>Meiosis I in human oocyte (polarized light microscopy)</em> [Video].
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://openpolscope.org/pages/Overview_Gallery.htm"
+          target="_blank"
+          rel="noopener noreferrer"
+        >https://openpolscope.org/pages/Overview_Gallery.htm</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[40]</span>
+      <span>
+        Hamilton Thorne. (2024). <em>OOSIGHT-Spindle view imaging system ICSI movie</em> [Video]. YouTube.
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://www.youtube.com/watch?v=eJ84LwYs-6U"
+          target="_blank"
+          rel="noopener noreferrer"
+        >https://www.youtube.com/watch?v=eJ84LwYs-6U</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[41]</span>
+      <span>
+        Prague Fertility Centre. (2024). <em>OptimFert — Egg maturation monitoring</em> [Video]. Facebook.
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://www.facebook.com/pragueivf/videos/optimfert-egg-maturation-monitoring/161608249679817/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >https://www.facebook.com/pragueivf/videos/optimfert-egg-maturation-monitoring/161608249679817/</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[42]</span>
+      <span>
+        Zenodo. (2024). <em>Dataset de imágenes de retardo (polarización) de ovocitos</em>. Zenodo.
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.5281/zenodo.12806560"
+          target="_blank"
+          rel="noopener noreferrer"
+        >https://doi.org/10.5281/zenodo.12806560</a>.
+      </span>
+    </li>
   </ol>
 </div><!-- cierre scroll -->
 

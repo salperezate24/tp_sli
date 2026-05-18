@@ -90,7 +90,7 @@ deckSection: metodologia
         <span class="text-[0.9rem] font-bold leading-tight text-unal-blue">Modelación Física</span>
       </div>
       <ul class="list-none space-y-1.5 text-[0.82rem] leading-snug text-unal-gray">
-        <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Huso meiótico:</b> Gaussiana anisotrópica 2D (Retardo ~5,6 nm)</span></li>
+        <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Huso meiótico:</b> Gaussiana anisotrópica 2D (Retardo ~5,6 nm) <span class="text-[0.68rem] text-unal-gray/50">(Kelleher et al., 2024)</span></span></li>
         <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Zona Pelúcida:</b> Banda elíptica + Filtro Gaussiano</span></li>
         <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Estructuras base:</b> Cuerpo polar y límite citoplasmático</span></li>
       </ul>
@@ -104,7 +104,7 @@ deckSection: metodologia
         <span class="text-[0.9rem] font-bold leading-tight text-unal-blue">Síntesis Combinatoria</span>
       </div>
       <ul class="list-none space-y-1.5 text-[0.82rem] leading-snug text-unal-gray">
-        <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Calibración espacial:</b> 1 px = 0,129 µm (Ovocito de 120 µm)</span></li>
+        <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Calibración espacial:</b> 1 px = 0,129 µm (Ovocito de 120 µm) <span class="text-[0.68rem] text-unal-gray/50">(Kelleher et al., 2024; Rienzi et al., 2012)</span></span></li>
         <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Normalización:</b> 0 nm (fondo) → 5,6 nm (máx.) → imagen 8-bit [0, 255]</span></li>
         <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span>Iteración de posiciones (18 husos, 12 ZP) + Ruido de fondo</span></li>
         <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Volumen generado:</b> 526 392 imágenes sintéticas</span></li>
@@ -188,19 +188,19 @@ deckSection: metodologia
     <ul class="list-none space-y-1.5 text-[0.80rem] leading-snug text-unal-gray">
       <li class="flex gap-2">
         <carbon-play-filled class="mt-0.5 shrink-0 text-[0.95rem] text-unal-green" />
-        <span><span class="font-semibold">Sec. 1:</span> time-lapse meiosis I (109 fotogramas) — galería pública OpenPolScope</span>
+        <span><span class="font-semibold">Sec. 1:</span> time-lapse meiosis I (109 fotogramas) — galería pública OpenPolScope <span class="text-[0.68rem] text-unal-gray/50">(OpenPolScope, 2024)</span></span>
       </li>
       <li class="flex gap-2">
         <carbon-play-filled class="mt-0.5 shrink-0 text-[0.95rem] text-unal-green" />
-        <span><span class="font-semibold">Sec. 2:</span> ICSI con sistema OOSIGHT-Spindle View (deformación del ovocito por aguja)</span>
+        <span><span class="font-semibold">Sec. 2:</span> ICSI con sistema OOSIGHT-Spindle View (deformación del ovocito por aguja) <span class="text-[0.68rem] text-unal-gray/50">(Hamilton Thorne, 2024)</span></span>
       </li>
       <li class="flex gap-2">
         <carbon-play-filled class="mt-0.5 shrink-0 text-[0.95rem] text-unal-green" />
-        <span><span class="font-semibold">Sec. 3:</span> extrusión del primer cuerpo polar — Prague IVF OptimFert</span>
+        <span><span class="font-semibold">Sec. 3:</span> extrusión del primer cuerpo polar — Prague IVF OptimFert <span class="text-[0.68rem] text-unal-gray/50">(Prague Fertility Centre, 2024)</span></span>
       </li>
       <li class="flex gap-2">
         <carbon-play-filled class="mt-0.5 shrink-0 text-[0.95rem] text-unal-green" />
-        <span><span class="font-semibold">Sec. 4–5:</span> imágenes TIF de retardo (Zenodo) → convertidas a video PNG a 5 FPS</span>
+        <span><span class="font-semibold">Sec. 4–5:</span> imágenes TIF de retardo (Zenodo) → convertidas a video PNG a 5 FPS <span class="text-[0.68rem] text-unal-gray/50">(Zenodo, 2024)</span></span>
       </li>
     </ul>
     <div class="mt-1 rounded-md bg-gray-50 px-2.5 py-1.5 text-[0.67rem] leading-snug text-unal-gray/80 ring-1 ring-gray-200">
@@ -318,7 +318,7 @@ deckSection: metodologia
         class="h-auto max-h-[min(26vh,170px)] w-full object-contain"
       />
       <figcaption lang="es" class="plm-figcaption">
-        <span class="font-semibold text-unal-gray">Fig. 11.</span> GDXray+: rayos X industriales de fundición metálica — defectos elípticos simulados (b), superposición de bajo contraste (c) y detecciones del modelo (d). Mery <span class="font-semibold text-unal-blue">[13]</span>
+        <span class="font-semibold text-unal-gray">Fig. 11.</span> GDXray+: rayos X industriales de fundición metálica — defectos elípticos simulados (b), superposición de bajo contraste (c) y detecciones del modelo (d). Mery (2021)
       </figcaption>
     </figure>
     <p class="text-[0.87rem] leading-snug text-unal-gray">

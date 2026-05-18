@@ -131,64 +131,137 @@ deckSection: justificacion
 
 <div class="slide-deck-shell">
 <header class="mb-2 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Proceso de maduración ovocitaria in vitro</h1>
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Justificación</h1>
   <div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
-
-<!-- Timeline del procedimiento -->
-<div class="mb-3 flex items-center gap-0 text-center">
-  <div class="flex w-[17%] flex-col items-center rounded-lg border border-unal-blue/30 bg-unal-blue/[0.06] px-1.5 py-2">
-    <span class="text-[11px] font-bold leading-tight text-unal-blue">Obtención</span>
-    <span class="mt-0.5 text-[10px] leading-tight text-unal-gray/70">Ovario (matadero / extracción)</span>
+<div class="grid min-h-0 flex-1 grid-cols-2 gap-5">
+<div class="flex flex-col gap-2.5">
+  <p class="mb-0.5 text-[11.5px] font-bold uppercase tracking-wide text-unal-gray">Industria Porcina · Chen et al., 2022 <span class="font-semibold">[1]</span></p>
+  <div class="flex flex-col rounded-xl border border-unal-blue/25 bg-unal-blue/[0.05] px-5 py-3">
+    <span class="text-[3.1rem] font-black leading-none tracking-tight text-unal-blue">1 de 5</span>
+    <span class="mt-1 text-[11.5px] font-semibold leading-snug text-unal-gray/80">embriones in vitro llega a término</span>
+    <span class="mt-0.5 text-[10px] text-unal-gray/50">Eficiencia actual de IVP</span>
   </div>
-  <div class="w-[4%] text-center text-[13px] font-bold text-unal-blue/50">→</div>
-  <div class="flex w-[17%] flex-col items-center rounded-lg border border-unal-blue/30 bg-unal-blue/[0.06] px-1.5 py-2">
-    <span class="text-[11px] font-bold leading-tight text-unal-blue">Denudación</span>
-    <span class="mt-0.5 text-[10px] leading-tight text-unal-gray/70">Remoción de cél. de granulosa</span>
+  <div class="flex items-center gap-2 px-1">
+    <div class="h-px flex-1 bg-unal-green/50" />
+    <span class="text-[9px] font-bold uppercase tracking-widest text-unal-green">con selección avanzada</span>
+    <div class="h-px flex-1 bg-unal-green/50" />
   </div>
-  <div class="w-[4%] text-center text-[13px] font-bold text-unal-blue/50">→</div>
-  <div class="flex w-[17%] flex-col items-center rounded-lg border border-unal-blue/30 bg-unal-blue/[0.06] px-1.5 py-2">
-    <span class="text-[11px] font-bold leading-tight text-unal-blue">Cultivo IVM</span>
-    <span class="mt-0.5 text-[10px] leading-tight text-unal-gray/70">37 °C · 5% CO₂ · 6% O₂ · ~40–48 h</span>
-  </div>
-  <div class="w-[4%] text-center text-[13px] font-bold text-unal-blue/50">→</div>
-  <div class="flex w-[17%] flex-col items-center rounded-lg border border-unal-green/40 bg-unal-green/[0.08] px-1.5 py-2">
-    <span class="text-[11px] font-bold leading-tight text-unal-green">Observación PLM</span>
-    <span class="mt-0.5 text-[10px] leading-tight text-unal-gray/70">Ventana crítica ~2 h</span>
-  </div>
-  <div class="w-[4%] text-center text-[13px] font-bold text-unal-blue/50">→</div>
-  <div class="flex w-[17%] flex-col items-center rounded-lg border border-unal-blue/30 bg-unal-blue/[0.06] px-1.5 py-2">
-    <span class="text-[11px] font-bold leading-tight text-unal-blue">ICSI</span>
-    <span class="mt-0.5 text-[10px] leading-tight text-unal-gray/70">Inyección del espermatozoide</span>
+  <div class="flex flex-col rounded-xl border border-unal-green/35 bg-unal-green/[0.07] px-5 py-3">
+    <span class="text-[3.1rem] font-black leading-none tracking-tight text-unal-green">1 de 3</span>
+    <span class="mt-1 text-[11.5px] font-semibold leading-snug text-unal-gray/80">embriones puede llegar a término</span>
+    <span class="mt-0.5 text-[10px] text-unal-gray/50">Potencial con mejor selección ovocitaria</span>
   </div>
 </div>
-
-<!-- Dos columnas de contenido -->
-<div class="grid min-h-0 flex-1 grid-cols-2 gap-4">
-
-  <!-- Columna izquierda: No todos maduran -->
-  <div class="flex flex-col gap-2">
-    <p class="text-[11.5px] font-bold uppercase tracking-wide text-unal-blue">No todos los ovocitos maduran</p>
-    <ul class="list-disc space-y-1.5 pl-3 text-[13.5px] leading-snug text-unal-gray marker:text-unal-blue">
-      <li>En porcinos, ~<span class="font-semibold">50&nbsp;%</span> de los ovocitos <span class="font-semibold">no alcanzan</span> la etapa MII.</li>
-      <li>La maduración <span class="font-semibold">no es simultánea</span>: ovocitos del mismo cultivo maduran a distintas velocidades.</li>
-      <li>El estado <span class="font-semibold">GV</span> (vesícula germinal) indica inmadurez; la expulsión del cuerpo polar confirma MII — el estado óptimo para ICSI.</li>
-    </ul>
+<div class="flex flex-col gap-1.5">
+  <p class="mb-0.5 text-[11.5px] font-bold uppercase tracking-wide text-unal-gray">Éxito IVF por Edad Materna (SART 2024)</p>
+  <div class="flex-1 min-h-0">
+    <IvfLiveBirthByAgeChart />
   </div>
+  <div class="rounded-lg border-l-4 border-unal-blue/60 bg-unal-blue/[0.07] px-3 py-1.5 text-[0.72rem] leading-[1.45] text-unal-gray">
+    Del <span class="font-semibold">50 %</span> (&lt;35 años) al <span class="font-semibold text-red-500">4 %</span> (&gt;42 años) — el margen de éxito depende críticamente de la calidad del ovocito. <span class="font-semibold text-unal-blue">[2]</span>
+  </div>
+</div>
+</div>
+</div>
 
-  <!-- Columna derecha: La ventana es estrecha -->
-  <div class="flex flex-col gap-2">
-    <p class="text-[11.5px] font-bold uppercase tracking-wide text-unal-blue">La ventana de observación es estrecha</p>
-    <ul class="list-disc space-y-1.5 pl-3 text-[13.5px] leading-snug text-unal-gray marker:text-unal-blue">
-      <li>El huso meiótico (spindle) emerge a las ~<span class="font-semibold">38–40 h</span> de cultivo.</li>
-      <li>La transición MI → MII + expulsión del cuerpo polar ocurre en <span class="font-semibold text-unal-blue">~2 horas</span>.</li>
-      <li>El cuerpo polar puede ser visible <span class="font-semibold">antes</span> de que el huso esté ensamblado — la presencia de CP sola no confirma MII <span class="font-semibold text-unal-blue">[36]</span>.</li>
-    </ul>
-    <div class="mt-1 rounded-lg border-l-4 border-unal-blue/60 bg-unal-blue/[0.07] px-3 py-1.5 text-[0.72rem] leading-[1.45] text-unal-gray">
-      <span class="font-semibold">En la práctica:</span> si el observador no está presente en la ventana exacta, la oportunidad de confirmar MII se pierde.
+<div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
+  <img src="../images/logos/gpima_logo.png" alt="GPIMA" class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6" />
+  <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
+</div>
+
+<!--
+En la industria porcina, la eficiencia de la producción in vitro sigue siendo un desafío: según
+Chen y otros (2022), solo 1 de cada 5 embriones producidos in vitro llega a término. Técnicas
+avanzadas de selección pueden elevar eso a 1 de cada 3 — lo que evidencia el impacto de mejorar la identificación del ovocito en el momento correcto. Este es precisamente el modelo experimental del trabajo.
+
+En medicina humana, el impacto es aún más evidente: según el reporte preliminar de Sociedad de Reproducción Asistida de los Estados Unidos para 2024, la probabilidad de éxito cae drásticamente con la edad materna — del 50% en menores de 35 años, a apenas el 4% en mayores de 42 con sus propios óvulos.
+
+En ambos contextos, el resultado depende críticamente de identificar el ovocito en el estado
+óptimo de madurez. Para entender por qué eso es tan difícil, veamos en detalle cómo transcurre el proceso de maduración in vitro.
+-->
+
+---
+transition: slide-left
+deckSection: justificacion
+---
+
+<div class="slide-deck-shell">
+<header class="mb-3 text-left">
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Límites del criterio clínico actual</h1>
+  <div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
+</header>
+<div class="mb-4 flex items-stretch">
+  <div class="flex w-[16%] flex-col items-center justify-center rounded-lg border border-unal-blue/25 bg-unal-blue/[0.05] px-2 py-2.5 text-center">
+    <span class="text-[12px] font-bold leading-tight text-unal-blue">Obtención</span>
+    <span class="mt-0.5 text-[11px] leading-tight text-unal-gray/55">Ovario</span>
+  </div>
+  <div class="flex w-[5%] items-center justify-center text-[14px] font-bold text-unal-blue/35">→</div>
+  <div class="flex w-[16%] flex-col items-center justify-center rounded-lg border border-unal-blue/25 bg-unal-blue/[0.05] px-2 py-2.5 text-center">
+    <span class="text-[12px] font-bold leading-tight text-unal-blue">Denudación</span>
+    <span class="mt-0.5 text-[11px] leading-tight text-unal-gray/55">Cél. granulosa</span>
+  </div>
+  <div class="flex w-[5%] items-center justify-center text-[14px] font-bold text-unal-blue/35">→</div>
+  <div class="flex w-[16%] flex-col items-center justify-center rounded-lg border border-unal-blue/25 bg-unal-blue/[0.05] px-2 py-2.5 text-center">
+    <span class="text-[12px] font-bold leading-tight text-unal-blue">Cultivo IVM</span>
+    <span class="mt-0.5 text-[11px] leading-tight text-unal-gray/55">40–48 h</span>
+  </div>
+  <div class="flex w-[5%] items-center justify-center text-[14px] font-bold text-unal-green/60">→</div>
+  <div class="flex w-[22%] flex-col items-center justify-center rounded-xl border-2 border-unal-green bg-unal-green/[0.09] px-3 py-2.5 text-center shadow-sm ring-1 ring-unal-green/20">
+    <carbon-microscope class="mb-1 text-[1.5rem] text-unal-green" />
+    <span class="text-[12.5px] font-extrabold leading-tight tracking-wide text-unal-green">Observación PLM</span>
+    <span class="mt-1 rounded-full bg-unal-green/20 px-2 py-0.5 text-[10.5px] font-bold text-unal-green">⏱ ~2 h</span>
+  </div>
+  <div class="flex w-[5%] items-center justify-center text-[14px] font-bold text-unal-blue/35">→</div>
+  <div class="flex w-[10%] flex-col items-center justify-center rounded-lg border border-unal-blue/25 bg-unal-blue/[0.05] px-2 py-2.5 text-center">
+    <span class="text-[12px] font-bold leading-tight text-unal-blue">ICSI</span>
+  </div>
+</div>
+<div class="grid min-h-0 flex-1 grid-cols-2 gap-5">
+  <div class="flex flex-col gap-3">
+    <div class="text-[11.5px] font-bold uppercase tracking-widest text-unal-gray/50">Eficiencia actual · porcinos <span class="font-semibold">[1]</span></div>
+    <div class="flex items-end gap-3 rounded-xl border border-unal-blue/25 bg-unal-blue/[0.05] px-5 py-3">
+      <span class="text-[3.8rem] font-black leading-none tracking-tight text-unal-blue">~50%</span>
+      <div class="mb-1 flex flex-col gap-0.5">
+        <span class="text-[13.5px] font-semibold leading-tight text-unal-gray">no alcanzan MII</span>
+        <span class="text-[11.5px] leading-tight text-unal-gray/45">Maduración no simultánea</span>
+      </div>
+    </div>
+    <div class="flex items-center gap-2.5 rounded-lg border border-unal-green/35 bg-unal-green/[0.07] px-4 py-2.5">
+      <carbon-arrow-up class="shrink-0 text-[1.3rem] text-unal-green" />
+      <div class="flex flex-col">
+        <span class="text-[13.5px] font-semibold leading-tight text-unal-gray">Con selección avanzada</span>
+        <span class="text-[12.5px] leading-tight text-unal-gray/60"><span class="font-bold text-unal-green">1 de 3</span> llega a término</span>
+      </div>
     </div>
   </div>
-
+  <div class="flex flex-col gap-2.5">
+    <div class="text-[11.5px] font-bold uppercase tracking-widest text-unal-gray/50">Señal vs. Certeza</div>
+    <div class="grid min-h-0 flex-1 grid-cols-2 gap-2.5">
+      <div class="flex flex-col gap-1.5 rounded-xl border border-red-300/50 bg-red-50/60 px-3 py-2.5">
+        <div class="flex items-center gap-1.5">
+          <carbon-warning class="shrink-0 text-[1.1rem] text-red-400" />
+          <span class="text-[12.5px] font-extrabold uppercase tracking-wide text-red-500">Cuerpo polar</span>
+        </div>
+        <span class="text-[13px] font-semibold leading-snug text-unal-gray">Señal insuficiente</span>
+        <span class="text-[12px] leading-snug text-unal-gray/60">Aparece <span class="font-semibold">antes</span> del huso</span>
+        <span class="text-[12px] leading-snug text-unal-gray/60"><span class="font-semibold text-red-500">No confirma</span> MII <span class="font-semibold">[36]</span></span>
+      </div>
+      <div class="flex flex-col gap-1.5 rounded-xl border border-unal-green/40 bg-unal-green/[0.07] px-3 py-2.5">
+        <div class="flex items-center gap-1.5">
+          <carbon-checkmark-filled class="shrink-0 text-[1.1rem] text-unal-green" />
+          <span class="text-[12.5px] font-extrabold uppercase tracking-wide text-unal-green">Huso meiótico</span>
+        </div>
+        <span class="text-[13px] font-semibold leading-snug text-unal-gray">Certeza de MII</span>
+        <span class="text-[12px] leading-snug text-unal-gray/60">Emerge a las <span class="font-semibold">38–40 h</span></span>
+        <span class="text-[12px] leading-snug text-unal-gray/60">Ventana: <span class="font-semibold text-unal-green">~2 h</span></span>
+      </div>
+    </div>
+    <div class="flex items-start gap-2 rounded-lg border-l-4 border-unal-blue/60 bg-unal-blue/[0.07] px-3 py-2">
+      <carbon-time class="mt-0.5 shrink-0 text-[1rem] text-unal-blue" />
+      <span class="text-[0.82rem] leading-[1.45] text-unal-gray">Sin observador en la ventana exacta, la oportunidad <span class="font-semibold">se pierde</span>.</span>
+    </div>
+  </div>
 </div>
 </div>
 
@@ -199,86 +272,11 @@ deckSection: justificacion
 </div>
 
 <!--
-El problema que motiva este trabajo tiene una dimensión clínica muy concreta: hay una ventana de apenas dos horas para confirmar si un ovocito alcanzó el estado óptimo de madurez — y si ese momento se pierde, la oportunidad también. Para entender por qué eso importa, veamos el proceso de maduración in vitro.
+El ovocito se obtiene, se denudan sus células de granulosa, y se coloca en cultivo durante 40 a 48 horas. La ventana crítica de todo el proceso es la observación para la selección, ya veremos más adelantes los adelantos tecnológicos y por qué nosotros proponemos la observación por microscopía polarizada que tiene una ventana de dos horas. Y una vez se tiene un ovocito que se considera madura se pasa a ICSI o al proceso correspondiente.
 
-El proceso comienza con la obtención del ovario — generalmente del matadero en el contexto de
-investigación porcina — del que se extraen los ovocitos. Estos son denudados, eliminándoles las
-células de granulosa, y se colocan en cultivo a 37 grados, 5% de CO₂ y 6% de O₂, durante 40 a
-48 horas.
+En este proceso de maduración, por ejemplo los porcinos, cerca del 50% de los ovocitos no alcanza la maduración deseada, y esta no es simultánea.
 
-En ese tiempo, el ovocito debe progresar hasta metafase II — el estado óptimo para la ICSI. Pero
-la maduración no es simultánea: distintos ovocitos del mismo cultivo progresan a ritmos
-diferentes, y no todos llegan a MII.
+Sin PLM el marcador principal de maduración es el cuerpo polar, clínicamente se usa como indicador de maduración — pero el cuerpo polar aparece antes de que el huso meiótico esté ensamblado, y por sí solo no confirma MII. En cambio si somos capaces de integrar tecnología que ayude a detectar el huso meiótico, visible durante esas dos horas, podemos dar una mayor certeza de efectividad del uso del ovocito.
 
-Lo más crítico es el indicador definitivo de MII: el huso meiótico, que emerge alrededor de las
-38 a 40 horas y es visible durante apenas 2 horas. Un dato clave: el cuerpo polar puede aparecer
-antes de que el huso esté completamente ensamblado, lo que hace que su presencia sola no sea
-suficiente para confirmar la madurez. Esa es exactamente la ventana que necesitamos capturar.
--->
-
----
-transition: slide-left
-deckSection: justificacion
----
-
-<div class="slide-deck-shell">
-<header class="mb-1.5 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Relevancia clínica e industrial</h1>
-  <div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
-</header>
-<p class="mb-2 max-w-4xl hyphens-auto text-justify text-[0.925rem] font-normal leading-snug text-unal-gray">
-  La identificación del estado de madurez del ovocito es un nudo crítico tanto en la
-  <span class="font-semibold text-unal-blue">reproducción animal</span> como en la
-  <span class="font-semibold text-unal-blue">medicina humana</span> — en ambos contextos, el resultado depende de actuar en el momento óptimo.
-</p>
-<div class="grid min-h-0 flex-1 grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:gap-6">
-<div class="min-w-0">
-<p class="mb-1 text-[11.5px] !font-bold uppercase tracking-wide text-unal-blue">
-  Industria porcina (Chen et al., 2022)<span class="ml-0.5 font-semibold normal-case tracking-normal text-unal-blue">[1]</span>
-</p>
-<ul class="list-disc space-y-1 pl-3 text-[14px] leading-snug text-unal-gray marker:text-unal-blue">
-  <li>Solo <span class="font-semibold">1 de cada 5</span> embriones producidos in vitro llega a término.</li>
-  <li>Técnicas avanzadas de selección pueden elevar esta proporción a <span class="font-semibold">1 de cada 3</span>.</li>
-  <li>La selección embrionaria in vitro (IVP) es el <span class="font-semibold text-unal-blue">nudo crítico</span> para optimizar las tasas de transferencia.</li>
-</ul>
-<div class="mt-2 rounded-lg border-l-4 border-unal-blue/60 bg-unal-blue/[0.07] px-3 py-1.5 text-[0.72rem] leading-[1.45] text-unal-gray">
-  <span class="font-semibold">Modelo experimental del trabajo:</span> ovocitos porcinos madurados in vitro bajo microscopía polarizada.
-</div>
-</div>
-<div class="min-w-0">
-<p class="mb-0.5 text-[11.5px] !font-bold uppercase tracking-wide text-unal-gray">
-  Tasas de éxito de IVF en EE.&nbsp;UU. por edad materna
-</p>
-<figure class="m-0 min-w-0 max-w-full">
-<IvfLiveBirthByAgeChart />
-<figcaption lang="es" class="plm-figcaption">
-  <span class="font-semibold text-unal-gray">Fig. 1.</span>
-  Tasas aprox. de nacidos vivos por edad materna (EE. UU., 2024&nbsp;—&nbsp;preliminar).
-  <span class="ml-0.5 font-semibold text-unal-blue">[2]</span>
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
-  <img src="../images/logos/gpima_logo.png" alt="GPIMA" class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6" />
-  <img src="../images/logos/unal_logo_lateral.png" alt="Universidad Nacional de Colombia" class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14" />
-</div>
-
-<!--
-Para entender la magnitud del problema, miremos los números en dos contextos donde la madurez del
-ovocito es determinante.
-
-En la industria porcina, la eficiencia de la producción in vitro sigue siendo un desafío: según
-Chen et al. (2022), solo 1 de cada 5 embriones producidos in vitro llega a término. Técnicas
-avanzadas de selección pueden elevar eso a 1 de cada 3 — lo que evidencia el impacto de mejorar
-la identificación del ovocito en el momento correcto. Este es precisamente el modelo experimental
-del trabajo.
-
-En medicina humana, el impacto es aún más evidente: según el reporte preliminar de SART para
-2024, la probabilidad de éxito cae drásticamente con la edad materna — del 50% en menores de 35
-años, a apenas el 4% en mayores de 42 con sus propios óvulos.
-
-En ambos contextos, el resultado depende críticamente de identificar el ovocito en el estado
-óptimo de madurez. Ese es el punto de partida de este trabajo.
+Esto hace que la automatización de la observación PLM no sea solo conveniente — es una necesidad.
 -->

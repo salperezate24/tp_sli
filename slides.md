@@ -2,7 +2,8 @@
 theme: seriph
 colorSchema: light
 background: #F2F2F0
-title: Desarrollo de un modelo de red neuronal profunda para la identificación de ovocitos y sus características a través de microscopía polarizada
+title: Desarrollo de un modelo de red neuronal profunda para la identificación
+  de ovocitos y sus características a través de microscopía polarizada
 # Pie de página: visible desde la diapositiva 2 (portada sin pie; ver `ThesisFooter.vue`)
 shortAuthor: Salomón Pérez Atencia
 shortInstitute: Facultad de Minas
@@ -18,11 +19,7 @@ transition: slide-left
 fonts:
   sans: 'IBM Plex Sans'
   provider: google
-
 ---
-
-
-
 
 <div class="flex h-full flex-col text-center">
 
@@ -90,9 +87,9 @@ const formattedDate = new Intl.DateTimeFormat('es-CO', {
 </div>
 
 <!--
-Buenos días, apreciados jurados, señoras y señores. Mi nombre es Salomón Pérez Atencia, ingeniero mecánico, y soy el autor de la tesis titulada "Desarrollo de un modelo de red neuronal profunda para la identificación de ovocitos y sus características a través de microscopía polarizada" para optar al título de Magíster en Ingeniería - Analítica.
+Buenos días, apreciados jurados, señoras y señores. Mi nombre es Salomón Pérez Atencia, ingeniero mecánico. Autor de la tesis titulada "Desarrollo de un modelo de red neuronal profunda para la identificación de ovocitos y sus características a través de microscopía polarizada" para optar al título de Maestría en Ingeniería - Analítica.
 
-Antes de comenzar, quiero agradecer especialmente a los jurados por su tiempo, por la lectura del documento y por estar presentes hoy en la defensa.
+Agradezco a los jurados por su tiempo, por la lectura del documento y por estar presentes hoy en la defensa.
 
 El director de esta tesis es el profesor Alejandro Restrepo Martínez, y este trabajo se realizó en el marco del Grupo de Promoción e Investigación en Mecánica Aplicada (GPIMA) de la Facultad de Minas de la Universidad Nacional de Colombia, Sede Medellín.
 -->
@@ -166,7 +163,7 @@ function goToSection(id) {
 <!--
 La presentación del día de hoy está estructurada de la siguiente manera:
 
-Comenzaremos con la justificación y relevancia de este trabajo; luego se presentará el marco teórico del problema de investigación, seguido por el estado del arte, a partir de estos estudios y conocimientos se planteará la hipótesis de investigación, se presentarán los objetivos, se explicará la metodología, los resultados, y terminaremos con las conclusiones y un poco sobre el trabajo futuro.
+Comenzaremos con la justificación y relevancia de este trabajo; luego presentaremos el marco teórico del problema de investigación, seguido por el estado del arte, a partir de estos estudios y conocimientos se plantea la hipótesis de investigación, se presentarán los objetivos, se explicará la metodología, los resultados, y terminaremos con las conclusiones y un poco sobre el trabajo futuro.
 
 Comencemos con la justificación.
 -->

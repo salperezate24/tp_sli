@@ -124,9 +124,15 @@ Los hex solo aparecen en `uno.config.ts` (definición canónica) y en comentario
 
 Los slides tienen altura fija sin scroll. Estas reglas evitan desbordamiento vertical/horizontal:
 
+**⚠️ Regla crítica — HTML en archivos `.md` de Slidev (markdown-it):**
+- **Nunca dejar líneas en blanco entre etiquetas HTML hermanas** dentro de un bloque HTML. El parser de markdown-it termina el bloque HTML al encontrar una línea en blanco; todo lo que sigue queda fuera del contenedor padre y se muestra como HTML crudo o texto literal en el slide.
+- Correcto: etiquetas `<div>`, `<span>`, `</div>` consecutivas sin líneas vacías entre ellas.
+- Si necesitas separación visual en el código fuente, usa un comentario `<!-- ... -->` en la misma línea o sin línea en blanco previa.
+- Esta regla aplica también a `<p>` dentro de `<div>`: si hay línea en blanco después de `</p>`, el siguiente `<div>` queda huérfano.
+
 **Texto dentro de contenedores flex:**
-- Usar `<span>` en lugar de `<p>` — los `<p>` tienen `margin: 1em 0` por defecto que rompe el layout.
-- Si se necesita usar `<p>`, agregar `my-0` explícitamente.
+- Usar `<span>` o `<div>` en lugar de `<p>` — los `<p>` tienen `margin: 1em 0` por defecto que rompe el layout, y además son más propensos a romper el contexto HTML del parser.
+- Si se necesita usar `<p>`, agregar `my-0` explícitamente **y** no dejar línea en blanco después del cierre `</p>`.
 - Para agrupar líneas de texto: `<div class="flex flex-col gap-0.5 leading-none">` con `<span>` hijos.
 
 **Contenedores flexbox:**

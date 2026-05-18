@@ -46,8 +46,13 @@ Es posible <span class="font-semibold text-unal-blue">desarrollar</span> una red
 </div>
 
 <!--
-La pregunta tiene dos términos que quiero precisar antes de continuar. Primero: "identificar distintos estados de maduración". En microscopía PLM, la detección del huso meiótico no es un prerrequisito para determinar el estado de madurez — es la determinación del estado de madurez. Huso presente en la imagen equivale a MII, maduro, apto para ICSI. Huso ausente equivale a GV o MI, no maduro. No hay una capa de inferencia adicional entre detección y diagnóstico. Segundo: "video en vivo". Esto no significa integración directa con el controlador del microscopio en tiempo real — eso es ingeniería de sistema y queda como trabajo futuro. Significa que el tiempo de inferencia de los modelos, siete punto cuatro milisegundos por imagen en YOLOv9m, es sustancialmente inferior al período de trama de la cámara PLM. La arquitectura es compatible con ese escenario desde el punto de vista computacional.
+Todo esto nos permite plantear la siguiente pregunta de investigación.
 
-La hipótesis propone que sí es posible. Al modificar parámetros clave de la red — el formato de imagen de entrada, la función de pérdida, las técnicas de predicción de cajas y los módulos de atención — puede desarrollarse un detector capaz de localizar y clasificar el ovocito, el huso meiótico y sus características birrefringentes, permitiendo caracterizar el estado de madurez sin manipular la muestra.
+Y aquí quiero precisar que  la detección del huso meiótico o no es la determinación del estado de madurez. Huso presente en la imagen equivale a MII, maduro, apto para ICSI. Huso ausente equivale a GV (vesicula germinal) o MI, no maduro. 
+
+La hipótesis propone que es posible al modificar parámetros clave de la red — el formato de imagen de entrada, la arquitectura, hiperparametros — puede desarrollarse un detector capaz de localizar y clasificar el huso meiótico permitiendo caracterizar el estado de madurez sin manipular la muestra.
+
+
+-- esto????
+No hay una capa de inferencia adicional entre detección y diagnóstico. Segundo: "video en vivo". Esto no significa integración directa con el controlador del microscopio en tiempo real — eso es ingeniería de sistema y queda como trabajo futuro. Significa que el tiempo de inferencia de los modelos, siete punto cuatro milisegundos por imagen en YOLOv9m, es sustancialmente inferior al período de trama de la cámara PLM. La arquitectura es compatible con ese escenario desde el punto de vista computacional.
 -->
-

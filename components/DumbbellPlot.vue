@@ -86,6 +86,14 @@ const ticks = computed(() => {
   return result
 })
 
+const minorTicks = computed(() => {
+  const step = 0.05
+  const result: number[] = []
+  for (let t = props.xMin; t <= props.xMax + 0.001; t = Math.round((t + step) * 1000) / 1000)
+    result.push(t)
+  return result.filter(t => !ticks.value.includes(t))
+})
+
 const maxDeltaIndex = computed(() => {
   let maxD = -Infinity, idx = -1
   props.rows.forEach((row, i) => {
@@ -129,11 +137,26 @@ function trackWidth(row: DumbbellRow): number {
   >
     <!-- ── Background grid lines ─────────────────────────────────────────── -->
     <line
+      v-for="t in minorTicks"
+      :key="`mg${t}`"
+      :x1="xPx(t)" :x2="xPx(t)"
+      :y1="PAD_TOP - 4" :y2="svgH - PAD_BOT"
+      stroke="#C8C4BE" stroke-width="0.5"
+    />
+    <line
       v-for="t in ticks"
       :key="`g${t}`"
       :x1="xPx(t)" :x2="xPx(t)"
       :y1="PAD_TOP - 4" :y2="svgH - PAD_BOT"
-      stroke="#ECEAE8" stroke-width="1"
+      stroke="#A09A92" stroke-width="1"
+    />
+    <!-- ── Row rules (horizontal) — guías de lectura por fila ────────────── -->
+    <line
+      v-for="(y, i) in rowYs"
+      :key="`ry${i}`"
+      :x1="CHART_L" :x2="CHART_L + CHART_W"
+      :y1="y" :y2="y"
+      stroke="#C8C4BE" stroke-width="0.5" stroke-dasharray="3 4"
     />
 
     <!-- ── Legend ────────────────────────────────────────────────────────── -->

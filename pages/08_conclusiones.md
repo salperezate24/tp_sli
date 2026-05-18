@@ -15,13 +15,10 @@ title: Conclusiones
       <p class="my-0 mb-1.5 border-b border-gray-200/90 pb-1 text-[11px] font-bold uppercase tracking-wider text-unal-blue sm:text-xs">
         Cumplimiento de objetivos
       </p>
-      <p class="my-0 mb-2 text-[0.74rem] leading-[1.38] text-unal-gray sm:text-sm">
-        El <span class="font-semibold text-unal-blue">objetivo general</span> se cumplió en tres etapas: <span class="font-semibold">(1)</span> generación de la base sintética, <span class="font-semibold">(2)</span> preentrenamiento y transferencia en imágenes PLM reales, y <span class="font-semibold">(3)</span> desarrollo y evaluación de modelos con módulos de atención.
-      </p>
-      <ul class="list-disc space-y-1 pl-4.5 text-[0.74rem] leading-[1.35] text-unal-gray marker:font-semibold marker:text-unal-blue sm:text-sm">
-        <li><span class="font-semibold text-unal-blue">OE 1:</span> base sintética <code class="rounded bg-gray-100/90 px-1 py-0.5 font-mono text-[0.65rem] text-unal-gray">oocyte_synthetic_2025b</code> — 526.392 imágenes, cuatro estructuras, etiquetado automático.</li>
-        <li><span class="font-semibold text-unal-blue">OE 2:</span> método sistemático de evaluación de arquitecturas — modelos estándar y con <span class="font-semibold">módulos de atención</span>.</li>
-        <li><span class="font-semibold text-unal-blue">OE 3:</span> evaluación exhaustiva con transferencia <span class="font-semibold">sintético → real</span> y análisis comparativo de 13 configuraciones.</li>
+      <ul class="list-disc space-y-1.5 pl-4.5 text-[0.74rem] leading-[1.38] text-unal-gray marker:font-semibold marker:text-unal-blue sm:text-sm">
+        <li><span class="font-semibold text-unal-blue">OE 1:</span> generación de <code class="rounded bg-gray-100/90 px-1 py-0.5 font-mono text-[0.65rem] text-unal-gray">oocyte_synthetic_2025b</code> desde cero — 526.392 imágenes sintéticas con etiquetado automático de cuatro estructuras estructurales.</li>
+        <li><span class="font-semibold text-unal-blue">OE 2:</span> preentrenamiento con base sintética y transferencia a imágenes PLM reales — método sistemático de evaluación de arquitecturas estándar y con <span class="font-semibold">módulos de atención</span>.</li>
+        <li><span class="font-semibold text-unal-blue">OE 3:</span> evaluación exhaustiva del esquema <span class="font-semibold">sintético → real</span> con análisis comparativo de 13 configuraciones YOLO (v8–v12) y RT-DETR.</li>
       </ul>
     </div>
     <div class="rounded-xl border border-gray-300/60 border-l-4 border-l-unal-green bg-white/95 px-4 pb-2 pt-1 shadow-md ring-1 ring-gray-900/5 backdrop-blur-sm sm:px-5">
@@ -58,25 +55,25 @@ title: Contribuciones
       <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Contribuciones</h1>
       <div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
     </header>
-    <div class="flex w-full flex-col gap-2 pt-1 text-left">
-    <div class="rounded-xl border border-gray-300/60 border-l-4 border-l-unal-blue bg-white/95 px-4 pb-2 pt-1 shadow-md ring-1 ring-gray-900/5 backdrop-blur-sm sm:px-5">
-      <p class="my-0 mb-1.5 border-b border-gray-200/90 pb-1 text-xs uppercase tracking-wider text-unal-blue" style="font-weight:800">
+    <div class="flex w-full flex-col gap-1.5 pt-0.5 text-left">
+    <div class="rounded-xl border border-gray-300/60 border-l-4 border-l-unal-blue bg-white/95 px-4 pb-1.5 pt-1 shadow-md ring-1 ring-gray-900/5 backdrop-blur-sm sm:px-5">
+      <p class="my-0 mb-1 border-b border-gray-200/90 pb-0.5 text-[11px] uppercase tracking-wider text-unal-blue" style="font-weight:800">
         Hallazgos
       </p>
-      <ul class="list-disc space-y-1 pl-4.5 text-[0.72rem] leading-[1.35] text-unal-gray marker:font-semibold marker:text-unal-blue sm:text-[0.82rem]">
-        <li><span class="font-semibold text-unal-blue">Transferencia esencial:</span> la transferencia de aprendizaje es esencial — cuerpo polar 0,012 → 0,516 <span class="font-semibold">(+0,504)</span>; huso meiótico +0,579; ZP y citoplasma ≥ 0,975.</li>
-        <li><span class="font-semibold text-unal-blue">Módulos de atención:</span> ventaja significativa sin ajuste fino. En video, CBAM detectó el citoplasma establemente donde YOLOv9m falló.</li>
-        <li><span class="font-semibold text-unal-blue">RT-DETR</span> competitivo en métricas estáticas; <span class="font-semibold text-unal-blue">YOLOv9m-CBAM</span> es la referencia clínica — generalización sin TL <span class="font-semibold">+14,2 pp</span>, sin falsos positivos en 660 fotogramas, confianza estable.</li>
+      <ul class="list-disc space-y-0.5 pl-4.5 text-[0.72rem] leading-[1.35] text-unal-gray marker:font-semibold marker:text-unal-blue">
+        <li><span class="font-semibold text-unal-blue">Transferencia esencial:</span> cuerpo polar 0,012 → 0,516 <span class="font-semibold">(+0,504)</span>; huso meiótico +0,579; ZP y citoplasma ≥ 0,975.</li>
+        <li><span class="font-semibold text-unal-blue">Módulos de atención:</span> ventaja clara en generalización sin TL — YOLOv9m-CBAM alcanzó mAP50 = 0,470 vs 0,328 del modelo base. Con TL, detectó citoplimit establemente en video donde YOLOv9m falló.</li>
+        <li><span class="font-semibold text-unal-blue">RT-DETR</span> competitivo en métricas estáticas; su mayor latencia limita el uso en tiempo real frente a los modelos YOLO.</li>
       </ul>
     </div>
-    <div class="rounded-xl border border-gray-300/60 border-l-4 border-l-unal-green bg-white/95 px-4 pb-2 pt-1 shadow-md ring-1 ring-gray-900/5 backdrop-blur-sm sm:px-5">
-      <p class="my-0 mb-1.5 border-b border-gray-200/90 pb-1 text-xs uppercase tracking-wider text-unal-blue" style="font-weight:800">
+    <div class="rounded-xl border border-gray-300/60 border-l-4 border-l-unal-green bg-white/95 px-4 pb-1.5 pt-1 shadow-md ring-1 ring-gray-900/5 backdrop-blur-sm sm:px-5">
+      <p class="my-0 mb-1 border-b border-gray-200/90 pb-0.5 text-[11px] uppercase tracking-wider text-unal-blue" style="font-weight:800">
         Aportes
       </p>
-      <ul class="list-disc space-y-1 pl-4.5 text-[0.72rem] leading-[1.35] text-unal-gray marker:font-semibold marker:text-unal-blue sm:text-[0.82rem]">
+      <ul class="list-disc space-y-0.5 pl-4.5 text-[0.72rem] leading-[1.35] text-unal-gray marker:font-semibold marker:text-unal-blue">
         <li>Base sintética <code class="rounded bg-gray-100/90 px-1 py-0.5 font-mono text-[0.63rem] text-unal-gray">oocyte_synthetic_2025b</code>: +526.000 imágenes con etiquetado automático — recurso público inexistente hasta la fecha.</li>
         <li>Marco <span class="font-semibold text-unal-blue">sintético → real</span> demostrado efectivo para imágenes PLM biomédicas con datos reales escasos.</li>
-        <li>Referencia comparativa de <span class="font-semibold">13 configuraciones</span> YOLO/RT-DETR; <span class="font-semibold text-unal-blue">YOLOv9m-CBAM</span> como referencia clínica en PLM.</li>
+        <li>Benchmark comparativo de <span class="font-semibold">13 configuraciones</span> YOLO (v8–v12) y RT-DETR — <span class="font-semibold text-unal-blue">YOLOv9m</span> modelo óptimo en métricas estáticas; <span class="font-semibold text-unal-blue">YOLOv9m-CBAM</span> referencia para aplicación clínica dinámica.</li>
         <li>Artículo en preparación sobre detección con módulos de atención en imágenes PLM de ovocitos.</li>
       </ul>
     </div>

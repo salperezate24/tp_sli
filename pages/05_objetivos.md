@@ -2,6 +2,7 @@
 transition: slide-up
 deckSection: objetivos
 ---
+
 <div class="flex h-full min-h-0 flex-col pb-[8.5rem] pr-2 sm:pb-[9rem]">
   <div class="mx-auto w-full max-w-6xl text-left">
     <header class="mb-2 sm:mb-3">
@@ -28,6 +29,8 @@ deckSection: objetivos
 <!--
 Con la hipótesis planteada, el objetivo general del trabajo es desarrollar un modelo de red neuronal profunda para la identificación de ovocitos y algunas de sus características morfológicas a partir de imágenes de microscopía polarizada.
 
+-- esto no ???
+
 Este objetivo integra los tres ejes que hemos construido a lo largo del marco teórico: el conocimiento del dominio —el ovocito y sus estructuras birrefringentes—, la herramienta —una red de detección de objetos—, y el dato de entrada —imágenes PLM. Los tres objetivos específicos que vemos en la siguiente diapositiva descomponen este objetivo en etapas concretas.
 -->
 
@@ -35,6 +38,7 @@ Este objetivo integra los tres ejes que hemos construido a lo largo del marco te
 transition: slide-left
 deckSection: objetivos
 ---
+
 <div class="flex h-full min-h-0 flex-col pb-[8.5rem] pr-2 sm:pb-[9rem]">
   <div class="mx-auto w-full max-w-6xl text-left">
     <header class="mb-2 sm:mb-3">
@@ -61,7 +65,7 @@ deckSection: objetivos
 </div>
 
 <!--
-Los tres objetivos específicos traducen el objetivo general en etapas de trabajo concretas.
+Y los 3 objetivos especificos serian:
 
 El primero es diseñar el método para generar la base de datos de imágenes PLM de ovocitos — responde directamente a la ausencia de datos públicos identificada en el estado del arte, y es donde los datos sintéticos tienen su rol central.
 

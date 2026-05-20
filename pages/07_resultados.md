@@ -86,42 +86,46 @@ deckSection: resultados
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Preentrenamiento sintético</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
-<div class="grid min-h-0 flex-1 grid-cols-2 gap-5">
-  <!-- Panel izquierdo: preentrenamiento sintético -->
-  <div class="flex flex-col gap-2 rounded-lg border border-unal-blue/30 bg-unal-blue/5 px-3.5 py-3">
-    <p class="text-[0.74rem] !font-bold uppercase tracking-wide text-unal-blue">Etapa 1 — Preentrenamiento sintético</p>
-    <ul class="list-none space-y-1.5 text-[0.88rem] leading-snug text-unal-gray">
-      <li class="flex gap-2">
-        <span class="shrink-0 text-unal-green">▸</span>
-        <span>YOLO (10): <span class="font-semibold text-unal-blue">mAP50 = 0,995</span> · mAP50-95 = 0,995 · P = 1,0 · R = 1,0</span>
-      </li>
-      <li class="flex gap-2">
-        <span class="shrink-0 text-unal-green">▸</span>
-        <span>RT-DETR (3): mAP50 = 0,995 · mAP50-95 = 0,986–0,992 · P ≈ 1,0 · R ≈ 1,0</span>
-      </li>
-      <li class="flex gap-2">
-        <span class="shrink-0 text-unal-green">▸</span>
-        <span>Convergencia: 61–80 épocas (YOLO) · 86–136 (RT-DETR)</span>
-      </li>
-    </ul>
+<div class="flex min-h-0 flex-1 flex-col gap-3">
+  <div class="text-[0.73rem] leading-snug text-unal-gray/70">Todos los modelos convergieron sobre datos sintéticos (mAP50 ≈ 0,995). El <span class="font-semibold text-unal-gray">experimento control</span> evalúa generalización directa a imágenes reales <span class="font-semibold text-unal-gray">sin transferencia de aprendizaje</span>.</div>
+  <div class="overflow-hidden rounded-lg border border-gray-200">
+    <table class="w-full border-collapse text-[0.82rem] text-unal-gray">
+      <thead>
+        <tr class="bg-unal-blue/10 text-left">
+          <th class="px-3 py-2 font-semibold text-unal-blue">Grupo</th>
+          <th class="px-3 py-2 text-center font-semibold text-unal-blue">N</th>
+          <th class="px-3 py-2 text-center font-semibold text-unal-blue">mAP50 Sintético</th>
+          <th class="px-3 py-2 text-center font-semibold text-unal-blue">mAP50 Control</th>
+          <th class="px-3 py-2 text-center font-semibold text-unal-blue">mAP50-95 Control</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-gray-100 bg-white">
+          <td class="px-3 py-2.5 font-medium">YOLO estándar</td>
+          <td class="px-3 py-2.5 text-center text-unal-gray/70">10</td>
+          <td class="px-3 py-2.5 text-center font-semibold text-unal-green">0,995</td>
+          <td class="px-3 py-2.5 text-center text-orange-600">0,195–0,521</td>
+          <td class="px-3 py-2.5 text-center text-unal-gray/80">0,079–0,346</td>
+        </tr>
+        <tr class="border-t border-gray-100 bg-gray-50/50">
+          <td class="px-3 py-2.5 font-medium">RT-DETR</td>
+          <td class="px-3 py-2.5 text-center text-unal-gray/70">3</td>
+          <td class="px-3 py-2.5 text-center font-semibold text-unal-green">0,995</td>
+          <td class="px-3 py-2.5 text-center text-orange-600">0,348–0,503</td>
+          <td class="px-3 py-2.5 text-center text-unal-gray/80">0,191–0,267</td>
+        </tr>
+        <tr class="border-t border-gray-100 bg-white">
+          <td class="px-3 py-2.5 font-medium">Redes con atención</td>
+          <td class="px-3 py-2.5 text-center text-unal-gray/70">4</td>
+          <td class="px-3 py-2.5 text-center font-semibold text-unal-green">0,995</td>
+          <td class="px-3 py-2.5 text-center text-orange-600">0,319–0,499</td>
+          <td class="px-3 py-2.5 text-center text-unal-gray/80">0,183–0,309</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-  <!-- Panel derecho: experimento control -->
-  <div class="flex flex-col gap-2 rounded-lg border border-gray-300 bg-gray-50 px-3.5 py-3">
-    <p class="text-[0.74rem] !font-bold uppercase tracking-wide text-unal-gray">Experimento control — Sin transferencia de aprendizaje</p>
-    <ul class="list-none space-y-1.5 text-[0.88rem] leading-snug text-unal-gray">
-      <li class="flex gap-2">
-        <span class="shrink-0 text-red-400">▸</span>
-        <span>Estándar (13): mAP50 = <span class="font-semibold text-red-500">0,195–0,521</span> · mAP50-95 = 0,079–0,346</span>
-      </li>
-      <li class="flex gap-2">
-        <span class="shrink-0 text-red-400">▸</span>
-        <span>Redes desarrolladas (4): mAP50 = <span class="font-semibold text-red-500">0,319–0,499</span> · mAP50-95 = 0,183–0,309</span>
-      </li>
-      <li class="flex gap-2">
-        <span class="shrink-0 text-unal-green">▸</span>
-        <span>Mejor: <span class="font-semibold">YOLOv9m-Triple Attention</span> — mAP50 = 0,499 vs YOLOv9m = 0,328</span>
-      </li>
-    </ul>
+  <div class="rounded-lg border-l-4 border-unal-green/60 bg-unal-green/[0.07] px-3 py-2 text-[0.78rem] leading-[1.45] text-unal-gray">
+    <span class="font-semibold text-[#3a6a18]">Mejor resultado en control:</span> YOLOv9m-Triple Attention alcanzó mAP50 = <span class="font-semibold">0,499</span> — frente a mAP50 = 0,328 del YOLOv9m estándar — sin ningún dato real de ajuste. Los módulos de atención transfieren mejor entre dominios.
   </div>
 </div>
 </div>
@@ -166,38 +170,59 @@ const dumbbell1Rows = [
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Transferencia de aprendizaje en imágenes reales</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
-<div class="flex min-h-0 flex-1 flex-col gap-2">
-  <div class="w-full shrink-0 overflow-hidden">
+<div class="flex min-h-0 flex-1 flex-row items-center gap-3">
+  <div class="min-w-0 flex-1 overflow-x-hidden -ml-4">
     <DumbbellPlot
       :rows="dumbbell1Rows"
       leftLabel="Control (sin TL)"
       rightLabel="Con transferencia de aprendizaje"
       :compact="true"
+      chartWidth="100%"
       caption="mAP50 por modelo: control vs. transferencia de aprendizaje"
     />
   </div>
-  <div class="grid shrink-0 grid-cols-3 gap-2">
-    <div class="rounded-md border-l-4 border-unal-blue bg-unal-blue/10 px-3 py-2">
-      <div class="flex flex-col gap-1 leading-snug text-[0.72rem] text-unal-gray">
-        <span class="font-bold text-unal-blue">Métricas estáticas (TL)</span>
-        <span>YOLOv9m = RT-DETR-R101 · <strong>mAP50 = 0,902</strong></span>
-        <span>YOLOv9m: <strong>7,4 ms</strong> · <strong>20 M</strong> params vs. 60,9 M RT-DETR</span>
-      </div>
-    </div>
-    <div class="rounded-md border-l-4 border-unal-green bg-unal-green/10 px-3 py-2">
-      <div class="flex flex-col gap-1 leading-snug text-[0.72rem] text-unal-gray">
-        <span class="font-bold text-[#3a6a18]">Referencia clínica</span>
-        <span><strong>YOLOv9m-CBAM</strong> — criterio multidimensional</span>
-        <span><strong>+14,2 pp</strong> sin TL · video sin FP · confianza 0,95–0,97</span>
-      </div>
-    </div>
-    <div class="rounded-md border-l-4 border-gray-400 bg-gray-50 px-3 py-2">
-      <div class="flex flex-col gap-1 leading-snug text-[0.72rem] text-unal-gray">
-        <span class="font-bold text-unal-gray">Sin transferencia de aprendizaje</span>
-        <span>Control: <strong>0,195–0,521</strong> mAP50</span>
-        <span>Brecha sintético-real en todos los modelos</span>
-      </div>
-    </div>
+  <div class="shrink-0 self-center overflow-hidden rounded-lg border border-gray-200">
+    <table class="border-collapse text-[0.60rem] text-unal-gray">
+      <thead>
+        <tr class="bg-unal-blue/10 text-left">
+          <th class="px-1.5 py-0.5 font-semibold text-unal-blue">Métrica</th>
+          <th class="px-1.5 py-0.5 text-center font-semibold text-unal-blue">YOLOv9m</th>
+          <th class="px-1.5 py-0.5 text-center font-semibold text-unal-blue">RT-DETR-R101</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-gray-100 bg-white">
+          <td class="px-1.5 py-0.5 text-unal-gray/70">P</td>
+          <td class="px-1.5 py-0.5 text-center">0,957</td>
+          <td class="px-1.5 py-0.5 text-center">0,922</td>
+        </tr>
+        <tr class="border-t border-gray-100 bg-gray-50/50">
+          <td class="px-1.5 py-0.5 text-unal-gray/70">R</td>
+          <td class="px-1.5 py-0.5 text-center">0,857</td>
+          <td class="px-1.5 py-0.5 text-center">0,868</td>
+        </tr>
+        <tr class="border-t border-gray-100 bg-white">
+          <td class="px-1.5 py-0.5 text-unal-gray/70">mAP50</td>
+          <td class="px-1.5 py-0.5 text-center font-semibold">0,902</td>
+          <td class="px-1.5 py-0.5 text-center font-semibold">0,902</td>
+        </tr>
+        <tr class="border-t border-gray-100 bg-gray-50/50">
+          <td class="px-1.5 py-0.5 text-unal-gray/70">mAP50-95</td>
+          <td class="px-1.5 py-0.5 text-center">0,627</td>
+          <td class="px-1.5 py-0.5 text-center">0,612</td>
+        </tr>
+        <tr class="border-t border-gray-100 bg-white">
+          <td class="px-1.5 py-0.5 text-unal-gray/70">Inferencia</td>
+          <td class="px-1.5 py-0.5 text-center font-semibold text-unal-green">7,4 ms</td>
+          <td class="px-1.5 py-0.5 text-center text-orange-600">14,8 ms</td>
+        </tr>
+        <tr class="border-t border-gray-100 bg-gray-50/50">
+          <td class="px-1.5 py-0.5 text-unal-gray/70">Parámetros</td>
+          <td class="px-1.5 py-0.5 text-center text-unal-gray/70">20 M</td>
+          <td class="px-1.5 py-0.5 text-center text-unal-gray/70">60,9 M</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
 </div>
@@ -231,15 +256,20 @@ const dumbbell2Rows = [
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Análisis de rendimiento por clase</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
-<div class="flex min-h-0 flex-1 flex-col gap-2">
+<div class="flex min-h-0 flex-1 flex-col gap-1.5">
+  <p class="shrink-0 my-0 text-[0.72rem] italic text-unal-gray/60">Curvas Precisión-Recall · modelo YOLOv9m · evaluación sobre 40 imágenes reales (OocytePaperImages)</p>
   <div class="grid min-h-0 flex-1 grid-cols-2 gap-3">
-    <div class="flex min-w-0 flex-col gap-1 justify-center">
+    <div class="flex min-w-0 flex-col gap-1">
+      <div class="shrink-0 flex items-center gap-2">
+        <span class="text-[0.78rem] font-bold text-unal-gray">Sin transferencia de aprendizaje</span>
+        <span class="rounded bg-gray-200 px-1.5 py-0.5 text-[0.58rem] font-bold text-gray-500 uppercase tracking-wide">Control</span>
+      </div>
       <div class="flex shrink-0 gap-2" style="height:260px">
         <div class="overflow-hidden shrink-0 h-full" style="width:62%">
           <img src="../images/figures/results/pr_curve_v9m_control.png" alt="Curva P-R YOLOv9m — control (sin TL)" class="h-full w-auto max-w-none" />
         </div>
         <div class="flex flex-1 flex-col justify-center gap-2 pl-1 text-[0.75rem] text-unal-gray">
-          <div class="text-[0.6rem] font-semibold uppercase tracking-wide text-unal-gray/50">Control (sin TL) · mAP50</div>
+          <div class="text-[0.6rem] font-semibold uppercase tracking-wide text-unal-gray/50">mAP50 por clase</div>
           <div class="flex items-center gap-1.5"><span class="h-2.5 w-2.5 shrink-0 rounded-sm bg-amber-400"></span><span class="font-semibold">Zona pelúcida</span><span class="ml-auto font-mono font-bold">0,457</span></div>
           <div class="flex items-center gap-1.5"><span class="h-2.5 w-2.5 shrink-0 rounded-sm bg-unal-blue"></span><span class="font-semibold">Huso meiótico</span><span class="ml-auto font-mono font-bold">0,504</span></div>
           <div class="flex items-center gap-1.5"><span class="h-2.5 w-2.5 shrink-0 rounded-sm bg-unal-green"></span><span class="font-semibold">Lím. citoplasmático</span><span class="ml-auto font-mono font-bold">0,344</span></div>
@@ -247,13 +277,17 @@ const dumbbell2Rows = [
         </div>
       </div>
     </div>
-    <div class="flex min-w-0 flex-col gap-1 justify-center">
+    <div class="flex min-w-0 flex-col gap-1">
+      <div class="shrink-0 flex items-center gap-2">
+        <span class="text-[0.78rem] font-bold text-unal-blue">Con transferencia de aprendizaje</span>
+        <span class="rounded bg-unal-blue/15 px-1.5 py-0.5 text-[0.58rem] font-bold text-unal-blue uppercase tracking-wide">TL</span>
+      </div>
       <div class="flex shrink-0 gap-2" style="height:260px">
         <div class="overflow-hidden shrink-0 h-full" style="width:62%">
           <img src="../images/figures/results/pr_curve_v9m_tl.png" alt="Curva P-R YOLOv9m — con transferencia de aprendizaje" class="h-full w-auto max-w-none" />
         </div>
         <div class="flex flex-1 flex-col justify-center gap-2 pl-1 text-[0.75rem] text-unal-gray">
-          <div class="text-[0.6rem] font-semibold uppercase tracking-wide text-unal-gray/50">Con TL · mAP50</div>
+          <div class="text-[0.6rem] font-semibold uppercase tracking-wide text-unal-gray/50">mAP50 por clase</div>
           <div class="flex items-center gap-1.5"><span class="h-2.5 w-2.5 shrink-0 rounded-sm bg-amber-400"></span><span class="font-semibold">Zona pelúcida</span><span class="ml-auto font-mono font-bold">0,995</span></div>
           <div class="flex items-center gap-1.5"><span class="h-2.5 w-2.5 shrink-0 rounded-sm bg-unal-blue"></span><span class="font-semibold">Huso meiótico</span><span class="ml-auto font-mono font-bold">0,993</span></div>
           <div class="flex items-center gap-1.5"><span class="h-2.5 w-2.5 shrink-0 rounded-sm bg-unal-green"></span><span class="font-semibold">Lím. citoplasmático</span><span class="ml-auto font-mono font-bold">0,979</span></div>
@@ -439,7 +473,7 @@ deckSection: resultados
   <div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="flex min-h-0 flex-1 flex-col gap-1">
-  <p class="shrink-0 text-[0.78rem] font-medium text-unal-gray/60">CBAM supera al modelo base en los 3 escenarios · evaluación cualitativa · comparación cuadro a cuadro</p>
+  <p class="shrink-0 text-[0.78rem] font-medium text-unal-gray/60">CBAM supera al modelo base en los 3 escenarios · evaluación en video · comparación cuadro a cuadro</p>
   <div class="grid min-h-0 flex-1 grid-cols-3 gap-3">
     <!-- Secuencia 1 -->
     <div class="flex h-full flex-col gap-1.5 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm border-l-[5px] border-l-unal-blue px-3 py-2">
@@ -515,15 +549,9 @@ deckSection: resultados
         <span class="text-[0.65rem] text-unal-gray/50">modelo base</span>
       </div>
       <div class="aspect-video w-full overflow-hidden rounded-lg bg-black/5 shadow-md ring-1 ring-gray-900/10">
-        <iframe
-          class="h-full w-full border-0"
-          width="560" height="315"
-          src="https://www.youtube.com/embed/a1OraXCZyKk?si=vNbHO_YAyjI98A__&autoplay=1&mute=1&playsinline=1&loop=1&playlist=a1OraXCZyKk"
-          title="YOLOv9m — Secuencia 1 OpenPolScope meiosis I"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        />
+        <video class="h-full w-full" autoplay muted loop playsinline>
+          <source src="/videos/seq1_std.mp4" type="video/mp4" />
+        </video>
       </div>
     </figure>
     <figure class="m-0 flex min-w-0 flex-col gap-0.5">
@@ -532,15 +560,9 @@ deckSection: resultados
         <span class="text-[0.65rem] text-unal-gray/50">con módulo de atención</span>
       </div>
       <div class="aspect-video w-full overflow-hidden rounded-lg bg-black/5 shadow-md ring-1 ring-gray-900/10">
-        <iframe
-          class="h-full w-full border-0"
-          width="560" height="315"
-          src="https://www.youtube.com/embed/lKPqXQZH1k0?si=8EwhGaEoiE1JphMS&autoplay=1&mute=1&playsinline=1&loop=1&playlist=lKPqXQZH1k0"
-          title="YOLOv9m-CBAM — Secuencia 1 OpenPolScope meiosis I"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        />
+        <video class="h-full w-full" autoplay muted loop playsinline>
+          <source src="/videos/seq1_cbam.mp4" type="video/mp4" />
+        </video>
       </div>
     </figure>
   </div>
@@ -687,15 +709,9 @@ deckSection: resultados
         <span class="text-[0.65rem] text-unal-gray/50">modelo base</span>
       </div>
       <div class="aspect-video w-full overflow-hidden rounded-lg bg-black/5 shadow-md ring-1 ring-gray-900/10">
-        <iframe
-          class="h-full w-full border-0"
-          width="560" height="315"
-          src="https://www.youtube.com/embed/01CZ1IEIHjI?autoplay=1&mute=1&playsinline=1&loop=1&playlist=01CZ1IEIHjI"
-          title="YOLOv9m — Secuencia 2 OOSIGHT-Spindle View ICSI"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        />
+        <video class="h-full w-full" autoplay muted loop playsinline>
+          <source src="/videos/seq2_std.mp4" type="video/mp4" />
+        </video>
       </div>
     </figure>
     <figure class="m-0 flex min-w-0 flex-col gap-0.5">
@@ -704,15 +720,9 @@ deckSection: resultados
         <span class="text-[0.65rem] text-unal-gray/50">con módulo de atención</span>
       </div>
       <div class="aspect-video w-full overflow-hidden rounded-lg bg-black/5 shadow-md ring-1 ring-gray-900/10">
-        <iframe
-          class="h-full w-full border-0"
-          width="560" height="315"
-          src="https://www.youtube.com/embed/mO-GYGNMnw8?autoplay=1&mute=1&playsinline=1&loop=1&playlist=mO-GYGNMnw8"
-          title="YOLOv9m-CBAM — Secuencia 2 OOSIGHT-Spindle View ICSI"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        />
+        <video class="h-full w-full" autoplay muted loop playsinline>
+          <source src="/videos/seq2_cbam.mp4" type="video/mp4" />
+        </video>
       </div>
     </figure>
   </div>
@@ -803,15 +813,9 @@ deckSection: resultados
         <span class="text-[0.65rem] text-unal-gray/50">modelo base</span>
       </div>
       <div class="aspect-video w-full overflow-hidden rounded-lg bg-black/5 shadow-md ring-1 ring-gray-900/10">
-        <iframe
-          class="h-full w-full border-0"
-          width="560" height="315"
-          src="https://www.youtube.com/embed/f007H86yr2A?autoplay=1&mute=1&playsinline=1&loop=1&playlist=f007H86yr2A"
-          title="YOLOv9m — Secuencia 3 OptimFert Prague IVF"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        />
+        <video class="h-full w-full" autoplay muted loop playsinline>
+          <source src="/videos/seq3_std.mp4" type="video/mp4" />
+        </video>
       </div>
     </figure>
     <figure class="m-0 flex min-w-0 flex-col gap-0.5">
@@ -820,15 +824,9 @@ deckSection: resultados
         <span class="text-[0.65rem] text-unal-gray/50">con módulo de atención</span>
       </div>
       <div class="aspect-video w-full overflow-hidden rounded-lg bg-black/5 shadow-md ring-1 ring-gray-900/10">
-        <iframe
-          class="h-full w-full border-0"
-          width="560" height="315"
-          src="https://www.youtube.com/embed/HsXPM1nb5y4?autoplay=1&mute=1&playsinline=1&loop=1&playlist=HsXPM1nb5y4"
-          title="YOLOv9m-CBAM — Secuencia 3 OptimFert Prague IVF"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        />
+        <video class="h-full w-full" autoplay muted loop playsinline>
+          <source src="/videos/seq3_cbam.mp4" type="video/mp4" />
+        </video>
       </div>
     </figure>
   </div>
@@ -909,44 +907,44 @@ deckSection: resultados
 <div class="slide-deck-shell">
 <header class="mb-1 text-left">
   <div class="flex items-center gap-3">
-    <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Imagen ampliada Zenodo</h1>
+    <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">YOLOv9m-CBAM — imagen completa vs. ampliada</h1>
     <span class="shrink-0 rounded-md bg-unal-green/25 px-2.5 py-0.5 text-[0.65rem] font-bold text-[#3a6a18] ring-1 ring-unal-green/50">★ Aporte</span>
   </div>
   <div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="grid min-h-0 flex-1 grid-cols-2 gap-3">
-  <!-- Normal (izquierda) -->
+  <!-- Sin zoom (izquierda) -->
   <figure class="m-0 flex h-full flex-col gap-0.5 overflow-hidden">
     <div class="flex shrink-0 items-center gap-2">
-      <span class="font-mono text-[0.85rem] font-bold text-unal-gray">YOLOv9m</span>
-      <span class="text-[0.65rem] text-unal-gray/50">modelo base</span>
+      <span class="font-mono text-[0.85rem] font-bold text-unal-blue">YOLOv9m-CBAM</span>
+      <span class="text-[0.65rem] text-unal-gray/50">imagen completa (sin zoom)</span>
     </div>
     <div class="min-h-0 flex-1 overflow-hidden rounded">
       <img
-        src="../images/figures/results/detection_normal_real.jpg"
-        alt="Detección YOLOv9m en imagen real multi-ovocito"
+        src="../images/figures/results/detection_cbam_sinzoom.png"
+        alt="YOLOv9m-CBAM detección sobre imagen completa sin zoom"
         class="h-full w-full object-contain"
       />
     </div>
     <figcaption class="plm-figcaption mt-1">
-      <span class="font-semibold text-unal-gray">YOLOv9m —</span> 2 clases detectadas: zp · huso ×3 · conf. 0,54–0,92. <span class="text-red-500">zrpb y citolimit no detectados.</span>
+      <span class="font-semibold text-unal-blue">Sin zoom —</span> campo completo · múltiples ovocitos · imagen Zenodo original.
     </figcaption>
   </figure>
-  <!-- CBAM (derecha) -->
+  <!-- Con zoom (derecha) -->
   <figure class="m-0 flex h-full flex-col gap-0.5 overflow-hidden">
     <div class="flex shrink-0 items-center gap-2">
       <span class="font-mono text-[0.85rem] font-bold text-unal-blue">YOLOv9m-CBAM</span>
-      <span class="text-[0.65rem] text-unal-gray/50">con módulo de atención</span>
+      <span class="text-[0.65rem] text-unal-gray/50">imagen ampliada (con zoom)</span>
     </div>
     <div class="min-h-0 flex-1 overflow-hidden rounded">
       <img
         src="../images/figures/results/detection_cbam_real.jpg"
-        alt="Detección YOLOv9m-CBAM en imagen real multi-ovocito"
+        alt="Detección YOLOv9m-CBAM en imagen real ampliada"
         class="h-full w-full object-contain"
       />
     </div>
     <figcaption class="plm-figcaption mt-1">
-      <span class="font-semibold text-unal-blue">YOLOv9m-CBAM —</span> 4 clases detectadas: zp · zrpb · huso ×4 · citolimit · conf. 0,63–0,85.
+      <span class="font-semibold text-unal-blue">Con zoom —</span> 4 clases detectadas: zp · zrpb · huso ×4 · citolimit · conf. 0,63–0,85.
     </figcaption>
   </figure>
 </div>

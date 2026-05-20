@@ -213,11 +213,11 @@ function trackWidth(row: DumbbellRow): number {
         stroke="white" stroke-width="2"
       />
 
-      <!-- Valor real del punto derecho (con TL) — color neutro -->
+      <!-- Valor real del punto derecho (con TL) — azul si la fila está destacada -->
       <text
         v-if="showDelta"
         :x="W - DELTA_W + 8" :y="rowYs[i] + 5"
-        font-size="7" font-weight="600" fill="#374151"
+        font-size="7" font-weight="600" :fill="row.highlight ? '#3981BF' : '#374151'"
         font-family="IBM Plex Sans,sans-serif"
       >{{ row.rightVal.toFixed(3) }}</text>
 

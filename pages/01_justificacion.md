@@ -97,7 +97,6 @@ deckSection: justificacion
 <figure class="m-0 min-w-0 max-w-full">
 <IvfLiveBirthByAgeChart />
 <figcaption lang="es" class="plm-figcaption">
-  <span class="font-semibold text-unal-gray">Fig. 1.</span>
   Tasas aprox. de nacidos vivos por edad materna (EE. UU., 2024&nbsp;—&nbsp;preliminar)
   <span class="ml-0.5 font-semibold text-unal-blue">(SART, 2024)</span>.
 </figcaption>

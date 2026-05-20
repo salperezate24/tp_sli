@@ -28,7 +28,6 @@ deckSection: estado
         class="h-auto max-h-[min(40vh,250px)] w-full object-contain object-top"
       />
       <figcaption lang="es" class="plm-figcaption">
-        <span class="font-semibold text-unal-gray">Fig. 7.</span>
         Huso meiótico: invisible en campo claro, visible con fluorescencia y con <span class="font-semibold">PLM</span>. Holubcová et al. (2019)
       </figcaption>
     </figure>
@@ -48,7 +47,6 @@ deckSection: estado
         class="h-auto max-h-[min(40vh,250px)] w-full object-contain object-top"
       />
       <figcaption lang="es" class="plm-figcaption">
-        <span class="font-semibold text-unal-gray">Fig. 8.</span>
         MOMA (Fjeldstad et al., 2024): segmentación de ZP y ooplasma en <span class="font-semibold">campo claro</span> — sin PLM, sin huso meiótico.
       </figcaption>
     </figure>
@@ -110,7 +108,6 @@ deckSection: estado
       class="h-auto max-h-[min(46vh,300px)] w-full object-contain"
     />
     <figcaption lang="es" class="plm-figcaption">
-      <span class="font-semibold text-unal-gray">Fig. 9.</span>
       Huso meiótico (s), zona pelúcida (zp), citoplasma (c) y cuerpo polar (pb). Rienzi et al. (2011)
     </figcaption>
   </figure>
@@ -176,7 +173,6 @@ deckSection: estado
       class="h-auto max-h-[min(42vh,270px)] w-full object-contain"
     />
     <figcaption lang="es" class="plm-figcaption">
-      <span class="font-semibold text-unal-gray">Fig. 10.</span>
       Huso bajo PLM (4×, 10×, 100×); perfiles de retardo en MI y MII. Kelleher &amp; Needleman (2022)
     </figcaption>
   </figure>
@@ -209,6 +205,72 @@ deckSection: estado
 ---
 
 <div class="slide-deck-shell">
+<header class="mb-2 text-left">
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray">Proyecto marco — Sistema PLM propuesto (GPIMA)</h1>
+  <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
+  <div class="mt-1 text-[0.65rem] italic leading-snug text-gray-400">Desarrollo de un método para la detección automática del huso meiótico para establecer la relación con la maduración y la fertilización in vitro en ovocitos porcinos, basado en el vector de Stokes y estrategias de visión artificial</div>
+</header>
+<div class="grid min-h-0 flex-1 grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-3">
+  <figure class="m-0 flex flex-col items-center justify-center gap-1">
+    <img
+      src="../images/figures/gpima_montaje_optico.png"
+      alt="Configuración del microscopio polarizado propuesto — montaje óptico GPIMA"
+      class="h-auto max-h-[min(46vh,290px)] w-full object-contain"
+    />
+    <figcaption lang="es" class="plm-figcaption text-center">
+      Configuración del microscopio polarizado propuesto. LS-LED · P1 · LC · DC-PS · CÁMARA · OBJETIVO 20×. Los ángulos (α, φ) corresponden a la rotación física de cada elemento.
+    </figcaption>
+  </figure>
+  <div class="flex flex-col gap-2">
+    <figure class="m-0 flex flex-col items-center justify-center gap-1">
+      <img
+        src="../images/figures/gpima_retardo_ovocito.png"
+        alt="Imágenes de retardo y ángulo de ovocito porcino — método de cambio de fase"
+        class="h-auto max-h-[min(24vh,150px)] w-full object-contain"
+      />
+      <figcaption lang="es" class="plm-figcaption text-center">
+        Retardo y ángulo de ovocito porcino (grado 1, 24 h). Col. izq.: cambio de fase 6 pasos; col. central: 4 pasos. Fila sup.: ángulo; fila inf.: retardo.
+      </figcaption>
+    </figure>
+    <div class="rounded-md border-l-4 border-unal-blue/60 bg-unal-blue/[0.07] px-2.5 py-1.5 text-[0.72rem] leading-[1.45] text-unal-gray">
+      <div class="mb-0.5 font-semibold text-unal-blue">Limitaciones experimentales del proyecto marco:</div>
+      <ol class="list-decimal pl-4 space-y-0">
+        <li>Horas exactas de maduración de los ovocitos desconocidas</li>
+        <li>Sin micromanipulador robótico para rotar el óvulo al ángulo de medición</li>
+        <li>Sin cámara conectada a la incubadora — extraer el óvulo para observarlo lo daña</li>
+        <li>Los procedimientos de polarización requerían una mejora de contraste que no se tenía</li>
+      </ol>
+    </div>
+  </div>
+</div>
+</div>
+<div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
+  <img
+    src="../images/logos/gpima_logo.png"
+    alt="GPIMA"
+    class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6"
+  />
+  <img
+    src="../images/logos/unal_logo_lateral.png"
+    alt="Universidad Nacional de Colombia"
+    class="h-14 w-auto shrink-0 object-contain opacity-90 sm:h-14"
+  />
+</div>
+
+<!--
+Este es el sistema que el grupo GPIMA construyó y en el que se enmarca esta tesis. El montaje usa una fuente LED, un polarizador lineal, cristales líquidos como retardadores variables y una cámara polarizada — todo controlado para adquirir imágenes de retardo óptico a diferentes ángulos de fase, como se ve en la figura 7-13: esa cuadrícula de cuatro imágenes muestra el retardo y el ángulo extraídos de un ovocito porcino usando los métodos de cambio de fase de seis y cuatro pasos.
+
+Sin embargo, en vista de las dificultades experimentales del proyecto marco, no fue posible construir una base de datos real de ovocitos humanos: no se conocían las horas exactas de maduración, no se contaba con micromanipulador robótico para posicionar el óvulo, extraer el ovocito de la incubadora para fotografiarlo lo daña, y los procedimientos de polarización requerían una mejora de contraste que aún no estaba disponible.
+
+En vista de estas dificultades, desarrollamos la siguiente estrategia para generar los datos de entrenamiento.
+-->
+
+---
+transition: slide-up
+deckSection: estado
+---
+
+<div class="slide-deck-shell">
 <header class="mb-3 text-left">
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Bases de datos sintéticas para aprendizaje profundo</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
@@ -231,7 +293,6 @@ deckSection: estado
       class="h-auto max-h-[min(38vh,235px)] w-full object-contain"
     />
     <figcaption lang="es" class="plm-figcaption text-center">
-      <span class="font-semibold text-unal-gray">Fig. 11.</span>
       GDXray+ (Mery, 2021): (a) fundición X-ray, (b) defectos simulados, (c) superposición, (d) detecciones.
     </figcaption>
   </figure>
@@ -548,29 +609,45 @@ $$\text{Espacial:}\quad M_s(\mathbf{F}) = \sigma\!\left(f^{7\times7}\!\left([\ma
 </div>
 
 <!-- Diagrama CBAM ancho completo -->
-```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E8E8E8', 'primaryBorderColor': '#808080', 'primaryTextColor': '#262626', 'lineColor': '#555555', 'fontSize': '13px', 'edgeLabelBackground': '#F2F2F0'}}}%%
-graph LR
-    Input["Entrada x<br/>(B, C, H, W)"]
-    Output["Salida<br/>(B, C, H, W)"]
-
-    subgraph cbam["Módulo CBAM"]
-        direction LR
-        CA["self.channel_attention<br/>(Bloque Atención Canal)"]
-        SA["self.spatial_attention<br/>(Bloque Atención Espacial)"]
-        CA -->|"Rasgos Refinados por Canal"| SA
-    end
-
-    Input -->|"Rasgos Crudos"| CA
-    SA -->|"Rasgos Refinados Espacialmente"| Output
-
-    style Input fill:#BDD7EE,stroke:#4472C4,stroke-width:2px,color:#262626
-    style Output fill:#BDD7EE,stroke:#4472C4,stroke-width:2px,color:#262626
-    style CA fill:#E8E8E8,stroke:#808080,stroke-width:1.5px,color:#262626
-    style SA fill:#E8E8E8,stroke:#808080,stroke-width:1.5px,color:#262626
-    style cbam fill:#ffffff,stroke:#808080,stroke-dasharray:5 5,color:#262626
-```
-<p class="text-center text-[11px] leading-snug text-gray-500"><span class="font-semibold text-unal-gray">Fig. 12.</span> Módulo CBAM: refinamiento secuencial por canal y por espacio.</p>
+<div class="mt-1 flex items-center justify-center gap-2 text-[0.78rem]">
+  <div class="flex flex-col items-center rounded-lg border border-unal-blue/40 bg-unal-blue/10 px-3 py-2 text-center text-unal-gray">
+    <span class="font-semibold">x</span>
+    <span class="text-[0.66rem] text-gray-500">(B, C, H, W)</span>
+  </div>
+  <div class="flex flex-col items-center gap-0">
+    <span class="text-[0.60rem] leading-none text-gray-400">Rasgos</span>
+    <span class="text-[0.60rem] leading-none text-gray-400">crudos</span>
+    <span class="text-lg leading-none text-gray-400">→</span>
+  </div>
+  <div class="rounded-lg border border-dashed border-unal-gray/35 px-3 py-2">
+    <div class="mb-1.5 text-center text-[0.58rem] font-bold uppercase tracking-widest text-unal-gray/40">Módulo CBAM</div>
+    <div class="flex items-center gap-2">
+      <div class="flex flex-col items-center rounded-md border border-gray-300 bg-gray-100 px-3 py-2 text-center text-unal-gray">
+        <span class="font-semibold">Atención Canal</span>
+        <span class="text-[0.66rem] italic text-gray-500">M<sub>c</sub>(F)</span>
+      </div>
+      <div class="flex flex-col items-center gap-0">
+        <span class="text-[0.60rem] leading-none text-gray-400">Rasgos</span>
+        <span class="text-[0.60rem] leading-none text-gray-400">por canal</span>
+        <span class="text-lg leading-none text-gray-400">→</span>
+      </div>
+      <div class="flex flex-col items-center rounded-md border border-gray-300 bg-gray-100 px-3 py-2 text-center text-unal-gray">
+        <span class="font-semibold">Atención Espacial</span>
+        <span class="text-[0.66rem] italic text-gray-500">M<sub>s</sub>(F)</span>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col items-center gap-0">
+    <span class="text-[0.60rem] leading-none text-gray-400">Rasgos</span>
+    <span class="text-[0.60rem] leading-none text-gray-400">refinados</span>
+    <span class="text-lg leading-none text-gray-400">→</span>
+  </div>
+  <div class="flex flex-col items-center rounded-lg border border-unal-blue/40 bg-unal-blue/10 px-3 py-2 text-center text-unal-gray">
+    <span class="font-semibold">F'</span>
+    <span class="text-[0.66rem] text-gray-500">(B, C, H, W)</span>
+  </div>
+</div>
+<div class="mt-1 text-center text-[0.70rem] text-gray-500"> Módulo CBAM: refinamiento secuencial canal → espacio.</div>
 
 </div>
 </div>

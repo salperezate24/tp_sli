@@ -30,14 +30,12 @@ deckSection: marco
     <figure class="m-0 flex flex-col">
       <img src="../images/figures/diagrams/oocyte_plm.png" alt="Ovocito bajo PLM" class="w-full max-h-[12rem] object-contain" />
       <figcaption lang="es" class="plm-figcaption">
-        <span class="font-semibold text-unal-gray">Fig. 2.</span>
         Ovocito bajo PLM: huso meiótico (s), zona pelúcida (zp), citoplasma (c) y cuerpo polar (pb). Rienzi et al. (2011).
       </figcaption>
     </figure>
     <figure class="m-0 flex flex-col">
       <img src="../images/figures/oocytes/oocyte_diagram_002.png" alt="Esquema del proceso de maduración de un ovocito" class="w-full max-h-[11rem] object-contain" />
       <figcaption lang="es" class="plm-figcaption">
-        <span class="font-semibold text-unal-gray">Fig. 3.</span>
         Esquema del proceso de maduración. Elaboración propia.
       </figcaption>
     </figure>
@@ -76,6 +74,7 @@ deckSection: marco
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 
+<!-- DIAGRAMA ABSTRACTO COMENTADO — reemplazado por foto real del setup
 <div class="my-2 w-full overflow-hidden rounded-xl border border-unal-gray/10 bg-unal-gray/[0.03] px-4 py-3">
   <div class="mb-2 flex items-center justify-between text-[0.42rem] font-bold uppercase tracking-widest text-unal-gray/35">
     <span>↓ Entrada</span>
@@ -147,6 +146,17 @@ deckSection: marco
     </div>
   </div>
 </div>
+-->
+<figure class="my-2 m-0 flex flex-col items-center">
+  <img
+    src="../images/figures/plm_setup_real.png"
+    alt="Setup experimental del PolScope: He-Ne, polarizador, LCA, LCB, condensador, muestra, objetivo, λ/4, analizador y detector"
+    class="h-auto max-h-[140px] w-full object-contain"
+  />
+  <figcaption lang="es" class="plm-figcaption mt-1">
+    Setup experimental del PolScope: He-Ne · P(0°) · LCA(α,45°) · LCB(β,0°) · Condensador · Muestra · Objetivo (4×) · λ/4(±45°) · A(0°) · Detector. Elaboración propia.
+  </figcaption>
+</figure>
 
 <div class="grid min-h-0 flex-1 grid-cols-1 gap-2 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-4">
 
@@ -160,7 +170,6 @@ deckSection: marco
         class="h-auto w-full max-h-[min(36vh,240px)] object-contain"
       />
       <figcaption lang="es" class="plm-figcaption">
-        <span class="font-semibold text-unal-gray">Fig. 4.</span>
         I₀–I₄: cinco estados de polarización capturados sobre un áster de microtúbulos. Shribak &amp; Oldenbourg (2003)
       </figcaption>
     </figure>
@@ -176,7 +185,6 @@ deckSection: marco
         class="plm-retardo-img"
       />
       <figcaption lang="es" class="plm-figcaption">
-        <span class="font-semibold text-unal-gray">Fig. 5.</span>
         Mapa de retardo óptico del mismo áster: blanco ≈ 1,2&nbsp;nm (alta birrefringencia); negro, nula. Shribak &amp; Oldenbourg (2003)
       </figcaption>
     </figure>
@@ -325,7 +333,6 @@ deckSection: marco
       class="mx-auto h-auto max-h-[min(54vh,400px)] w-full max-w-[96%] object-contain"
     />
     <figcaption lang="es" class="plm-figcaption">
-      <span class="font-semibold text-unal-gray">Fig. 6.</span>
       Arquitectura general de los modelos YOLO.
       Elaboración propia.
     </figcaption>

@@ -9,6 +9,7 @@ components.d.ts
 # Archivos locales de trabajo (no son contenido de la presentación)
 .claude/
 CLAUDE.md
+archive/
 PLAN_ACCION_DEFENSA_FINAL.md
 PLAN_MEJORA_DEFENSA.md
 RESPUESTAS_JURADO.md

@@ -238,7 +238,6 @@ deckSection: estado
         <li>Horas exactas de maduración de los ovocitos desconocidas</li>
         <li>Sin micromanipulador robótico para rotar el óvulo al ángulo de medición</li>
         <li>Sin cámara conectada a la incubadora — extraer el óvulo para observarlo lo daña</li>
-        <li>Los procedimientos de polarización requerían una mejora de contraste que no se tenía</li>
       </ol>
     </div>
   </div>

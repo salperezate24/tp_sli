@@ -78,33 +78,33 @@ deckSection: metodologia
 ---
 
 <div class="slide-deck-shell">
-<header class="mb-3 text-left">
-  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Generación de la base de datos sintética</h1>
+<header class="mb-2 text-left">
+  <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray">Generación de la base de datos sintética</h1>
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
 <div class="flex min-h-0 flex-1 flex-col justify-center">
   <div class="grid grid-cols-[1fr_auto_1fr_auto_1fr] items-stretch gap-2">
-    <div class="flex flex-col gap-2.5 rounded-xl border-2 border-unal-blue/30 bg-unal-blue/5 px-4 py-3">
+    <div class="flex flex-col gap-2 rounded-xl border-2 border-unal-blue/30 bg-unal-blue/5 px-3 py-2.5">
       <div class="flex flex-col gap-0.5">
         <span class="text-[0.58rem] font-bold uppercase tracking-widest text-unal-blue/60">Paso 1</span>
-        <span class="text-[0.9rem] font-bold leading-tight text-unal-blue">Modelación Física</span>
+        <span class="text-[0.86rem] font-bold leading-tight text-unal-blue">Modelación Física</span>
       </div>
-      <ul class="list-none space-y-1.5 text-[0.82rem] leading-snug text-unal-gray">
-        <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Huso meiótico:</b> Gaussiana anisotrópica 2D (Retardo ~5,6 nm) <span class="text-[0.68rem] text-unal-gray/50">(Kelleher et al., 2024)</span></span></li>
-        <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Zona Pelúcida:</b> Banda elíptica + Filtro Gaussiano</span></li>
+      <ul class="list-none space-y-1 text-[0.76rem] leading-snug text-unal-gray">
+        <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Huso meiótico:</b> Gaussiana anisotrópica 2D (Retardo ~5,6 nm) <span class="text-[0.64rem] text-unal-gray/50">(Kelleher et al., 2024)</span></span></li>
+        <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Zona Pelúcida:</b> Banda elíptica + Filtro Gaussiano (Retardo 0–2 nm) <span class="text-[0.64rem] text-unal-gray/50">(Rienzi et al., 2011)</span></span></li>
         <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Estructuras base:</b> Cuerpo polar y límite citoplasmático</span></li>
       </ul>
     </div>
     <div class="flex items-center justify-center px-1">
       <span class="text-2xl font-bold text-unal-blue/40">→</span>
     </div>
-    <div class="flex flex-col gap-2.5 rounded-xl border-2 border-unal-blue/50 bg-unal-blue/10 px-4 py-3">
+    <div class="flex flex-col gap-2 rounded-xl border-2 border-unal-blue/50 bg-unal-blue/10 px-3 py-2.5">
       <div class="flex flex-col gap-0.5">
         <span class="text-[0.58rem] font-bold uppercase tracking-widest text-unal-blue/60">Paso 2</span>
-        <span class="text-[0.9rem] font-bold leading-tight text-unal-blue">Síntesis Combinatoria</span>
+        <span class="text-[0.86rem] font-bold leading-tight text-unal-blue">Síntesis Combinatoria</span>
       </div>
-      <ul class="list-none space-y-1.5 text-[0.82rem] leading-snug text-unal-gray">
-        <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Calibración espacial:</b> 1 px = 0,129 µm (Ovocito de 120 µm) <span class="text-[0.68rem] text-unal-gray/50">(Kelleher et al., 2024; Rienzi et al., 2012)</span></span></li>
+      <ul class="list-none space-y-1 text-[0.76rem] leading-snug text-unal-gray">
+        <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Calibración espacial:</b> 1 px = 0,129 µm (Ovocito de 120 µm) <span class="text-[0.64rem] text-unal-gray/50">(Kelleher et al., 2024; Rienzi et al., 2012)</span></span></li>
         <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Normalización:</b> 0 nm (fondo) → 5,6 nm (máx.) → imagen 8-bit [0, 255]</span></li>
         <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span>Iteración de posiciones (18 husos, 12 ZP) + Ruido de fondo</span></li>
         <li class="flex gap-1.5"><span class="shrink-0 text-unal-blue">▸</span><span><b>Volumen generado:</b> 526 392 imágenes sintéticas</span></li>
@@ -113,15 +113,15 @@ deckSection: metodologia
     <div class="flex items-center justify-center px-1">
       <span class="text-2xl font-bold text-unal-green/60">→</span>
     </div>
-    <div class="flex flex-col gap-2.5 rounded-xl border-2 border-unal-green/50 bg-unal-green/10 px-4 py-3">
+    <div class="flex flex-col gap-2 rounded-xl border-2 border-unal-green/50 bg-unal-green/10 px-3 py-2.5">
       <div class="flex flex-col gap-0.5">
         <div class="flex items-center gap-2">
           <span class="text-[0.58rem] font-bold uppercase tracking-widest text-[#3a6a18]/60">Paso 3</span>
           <span class="rounded-md bg-unal-green/25 px-1.5 py-0.5 text-[0.55rem] font-bold text-[#3a6a18] ring-1 ring-unal-green/50">★ Dataset Final</span>
         </div>
-        <span class="text-[0.9rem] font-bold leading-tight text-[#3a6a18]">Etiquetado y Organización</span>
+        <span class="text-[0.86rem] font-bold leading-tight text-[#3a6a18]">Etiquetado y Organización</span>
       </div>
-      <ul class="list-none space-y-1.5 text-[0.82rem] leading-snug text-unal-gray">
+      <ul class="list-none space-y-1 text-[0.76rem] leading-snug text-unal-gray">
         <li class="flex gap-1.5"><span class="shrink-0 text-[#3a6a18]">▸</span><span><b>Selección curada:</b> Subconjunto de 21 600 imágenes</span></li>
         <li class="flex gap-1.5"><span class="shrink-0 text-[#3a6a18]">▸</span><span><b>Etiquetado 100% automático</b> por definición paramétrica</span></li>
       </ul>
@@ -174,7 +174,7 @@ deckSection: metodologia
       </li>
       <li class="flex gap-2">
         <carbon-cut-out class="mt-0.5 shrink-0 text-[0.95rem] text-unal-blue" />
-        <span><span class="font-semibold">Curaduría:</span> eliminación de texto, barras de escala y gráficos superpuestos · estandarización a 640 × 640 px</span>
+        <span><span class="font-semibold">Curaduría:</span> eliminación de texto, barras de escala y gráficos superpuestos</span>
       </li>
       <li class="flex gap-2">
         <carbon-label class="mt-0.5 shrink-0 text-[0.95rem] text-unal-blue" />
@@ -247,7 +247,7 @@ deckSection: metodologia
         <li><span class="font-semibold">Clases:</span> huso, ZP, citoplasma, CP</li>
       </ul>
       <div class="mt-auto rounded-md border border-unal-blue/20 bg-unal-blue/5 px-2.5 py-1.5 text-[0.67rem] leading-snug text-unal-gray">
-        <span class="font-semibold text-unal-blue">¿Por qué 21 600?</span> Límites de cómputo y para evitar sobreajuste al dominio sintético antes de la transferencia.
+        <span class="font-semibold text-unal-blue">¿Por qué 21 600?</span> Cómputo: algunos entrenamientos superaron las <span class="font-semibold">22 h</span> en GPU L4; y para evitar sobreajuste al dominio sintético antes de la transferencia.
       </div>
     </div>
     <!-- Conjunto 2: Real PLM -->
@@ -318,7 +318,7 @@ deckSection: metodologia
         class="h-auto max-h-[min(26vh,170px)] w-full object-contain"
       />
       <figcaption lang="es" class="plm-figcaption">
-        <span class="font-semibold text-unal-gray">Fig. 11.</span> GDXray+: rayos X industriales de fundición metálica — defectos elípticos simulados (b), superposición de bajo contraste (c) y detecciones del modelo (d). Mery (2021)
+         GDXray+: rayos X industriales de fundición metálica — defectos elípticos simulados (b), superposición de bajo contraste (c) y detecciones del modelo (d). Mery (2021)
       </figcaption>
     </figure>
     <p class="text-[0.87rem] leading-snug text-unal-gray">
@@ -365,74 +365,84 @@ deckSection: metodologia
 ---
 
 <div class="slide-deck-shell">
-<header class="mb-0.5 text-left">
+<header class="mb-1 text-left">
   <h1 class="mt-0 text-xl font-bold leading-tight tracking-tight text-unal-gray sm:text-2xl">Transferencia de aprendizaje sintético-a-real</h1>
-  <div class="mt-0 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
+  <div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
-<div class="grid h-0 min-h-0 flex-1 grid-rows-[auto_auto_1fr] gap-1">
-  <!-- Diagrama de flujo -->
-  <div class="rounded-lg border border-gray-200 bg-gray-50 px-2 py-0.5">
-    <div class="flex items-center gap-0">
-      <!-- Inicio -->
-      <div class="flex w-[16%] shrink-0 flex-col items-center justify-center gap-0.5 rounded-md border border-gray-300 bg-white px-4 py-1 text-center leading-none">
-        <span class="text-[0.62rem] font-bold uppercase tracking-wide text-unal-gray/60">Inicio</span>
-        <span class="text-[0.72rem] font-semibold text-unal-gray">Pesos COCO</span>
+<div class="flex min-h-0 flex-1 flex-col gap-3">
+  <!-- Diagrama TL -->
+  <div class="rounded-lg border border-unal-blue/25 bg-unal-blue/[0.03] px-3 py-2.5">
+    <div class="mb-2 text-[0.58rem] font-bold uppercase tracking-widest text-unal-blue/70">Protocolo con transferencia de aprendizaje</div>
+    <div class="flex items-center">
+      <div class="flex w-[14%] shrink-0 flex-col items-center justify-center gap-1 rounded-md border border-gray-300 bg-white px-2 py-2 text-center leading-none">
+        <span class="text-[0.58rem] font-bold uppercase tracking-wide text-unal-gray/60">Inicio</span>
+        <span class="text-[0.70rem] font-semibold text-unal-gray">Pesos COCO</span>
       </div>
-      <!-- Flecha 1 -->
       <div class="flex w-[5%] shrink-0 items-center justify-center text-sm font-bold text-unal-blue/50">→</div>
-      <!-- Etapa 1 -->
-      <div class="flex w-[22%] shrink-0 flex-col items-center justify-center gap-0.5 rounded-md border border-unal-blue/40 bg-unal-blue/10 px-2 py-1 text-center leading-none">
-        <span class="text-[0.62rem] font-bold uppercase tracking-wide text-unal-blue">Etapa 1</span>
-        <span class="text-[0.80rem] font-semibold leading-tight text-unal-gray">Preentrenamiento<br/>sintético</span>
+      <div class="flex w-[24%] shrink-0 flex-col items-center justify-center gap-1 rounded-md border border-unal-blue/40 bg-unal-blue/10 px-2 py-2 text-center leading-none">
+        <span class="text-[0.58rem] font-bold uppercase tracking-wide text-unal-blue">Etapa 1</span>
+        <span class="text-[0.76rem] font-semibold leading-tight text-unal-gray">Preentrenamiento sintético</span>
         <span class="text-[0.60rem] text-unal-gray/70">SGD · 21 600 imgs</span>
       </div>
-      <!-- Flecha 2 con TL/ctrl -->
-      <div class="flex w-[7%] shrink-0 flex-col items-center justify-center leading-none">
-        <span class="text-sm font-bold text-unal-blue/50">→</span>
-        <span class="text-[0.58rem] font-semibold text-unal-blue">TL</span>
-        <span class="text-[0.58rem] text-unal-gray/50">↓ ctrl</span>
+      <div class="flex w-[5%] shrink-0 items-center justify-center text-sm font-bold text-unal-blue/50">→</div>
+      <div class="flex w-[35%] shrink-0 flex-col items-center justify-center gap-1 rounded-md border border-unal-green/50 bg-unal-green/10 px-2 py-2 text-center leading-none">
+        <span class="text-[0.58rem] font-bold uppercase text-[#3a6a18]">Etapa 2</span>
+        <span class="text-[0.76rem] font-semibold leading-tight text-unal-gray">Transferencia de aprendizaje</span>
+        <span class="text-[0.60rem] text-unal-gray/70">AdamW · 200 imgs reales · OocytePaperImages</span>
       </div>
-      <!-- Bifurcación: Etapa 2 + Control -->
-      <div class="flex w-[28%] shrink-0 flex-col gap-0.5">
-        <div class="flex flex-col items-center gap-0.5 rounded-md border border-unal-green/50 bg-unal-green/10 px-2 py-1 text-center leading-none">
-          <span class="text-[0.62rem] font-bold uppercase text-[#3a6a18]">Etapa 2</span>
-          <span class="text-[0.80rem] font-semibold leading-tight text-unal-gray">Transferencia de<br/>aprendizaje</span>
-          <span class="text-[0.60rem] text-unal-gray/70">AdamW · 200 imgs</span>
-        </div>
-        <div class="flex flex-col items-center gap-0.5 rounded-md border border-dashed border-gray-400 bg-white px-2 py-1 text-center leading-none">
-          <span class="text-[0.62rem] font-bold uppercase text-unal-gray/60">Control</span>
-          <span class="text-[0.66rem] text-unal-gray/70">Sin Etapa 2</span>
-        </div>
-      </div>
-      <!-- Flecha 3 -->
       <div class="flex w-[5%] shrink-0 items-center justify-center text-sm font-bold text-unal-green/50">→</div>
-      <!-- Evaluación -->
-      <div class="flex w-[17%] shrink-0 flex-col items-center justify-center gap-0.5 rounded-md border border-gray-300 bg-white px-2 py-1 text-center leading-none">
-        <span class="text-[0.62rem] font-bold uppercase tracking-wide text-unal-gray/60">Evaluación</span>
-        <span class="text-[0.72rem] font-semibold text-unal-gray">40 imgs · 146 instancias</span>
+      <div class="flex w-[12%] shrink-0 flex-col items-center justify-center gap-1 rounded-md border border-gray-300 bg-white px-2 py-2 text-center leading-none">
+        <span class="text-[0.58rem] font-bold uppercase tracking-wide text-unal-gray/60">Evaluación</span>
+        <span class="text-[0.66rem] font-semibold text-unal-gray">40 imgs · 146 inst.</span>
       </div>
     </div>
   </div>
-  <!-- Franja protocolo — mejora 3 -->
+  <!-- Diagrama Control -->
+  <div class="rounded-lg border border-dashed border-gray-300 bg-gray-50/60 px-3 py-2.5">
+    <div class="mb-2 text-[0.58rem] font-bold uppercase tracking-widest text-unal-gray/50">Experimento de control — sin transferencia de aprendizaje</div>
+    <div class="flex items-center">
+      <div class="flex w-[14%] shrink-0 flex-col items-center justify-center gap-1 rounded-md border border-gray-300 bg-white px-2 py-2 text-center leading-none">
+        <span class="text-[0.58rem] font-bold uppercase tracking-wide text-unal-gray/60">Inicio</span>
+        <span class="text-[0.70rem] font-semibold text-unal-gray">Pesos COCO</span>
+      </div>
+      <div class="flex w-[5%] shrink-0 items-center justify-center text-sm font-bold text-unal-gray/30">→</div>
+      <div class="flex w-[24%] shrink-0 flex-col items-center justify-center gap-1 rounded-md border border-unal-blue/40 bg-unal-blue/10 px-2 py-2 text-center leading-none">
+        <span class="text-[0.58rem] font-bold uppercase tracking-wide text-unal-blue">Etapa 1</span>
+        <span class="text-[0.76rem] font-semibold leading-tight text-unal-gray">Preentrenamiento sintético</span>
+        <span class="text-[0.60rem] text-unal-gray/70">SGD · 21 600 imgs</span>
+      </div>
+      <div class="flex w-[5%] shrink-0 items-center justify-center text-sm font-bold text-unal-gray/30">→</div>
+      <div class="flex w-[35%] shrink-0 flex-col items-center justify-center gap-1 rounded-md border border-dashed border-gray-300 bg-gray-100 px-2 py-2 text-center leading-none opacity-40">
+        <span class="text-[0.58rem] font-bold uppercase text-gray-500">Etapa 2</span>
+        <span class="text-[0.76rem] font-semibold leading-tight text-gray-400 line-through">Transferencia de aprendizaje</span>
+        <span class="text-[0.60rem] text-gray-400">omitida</span>
+      </div>
+      <div class="flex w-[5%] shrink-0 items-center justify-center text-sm font-bold text-unal-gray/30">→</div>
+      <div class="flex w-[12%] shrink-0 flex-col items-center justify-center gap-1 rounded-md border border-gray-300 bg-white px-2 py-2 text-center leading-none">
+        <span class="text-[0.58rem] font-bold uppercase tracking-wide text-unal-gray/60">Evaluación</span>
+        <span class="text-[0.66rem] font-semibold text-unal-gray">40 imgs · 146 inst.</span>
+      </div>
+    </div>
+  </div>
+  <!-- Franja protocolo -->
   <div class="flex shrink-0 items-center gap-2">
     <div class="h-px flex-1 rounded-full bg-unal-blue/20" />
-    <span class="text-[0.60rem] font-semibold text-unal-gray/60">Mismo protocolo: 13 config. estándar y 4 desarrolladas</span>
+    <span class="text-[0.58rem] font-semibold text-unal-gray/60">Mismo protocolo: 13 configuraciones estándar y 4 redes desarrolladas</span>
     <div class="h-px flex-1 rounded-full bg-unal-green/20" />
   </div>
   <!-- Hiperparámetros y métricas -->
-  <div class="flex gap-1 mt-4">
+  <div class="flex gap-2">
     <div class="flex min-h-0 flex-1 self-start flex-col gap-1.5 overflow-hidden rounded-lg border border-gray-200 border-l-4 border-l-unal-blue/50 bg-white px-4 pt-3 pb-2">
-      <span class="text-[0.67rem] font-bold uppercase tracking-wide text-unal-blue"><carbon-settings class="mr-1 inline text-[0.95rem]" />Hiperparámetros clave</span>
-      <ul class="list-none space-y-1 text-[0.72rem] leading-tight text-unal-gray">
+      <span class="text-[0.62rem] font-bold uppercase tracking-wide text-unal-blue"><carbon-settings class="mr-1 inline text-[0.85rem]" />Hiperparámetros clave</span>
+      <ul class="list-none space-y-0.5 text-[0.68rem] leading-tight text-unal-gray">
         <li><span class="font-semibold">Etapa 1:</span> SGD · 100 épocas YOLO / 150 RT-DETR · early stopping</li>
         <li><span class="font-semibold">Etapa 2:</span> AdamW · 200 épocas YOLO / 300 RT-DETR · early stopping</li>
-        <li><span class="font-semibold">Control:</span> mide el gap sintético-real y valida la necesidad del TL</li>
-        <li><span class="font-semibold">Aumentación en línea:</span> HSV · traslación · escalado · flip-H (p=0,5) · mosaico (p=1,0) + Albumentations: Blur, MedianBlur, ToGray, CLAHE (p=0,01 c/u) — sin rotación ni flip-V para preservar plausibilidad biológica</li>
+        <li><span class="font-semibold">Aumentación:</span> HSV · traslación · escalado · flip-H · mosaico + Albumentations (Blur, CLAHE, ToGray…) — sin rotación ni flip-V</li>
       </ul>
     </div>
     <div class="flex min-h-0 flex-1 self-start flex-col gap-1.5 overflow-hidden rounded-lg border border-gray-200 border-l-4 border-l-unal-green/60 bg-white px-4 pt-3 pb-2">
-      <span class="text-[0.67rem] font-bold uppercase tracking-wide text-[#3a6a18]"><carbon-chart-line class="mr-1 inline text-[0.95rem]" />Métricas de evaluación</span>
-      <ul class="list-none space-y-1 text-[0.72rem] leading-tight text-unal-gray">
+      <span class="text-[0.62rem] font-bold uppercase tracking-wide text-[#3a6a18]"><carbon-chart-line class="mr-1 inline text-[0.85rem]" />Métricas de evaluación</span>
+      <ul class="list-none space-y-0.5 text-[0.68rem] leading-tight text-unal-gray">
         <li><span class="font-semibold">mAP50</span> — umbral estándar (IoU = 0,5)</li>
         <li><span class="font-semibold">mAP50-95</span> — promedio sobre 10 umbrales, más exigente</li>
         <li>Precisión · Recall · Tiempo de inferencia (ms/img)</li>
@@ -467,31 +477,34 @@ deckSection: metodologia
   </div>
   <div class="mt-1 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
 </header>
-<div class="grid min-h-0 flex-1 grid-rows-[auto_1fr] gap-2">
+<div class="flex min-h-0 flex-1 flex-col gap-2">
   <!-- Motivación como caja .co.bl -->
   <div class="rounded-lg border-l-4 border-unal-blue/60 bg-unal-blue/[0.07] px-3 py-2 text-[0.80rem] leading-[1.45] text-unal-gray">
-    <span class="font-semibold text-unal-blue">Motivación:</span> los modelos base presentan baja sensibilidad al <span class="font-semibold text-unal-blue">límite citoplasmático</span> y al <span class="font-semibold text-unal-blue">huso meiótico</span> — estructuras de bajo contraste sin precedente en bases de datos públicas → integración de atención para recalibrar respuesta espacial y de canal sin rediseñar la arquitectura completa
+    <span class="font-semibold text-unal-blue">Arquitecturas base:</span> YOLOv9m y YOLO11m fueron seleccionadas en Fase 2 como las de mayor rendimiento → se desarrollaron <span class="font-semibold text-unal-blue">4 variantes con módulos de atención</span> para mejorar la sensibilidad al <span class="font-semibold text-unal-blue">huso meiótico</span> y al <span class="font-semibold text-unal-blue">límite citoplasmático</span> sin rediseñar la arquitectura completa
   </div>
-  <div class="grid min-h-0 grid-cols-2 gap-3">
+  <div class="grid min-h-0 flex-1 grid-cols-2 gap-3">
     <div class="flex flex-col gap-2.5 rounded-lg border border-unal-blue/30 bg-unal-blue/[0.07] px-4 py-3">
       <span class="text-[0.72rem] font-bold uppercase tracking-wide text-unal-blue"><carbon-layers class="mr-1 inline text-[0.95rem]" />YOLOv9m-CBAM</span>
       <span class="text-[0.80rem] leading-[1.45] text-unal-gray">CBAM en columna vertebral · bloque P2/4 (128 ch) · después del primer RepNCSPELAN4 · atención canal + espacial secuencial</span>
+      <span class="text-[0.60rem] text-unal-gray/50">Woo et al., 2018 [43]; Hu et al., 2018 [44]</span>
     </div>
     <div class="flex flex-col gap-2.5 rounded-lg border border-unal-blue/30 bg-unal-blue/[0.07] px-4 py-3">
       <span class="text-[0.72rem] font-bold uppercase tracking-wide text-unal-blue"><carbon-chart-multitype class="mr-1 inline text-[0.95rem]" />YOLOv9m-Triple Attention</span>
       <span class="text-[0.80rem] leading-[1.45] text-unal-gray">Atención progresiva en 3 niveles: Channel Att. (P2/4) · Spatial Att. (P3/8) · CBAM (P4/16) — recalibración multi-escala</span>
+      <span class="text-[0.60rem] text-unal-gray/50">Woo et al., 2018 [43]; Hu et al., 2018 [44]</span>
     </div>
     <div class="flex flex-col gap-2.5 rounded-lg border border-unal-green/40 bg-unal-green/[0.08] px-4 py-3">
       <span class="text-[0.72rem] font-bold uppercase tracking-wide text-[#3a6a18]"><carbon-settings-adjust class="mr-1 inline text-[0.95rem]" />YOLO11m-Conservative Attention</span>
       <span class="text-[0.80rem] leading-[1.45] text-unal-gray">Channel Att. después del 1.er C3k2 (P2/4, 256 ch) · CBAM después del 2.° C3k2 (P3/8, 512 ch) — enfoque conservador</span>
+      <span class="text-[0.60rem] text-unal-gray/50">Woo et al., 2018 [43]; Hu et al., 2018 [44]</span>
     </div>
     <div class="flex flex-col gap-2.5 rounded-lg border border-unal-green/40 bg-unal-green/[0.08] px-4 py-3">
       <span class="text-[0.72rem] font-bold uppercase tracking-wide text-[#3a6a18]"><carbon-machine-learning class="mr-1 inline text-[0.95rem]" />YOLO11m-Transformer Enhanced</span>
       <span class="text-[0.80rem] leading-[1.45] text-unal-gray">Módulos C3TR + Atención en columna vertebral — captura de relaciones globales en la imagen para complementar la convolución local</span>
+      <span class="text-[0.60rem] text-unal-gray/50">Vaswani et al., 2017 [45]</span>
     </div>
   </div>
 </div>
-<div class="absolute text-[0.78rem] italic text-unal-gray/60" style="bottom: 4rem; left: 0;">Criterio consistente: añadir atención en posiciones estratégicas · overhead computacional &lt; 0,5% en todos los casos</div>
 </div>
 <div class="pointer-events-none absolute bottom-4 right-6 z-0 flex items-center gap-3 sm:bottom-6 sm:right-8 sm:gap-4">
   <img src="../images/logos/gpima_logo.png" alt="GPIMA" class="h-5 w-auto shrink-0 object-contain opacity-90 sm:h-6" />
@@ -527,7 +540,6 @@ deckSection: metodologia
       class="w-full max-w-[68%] h-auto object-contain"
     />
     <figcaption lang="es" class="plm-figcaption mt-1 text-center">
-      <span class="font-semibold text-unal-gray">Fig. 14.</span>
       Arquitectura YOLOv9m-Triple Attention: ChannelAttention en P2/4 (128 ch), SpatialAttention en P3/8 (240 ch) y CBAM en P4/16 (360 ch).
     </figcaption>
   </figure>
@@ -657,55 +669,64 @@ deckSection: metodologia
   <div class="mt-1.5 h-0.5 w-20 max-w-full rounded-full bg-unal-green" />
   <p class="mt-1.5 text-[0.82rem] leading-snug text-unal-gray">Mismo protocolo de Fase 2 — las diferencias en resultados se deben exclusivamente a los <span class="font-semibold text-unal-blue">módulos de atención</span>.</p>
 </header>
-<div class="flex min-h-0 flex-1 flex-col gap-2">
-  <!-- Tabla comparativa -->
-  <div class="rounded-xl border border-gray-200">
-    <table class="w-full text-[0.82rem] leading-snug">
-      <thead>
-        <tr class="border-b-2 border-unal-gray/25">
-          <th class="px-3 py-1.5 !text-center !font-bold text-unal-gray">Aspecto</th>
-          <th class="px-3 py-1.5 !text-center !font-bold text-unal-blue">Fase 2 — Redes estándar</th>
-          <th class="px-3 py-1.5 !text-center !font-bold text-[#3a6a18]">Fase 3 — Redes desarrolladas</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-100">
-        <tr class="bg-white">
-          <td class="px-3 py-1 font-semibold text-unal-gray">Arquitecturas</td>
-          <td class="px-3 py-1 text-center text-unal-gray">13 configuraciones YOLO / RT-DETR</td>
-          <td class="px-3 py-1 text-center text-unal-gray">4 variantes con módulos de atención</td>
-        </tr>
-        <tr class="bg-gray-50/60">
-          <td class="px-3 py-1 font-semibold text-unal-gray">Flujo de TL</td>
-          <td class="px-3 py-1 text-center text-unal-gray">COCO → Sintético → Real</td>
-          <td class="px-3 py-1 text-center text-unal-gray">COCO → Sintético → Real</td>
-        </tr>
-        <tr class="bg-white">
-          <td class="px-3 py-1 font-semibold text-unal-gray">Exp. control</td>
-          <td class="px-3 py-1 text-center text-unal-gray">✓ Sin transferencia de aprendizaje</td>
-          <td class="px-3 py-1 text-center text-unal-gray">✓ Sin transferencia de aprendizaje</td>
-        </tr>
-        <tr class="bg-gray-50/60">
-          <td class="px-3 py-1 font-semibold text-unal-gray">Métricas</td>
-          <td class="px-3 py-1 text-center text-unal-gray">mAP50, mAP50-95, P, R, ms/img</td>
-          <td class="px-3 py-1 text-center text-unal-gray">mAP50, mAP50-95, P, R, ms/img</td>
-        </tr>
-        <tr class="bg-white">
-          <td class="px-3 py-1 font-semibold text-unal-gray">Conjunto de prueba</td>
-          <td class="px-3 py-1 text-center text-unal-gray">40 imgs · 146 instancias (OocytePaperImages)</td>
-          <td class="px-3 py-1 text-center text-unal-gray">40 imgs · 146 instancias (OocytePaperImages)</td>
-        </tr>
-        <tr class="bg-unal-green/[0.05]">
-          <td class="px-3 py-1 font-semibold text-unal-gray">Eval. video</td>
-          <td class="px-3 py-1 text-center text-unal-gray/35">—</td>
-          <td class="px-3 py-1 text-center font-bold text-[#3a6a18]">✓ 5 secuencias PLM</td>
-        </tr>
-      </tbody>
-    </table>
+<div class="flex min-h-0 flex-1 flex-col gap-3">
+  <!-- Diagrama TL -->
+  <div class="rounded-lg border border-unal-blue/25 bg-unal-blue/[0.03] px-3 py-2.5">
+    <div class="mb-2 text-[0.58rem] font-bold uppercase tracking-widest text-unal-blue/70">Protocolo con transferencia de aprendizaje</div>
+    <div class="flex items-center">
+      <div class="flex w-[14%] shrink-0 flex-col items-center justify-center gap-1 rounded-md border border-gray-300 bg-white px-2 py-2 text-center leading-none">
+        <span class="text-[0.58rem] font-bold uppercase tracking-wide text-unal-gray/60">Inicio</span>
+        <span class="text-[0.70rem] font-semibold text-unal-gray">Pesos COCO</span>
+      </div>
+      <div class="flex w-[5%] shrink-0 items-center justify-center text-sm font-bold text-unal-blue/50">→</div>
+      <div class="flex w-[24%] shrink-0 flex-col items-center justify-center gap-1 rounded-md border border-unal-blue/40 bg-unal-blue/10 px-2 py-2 text-center leading-none">
+        <span class="text-[0.58rem] font-bold uppercase tracking-wide text-unal-blue">Etapa 1</span>
+        <span class="text-[0.76rem] font-semibold leading-tight text-unal-gray">Preentrenamiento sintético</span>
+        <span class="text-[0.60rem] text-unal-gray/70">SGD · 21 600 imgs</span>
+      </div>
+      <div class="flex w-[5%] shrink-0 items-center justify-center text-sm font-bold text-unal-blue/50">→</div>
+      <div class="flex w-[35%] shrink-0 flex-col items-center justify-center gap-1 rounded-md border border-unal-green/50 bg-unal-green/10 px-2 py-2 text-center leading-none">
+        <span class="text-[0.58rem] font-bold uppercase text-[#3a6a18]">Etapa 2</span>
+        <span class="text-[0.76rem] font-semibold leading-tight text-unal-gray">Transferencia de aprendizaje</span>
+        <span class="text-[0.60rem] text-unal-gray/70">AdamW · 200 imgs reales · OocytePaperImages</span>
+      </div>
+      <div class="flex w-[5%] shrink-0 items-center justify-center text-sm font-bold text-unal-green/50">→</div>
+      <div class="flex w-[12%] shrink-0 flex-col items-center justify-center gap-1 rounded-md border border-gray-300 bg-white px-2 py-2 text-center leading-none">
+        <span class="text-[0.58rem] font-bold uppercase tracking-wide text-unal-gray/60">Evaluación</span>
+        <span class="text-[0.66rem] font-semibold text-unal-gray">40 imgs · 146 inst.</span>
+      </div>
+    </div>
   </div>
-  <div class="flex items-center justify-center gap-2">
-    <div class="h-0.5 flex-1 rounded-full bg-unal-green/20" />
-    <span class="text-[0.75rem] font-semibold text-[#3a6a18]">Protocolo idéntico → comparación justa entre redes estándar y desarrolladas</span>
-    <div class="h-0.5 flex-1 rounded-full bg-unal-green/20" />
+  <!-- Diagrama Control -->
+  <div class="rounded-lg border border-dashed border-gray-300 bg-gray-50/60 px-3 py-2.5">
+    <div class="mb-2 text-[0.58rem] font-bold uppercase tracking-widest text-unal-gray/50">Experimento de control — sin transferencia de aprendizaje</div>
+    <div class="flex items-center">
+      <div class="flex w-[14%] shrink-0 flex-col items-center justify-center gap-1 rounded-md border border-gray-300 bg-white px-2 py-2 text-center leading-none">
+        <span class="text-[0.58rem] font-bold uppercase tracking-wide text-unal-gray/60">Inicio</span>
+        <span class="text-[0.70rem] font-semibold text-unal-gray">Pesos COCO</span>
+      </div>
+      <div class="flex w-[5%] shrink-0 items-center justify-center text-sm font-bold text-unal-gray/30">→</div>
+      <div class="flex w-[24%] shrink-0 flex-col items-center justify-center gap-1 rounded-md border border-unal-blue/40 bg-unal-blue/10 px-2 py-2 text-center leading-none">
+        <span class="text-[0.58rem] font-bold uppercase tracking-wide text-unal-blue">Etapa 1</span>
+        <span class="text-[0.76rem] font-semibold leading-tight text-unal-gray">Preentrenamiento sintético</span>
+        <span class="text-[0.60rem] text-unal-gray/70">SGD · 21 600 imgs</span>
+      </div>
+      <div class="flex w-[5%] shrink-0 items-center justify-center text-sm font-bold text-unal-gray/30">→</div>
+      <div class="flex w-[35%] shrink-0 flex-col items-center justify-center gap-1 rounded-md border border-dashed border-gray-300 bg-gray-100 px-2 py-2 text-center leading-none opacity-40">
+        <span class="text-[0.58rem] font-bold uppercase text-gray-500">Etapa 2</span>
+        <span class="text-[0.76rem] font-semibold leading-tight text-gray-400 line-through">Transferencia de aprendizaje</span>
+        <span class="text-[0.60rem] text-gray-400">omitida</span>
+      </div>
+      <div class="flex w-[5%] shrink-0 items-center justify-center text-sm font-bold text-unal-gray/30">→</div>
+      <div class="flex w-[12%] shrink-0 flex-col items-center justify-center gap-1 rounded-md border border-gray-300 bg-white px-2 py-2 text-center leading-none">
+        <span class="text-[0.58rem] font-bold uppercase tracking-wide text-unal-gray/60">Evaluación</span>
+        <span class="text-[0.66rem] font-semibold text-unal-gray">40 imgs · 146 inst.</span>
+      </div>
+    </div>
+  </div>
+  <!-- Nota Fase 3 -->
+  <div class="rounded-lg border-l-4 border-unal-green/60 bg-unal-green/[0.07] px-3 py-2 text-[0.78rem] leading-snug text-unal-gray">
+    <span class="font-semibold text-[#3a6a18]">Fase 3 — único diferencial:</span> las 4 redes con módulos de atención siguen este mismo protocolo + <span class="font-semibold text-[#3a6a18]">evaluación en 5 secuencias PLM de video</span> — las diferencias en resultados se atribuyen exclusivamente a los módulos de atención.
   </div>
 </div>
 </div>

@@ -23,7 +23,7 @@ title: Conclusiones
     </div>
     <div class="rounded-xl border border-gray-300/60 border-l-4 border-l-unal-green bg-white/95 px-4 pb-2 pt-1 shadow-md ring-1 ring-gray-900/5 backdrop-blur-sm sm:px-5">
       <p class="my-0 text-[0.74rem] leading-[1.38] text-unal-gray sm:text-sm">
-        <span class="font-semibold text-unal-blue">Resultado principal:</span> entre 13 configuraciones YOLO (v8–v12) y RT-DETR, <span class="font-semibold text-unal-blue">YOLOv9m</span> lidera en métricas estáticas (<span class="font-semibold text-unal-blue">mAP50 = 0,902</span>, mAP50-95 = 0,627). <span class="font-semibold text-unal-blue">YOLOv9m-CBAM</span> es el modelo de referencia para aplicación clínica — criterio multidimensional: generalización sin TL (+14,2 pp), video sin falsos positivos, confianza estable (0,95–0,97).
+        <span class="font-semibold text-unal-blue">Resultado principal:</span> <span class="font-semibold text-unal-blue">YOLOv9m-CBAM</span> es el modelo de referencia para aplicación clínica — mAP50 = <span class="font-semibold text-unal-blue">0,902</span>, generaliza sin transferencia de aprendizaje (+14,2 pp), produce menos falsos positivos en video y mantiene confianza estable (0,95–0,97).
       </p>
     </div>
     </div>
@@ -71,9 +71,9 @@ title: Contribuciones
         Aportes
       </p>
       <ul class="list-disc space-y-0.5 pl-4.5 text-[0.72rem] leading-[1.35] text-unal-gray marker:font-semibold marker:text-unal-blue">
-        <li>Base sintética <code class="rounded bg-gray-100/90 px-1 py-0.5 font-mono text-[0.63rem] text-unal-gray">oocyte_synthetic_2025b</code>: +526.000 imágenes con etiquetado automático — recurso público inexistente hasta la fecha.</li>
+        <li>Tres bases de datos públicas: <code class="rounded bg-gray-100/90 px-1 py-0.5 font-mono text-[0.63rem] text-unal-gray">oocyte_synthetic_2025b</code> (+526.000 imágenes, etiquetado automático), <code class="rounded bg-gray-100/90 px-1 py-0.5 font-mono text-[0.63rem] text-unal-gray">OocytePaperImages</code> (200 imágenes PLM reales, curadas y anotadas manualmente) y conjunto Zenodo de imagen ampliada multi-ovocito — recursos inexistentes hasta la fecha.</li>
         <li>Marco <span class="font-semibold text-unal-blue">sintético → real</span> demostrado efectivo para imágenes PLM biomédicas con datos reales escasos.</li>
-        <li>Benchmark comparativo de <span class="font-semibold">13 configuraciones</span> YOLO (v8–v12) y RT-DETR — <span class="font-semibold text-unal-blue">YOLOv9m</span> modelo óptimo en métricas estáticas; <span class="font-semibold text-unal-blue">YOLOv9m-CBAM</span> referencia para aplicación clínica dinámica.</li>
+        <li>Benchmark comparativo de <span class="font-semibold">13 configuraciones</span> YOLO (v8–v12) y RT-DETR — <span class="font-semibold text-unal-blue">YOLOv9m-CBAM</span> modelo de referencia para aplicación clínica.</li>
         <li>Artículo en preparación sobre detección con módulos de atención en imágenes PLM de ovocitos.</li>
       </ul>
     </div>

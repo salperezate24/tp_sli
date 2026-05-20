@@ -639,6 +639,52 @@ deckSection: referencias
         >https://doi.org/10.5281/zenodo.12806560</a>.
       </span>
     </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[43]</span>
+      <span>
+        Woo, S., Park, J., Lee, J.-Y. y Kweon, I. S.,
+        «CBAM: Convolutional Block Attention Module»,
+        en <em>Proc. European Conference on Computer Vision (ECCV)</em>, pp.&nbsp;3–19, 2018.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.1007/978-3-030-01234-2_1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1007/978-3-030-01234-2_1</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[44]</span>
+      <span>
+        Hu, J., Shen, L. y Sun, G.,
+        «Squeeze-and-Excitation Networks»,
+        en <em>Proc. IEEE Conf. Computer Vision and Pattern Recognition (CVPR)</em>, pp.&nbsp;7132–7141, 2018.
+        DOI:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://doi.org/10.1109/CVPR.2018.00745"
+          target="_blank"
+          rel="noopener noreferrer"
+        >10.1109/CVPR.2018.00745</a>.
+      </span>
+    </li>
+    <li class="flex gap-2">
+      <span class="shrink-0 font-semibold text-unal-blue">[45]</span>
+      <span>
+        Vaswani, A. et al.,
+        «Attention Is All You Need»,
+        en <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, vol.&nbsp;30, 2017.
+        [Online].
+        Available:
+        <a
+          class="break-all text-unal-blue underline decoration-unal-blue/40 underline-offset-1 hover:decoration-unal-blue"
+          href="https://arxiv.org/abs/1706.03762"
+          target="_blank"
+          rel="noopener noreferrer"
+        >https://arxiv.org/abs/1706.03762</a>.
+      </span>
+    </li>
   </ol>
 </div><!-- cierre scroll -->
 

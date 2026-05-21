@@ -213,8 +213,8 @@ deckSection: estado
 <div class="grid min-h-0 flex-1 grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-3">
   <figure class="m-0 flex flex-col items-center justify-center gap-1">
     <img
-      src="../images/figures/gpima_montaje_optico.png"
-      alt="Configuración del microscopio polarizado propuesto — montaje óptico GPIMA"
+      src="../images/figures/gpima_montaje_real.png"
+      alt="Montaje real del microscopio polarizado propuesto — sistema PLM GPIMA"
       class="h-auto max-h-[min(46vh,290px)] w-full object-contain"
     />
     <figcaption lang="es" class="plm-figcaption text-center">

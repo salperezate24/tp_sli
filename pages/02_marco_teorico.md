@@ -28,13 +28,16 @@ deckSection: marco
   </div>
   <div class="flex min-h-0 flex-col gap-3">
     <figure class="m-0 flex flex-col">
-      <img src="../images/figures/diagrams/oocyte_plm.png" alt="Ovocito bajo PLM" class="w-full max-h-[12rem] object-contain" />
+      <div class="flex gap-2">
+        <img src="../images/figures/diagrams/oocyte_plm.png" alt="Ovocito bajo PLM (diagrama)" class="flex-1 max-h-[11rem] w-0 object-contain" />
+        <img src="../images/figures/diagrams/oocyte_plm_real.png" alt="Ovocito real bajo PLM" class="flex-1 max-h-[11rem] w-0 object-contain" />
+      </div>
       <figcaption lang="es" class="plm-figcaption">
         Ovocito bajo PLM: huso meiótico (s), zona pelúcida (zp), citoplasma (c) y cuerpo polar (pb). Rienzi et al. (2011).
       </figcaption>
     </figure>
     <figure class="m-0 flex flex-col">
-      <img src="../images/figures/oocytes/oocyte_diagram_002.png" alt="Esquema del proceso de maduración de un ovocito" class="w-full max-h-[11rem] object-contain" />
+      <img src="../images/figures/oocytes/oocyte_diagram_002.png" alt="Esquema del proceso de maduración de un ovocito" class="w-full max-h-[9rem] object-contain" />
       <figcaption lang="es" class="plm-figcaption">
         Esquema del proceso de maduración. Elaboración propia.
       </figcaption>

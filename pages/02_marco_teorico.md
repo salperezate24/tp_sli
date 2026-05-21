@@ -22,7 +22,7 @@ deckSection: marco
       </li>
       <li class="flex gap-1.5">
         <span class="mt-0.5 shrink-0 text-unal-green">▸</span>
-        <span><span class="font-semibold text-unal-blue">Cuerpo polar:</span> señal habitual, pero emerge <span class="font-semibold">antes</span> del huso.</span>
+        <span><span class="font-semibold text-unal-blue">Cuerpo polar:</span> señal habitual de madurez.</span>
       </li>
     </ul>
   </div>

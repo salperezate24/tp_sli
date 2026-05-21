@@ -243,7 +243,6 @@ deckSection: justificacion
           <span class="text-[12.5px] font-extrabold uppercase tracking-wide text-red-500">Cuerpo polar</span>
         </div>
         <span class="text-[13px] font-semibold leading-snug text-unal-gray">Señal insuficiente</span>
-        <span class="text-[12px] leading-snug text-unal-gray/60">Aparece <span class="font-semibold">antes</span> del huso</span>
         <span class="text-[12px] leading-snug text-unal-gray/60"><span class="font-semibold text-red-500">No confirma</span> MII <span class="font-semibold">(Holubcová et al., 2019)</span></span>
       </div>
       <div class="flex flex-col gap-1.5 rounded-xl border border-unal-green/40 bg-unal-green/[0.07] px-3 py-2.5">
